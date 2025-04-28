@@ -119,9 +119,9 @@ card 343 "the spirit's call" level=X image-path="images/fh-the-spirits-call.png"
 
 card 344 "birds in a tempest" level=2 image-path="images/fh-birds-in-a-tempest.png" {
 	top lost=#true persistent=#true {
-		enhancement kind=square ability="summon hp"
-		enhancement kind=square ability="summon move"
-		enhancement kind=square ability="summon attack"
+		enhancement kind=square ability="summon hp" multiple=#true
+		enhancement kind=square ability="summon move" multiple=#true
+		enhancement kind=square ability="summon attack" multiple=#true
 	}
 	bottom {
 		enhancement kind=square ability=attack
