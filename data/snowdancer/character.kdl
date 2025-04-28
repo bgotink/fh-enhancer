@@ -124,7 +124,7 @@ card 344 "birds in a tempest" level=2 image-path="images/fh-birds-in-a-tempest.p
 		enhancement kind=square ability="summon attack" multiple=#true
 	}
 	bottom {
-		enhancement kind=square ability=attack
+		enhancement kind=square ability=move
 	}
 }
 
