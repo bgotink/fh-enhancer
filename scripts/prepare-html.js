@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // @ts-check
 
-import {copyFile, mkdir, readFile, writeFile} from "node:fs/promises";
+import {readdir, readFile, writeFile} from "node:fs/promises";
 import {JSDOM} from "jsdom";
 
 import {
@@ -65,13 +65,19 @@ const [scriptText, styleText] = await Promise.all([
   readFile(new URL("template/styles.css", import.meta.url), "utf8"),
 ]);
 
-for (const characterName of ["snowdancer"]) {
-  const character = parsePlayerCharacter(
-    await readFile(
-      new URL(`${characterName}/character.kdl`, rootFolder),
-      "utf8",
-    ),
-  );
+for (const characterName of await readdir(rootFolder)) {
+	let characterString;
+
+	try {
+		characterString = await readFile(
+			new URL(`${characterName}/character.kdl`, rootFolder),
+			"utf8",
+		);
+	} catch {
+		continue;
+	}
+
+  const character = parsePlayerCharacter(characterString);
 
   const jsdom = new JSDOM(`<!doctype html><html lang=en></html>`);
   const {document} = jsdom.window;
