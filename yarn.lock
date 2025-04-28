@@ -18,10 +18,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bgotink/kdl@npm:^0.3.1":
-  version: 0.3.1
-  resolution: "@bgotink/kdl@npm:0.3.1"
-  checksum: 10c0/b5c433f261e71f7fc40dfcdaf506942ea4039046efc8b664d930cb69841b861a190f6dc943fb962402be5f0019df3afb72f4e2eef2315e738e979e2d0f0242e5
+"@bgotink/kdl@npm:0.4.0-next.1":
+  version: 0.4.0-next.1
+  resolution: "@bgotink/kdl@npm:0.4.0-next.1"
+  checksum: 10c0/2b217c5b14c1655b60332125977320f1727a8754d74827d7799630601fa97cfeeafea7cef7b70f2cd3b9dd498bd299db54372afb4afe091a0071ea6fecc03e90
   languageName: node
   linkType: hard
 
@@ -163,7 +163,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "fh-enhancer@workspace:."
   dependencies:
-    "@bgotink/kdl": "npm:^0.3.1"
+    "@bgotink/kdl": "npm:0.4.0-next.1"
     express-check-in: "npm:^0.2.0"
     husky: "npm:^9.1.7"
     is-ci: "npm:^4.1.0"
