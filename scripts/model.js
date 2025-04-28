@@ -1,6 +1,7 @@
 // @ts-check
 
-import {parse, format} from '@bgotink/kdl/dessert';
+import {getLocation, InvalidKdlError, parse} from '@bgotink/kdl';
+import {deserialize, format, KdlDeserializeError} from '@bgotink/kdl/dessert';
 
 /** @import {DeserializationContext, DocumentSerializationContext, SerializationContext} from "@bgotink/kdl/dessert"; */
 
@@ -282,7 +283,62 @@ export class PlayerCharacter {
 
 /** @param {string} text */
 export function parsePlayerCharacter(text) {
-	return parse(text, PlayerCharacter);
+	let document;
+	try {
+		document = parse(text, {storeLocations: true});
+	} catch (e) {
+		if (!(e instanceof InvalidKdlError)) {
+			throw e;
+		}
+
+		console.error("Invalid KDL file:");
+		for (const err of e.flat()) {
+			let message = `- ${err.message}`;
+
+			if (err.start) {
+				message += ` at ${err.start.line}:${err.start.column}`;
+
+				if (err.end && err.end.offset !== err.start.offset) {
+					if (err.end.line === err.start.line) {
+						message += `-${err.end.column}`;
+					} else {
+						message += `-${err.end.line}:${err.end.column}`;
+					}
+				}
+			}
+
+			console.log(message);
+		}
+
+		throw new Error("Invalid KDL file");
+	}
+
+	try {
+		return deserialize(document, PlayerCharacter);
+	} catch (e) {
+		if (!(e instanceof KdlDeserializeError)) {
+			throw e;
+		}
+
+		console.log("Invalid character file:");
+
+		let message = e.message;
+		const location = getLocation(e.location);
+		if (location) {
+			message += ` at ${location.start.line}:${location.start.column}`;
+
+			if (location.end && location.end.offset !== location.start.offset) {
+				if (location.end.line === location.start.line) {
+					message += `-${location.end.column}`;
+				} else {
+					message += `-${location.end.line}:${location.end.column}`;
+				}
+			}
+		}
+
+		console.log(message);
+		throw new Error("Invalid character file");
+	}
 }
 
 /** @param {PlayerCharacter} pc */
