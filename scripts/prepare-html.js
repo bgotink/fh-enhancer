@@ -168,6 +168,7 @@ for (const characterName of ["snowdancer"]) {
           `${numberOfHexes} → ${numberOfHexes + 1}`,
           card,
           action,
+          enhancement,
           baseCostAttackHex(numberOfHexes),
         ),
       );
@@ -182,6 +183,7 @@ for (const characterName of ["snowdancer"]) {
             "+1",
             card,
             action,
+            enhancement,
             baseCostPerAbility[enhancement.ability],
             enhancement.multiple,
           ),
@@ -193,6 +195,7 @@ for (const characterName of ["snowdancer"]) {
               "add jump",
               card,
               action,
+              enhancement,
               baseCostJump,
               enhancement.multiple,
             ),
@@ -206,6 +209,7 @@ for (const characterName of ["snowdancer"]) {
             "create one element",
             card,
             action,
+            enhancement,
             baseCostOneElement,
           ),
         );
@@ -214,6 +218,7 @@ for (const characterName of ["snowdancer"]) {
             "create any element",
             card,
             action,
+            enhancement,
             baseCostAnyElement,
           ),
         );
@@ -226,6 +231,7 @@ for (const characterName of ["snowdancer"]) {
               `apply ${name}`,
               card,
               action,
+              enhancement,
               cost,
               enhancement.multiple,
             ),
@@ -238,6 +244,7 @@ for (const characterName of ["snowdancer"]) {
               `apply ${name}`,
               card,
               action,
+              enhancement,
               cost,
               enhancement.multiple,
             ),
@@ -254,6 +261,7 @@ for (const characterName of ["snowdancer"]) {
    * @param {string} name
    * @param {Card} card
    * @param {Action} action
+   * @param {Enhancement} enhancement
    * @param {number} baseCost
    * @param {boolean=} multiple
    */
@@ -261,6 +269,7 @@ for (const characterName of ["snowdancer"]) {
     name,
     card,
     action,
+    enhancement,
     baseCost,
     multiple = false,
   ) {
@@ -280,11 +289,11 @@ for (const characterName of ["snowdancer"]) {
       computation.setAttribute("target-multiple", "");
     }
 
-    if (action.lost) {
+    if (action.lost && !action.persistent) {
       computation.setAttribute("lost", "");
     }
 
-    if (action.persistent) {
+    if (action.persistent && !enhancement.ability?.startsWith("summon")) {
       computation.setAttribute("persistent", "");
     }
 
