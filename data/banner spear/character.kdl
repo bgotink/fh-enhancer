@@ -1,0 +1,116 @@
+card 61 "at all costs" level=1 image-path="images/fh-at-all-costs.png" {
+	top
+	bottom
+}
+card 62 "rallying cry" level=1 image-path="images/fh-rallying-cry.png" {
+	top
+	bottom
+}
+card 63 "unbreakable wall" level=1 image-path="images/fh-unbreakable-wall.png" {
+	top
+	bottom
+}
+card 64 javelin level=1 image-path="images/fh-javelin.png" {
+	top
+	bottom
+}
+card 65 "deflecting maneuver" level=1 image-path="images/fh-deflecting-maneuver.png" {
+	top
+	bottom
+}
+card 66 "tip of the spear" level=1 image-path="images/fh-tip-of-the-spear.png" {
+	top
+	bottom
+}
+card 67 "combined effort" level=1 image-path="images/fh-combined-effort.png" {
+	top
+	bottom
+}
+card 68 "set for the charge" level=1 image-path="images/fh-set-for-the-charge.png" {
+	top
+	bottom
+}
+card 69 "pincer movement" level=1 image-path="images/fh-pincer-movement.png" {
+	top
+	bottom
+}
+card 70 regroup level=1 image-path="images/fh-regroup.png" {
+	top
+	bottom
+}
+card 71 "resolved courage" level=X image-path="images/fh-resolved-courage.png" {
+	top
+	bottom
+}
+card 72 "incendiary throw" level=X image-path="images/fh-incendiary-throw.png" {
+	top
+	bottom
+}
+card 73 "driving inspiration" level=X image-path="images/fh-driving-inspiration.png" {
+	top
+	bottom
+}
+card 74 "meat grinder" level=2 image-path="images/fh-meat-grinder.png" {
+	top
+	bottom
+}
+card 75 "pinning charge" level=2 image-path="images/fh-pinning-charge.png" {
+	top
+	bottom
+}
+card 76 "let them come" level=3 image-path="images/fh-let-them-come.png" {
+	top
+	bottom
+}
+card 77 "head of the hammer" level=3 image-path="images/fh-head-of-the-hammer.png" {
+	top
+	bottom
+}
+card 78 "boldening blow" level=4 image-path="images/fh-boldening-blow.png" {
+	top
+	bottom
+}
+card 79 "air support" level=4 image-path="images/fh-air-support.png" {
+	top
+	bottom
+}
+card 80 "explosive epicenter" level=5 image-path="images/fh-explosive-epicenter.png" {
+	top
+	bottom
+}
+card 81 "hold the line" level=5 image-path="images/fh-hold-the-line.png" {
+	top
+	bottom
+}
+card 82 barricade level=6 image-path="images/fh-barricade.png" {
+	top
+	bottom
+}
+card 83 "bolstering shout" level=6 image-path="images/fh-bolstering-shout.png" {
+	top
+	bottom
+}
+card 84 tri-thrust level=7 image-path="images/fh-tri-thrust.png" {
+	top
+	bottom
+}
+card 85 "lead from afar" level=7 image-path="images/fh-lead-from-afar.png" {
+	top
+	bottom
+}
+card 86 "sweeping aid" level=8 image-path="images/fh-sweeping-aid.png" {
+	top
+	bottom
+}
+card 87 "taunting howl" level=8 image-path="images/fh-taunting-howl.png" {
+	top
+	bottom
+}
+card 88 "take no prisoners" level=9 image-path="images/fh-take-no-prisoners.png" {
+	top
+	bottom
+}
+card 89 "hail of spears" level=9 image-path="images/fh-hail-of-spears.png" {
+	top
+	bottom
+}

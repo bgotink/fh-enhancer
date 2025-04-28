@@ -1,0 +1,120 @@
+card 90 "call to the abyss" level=1 image-path="images/fh-call-to-the-abyss.png" {
+	top
+	bottom
+}
+card 91 "anger of the dead" level=1 image-path="images/fh-anger-of-the-dead.png" {
+	top
+	bottom
+}
+card 92 "sunless apparition" level=1 image-path="images/fh-sunless-apparition.png" {
+	top
+	bottom
+}
+card 93 "fluid night" level=1 image-path="images/fh-fluid-night.png" {
+	top
+	bottom
+}
+card 94 "dark fog" level=1 image-path="images/fh-dark-fog.png" {
+	top
+	bottom
+}
+card 95 "black barrage" level=1 image-path="images/fh-black-barrage.png" {
+	top
+	bottom
+}
+card 96 "call of doom" level=1 image-path="images/fh-call-of-doom.png" {
+	top
+	bottom
+}
+card 97 eclipse level=1 image-path="images/fh-eclipse.png" {
+	top
+	bottom
+}
+card 98 "lingering rot" level=1 image-path="images/fh-lingering-rot.png" {
+	top
+	bottom
+}
+card 99 "shadow step" level=1 image-path="images/fh-shadow-step.png" {
+	top
+	bottom
+}
+card 100 "strength of the abyss" level=1 image-path="images/fh-strength-of-the-abyss.png" {
+	top
+	bottom
+}
+card 101 "wave of anguish" level=X image-path="images/fh-wave-of-anguish.png" {
+	top
+	bottom
+}
+card 102 "forceful spirits" level=X image-path="images/fh-forceful-spirits.png" {
+	top
+	bottom
+}
+card 103 "rest in the shade" level=X image-path="images/fh-rest-in-the-shade.png" {
+	top
+	bottom
+}
+card 104 "restless spirits" level=2 image-path="images/fh-restless-spirits.png" {
+	top
+	bottom
+}
+card 105 "deepening despair" level=2 image-path="images/fh-deepening-despair.png" {
+	top
+	bottom
+}
+card 106 "dead bolt" level=3 image-path="images/fh-dead-bolt.png" {
+	top
+	bottom
+}
+card 107 "ritual sacrifice" level=3 image-path="images/fh-ritual-sacrifice.png" {
+	top
+	bottom
+}
+card 108 "fleeting dusk" level=4 image-path="images/fh-fleeting-dusk.png" {
+	top
+	bottom
+}
+card 109 "pulled across" level=4 image-path="images/fh-pulled-across.png" {
+	top
+	bottom
+}
+card 110 medium level=5 image-path="images/fh-medium.png" {
+	top
+	bottom
+}
+card 111 dominate level=5 image-path="images/fh-dominate.png" {
+	top
+	bottom
+}
+card 112 "the night takes shape" level=6 image-path="images/fh-the-night-takes-shape.png" {
+	top
+	bottom
+}
+card 113 "vengeful storm" level=6 image-path="images/fh-vengeful-storm.png" {
+	top
+	bottom
+}
+card 114 "proliferation of the abyss" level=7 image-path="images/fh-proliferation-of-the-abyss.png" {
+	top
+	bottom
+}
+card 115 "hungry grasps" level=7 image-path="images/fh-hungry-grasps.png" {
+	top
+	bottom
+}
+card 116 "lashing tendrils" level=8 image-path="images/fh-lashing-tendrils.png" {
+	top
+	bottom
+}
+card 117 "frozen in fear" level=8 image-path="images/fh-frozen-in-fear.png" {
+	top
+	bottom
+}
+card 118 "when your time comes" level=9 image-path="images/fh-when-your-time-comes.png" {
+	top
+	bottom
+}
+card 119 "black lance" level=9 image-path="images/fh-black-lance.png" {
+	top
+	bottom
+}

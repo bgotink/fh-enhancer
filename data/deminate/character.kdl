@@ -1,0 +1,136 @@
+card 151 "icebound quills" level=1 image-path="images/fh-icebound-quills.png" {
+	top
+	bottom
+}
+card 152 "draining pincers" level=1 image-path="images/fh-draining-pincers.png" {
+	top
+	bottom
+}
+card 153 "hornet stingers" level=1 image-path="images/fh-hornet-stingers.png" {
+	top
+	bottom
+}
+card 154 "changeling's boon" level=1 image-path="images/fh-changelings-boon.png" {
+	top
+	bottom
+}
+card 155 "flailing tendrils" level=1 image-path="images/fh-flailing-tendrils.png" {
+	top
+	bottom
+}
+card 156 "drag down" level=1 image-path="images/fh-drag-down.png" {
+	top
+	bottom
+}
+card 157 "hornbeetle carapace" level=1 image-path="images/fh-hornbeetle-carapace.png" {
+	top
+	bottom
+}
+card 158 "reckless jab" level=X image-path="images/fh-reckless-jab.png" {
+	top
+	bottom
+}
+card 159 "feeding frenzy" level=X image-path="images/fh-feeding-frenzy.png" {
+	top
+	bottom
+}
+card 160 "selfless offering" level=1 image-path="images/fh-selfless-offering.png" {
+	top
+	bottom
+}
+card 161 "into my embrace" level=1 image-path="images/fh-into-my-embrace.png" {
+	top
+	bottom
+}
+card 162 "firefly swarm" level=1 image-path="images/fh-firefly-swarm.png" {
+	top
+	bottom
+}
+card 163 "scarab flight" level=1 image-path="images/fh-scarab-flight.png" {
+	top
+	bottom
+}
+card 164 "mind spike" level=1 image-path="images/fh-mind-spike.png" {
+	top
+	bottom
+}
+card 165 "harvest the essence" level=1 image-path="images/fh-harvest-the-essence.png" {
+	top
+	bottom
+}
+card 166 "hail of thorns" level=1 image-path="images/fh-hail-of-thorns.png" {
+	top
+	bottom
+}
+card 167 "smoldering hatred" level=X image-path="images/fh-smoldering-hatred.png" {
+	top
+	bottom
+}
+card 168 "reshape the guise" level=X image-path="images/fh-reshape-the-guise.png" {
+	top
+	bottom
+}
+card 169 "venomous barbs" level=2 image-path="images/fh-venomous-barbs.png" {
+	top
+	bottom
+}
+card 170 "locust host" level=2 image-path="images/fh-locust-host.png" {
+	top
+	bottom
+}
+card 171 "mandible storm" level=3 image-path="images/fh-mandible-storm.png" {
+	top
+	bottom
+}
+card 172 "dragonfly surge" level=3 image-path="images/fh-dragonfly-surge.png" {
+	top
+	bottom
+}
+card 173 "thresh and flail" level=4 image-path="images/fh-thresh-and-flail.png" {
+	top
+	bottom
+}
+card 174 "luminous descent" level=4 image-path="images/fh-luminous-descent.png" {
+	top
+	bottom
+}
+card 175 "formless grace" level=5 image-path="images/fh-formless-grace.png" {
+	top
+	bottom
+}
+card 176 "chitinous horde" level=5 image-path="images/fh-chitinous-horde.png" {
+	top
+	bottom
+}
+card 177 "corrosive acids" level=6 image-path="images/fh-corrosive-acids.png" {
+	top
+	bottom
+}
+card 178 hirudotherapy level=6 image-path="images/fh-hirudotherapy.png" {
+	top
+	bottom
+}
+card 179 "two-pronged entrapment" level=7 image-path="images/fh-two-pronged-entrapment.png" {
+	top
+	bottom
+}
+card 180 "alluring pheromones" level=7 image-path="images/fh-alluring-pheromones.png" {
+	top
+	bottom
+}
+card 181 "accelerated metabolism" level=8 image-path="images/fh-accelerated-metabolism.png" {
+	top
+	bottom
+}
+card 182 "oscillating entity" level=8 image-path="images/fh-oscillating-entity.png" {
+	top
+	bottom
+}
+card 183 "harbinger of ruin" level=9 image-path="images/fh-harbinger-of-ruin.png" {
+	top
+	bottom
+}
+card 184 "voice of salvation" level=9 image-path="images/fh-voice-of-salvation.png" {
+	top
+	bottom
+}

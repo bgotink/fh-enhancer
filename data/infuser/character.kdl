@@ -1,0 +1,120 @@
+card 185 "boon of the tempest" level=1 image-path="images/fh-boon-of-the-tempest.png" {
+	top
+	bottom
+}
+card 186 "bounty of the earth" level=1 image-path="images/fh-bounty-of-the-earth.png" {
+	top
+	bottom
+}
+card 187 "caress of the night" level=1 image-path="images/fh-caress-of-the-night.png" {
+	top
+	bottom
+}
+card 188 "formless bladestorm" level=1 image-path="images/fh-formless-bladestorm.png" {
+	top
+	bottom
+}
+card 189 "emerald edge" level=1 image-path="images/fh-emerald-edge.png" {
+	top
+	bottom
+}
+card 190 "torrential cleave" level=1 image-path="images/fh-torrential-cleave.png" {
+	top
+	bottom
+}
+card 191 "onyx shards" level=1 image-path="images/fh-onyx-shards.png" {
+	top
+	bottom
+}
+card 192 "unstoppable impulse" level=1 image-path="images/fh-unstoppable-impulse.png" {
+	top
+	bottom
+}
+card 193 "slashing cyclone" level=1 image-path="images/fh-slashing-cyclone.png" {
+	top
+	bottom
+}
+card 194 "rising momentum" level=1 image-path="images/fh-rising-momentum.png" {
+	top
+	bottom
+}
+card 195 "stoic vigilance" level=1 image-path="images/fh-stoic-vigilance.png" {
+	top
+	bottom
+}
+card 196 "imbue with life" level=X image-path="images/fh-imbue-with-life.png" {
+	top
+	bottom
+}
+card 197 "battle prowess" level=X image-path="images/fh-battle-prowess.png" {
+	top
+	bottom
+}
+card 198 "crystalline aegis" level=X image-path="images/fh-crystalline-aegis.png" {
+	top
+	bottom
+}
+card 199 "veil of protection" level=2 image-path="images/fh-veil-of-protection.png" {
+	top
+	bottom
+}
+card 200 "remote impact" level=2 image-path="images/fh-remote-impact.png" {
+	top
+	bottom
+}
+card 201 "reinforced riposte" level=3 image-path="images/fh-reinforced-riposte.png" {
+	top
+	bottom
+}
+card 202 "guide the flow" level=3 image-path="images/fh-guide-the-flow.png" {
+	top
+	bottom
+}
+card 203 "coalescing darkness" level=4 image-path="images/fh-coalescing-darkness.png" {
+	top
+	bottom
+}
+card 204 "desperate throw" level=4 image-path="images/fh-desperate-throw.png" {
+	top
+	bottom
+}
+card 205 "gemstone resonance" level=5 image-path="images/fh-gemstone-resonance.png" {
+	top
+	bottom
+}
+card 206 "obsidian spear" level=5 image-path="images/fh-obsidian-spear.png" {
+	top
+	bottom
+}
+card 207 "propulsive tailwind" level=6 image-path="images/fh-propulsive-tailwind.png" {
+	top
+	bottom
+}
+card 208 "gale barrage" level=6 image-path="images/fh-gale-barrage.png" {
+	top
+	bottom
+}
+card 209 diamondization level=7 image-path="images/fh-diamondization.png" {
+	top
+	bottom
+}
+card 210 "malachite shockwave" level=7 image-path="images/fh-malachite-shockwave.png" {
+	top
+	bottom
+}
+card 211 "untether the shackles" level=8 image-path="images/fh-untether-the-shackles.png" {
+	top
+	bottom
+}
+card 212 "swift pivot" level=8 image-path="images/fh-swift-pivot.png" {
+	top
+	bottom
+}
+card 213 "ancient rites of power" level=9 image-path="images/fh-ancient-rites-of-power.png" {
+	top
+	bottom
+}
+card 214 "sky-splitting strike" level=9 image-path="images/fh-sky-splitting-strike.png" {
+	top
+	bottom
+}

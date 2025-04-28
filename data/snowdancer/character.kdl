@@ -1,0 +1,250 @@
+card 330 blizzard level=1 image-path="images/fh-blizzard.png" {
+	top lost=#true {
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
+}
+
+card 331 "enticing breeze" level=1 image-path="images/fh-enticing-breeze.png" {
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=square ability=pull multiple=#true
+	}
+}
+
+card 332 "chilling impact" level=1 image-path="images/fh-chilling-impact.png" {
+	top lost=#true persistent=#true
+	bottom {
+		enhancement kind=square ability=move
+	}
+}
+
+card 333 "gathering force" level=1 image-path="images/fh-gathering-force.png" {
+	top lost=#true persistent=#true
+}
+
+card 334 "nature's breath" level=1 image-path="images/fh-natures-breath.png" {
+	top lost=#true persistent=#true {
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom {
+		enhancement kind=square ability=jump
+	}
+}
+
+card 335 "lifting gust" level=1 image-path="images/fh-lifting-gust.png" {
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true {
+		enhancement kind=circle ability=jump
+	}
+}
+
+card 336 snowball level=1 image-path="images/fh-snowball.png" {
+	top {
+		enhancement kind=diamond+ ability=heal
+	}
+	bottom lost=#true persistent=#true
+}
+
+card 337 whiteout level=1 image-path="images/fh-whiteout.png" {
+	top lost=#true {
+		enhancement kind=diamond ability=attack multiple=#true
+		enhancement kind=square ability=target
+	}
+	bottom {
+		enhancement kind=square ability=range
+	}
+}
+
+card 338 "cross winds" level=1 image-path="images/fh-cross-winds.png" {
+	top {
+		enhancement kind=square ability=move
+		enhancement kind=square ability=attack
+	}
+	bottom {
+		enhancement kind=square ability=move
+	}
+}
+
+card 339 "frigid growth" level=1 image-path="images/fh-frigid-growth.png" {
+	bottom {
+		enhancement kind=square ability=jump
+	}
+}
+
+card 340 "cold therapy" level=1 image-path="images/fh-cold-therapy.png" {
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true persistent=#true
+}
+
+card 341 "white winds" level=X image-path="images/fh-white-winds.png" {
+	top lost=#true {
+		enhancement kind="attack hex" number-of-hexes=6
+		enhancement kind="attack hex" number-of-hexes=7
+	}
+	bottom {
+		enhancement kind=square ability=heal
+		enhancement kind=square ability=range
+	}
+}
+
+card 342 "blinding vortex" level=X image-path="images/fh-blinding-vortex.png" {
+	top lost=#true {
+		enhancement kind=diamond ability=attack multiple=#true
+		enhancement kind="attack hex" number-of-hexes=6
+	}
+	bottom {
+		enhancement kind=circle ability=jump
+	}
+}
+
+card 343 "the spirit's call" level=X image-path="images/fh-the-spirits-call.png" {
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true {
+		enhancement kind=square ability=push multiple=#true
+	}
+}
+
+card 344 "birds in a tempest" level=2 image-path="images/fh-birds-in-a-tempest.png" {
+	top lost=#true persistent=#true {
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom {
+		enhancement kind=square ability=attack
+	}
+}
+
+card 345 tornado level=2 image-path="images/fh-tornado.png" {
+	top lost=#true {
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom {
+		enhancement kind=square ability=jump
+	}
+}
+
+card 346 "cold snap" level=3 image-path="images/fh-cold-snap.png" {
+	bottom {
+		enhancement kind=diamond+ ability=heal
+	}
+}
+
+card 347 "polar vortex" level=3 image-path="images/fh-polar-vortex.png" {
+	top {
+		enhancement kind=circle ability=pull multiple=#true
+	}
+	bottom lost=#true {
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+}
+
+card 348 "zephyr barrier" level=4 image-path="images/fh-zephyr-barrier.png" {
+	top {
+		enhancement kind=square ability=heal multiple=#true
+	}
+	bottom lost=#true persistent=#true
+}
+
+card 349 "biting frost" level=4 image-path="images/fh-biting-frost.png" {
+	top lost=#true {
+		enhancement kind=square ability=move
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
+}
+
+card 350 "whipping gale" level=5 image-path="images/fh-whipping-gale.png" {
+	top {
+		enhancement kind=square ability=attack multiple=#true
+		enhancement kind=square ability=pull multiple=#true
+	}
+	bottom lost=#true persistent=#true
+}
+
+card 351 "shifting snow" level=5 image-path="images/fh-shifting-snow.png" {
+	bottom {
+		enhancement kind=square ability=move
+	}
+}
+
+card 352 "refreshing flurry" level=6 image-path="images/fh-refreshing-flurry.png" {
+	top {
+		enhancement kind=diamond+ ability=heal
+	}
+	bottom lost=#true persistent=#true {
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+}
+
+card 353 "frozen brand" level=6 image-path="images/fh-frozen-brand.png" {
+	top lost=#true
+	bottom {
+		enhancement kind=square ability=jump
+	}
+}
+
+card 354 "freezing storm" level=7 image-path="images/fh-freezing-storm.png" {
+	top lost=#true {
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
+}
+
+card 355 "storm wall" level=7 image-path="images/fh-storm-wall.png" {
+	bottom lost=#true
+}
+
+card 356 "surging blow" level=8 image-path="images/fh-surging-blow.png" {
+	top {
+		enhancement kind=square ability=range
+		enhancement kind=square ability=push
+		enhancement kind=square ability=range
+		enhancement kind=square ability=push
+	}
+	bottom {
+		enhancement kind=diamond+ ability=heal
+	}
+}
+
+card 357 "the endless white" level=8 image-path="images/fh-the-endless-white.png" {
+	bottom {
+		enhancement kind=square ability=move
+	}
+}
+
+card 358 "winds of change" level=9 image-path="images/fh-winds-of-change.png" {
+	top lost=#true {
+		enhancement kind=diamond ability=attack multiple=#true
+		enhancement kind=square ability=target
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
+}
+
+card 359 snowblind level=9 image-path="images/fh-snowblind.png" {
+	top {
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom lost=#true persistent=#true
+}

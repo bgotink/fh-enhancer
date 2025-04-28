@@ -1,0 +1,15 @@
+{
+  "name": "fh-enhancer",
+  "type": "module",
+  "packageManager": "yarn@4.9.1",
+  "devDependencies": {
+    "@bgotink/kdl": "^0.3.1",
+    "express-check-in": "^0.2.0",
+    "husky": "^9.1.7",
+    "is-ci": "^4.1.0",
+    "prettier": "^3.5.3"
+  },
+  "dependencies": {
+    "jsdom": "^26.1.0"
+  }
+}

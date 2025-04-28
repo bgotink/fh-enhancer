@@ -1,0 +1,8 @@
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+
+node_modules
+
+/data/*/images
+/data/*/index.html

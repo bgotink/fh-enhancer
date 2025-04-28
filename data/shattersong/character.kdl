@@ -1,0 +1,116 @@
+card 244 "unrelenting wail" level=1 image-path="images/fh-unrelenting-wail.png" {
+	top
+	bottom
+}
+card 245 "lifting voice" level=1 image-path="images/fh-lifting-voice.png" {
+	top
+	bottom
+}
+card 246 "heartening harmony" level=1 image-path="images/fh-heartening-harmony.png" {
+	top
+	bottom
+}
+card 247 "forceful vibrations" level=1 image-path="images/fh-forceful-vibrations.png" {
+	top
+	bottom
+}
+card 248 "resonant frequency" level=1 image-path="images/fh-resonant-frequency.png" {
+	top
+	bottom
+}
+card 249 "foreboding tremors" level=1 image-path="images/fh-foreboding-tremors.png" {
+	top
+	bottom
+}
+card 250 "sonic shock" level=1 image-path="images/fh-sonic-shock.png" {
+	top
+	bottom
+}
+card 251 "precious gems" level=1 image-path="images/fh-precious-gems.png" {
+	top
+	bottom
+}
+card 252 "empowering pulse" level=1 image-path="images/fh-empowering-pulse.png" {
+	top
+	bottom
+}
+card 253 "devastating shout" level=1 image-path="images/fh-devastating-shout.png" {
+	top
+	bottom
+}
+card 254 "calamitous yawp" level=X image-path="images/fh-calamitous-yawp.png" {
+	top
+	bottom
+}
+card 255 "din of battle" level=X image-path="images/fh-din-of-battle.png" {
+	top
+	bottom
+}
+card 256 "illuminative tone" level=X image-path="images/fh-illuminative-tone.png" {
+	top
+	bottom
+}
+card 257 transparency level=2 image-path="images/fh-transparency.png" {
+	top
+	bottom
+}
+card 258 "befuddling bellow" level=2 image-path="images/fh-befuddling-bellow.png" {
+	top
+	bottom
+}
+card 259 "shape the path" level=3 image-path="images/fh-shape-the-path.png" {
+	top
+	bottom
+}
+card 260 "stealth vibrations" level=3 image-path="images/fh-stealth-vibrations.png" {
+	top
+	bottom
+}
+card 261 "concentrated blast" level=4 image-path="images/fh-concentrated-blast.png" {
+	top
+	bottom
+}
+card 262 "elemental pulse" level=4 image-path="images/fh-elemental-pulse.png" {
+	top
+	bottom
+}
+card 263 "shrieking chakram" level=5 image-path="images/fh-shrieking-chakram.png" {
+	top
+	bottom
+}
+card 264 "empowering note" level=5 image-path="images/fh-empowering-note.png" {
+	top
+	bottom
+}
+card 265 "unsustainable wave" level=6 image-path="images/fh-unsustainable-wave.png" {
+	top
+	bottom
+}
+card 266 "future sense" level=6 image-path="images/fh-future-sense.png" {
+	top
+	bottom
+}
+card 267 "sound therapy" level=7 image-path="images/fh-sound-therapy.png" {
+	top
+	bottom
+}
+card 268 "cloaking refraction" level=7 image-path="images/fh-cloaking-refraction.png" {
+	top
+	bottom
+}
+card 269 "soft spots" level=8 image-path="images/fh-soft-spots.png" {
+	top
+	bottom
+}
+card 270 feedback level=8 image-path="images/fh-feedback.png" {
+	top
+	bottom
+}
+card 271 "barbaric yawp" level=9 image-path="images/fh-barbaric-yawp.png" {
+	top
+	bottom
+}
+card 272 "violent vibrations" level=9 image-path="images/fh-violent-vibrations.png" {
+	top
+	bottom
+}

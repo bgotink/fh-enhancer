@@ -1,0 +1,124 @@
+card 1 "crushing weight" level=1 image-path="images/fh-crushing-weight.png" {
+	top
+	bottom
+}
+card 2 "sustained momentum" level=1 image-path="images/fh-sustained-momentum.png" {
+	top
+	bottom
+}
+card 3 "precision aim" level=1 image-path="images/fh-precision-aim.png" {
+	top
+	bottom
+}
+card 4 "continuous health" level=1 image-path="images/fh-continuous-health.png" {
+	top
+	bottom
+}
+card 5 relentless level=1 image-path="images/fh-relentless.png" {
+	top
+	bottom
+}
+card 6 unbreakable level=1 image-path="images/fh-unbreakable.png" {
+	top
+	bottom
+}
+card 7 "vile assault" level=1 image-path="images/fh-vile-assault.png" {
+	top
+	bottom
+}
+card 8 "draining arrows" level=1 image-path="images/fh-draining-arrows.png" {
+	top
+	bottom
+}
+card 9 "prudent preparation" level=1 image-path="images/fh-prudent-preparation.png" {
+	top
+	bottom
+}
+card 10 "deadly shot" level=1 image-path="images/fh-deadly-shot.png" {
+	top
+	bottom
+}
+card 11 bloodletting level=1 image-path="images/fh-bloodletting.png" {
+	top
+	bottom
+}
+card 12 "violent inheritance" level=1 image-path="images/fh-violent-inheritance.png" {
+	top
+	bottom
+}
+card 13 fortitude level=X image-path="images/fh-fortitude.png" {
+	top
+	bottom
+}
+card 14 "no remorse" level=X image-path="images/fh-no-remorse.png" {
+	top
+	bottom
+}
+card 15 "destructive fury" level=X image-path="images/fh-destructive-fury.png" {
+	top
+	bottom
+}
+card 16 shockwave level=2 image-path="images/fh-shockwave.png" {
+	top
+	bottom
+}
+card 17 "ever forward" level=2 image-path="images/fh-ever-forward.png" {
+	top
+	bottom
+}
+card 18 "fierce barrage" level=3 image-path="images/fh-fierce-barrage.png" {
+	top
+	bottom
+}
+card 19 "dual bow" level=3 image-path="images/fh-dual-bow.png" {
+	top
+	bottom
+}
+card 20 "chunk of flesh" level=4 image-path="images/fh-chunk-of-flesh.png" {
+	top
+	bottom
+}
+card 21 "gift of the prey" level=4 image-path="images/fh-gift-of-the-prey.png" {
+	top
+	bottom
+}
+card 22 survivalist level=5 image-path="images/fh-survivalist.png" {
+	top
+	bottom
+}
+card 23 "break through" level=5 image-path="images/fh-break-through.png" {
+	top
+	bottom
+}
+card 24 "accurate strikes" level=6 image-path="images/fh-accurate-strikes.png" {
+	top
+	bottom
+}
+card 25 "consume stamina" level=6 image-path="images/fh-consume-stamina.png" {
+	top
+	bottom
+}
+card 26 "like the wind" level=7 image-path="images/fh-like-the-wind.png" {
+	top
+	bottom
+}
+card 27 "unending fight" level=7 image-path="images/fh-unending-fight.png" {
+	top
+	bottom
+}
+card 28 "against all odds" level=8 image-path="images/fh-against-all-odds.png" {
+	top
+	bottom
+}
+card 29 "inevitable conclusion" level=8 image-path="images/fh-inevitable-conclusion.png" {
+	top
+	bottom
+}
+card 30 everlasting level=9 image-path="images/fh-everlasting.png" {
+	top
+	bottom
+}
+card 31 "use every part" level=9 image-path="images/fh-use-every-part.png" {
+	top
+	bottom
+}

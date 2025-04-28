@@ -1,0 +1,116 @@
+card 445 "skull collection" level=1 image-path="images/fh-skull-collection.png" {
+	top
+	bottom
+}
+card 446 "hollow aura" level=1 image-path="images/fh-hollow-aura.png" {
+	top
+	bottom
+}
+card 447 "skewer the flesh" level=1 image-path="images/fh-skewer-the-flesh.png" {
+	top
+	bottom
+}
+card 448 "succumb to fear" level=1 image-path="images/fh-succumb-to-fear.png" {
+	top
+	bottom
+}
+card 449 "ink cloud" level=1 image-path="images/fh-ink-cloud.png" {
+	top
+	bottom
+}
+card 450 "lacerating stabs" level=1 image-path="images/fh-lacerating-stabs.png" {
+	top
+	bottom
+}
+card 451 "staring into the abyss" level=1 image-path="images/fh-staring-into-the-abyss.png" {
+	top
+	bottom
+}
+card 452 "mantle of dread" level=1 image-path="images/fh-mantle-of-dread.png" {
+	top
+	bottom
+}
+card 453 "black scythe" level=1 image-path="images/fh-black-scythe.png" {
+	top
+	bottom
+}
+card 454 "tumultuous panic" level=1 image-path="images/fh-tumultuous-panic.png" {
+	top
+	bottom
+}
+card 455 "soul hunger" level=X image-path="images/fh-soul-hunger.png" {
+	top
+	bottom
+}
+card 456 "morbid camouflage" level=X image-path="images/fh-morbid-camouflage.png" {
+	top
+	bottom
+}
+card 457 "haunting brutality" level=X image-path="images/fh-haunting-brutality.png" {
+	top
+	bottom
+}
+card 458 "slipping into death" level=2 image-path="images/fh-slipping-into-death.png" {
+	top
+	bottom
+}
+card 459 "lie in wait" level=2 image-path="images/fh-lie-in-wait.png" {
+	top
+	bottom
+}
+card 460 "crippling terror" level=3 image-path="images/fh-crippling-terror.png" {
+	top
+	bottom
+}
+card 461 "pinning spines" level=3 image-path="images/fh-pinning-spines.png" {
+	top
+	bottom
+}
+card 462 "crushing darkness" level=4 image-path="images/fh-crushing-darkness.png" {
+	top
+	bottom
+}
+card 463 "grim trophies" level=4 image-path="images/fh-grim-trophies.png" {
+	top
+	bottom
+}
+card 464 "extra decoration" level=5 image-path="images/fh-extra-decoration.png" {
+	top
+	bottom
+}
+card 465 "death spiral" level=5 image-path="images/fh-death-spiral.png" {
+	top
+	bottom
+}
+card 466 "claw of doom" level=6 image-path="images/fh-claw-of-doom.png" {
+	top
+	bottom
+}
+card 467 "the remorseless deep" level=6 image-path="images/fh-the-remorseless-deep.png" {
+	top
+	bottom
+}
+card 468 "hasten the end" level=7 image-path="images/fh-hasten-the-end.png" {
+	top
+	bottom
+}
+card 469 "dire frenzy" level=7 image-path="images/fh-dire-frenzy.png" {
+	top
+	bottom
+}
+card 470 "unseen horror" level=8 image-path="images/fh-unseen-horror.png" {
+	top
+	bottom
+}
+card 471 "rip from the bone" level=8 image-path="images/fh-rip-from-the-bone.png" {
+	top
+	bottom
+}
+card 472 "black night of the deep" level=9 image-path="images/fh-black-night-of-the-deep.png" {
+	top
+	bottom
+}
+card 473 "consume the helpless" level=9 image-path="images/fh-consume-the-helpless.png" {
+	top
+	bottom
+}

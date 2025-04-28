@@ -1,0 +1,112 @@
+card 273 caltrops level=1 image-path="images/fh-caltrops.png" {
+	top
+	bottom
+}
+card 274 "furry facade" level=1 image-path="images/fh-furry-facade.png" {
+	top
+	bottom
+}
+card 275 "boar catcher" level=1 image-path="images/fh-boar-catcher.png" {
+	top
+	bottom
+}
+card 276 "spike pit" level=1 image-path="images/fh-spike-pit.png" {
+	top
+	bottom
+}
+card 277 "electrified net" level=1 image-path="images/fh-electrified-net.png" {
+	top
+	bottom
+}
+card 278 honeypot level=1 image-path="images/fh-honeypot.png" {
+	top
+	bottom
+}
+card 279 "enticing bait" level=1 image-path="images/fh-enticing-bait.png" {
+	top
+	bottom
+}
+card 280 "exploding decoy" level=1 image-path="images/fh-exploding-decoy.png" {
+	top
+	bottom
+}
+card 281 "flurry of nails" level=1 image-path="images/fh-flurry-of-nails.png" {
+	top
+	bottom
+}
+card 282 dismantle level=X image-path="images/fh-dismantle.png" {
+	top
+	bottom
+}
+card 283 spring-loaded level=X image-path="images/fh-spring-loaded.png" {
+	top
+	bottom
+}
+card 284 "improvised improvement" level=X image-path="images/fh-improvised-improvement.png" {
+	top
+	bottom
+}
+card 285 "unavoidable outcome" level=2 image-path="images/fh-unavoidable-outcome.png" {
+	top
+	bottom
+}
+card 286 "path of pain" level=2 image-path="images/fh-path-of-pain.png" {
+	top
+	bottom
+}
+card 287 "extra teeth" level=3 image-path="images/fh-extra-teeth.png" {
+	top
+	bottom
+}
+card 288 pyrotechnics level=3 image-path="images/fh-pyrotechnics.png" {
+	top
+	bottom
+}
+card 289 "dangerous ground" level=4 image-path="images/fh-dangerous-ground.png" {
+	top
+	bottom
+}
+card 290 "stalker's spoils" level=4 image-path="images/fh-stalkers-spoils.png" {
+	top
+	bottom
+}
+card 291 "lure of the snare" level=5 image-path="images/fh-lure-of-the-snare.png" {
+	top
+	bottom
+}
+card 292 "proficient hunter" level=5 image-path="images/fh-proficient-hunter.png" {
+	top
+	bottom
+}
+card 293 "persistent pitfalls" level=6 image-path="images/fh-persistent-pitfalls.png" {
+	top
+	bottom
+}
+card 294 "cage of thorns" level=6 image-path="images/fh-cage-of-thorns.png" {
+	top
+	bottom
+}
+card 295 "grasping hazards" level=7 image-path="images/fh-grasping-hazards.png" {
+	top
+	bottom
+}
+card 296 foxhole level=7 image-path="images/fh-foxhole.png" {
+	top
+	bottom
+}
+card 297 "spike strip" level=8 image-path="images/fh-spike-strip.png" {
+	top
+	bottom
+}
+card 298 "magnetic shards" level=8 image-path="images/fh-magnetic-shards.png" {
+	top
+	bottom
+}
+card 299 "dangerous cargo" level=9 image-path="images/fh-dangerous-cargo.png" {
+	top
+	bottom
+}
+card 300 "mother of all traps" level=9 image-path="images/fh-mother-of-all-traps.png" {
+	top
+	bottom
+}

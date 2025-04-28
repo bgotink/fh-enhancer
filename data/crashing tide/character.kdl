@@ -1,0 +1,124 @@
+card 474 "overwhelming wave" level=1 image-path="images/fh-overwhelming-wave.png" {
+	top
+	bottom
+}
+card 475 "soft flesh" level=1 image-path="images/fh-soft-flesh.png" {
+	top
+	bottom
+}
+card 476 "rancid brine" level=1 image-path="images/fh-rancid-brine.png" {
+	top
+	bottom
+}
+card 477 "sharp chitin" level=1 image-path="images/fh-sharp-chitin.png" {
+	top
+	bottom
+}
+card 478 "down to the depths" level=1 image-path="images/fh-down-to-the-depths.png" {
+	top
+	bottom
+}
+card 479 "pool of power" level=1 image-path="images/fh-pool-of-power.png" {
+	top
+	bottom
+}
+card 480 skitter level=1 image-path="images/fh-skitter.png" {
+	top
+	bottom
+}
+card 481 "cleansing swell" level=1 image-path="images/fh-cleansing-swell.png" {
+	top
+	bottom
+}
+card 482 "cresting force" level=1 image-path="images/fh-cresting-force.png" {
+	top
+	bottom
+}
+card 483 "crashing surge" level=1 image-path="images/fh-crashing-surge.png" {
+	top
+	bottom
+}
+card 484 "mighty claws" level=1 image-path="images/fh-mighty-claws.png" {
+	top
+	bottom
+}
+card 485 submerge level=1 image-path="images/fh-submerge.png" {
+	top
+	bottom
+}
+card 486 "rising flood" level=X image-path="images/fh-rising-flood.png" {
+	top
+	bottom
+}
+card 487 undertow level=X image-path="images/fh-undertow.png" {
+	top
+	bottom
+}
+card 488 "crush armor" level=X image-path="images/fh-crush-armor.png" {
+	top
+	bottom
+}
+card 489 "smashing torrent" level=2 image-path="images/fh-smashing-torrent.png" {
+	top
+	bottom
+}
+card 490 "blood in the water" level=2 image-path="images/fh-blood-in-the-water.png" {
+	top
+	bottom
+}
+card 491 shuck level=3 image-path="images/fh-shuck.png" {
+	top
+	bottom
+}
+card 492 "endless cycle" level=3 image-path="images/fh-endless-cycle.png" {
+	top
+	bottom
+}
+card 493 "chaotic refraction" level=4 image-path="images/fh-chaotic-refraction.png" {
+	top
+	bottom
+}
+card 494 "clean sweep" level=4 image-path="images/fh-clean-sweep.png" {
+	top
+	bottom
+}
+card 495 "tidal blast" level=5 image-path="images/fh-tidal-blast.png" {
+	top
+	bottom
+}
+card 496 "sodden soil" level=5 image-path="images/fh-sodden-soil.png" {
+	top
+	bottom
+}
+card 497 "powerful pincer" level=6 image-path="images/fh-powerful-pincer.png" {
+	top
+	bottom
+}
+card 498 "twilight grasp" level=6 image-path="images/fh-twilight-grasp.png" {
+	top
+	bottom
+}
+card 499 "dug in" level=7 image-path="images/fh-dug-in.png" {
+	top
+	bottom
+}
+card 500 "drown beneath the waves" level=7 image-path="images/fh-drown-beneath-the-waves.png" {
+	top
+	bottom
+}
+card 501 "death on all sides" level=8 image-path="images/fh-death-on-all-sides.png" {
+	top
+	bottom
+}
+card 502 "ebb and flow" level=8 image-path="images/fh-ebb-and-flow.png" {
+	top
+	bottom
+}
+card 503 "high tide" level=9 image-path="images/fh-high-tide.png" {
+	top
+	bottom
+}
+card 504 "low tide" level=9 image-path="images/fh-low-tide.png" {
+	top
+	bottom
+}
