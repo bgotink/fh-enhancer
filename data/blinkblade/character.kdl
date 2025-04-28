@@ -1,18 +1,32 @@
 card 32 "blurry jab" level=1 image-path="images/fh-blurry-jab.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
 card 33 "twin strike" level=1 image-path="images/fh-twin-strike.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=attack
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
 card 34 "sap speed" level=1 image-path="images/fh-sap-speed.png" {
 	top
 	bottom
 }
 card 35 "kinetic transfer" level=1 image-path="images/fh-kinetic-transfer.png" {
-	top
-	bottom
+	top {
+		enhancement kind=circle ability=move
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
 card 36 overdrive level=1 image-path="images/fh-overdrive.png" {
 	top
@@ -20,23 +34,33 @@ card 36 overdrive level=1 image-path="images/fh-overdrive.png" {
 }
 card 37 "power leak" level=1 image-path="images/fh-power-leak.png" {
 	top
-	bottom
+	bottom lost=#true {
+		enhancement kind=circle ability=move
+	}
 }
 card 38 "hit and run" level=1 image-path="images/fh-hit-and-run.png" {
-	top
-	bottom
+	top {
+		enhancement kind=circle ability=attack
+	}
+	bottom persistent=#true lost=#true
 }
 card 39 "drive recharge" level=1 image-path="images/fh-drive-recharge.png" {
-	top
+	top lost=#true
 	bottom
 }
 card 40 "cascading reaction" level=1 image-path="images/fh-cascading-reaction.png" {
-	top
+	top lost=#true {
+		enhancement kind=circle ability=attack
+		enhancement kind=circle ability=move
+		enhancement kind=circle ability=attack
+	}
 	bottom
 }
 card 41 "temporal displacement" level=1 image-path="images/fh-temporal-displacement.png" {
 	top
-	bottom
+	bottom {
+		enhancement kind=circle ability=attack
+	}
 }
 card 42 "experimental adjustment" level=X image-path="images/fh-experimental-adjustment.png" {
 	top
@@ -44,67 +68,111 @@ card 42 "experimental adjustment" level=X image-path="images/fh-experimental-adj
 }
 card 43 "sand in the hourglass" level=X image-path="images/fh-sand-in-the-hourglass.png" {
 	top
-	bottom
+	bottom {
+		enhancement kind=circle ability=heal
+	}
 }
 card 44 "borrowed time" level=X image-path="images/fh-borrowed-time.png" {
 	top
 	bottom
 }
 card 45 "systems reboot" level=2 image-path="images/fh-systems-reboot.png" {
-	top
+	top lost=#true {
+		enhancement kind=diamond+ ability=heal
+	}
 	bottom
 }
 card 46 "reckless augmentation" level=2 image-path="images/fh-reckless-augmentation.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
 card 47 "make it count" level=3 image-path="images/fh-make-it-count.png" {
-	top
-	bottom
+	top {
+		enhancement kind=circle ability=heal
+	}
+	bottom {
+		enhancement kind=circle ability=attack
+	}
 }
 card 48 "double time" level=3 image-path="images/fh-double-time.png" {
-	top
+	top {
+		enhancement kind=circle ability=attack
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card 49 "precision timing" level=4 image-path="images/fh-precision-timing.png" {
 	top
-	bottom
+	bottom {
+		enhancement kind=circle ability=move
+		enhancement kind=circle ability=move
+	}
 }
 card 50 "potential energy" level=4 image-path="images/fh-potential-energy.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
 card 51 "breakneck speed" level=5 image-path="images/fh-breakneck-speed.png" {
 	top
-	bottom
+	bottom {
+		enhancement kind=circle ability=teleport
+	}
 }
 card 52 "flashing flurry" level=5 image-path="images/fh-flashing-flurry.png" {
 	top
-	bottom
+	bottom {
+		enhancement kind=diamond ability=#null
+	}
 }
 card 53 "stab them all" level=6 image-path="images/fh-stab-them-all.png" {
-	top
+	top {
+		enhancement kind=circle ability=attack
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card 54 "the knife's edge" level=6 image-path="images/fh-the-knifes-edge.png" {
 	top
-	bottom
+	bottom {
+		enhancement kind=square ability=heal
+	}
 }
 card 55 "phasing blades" level=7 image-path="images/fh-phasing-blades.png" {
 	top
-	bottom
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
 card 56 "rushed to the end" level=7 image-path="images/fh-rushed-to-the-end.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=circle ability=move
+		enhancement kind=circle ability=move
+	}
 }
 card 57 "quantum uncertainty" level=8 image-path="images/fh-quantum-uncertainty.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
 card 58 "fastest alive" level=8 image-path="images/fh-fastest-alive.png" {
 	top
-	bottom
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
 card 59 "reverse the flow" level=9 image-path="images/fh-reverse-the-flow.png" {
 	top
@@ -112,5 +180,7 @@ card 59 "reverse the flow" level=9 image-path="images/fh-reverse-the-flow.png" {
 }
 card 60 "fractured timeline" level=9 image-path="images/fh-fractured-timeline.png" {
 	top
-	bottom
+	bottom {
+		enhancement kind=circle ability=teleport
+	}
 }
