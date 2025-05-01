@@ -1,3 +1,8 @@
+meta {
+	name Blinkblade
+	color rgb="#209dc3" filter="invert(58%) sepia(36%) saturate(890%) hue-rotate(147deg) brightness(84%) contrast(96%)"
+}
+
 card 32 "blurry jab" level=1 image-path="images/fh-blurry-jab.png" {
 	top {
 		enhancement kind=diamond ability=attack

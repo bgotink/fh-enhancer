@@ -1,3 +1,7 @@
+meta {
+	name Hive
+}
+
 card 387 "plated defense" level=1 image-path="images/fh-plated-defense.png" {
 	top
 	bottom

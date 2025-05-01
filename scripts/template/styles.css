@@ -10,7 +10,7 @@ body {
 	justify-content: center;
 }
 
-fh-enhancer {
+header {
 	grid-column-start: l;
 	grid-column-end: r;
 }
@@ -22,6 +22,26 @@ body > section {
 	grid-template-columns: subgrid;
 	grid-template-rows: subgrid;
 	gap: 12px;
+}
+
+.character-list {
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 20px;
+}
+
+.character img {
+	width: auto;
+	height: 40px;
+}
+
+.character.character--active {
+	background: var(--color-rgb);
+}
+
+.character:not(.character--active) {
+	filter: var(--color-filter);
 }
 
 .card {

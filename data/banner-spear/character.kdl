@@ -1,3 +1,7 @@
+meta {
+	name "Banner Spear"
+}
+
 card 61 "at all costs" level=1 image-path="images/fh-at-all-costs.png" {
 	bottom persistent=#true {
 		enhancement kind=square ability="summon hp"

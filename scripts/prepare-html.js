@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // @ts-check
 
-import {readdir, readFile, writeFile} from "node:fs/promises";
+import {copyFile, mkdir, readdir, readFile, writeFile} from "node:fs/promises";
 import {JSDOM} from "jsdom";
 
 import {
@@ -12,7 +12,9 @@ import {
   Enhancement,
 } from "./model.js";
 
+const worldhavenFolder = new URL("../third_party/worldhaven/", import.meta.url);
 const rootFolder = new URL("../data/", import.meta.url);
+const sharedFolder = new URL("_shared/", rootFolder);
 
 /** @type {Record<Enhancement['ability'] & string, number>} */
 const baseCostPerAbility = {
@@ -65,32 +67,95 @@ const [scriptText, styleText] = await Promise.all([
   readFile(new URL("template/styles.css", import.meta.url), "utf8"),
 ]);
 
+/** @type {Map<string, PlayerCharacter>} */
+const characters = new Map();
+
 for (const characterName of await readdir(rootFolder)) {
-	let characterString;
+  let characterString;
 
-	try {
-		characterString = await readFile(
-			new URL(`${characterName}/character.kdl`, rootFolder),
-			"utf8",
-		);
-	} catch {
-		continue;
-	}
+  try {
+    characterString = await readFile(
+      new URL(`${characterName}/character.kdl`, rootFolder),
+      "utf8",
+    );
+  } catch {
+    continue;
+  }
 
-  const character = parsePlayerCharacter(characterString);
+  characters.set(characterName, parsePlayerCharacter(characterString));
+}
 
+const art = new Map(
+  /** @type {{expansion: string; name: string; image: string;}[]} */ (
+    JSON.parse(await readFile(new URL("data/art.js", worldhavenFolder), "utf8"))
+  )
+    .filter((item) => item.expansion === "Frosthaven")
+    .map((item) => [item.name, item.image]),
+);
+
+await Promise.all(
+  Array.from(characters.keys(), async (characterName) => {
+    const icon = art.get(`${characterName.replaceAll("-", " ")} icon`);
+
+    if (icon == null) {
+      throw new Error(`Couldn't find icon for ${characterName}`);
+    }
+
+    await copyFile(
+      new URL(`images/${icon}`, worldhavenFolder),
+      new URL(`${characterName}/icon.png`, rootFolder),
+    );
+  }),
+);
+
+for (const [characterName, character] of characters) {
   const jsdom = new JSDOM(`<!doctype html><html lang=en></html>`);
   const {document} = jsdom.window;
 
+	const prettyName = character.meta.name;
+
   document.head.appendChild(document.createElement("title")).textContent =
-    characterName;
+    prettyName;
   const style = document.head.appendChild(document.createElement("style"));
   style.textContent = styleText;
   const script = document.head.appendChild(document.createElement("script"));
   script.type = "module";
   script.textContent = scriptText;
 
-  document.body.appendChild(document.createElement("fh-enhancer")).innerHTML = `
+  const header = document.body.appendChild(document.createElement("header"));
+
+	header.appendChild(document.createElement("h1")).textContent = prettyName;
+
+  const characterList = header
+    .appendChild(document.createElement("nav"))
+    .appendChild(document.createElement("ul"));
+  characterList.className = "character-list";
+
+  for (const [otherCharacterName, otherCharacter] of characters) {
+    let el = characterList.appendChild(document.createElement("li"));
+    el.classList.add("character");
+    el.classList.toggle(
+      "character--active",
+      otherCharacterName === characterName,
+    );
+
+    if (otherCharacter.meta.color) {
+			el.style.setProperty("--color-rgb", otherCharacter.meta.color.rgb);
+
+			if (otherCharacter.meta.color.filter) {
+				el.style.setProperty("--color-filter", otherCharacter.meta.color.filter);
+			}
+    }
+
+    const anchor = el.appendChild(document.createElement("a"));
+    anchor.href = `../${otherCharacterName}/index.html`;
+
+    const icon = anchor.appendChild(document.createElement("img"));
+    icon.src = `../${otherCharacterName}/icon.png`;
+		icon.alt = otherCharacter.meta.name;
+  }
+
+  header.appendChild(document.createElement("fh-enhancer")).innerHTML = `
 	  <h2 id=enhancer>Enhancer Level</h2>
 	  <label><input type=radio name=enhancer value=1 checked></input>1</label>
 	  <label><input type=radio name=enhancer value=2></input>2</label>

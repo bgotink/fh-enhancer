@@ -1,3 +1,7 @@
+meta {
+	name Geminate
+}
+
 card 151 "icebound quills" level=1 image-path="images/fh-icebound-quills.png" {
 	top
 	bottom

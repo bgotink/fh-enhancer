@@ -1,3 +1,7 @@
+meta {
+	name Pyroclast
+}
+
 card 215 cooling level=1 image-path="images/fh-cooling.png" {
 	top
 	bottom

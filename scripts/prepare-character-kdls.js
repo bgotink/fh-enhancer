@@ -5,7 +5,7 @@ import {copyFile, mkdir, readFile, writeFile} from 'node:fs/promises';
 import {format} from '@bgotink/kdl/dessert';
 import { posix } from 'node:path';
 
-import {PlayerCharacter, Card, Action, parsePlayerCharacter} from "./model.js";
+import {PlayerCharacter, Card, Action, parsePlayerCharacter, CharacterMeta} from "./model.js";
 
 const rootFolder = new URL("../third_party/worldhaven/", import.meta.url);
 const targetFolder = new URL("../data/", import.meta.url);
@@ -33,7 +33,7 @@ for (const card of allAbilityCardList) {
 		characterName = 'geminate';
 	}
 
-	const character = abilitiesPerCharacter[characterName] ??= new PlayerCharacter;
+	const character = abilitiesPerCharacter[characterName] ??= new PlayerCharacter(new CharacterMeta(characterName));
 
 	const level = card.level === 'X' ? card.level : /** @type {Card['level']} */ (+card.level);
 

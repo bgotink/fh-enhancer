@@ -1,3 +1,7 @@
+meta {
+	name Infuser
+}
+
 card 185 "boon of the tempest" level=1 image-path="images/fh-boon-of-the-tempest.png" {
 	top
 	bottom

@@ -1,3 +1,7 @@
+meta {
+	name Snowdancer
+}
+
 card 330 blizzard level=1 image-path="images/fh-blizzard.png" {
 	top lost=#true {
 		enhancement kind=diamond ability=attack multiple=#true

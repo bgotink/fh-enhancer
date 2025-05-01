@@ -1,3 +1,7 @@
+meta {
+	name Drifter
+}
+
 card 1 "crushing weight" level=1 image-path="images/fh-crushing-weight.png" {
 	top
 	bottom

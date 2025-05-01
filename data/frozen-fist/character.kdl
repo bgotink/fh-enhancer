@@ -1,3 +1,7 @@
+meta {
+	name "Frozen Fist"
+}
+
 card 360 "one with the mountain" level=1 image-path="images/fh-one-with-the-mountain.png" {
 	top
 	bottom

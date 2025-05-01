@@ -1,3 +1,7 @@
+meta {
+	name Deepwraith
+}
+
 card 445 "skull collection" level=1 image-path="images/fh-skull-collection.png" {
 	top
 	bottom

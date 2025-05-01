@@ -40,8 +40,25 @@ export class Enhancement {
     let numberOfHexes = undefined;
 
     if (kind !== "attack hex") {
-      ability = ctx.property.required.enum("ability",
-      'move' , 'jump' , 'attack' , 'range' , 'target' , 'shield' , 'retaliate' , 'pierce' , 'heal' , 'push' , 'pull' , 'teleport' , 'summon hp' , 'summon move' , 'summon attack' , 'summon range', null
+      ability = ctx.property.required.enum(
+        "ability",
+        "move",
+        "jump",
+        "attack",
+        "range",
+        "target",
+        "shield",
+        "retaliate",
+        "pierce",
+        "heal",
+        "push",
+        "pull",
+        "teleport",
+        "summon hp",
+        "summon move",
+        "summon attack",
+        "summon range",
+        null,
       );
     } else {
       numberOfHexes = ctx.property.required("number-of-hexes", "number");
@@ -229,7 +246,86 @@ export class Card {
   }
 }
 
+export class Color {
+  rgb;
+
+  filter;
+
+  /** @type {DeserializationContext=} */
+  #ctx;
+
+  /** @param {DeserializationContext} ctx */
+  static deserialize(ctx) {
+    const color = new Color(
+      ctx.property.required("rgb", "string"),
+      ctx.property("filter", "string"),
+    );
+    color.#ctx = ctx;
+    return color;
+  }
+
+  /**
+   * @param {string} rgb
+   * @param {string=} filter
+   */
+  constructor(rgb, filter) {
+    this.rgb = rgb;
+    this.filter = filter;
+  }
+
+  /** @param {SerializationContext} ctx */
+  serialize(ctx) {
+    ctx.source(this.#ctx);
+
+    ctx.property("rgb", this.rgb);
+
+    if (this.filter) {
+      ctx.property("filter", this.filter);
+    }
+  }
+}
+
+export class CharacterMeta {
+  name;
+
+  color;
+
+  /** @type {DeserializationContext=} */
+  #ctx;
+
+  /** @param {DeserializationContext} ctx */
+  static deserialize(ctx) {
+    const meta = new CharacterMeta(
+      ctx.child.required.single("name", (c) => c.argument.required("string")),
+      ctx.child.single("color", Color),
+    );
+    meta.#ctx = ctx;
+    return meta;
+  }
+
+  /**
+   * @param {string} name
+   * @param {Color=} color
+   */
+  constructor(name, color) {
+    this.name = name;
+    this.color = color;
+  }
+
+  /** @param {SerializationContext} ctx */
+  serialize(ctx) {
+    ctx.source(this.#ctx);
+
+    ctx.child("name", (c) => c.argument(this.name));
+    if (this.color) {
+      ctx.child("color", this.color);
+    }
+  }
+}
+
 export class PlayerCharacter {
+  meta;
+
   cards;
 
   /** @type {DeserializationContext=} */
@@ -237,21 +333,28 @@ export class PlayerCharacter {
 
   /** @param {DeserializationContext} ctx */
   static deserialize(ctx) {
-    const cards = ctx.children("card", Card);
-
-    const character = new PlayerCharacter(cards);
+    const character = new PlayerCharacter(
+      ctx.child.single.required("meta", CharacterMeta),
+      ctx.children("card", Card),
+    );
     character.#ctx = ctx;
     return character;
   }
 
-  /** @param {Card[]=} cards */
-  constructor(cards = []) {
+  /**
+   * @param {CharacterMeta} meta
+   * @param {Card[]=} cards
+   */
+  constructor(meta, cards = []) {
+    this.meta = meta;
     this.cards = cards;
   }
 
   /** @param {DocumentSerializationContext} ctx */
   serialize(ctx) {
     ctx.source(this.#ctx);
+
+    ctx.child("meta", this.meta);
 
     for (const card of this.cards) {
       ctx.child("card", card);
