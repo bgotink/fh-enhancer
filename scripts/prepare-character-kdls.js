@@ -27,7 +27,13 @@ for (const card of allAbilityCardList) {
 	}
 	seenCardNumbers.add(card.cardno);
 
-	const character = abilitiesPerCharacter[card['character-xws']] ??= new PlayerCharacter;
+	let characterName = card['character-xws'];
+	// typo in the data file?
+	if (characterName === 'deminate') {
+		characterName = 'geminate';
+	}
+
+	const character = abilitiesPerCharacter[characterName] ??= new PlayerCharacter;
 
 	const level = card.level === 'X' ? card.level : /** @type {Card['level']} */ (+card.level);
 
