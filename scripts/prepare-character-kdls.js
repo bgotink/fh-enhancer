@@ -45,7 +45,7 @@ for (const card of allAbilityCardList) {
 
 await Promise.all(
 	Object.entries(abilitiesPerCharacter).map(async ([name, character]) => {
-		const characterFolder = new URL(`${name}/`, targetFolder);
+		const characterFolder = new URL(`${name.replaceAll(' ', '-')}/`, targetFolder);
 		const imagesFolder = new URL('images/', characterFolder);
 
 		await mkdir(imagesFolder, { recursive: true });
