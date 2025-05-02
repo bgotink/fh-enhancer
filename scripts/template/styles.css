@@ -1,92 +1,240 @@
+:root {
+  color-scheme: light dark;
+}
+
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	display: grid;
-	gap: 32px;
-	grid-template-columns: [l] repeat(auto-fit, 400px) [r];
-	grid-template-rows: min-content;
-	justify-content: center;
+  display: grid;
+  margin: 0;
+  gap: 32px;
+  grid-template-columns: [l] repeat(auto-fit, 400px) [r];
+  grid-template-rows: min-content;
+  justify-content: center;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 300;
 }
 
 header {
-	grid-column-start: l;
-	grid-column-end: r;
+  grid-column-start: l;
+  grid-column-end: r;
+
+  view-transition-name: header;
+
+  display: grid;
+  background: Canvas;
+	padding: 20px 0;
+	margin-bottom: -20px;
+  grid-template-columns: 1fr max-content;
+  grid-template-areas: "nav nav" "title enhancer";
+  align-items: center;
+}
+
+header nav {
+  grid-area: nav;
+  view-transition-name: nav;
+}
+
+header h1 {
+  grid-area: title;
+  view-transition-name: title;
+  font-weight: 500;
+}
+
+header fh-enhancer {
+	display: block;
+  grid-area: enhancer;
+}
+
+fh-enhancer h2 {
+	all: unset;
+	display: inline;
 }
 
 body > section {
-	display: grid;
-	grid-column: span 1;
-	grid-row: span 3;
-	grid-template-columns: subgrid;
-	grid-template-rows: subgrid;
-	gap: 12px;
+  display: grid;
+  grid-column: span 1;
+  grid-row: span 3;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+  gap: 12px;
 }
 
 .character-list {
-	list-style: none;
-	display: flex;
-	flex-flow: row wrap;
-	gap: 20px;
+  all: unset;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.character {
+  height: 40px;
+  padding: 6px;
+  border-radius: 12px;
+}
+
+.character:not(.character--active):has(a:focus-visible),
+.character:not(.character--active):hover {
+	outline: 1px solid var(--color-rgb);
+	outline-offset: 0;
+}
+
+.character a:focus-visible {
+	outline: none;
+}
+
+.character h1 {
+  all: unset;
 }
 
 .character img {
-	width: auto;
-	height: 40px;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .character.character--active {
-	background: var(--color-rgb);
+  background: var(--color-rgb);
+  view-transition-name: nav__active;
 }
 
-.character:not(.character--active) {
-	filter: var(--color-filter);
+@media not (prefers-color-scheme: dark) {
+  .character.character--active img {
+    filter: invert();
+  }
+}
+
+.character:not(.character--active) img {
+  filter: var(--color-filter);
 }
 
 .card {
-	display: grid;
-	grid-template: 560px / 400px;
-	grid-template-areas: "cell";
+  display: grid;
+  grid-template: 560px / 400px;
+  grid-template-areas: "cell";
 }
 
 .card h3 {
-	grid-area: cell;
-	margin: 0;
-	padding-top: 20px;
-	align-self: start;
-	text-align: center;
-	color: transparent;
+  grid-area: cell;
+  margin: 0;
+  padding-top: 20px;
+  align-self: start;
+  text-align: center;
+  color: transparent;
 }
 
 .card img {
-	grid-area: cell;
-	width: 100%;
-	aspect-ratio: 10 / 14;
-	border-radius: 12px;
+  grid-area: cell;
+  width: 100%;
+  aspect-ratio: 10 / 14;
+  border-radius: 12px;
 }
 
 fh-action {
-	display: grid;
-	padding: 12px;
-	border-radius: 12px;
-	border: 1px dashed hotpink;
-	gap: 12px 8px;
-	grid-template-columns: max-content max-content 1fr max-content;
-	align-content: start;
+  display: grid;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px dashed var(--color-rgb, hotpink);
+  gap: 12px 8px;
+  grid-template-columns: max-content max-content 1fr max-content;
+  align-content: start;
 }
 
 fh-enhancement {
-	display: contents;
+  display: contents;
 }
 
 fh-enhancement .cost-list {
-	display: grid;
-	grid-template-columns: subgrid;
-	grid-column: 3 / 5;
-	gap: 8px;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 3 / 5;
+  gap: 8px;
 }
 
 fh-enhancement .cost-list .computation {
-	display: contents;
+  display: contents;
+}
+
+/* Animations :) */
+
+@view-transition {
+  navigation: auto;
+}
+
+/* Customize the default animation behavior */
+
+::view-transition-group(*) {
+  animation-duration: 0.5s;
+}
+
+/* Create a custom animation */
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes move-out {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes move-in {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+/* Apply the custom animation to the old and new page states */
+
+::view-transition-old(root) {
+  animation: 0.4s ease-in both move-out;
+}
+
+::view-transition-new(root) {
+  animation: 0.4s ease-in both move-in;
+}
+
+::view-transition-old(nav__active) {
+  animation: 0.4s linear both fade-out;
+}
+
+::view-transition-new(nav__active) {
+  animation: 0.4s linear both fade-in;
+}
+
+::view-transition-old(title) {
+  animation: 0.4s ease-in both fade-out, 0.4s ease-in both move-out;
+}
+
+::view-transition-new(title) {
+  animation: 0.4s ease-in both fade-in, 0.4s ease-in both move-in;
 }

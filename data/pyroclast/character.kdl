@@ -1,5 +1,6 @@
 meta {
 	name Pyroclast
+	color rgb="#cb4a30" filter="invert(33%) sepia(71%) saturate(3999%) hue-rotate(352deg) brightness(90%) contrast(74%)"
 }
 
 card 215 cooling level=1 image-path="images/fh-cooling.png" {

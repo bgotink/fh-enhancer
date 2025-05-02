@@ -112,7 +112,13 @@ for (const [characterName, character] of characters) {
   const jsdom = new JSDOM(`<!doctype html><html lang=en></html>`);
   const {document} = jsdom.window;
 
-	const prettyName = character.meta.name;
+  const prettyName = character.meta.name;
+  if (character.meta.color) {
+    document.documentElement.style.setProperty(
+      "--color-rgb",
+      character.meta.color.rgb,
+    );
+  }
 
   document.head.appendChild(document.createElement("title")).textContent =
     prettyName;
@@ -124,27 +130,27 @@ for (const [characterName, character] of characters) {
 
   const header = document.body.appendChild(document.createElement("header"));
 
-	header.appendChild(document.createElement("h1")).textContent = prettyName;
-
   const characterList = header
     .appendChild(document.createElement("nav"))
     .appendChild(document.createElement("ul"));
   characterList.className = "character-list";
 
   for (const [otherCharacterName, otherCharacter] of characters) {
+    const isActive = otherCharacterName === characterName;
+
     let el = characterList.appendChild(document.createElement("li"));
     el.classList.add("character");
-    el.classList.toggle(
-      "character--active",
-      otherCharacterName === characterName,
-    );
+    el.classList.toggle("character--active", isActive);
 
     if (otherCharacter.meta.color) {
-			el.style.setProperty("--color-rgb", otherCharacter.meta.color.rgb);
+      el.style.setProperty("--color-rgb", otherCharacter.meta.color.rgb);
 
-			if (otherCharacter.meta.color.filter) {
-				el.style.setProperty("--color-filter", otherCharacter.meta.color.filter);
-			}
+      if (otherCharacter.meta.color.filter) {
+        el.style.setProperty(
+          "--color-filter",
+          otherCharacter.meta.color.filter,
+        );
+      }
     }
 
     const anchor = el.appendChild(document.createElement("a"));
@@ -152,8 +158,12 @@ for (const [characterName, character] of characters) {
 
     const icon = anchor.appendChild(document.createElement("img"));
     icon.src = `../${otherCharacterName}/icon.png`;
-		icon.alt = otherCharacter.meta.name;
+    icon.alt = otherCharacter.meta.name;
+    icon.title = otherCharacter.meta.name;
   }
+
+  header.appendChild(document.createElement("h1")).textContent =
+    character.meta.name;
 
   header.appendChild(document.createElement("fh-enhancer")).innerHTML = `
 	  <h2 id=enhancer>Enhancer Level</h2>

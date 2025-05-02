@@ -1,5 +1,6 @@
 meta {
 	name Trapper
+	color rgb="#c0a277" filter="invert(74%) sepia(13%) saturate(986%) hue-rotate(356deg) brightness(90%) contrast(81%)"
 }
 
 card 273 caltrops level=1 image-path="images/fh-caltrops.png" {

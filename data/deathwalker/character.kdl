@@ -1,5 +1,6 @@
 meta {
 	name Deathwalker
+	color rgb="#6f7a8a" filter="invert(52%) sepia(15%) saturate(432%) hue-rotate(176deg) brightness(88%) contrast(86%)"
 }
 
 card 90 "call to the abyss" level=1 image-path="images/fh-call-to-the-abyss.png" {

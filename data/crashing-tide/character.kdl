@@ -1,5 +1,6 @@
 meta {
 	name "Crashing Tide"
+	color rgb="#5f988b" filter="invert(61%) sepia(12%) saturate(958%) hue-rotate(116deg) brightness(88%) contrast(91%)"
 }
 
 card 474 "overwhelming wave" level=1 image-path="images/fh-overwhelming-wave.png" {

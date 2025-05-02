@@ -1,5 +1,6 @@
 meta {
 	name Geminate
+	color rgb="#943856" filter="invert(26%) sepia(20%) saturate(3576%) hue-rotate(303deg) brightness(90%) contrast(82%)"
 }
 
 card 151 "icebound quills" level=1 image-path="images/fh-icebound-quills.png" {

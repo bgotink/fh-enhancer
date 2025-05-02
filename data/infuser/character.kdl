@@ -1,5 +1,6 @@
 meta {
 	name Infuser
+	color rgb="#78ae54" filter="invert(62%) sepia(59%) saturate(368%) hue-rotate(52deg) brightness(90%) contrast(84%)"
 }
 
 card 185 "boon of the tempest" level=1 image-path="images/fh-boon-of-the-tempest.png" {

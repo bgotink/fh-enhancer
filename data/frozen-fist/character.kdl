@@ -1,5 +1,6 @@
 meta {
 	name "Frozen Fist"
+	color rgb="#6a92b2" filter="invert(52%) sepia(48%) saturate(285%) hue-rotate(164deg) brightness(96%) contrast(95%)"
 }
 
 card 360 "one with the mountain" level=1 image-path="images/fh-one-with-the-mountain.png" {

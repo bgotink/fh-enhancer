@@ -249,6 +249,8 @@ export class Card {
 export class Color {
   rgb;
 
+  // Generated via https://codepen.io/sosuke/pen/Pjoqqp
+  // --> could we automate this?
   filter;
 
   /** @type {DeserializationContext=} */
