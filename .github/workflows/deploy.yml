@@ -1,0 +1,43 @@
+name: Publish website
+on: workflow_dispatch
+
+permissions:
+  contents: read
+  id-token: write
+  pages: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Set up
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: 'true'
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.x
+      - name: Enable corepack
+        run: corepack enable
+
+      - name: Install npm dependencies
+        run: |
+          yarn install --immutable
+
+      # Publish website
+
+      - name: Prepare
+        run: |
+          node scripts/prepare-character-kdls.js
+      - name: Build
+        run: |
+          node scripts/prepare-html.js
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: data
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
