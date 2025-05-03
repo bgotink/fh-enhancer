@@ -485,7 +485,12 @@ function addHeader(document, characterName, title) {
 function installScriptAndStyle(document) {
 	const style = document.head.appendChild(document.createElement("style"));
 	style.textContent = styleText;
+
 	const script = document.head.appendChild(document.createElement("script"));
 	script.type = "module";
 	script.textContent = scriptText;
+
+	const meta = document.head.appendChild(document.createElement("meta"));
+	meta.name = "viewport";
+	meta.content = "width=device-width, initial-scale=1";
 }
