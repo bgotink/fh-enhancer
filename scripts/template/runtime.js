@@ -1,5 +1,7 @@
+const reEnhancerLevel = /\|enhancer-level=(\d)\|/;
+
 customElements.define("fh-enhancer", class FhEnhancer extends HTMLElement {
-	#level = 1;
+	#level = +(reEnhancerLevel.exec(window.name)?.[1] ?? 1);
 
 	get level() {
 		return this.#level;
@@ -7,6 +9,11 @@ customElements.define("fh-enhancer", class FhEnhancer extends HTMLElement {
 
 	connectedCallback() {
 		this.addEventListener('change', this);
+
+		const levelStr = String(this.#level);
+		for (const input of this.querySelectorAll('input')) {
+			input.checked = input.value === levelStr;
+		}
 	}
 
 	/** @param {Event} event */
@@ -18,6 +25,11 @@ customElements.define("fh-enhancer", class FhEnhancer extends HTMLElement {
 		event.stopPropagation();
 
 		this.#level = +/** @type {HTMLInputElement} */(event.target).value;
+		if (reEnhancerLevel.test(window.name)) {
+			window.name = window.name.replace(reEnhancerLevel, `|enhancer-level=${this.#level}|`);
+		} else {
+			window.name += `|enhancer-level=${this.#level}|`;
+		}
 
 		for (const el of document.querySelectorAll("fh-cost")) {
 			el.recompute();
