@@ -249,18 +249,13 @@ export class Card {
 export class Color {
   rgb;
 
-  // Generated via https://codepen.io/sosuke/pen/Pjoqqp
-  // --> could we automate this?
-  filter;
-
   /** @type {DeserializationContext=} */
   #ctx;
 
   /** @param {DeserializationContext} ctx */
   static deserialize(ctx) {
     const color = new Color(
-      ctx.property.required("rgb", "string"),
-      ctx.property("filter", "string"),
+      ctx.argument.required("string"),
     );
     color.#ctx = ctx;
     return color;
@@ -268,22 +263,16 @@ export class Color {
 
   /**
    * @param {string} rgb
-   * @param {string=} filter
    */
-  constructor(rgb, filter) {
+  constructor(rgb) {
     this.rgb = rgb;
-    this.filter = filter;
   }
 
   /** @param {SerializationContext} ctx */
   serialize(ctx) {
     ctx.source(this.#ctx);
 
-    ctx.property("rgb", this.rgb);
-
-    if (this.filter) {
-      ctx.property("filter", this.filter);
-    }
+    ctx.argument(this.rgb);
   }
 }
 

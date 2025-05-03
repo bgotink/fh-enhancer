@@ -1,6 +1,6 @@
 meta {
 	name "Metal Mosaic"
-	color rgb="#a48d68" filter="invert(54%) sepia(33%) saturate(370%) hue-rotate(358deg) brightness(99%) contrast(85%)"
+	color "#a48d68"
 }
 
 card 417 "steam armor" level=1 image-path="images/fh-steam-armor.png" {

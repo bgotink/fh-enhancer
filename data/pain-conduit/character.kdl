@@ -1,6 +1,6 @@
 meta {
 	name "Pain Conduit"
-	color rgb="#646699" filter="invert(43%) sepia(12%) saturate(1640%) hue-rotate(200deg) brightness(90%) contrast(83%)"
+	color "#646699"
 }
 
 card 301 "shared affliction" level=1 image-path="images/fh-shared-affliction.png" {

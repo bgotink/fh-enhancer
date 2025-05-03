@@ -1,6 +1,6 @@
 meta {
 	name Drifter
-	color rgb="#7f6e62" filter="invert(47%) sepia(6%) saturate(1144%) hue-rotate(342deg) brightness(91%) contrast(86%)"
+	color "#7f6e62"
 }
 
 card 1 "crushing weight" level=1 image-path="images/fh-crushing-weight.png" {

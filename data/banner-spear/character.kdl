@@ -1,6 +1,6 @@
 meta {
 	name "Banner Spear"
-	color rgb="#cca643" filter="invert(62%) sepia(37%) saturate(692%) hue-rotate(6deg) brightness(102%) contrast(83%)"
+	color "#cca643"
 }
 
 card 61 "at all costs" level=1 image-path="images/fh-at-all-costs.png" {

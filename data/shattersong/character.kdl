@@ -1,6 +1,6 @@
 meta {
 	name Shattersong
-	color rgb="#867886" filter="invert(57%) sepia(19%) saturate(243%) hue-rotate(251deg) brightness(81%) contrast(83%)"
+	color "#867886"
 }
 
 card 244 "unrelenting wail" level=1 image-path="images/fh-unrelenting-wail.png" {

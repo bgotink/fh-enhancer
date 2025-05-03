@@ -1,6 +1,6 @@
 meta {
 	name Boneshaper
-	color rgb="#4e9c5c" filter="invert(52%) sepia(18%) saturate(1179%) hue-rotate(79deg) brightness(99%) contrast(83%)"
+	color "#4e9c5c"
 }
 
 card 120 "life in death" level=1 image-path="images/fh-life-in-death.png" {

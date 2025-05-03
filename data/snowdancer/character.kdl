@@ -1,6 +1,6 @@
 meta {
 	name Snowdancer
-	color rgb="#7ca9b4" filter="invert(66%) sepia(30%) saturate(322%) hue-rotate(145deg) brightness(91%) contrast(90%)"
+	color "#7ca9b4"
 }
 
 card 330 blizzard level=1 image-path="images/fh-blizzard.png" {

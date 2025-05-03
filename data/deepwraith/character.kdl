@@ -1,6 +1,6 @@
 meta {
 	name Deepwraith
-	color rgb="#77578e" filter="invert(41%) sepia(16%) saturate(1106%) hue-rotate(232deg) brightness(90%) contrast(96%)"
+	color "#77578e"
 }
 
 card 445 "skull collection" level=1 image-path="images/fh-skull-collection.png" {

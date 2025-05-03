@@ -79,7 +79,7 @@ body > section {
 }
 
 .character:not(.character--active):is(:focus-visible, :hover) {
-	outline: 1px solid var(--color-rgb);
+	outline: 1px solid var(--color);
 	outline-offset: 0;
 }
 
@@ -94,18 +94,8 @@ body > section {
 }
 
 .character.character--active {
-  background: var(--color-rgb);
+  background: var(--color);
   view-transition-name: nav__active;
-}
-
-@media not (prefers-color-scheme: dark) {
-  .character.character--active img {
-    filter: invert();
-  }
-}
-
-.character:not(.character--active) img {
-  filter: var(--color-filter);
 }
 
 .card {
@@ -134,7 +124,7 @@ fh-action {
   display: grid;
   padding: 12px;
   border-radius: 12px;
-  border: 1px dashed var(--color-rgb, hotpink);
+  border: 1px dashed var(--color, hotpink);
   gap: 12px 8px;
   grid-template-columns: max-content max-content 1fr max-content;
   align-content: start;

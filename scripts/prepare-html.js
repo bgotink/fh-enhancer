@@ -3,7 +3,9 @@
 
 import {copyFile, readdir, readFile, writeFile} from "node:fs/promises";
 import {env} from "node:process";
+import {fileURLToPath} from "node:url";
 import {JSDOM} from "jsdom";
+import sharp from "sharp";
 
 import {
   PlayerCharacter,
@@ -12,7 +14,6 @@ import {
   parsePlayerCharacter,
   Enhancement,
 } from "./model.js";
-import { fileURLToPath } from "node:url";
 
 const buildForDeployment = !!env.CI;
 
@@ -98,28 +99,84 @@ const art = new Map(
 );
 
 await Promise.all(
-  Array.from(characters.keys(), async (characterName) => {
+  Array.from(characters, async ([characterName, character]) => {
     const icon = art.get(`${characterName.replaceAll("-", " ")} icon`);
 
     if (icon == null) {
       throw new Error(`Couldn't find icon for ${characterName}`);
     }
 
-    await copyFile(
-      new URL(`images/${icon}`, worldhavenFolder),
-      new URL(`${characterName}/icon.png`, rootFolder),
-    );
+    const image = await readFile(new URL(`images/${icon}`, worldhavenFolder));
+
+    await writeFile(new URL(`${characterName}/icon.png`, rootFolder), image);
+
+    const characterColor = character.meta.color?.rgb ?? "#999";
+
+    for (const [filename, color] of [
+      ["icon.png", characterColor],
+      ["icon--white.png", "white"],
+      ["icon--black.png", "black"],
+    ]) {
+      await sharp(image)
+        .rotate()
+        .resize({
+          width: 280,
+          height: 280,
+          fit: "contain",
+          background: "transparent",
+        })
+        .composite([
+          {
+            input: Buffer.from(
+              `<svg><rect x="0" y="0" width="280" height="280" fill="${color}"/></svg>`,
+            ),
+            blend: "in",
+          },
+        ])
+        .toFile(
+          fileURLToPath(new URL(`${characterName}/${filename}`, rootFolder)),
+        );
+    }
+
+      await sharp(image)
+        .rotate()
+        .resize({
+          width: 280,
+          height: 280,
+          fit: "contain",
+          background: "transparent",
+        })
+        .extend({
+          background: "transparent",
+          top: 60,
+          right: 60,
+          bottom: 60,
+          left: 60,
+        })
+        .composite([
+          {
+            input: Buffer.from(
+              `<svg><rect x="0" y="0" width="400" height="400" rx="120" ry="120" fill="${characterColor}"/></svg>`,
+            ),
+            blend: "dest-atop",
+          },
+        ])
+        .toFile(
+          fileURLToPath(new URL(`${characterName}/favicon.png`, rootFolder)),
+        );
   }),
 );
 
 {
-	const jsdom = await JSDOM.fromFile(fileURLToPath(new URL("template/index.html", import.meta.url)));
-	const { document } = jsdom.window;
+  const jsdom = await JSDOM.fromFile(
+    fileURLToPath(new URL("template/index.html", import.meta.url)),
+  );
+  const {document} = jsdom.window;
 
-	installScriptAndStyle(document);
+  installScriptAndStyle(document);
   addHeader(document, null, "Frosthaven Enhancer");
 
-	await writeFile(new URL("index.html", rootFolder), jsdom.serialize());
+  await writeFile(new URL("index.html", rootFolder), jsdom.serialize());
 }
 
 for (const [characterName, character] of characters) {
@@ -129,7 +186,7 @@ for (const [characterName, character] of characters) {
   const prettyName = character.meta.name;
   if (character.meta.color) {
     document.documentElement.style.setProperty(
-      "--color-rgb",
+      "--color",
       character.meta.color.rgb,
     );
   }
@@ -138,7 +195,7 @@ for (const [characterName, character] of characters) {
     prettyName;
   const favicon = document.head.appendChild(document.createElement("link"));
   favicon.rel = "icon";
-  favicon.href = `icon.png`;
+  favicon.href = `favicon.png`;
 
   installScriptAndStyle(document);
   addHeader(document, characterName, character.meta.name);
@@ -371,28 +428,40 @@ function addHeader(document, characterName, title) {
   for (const [otherCharacterName, otherCharacter] of characters) {
     const isActive = otherCharacterName === characterName;
 
-    let anchor = characterList.appendChild(document.createElement("li"))
-    	.appendChild(document.createElement("a"));
+    let anchor = characterList
+      .appendChild(document.createElement("li"))
+      .appendChild(document.createElement("a"));
     anchor.classList.add("character");
     anchor.classList.toggle("character--active", isActive);
 
-    if (otherCharacter.meta.color) {
-      anchor.style.setProperty("--color-rgb", otherCharacter.meta.color.rgb);
+    anchor.style.setProperty(
+      "--color",
+      otherCharacter.meta.color?.rgb ?? "#999",
+    );
 
-      if (otherCharacter.meta.color.filter) {
-        anchor.style.setProperty(
-          "--color-filter",
-          otherCharacter.meta.color.filter,
-        );
-      }
+    anchor.href = `${characterName ? "../" : ""}${otherCharacterName}/${buildForDeployment ? "" : "index.html"}`;
+
+    if (!isActive) {
+      const icon = anchor.appendChild(document.createElement("img"));
+      icon.src = `${characterName ? "../" : ""}${otherCharacterName}/icon.png`;
+      icon.alt = otherCharacter.meta.name;
+      icon.title = otherCharacter.meta.name;
+    } else {
+      const iconContainer = anchor.appendChild(
+        document.createElement("picture"),
+      );
+
+      const altIcon = iconContainer.appendChild(
+        document.createElement("source"),
+      );
+      altIcon.srcset = `${characterName ? "../" : ""}${otherCharacterName}/icon--black.png`;
+      altIcon.media = "(prefers-color-scheme: dark)";
+
+      const icon = iconContainer.appendChild(document.createElement("img"));
+      icon.src = `${characterName ? "../" : ""}${otherCharacterName}/icon--white.png`;
+      icon.alt = otherCharacter.meta.name;
+      icon.title = otherCharacter.meta.name;
     }
-
-		anchor.href = `${characterName ? "../" : ""}${otherCharacterName}/${buildForDeployment ? "" : "index.html"}`;
-
-    const icon = anchor.appendChild(document.createElement("img"));
-    icon.src = `${characterName ? "../" : ""}${otherCharacterName}/icon.png`;
-    icon.alt = otherCharacter.meta.name;
-    icon.title = otherCharacter.meta.name;
   }
 
   header.appendChild(document.createElement("h1")).textContent = title;
