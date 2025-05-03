@@ -72,23 +72,19 @@ body > section {
 }
 
 .character {
+	display: block;
   height: 40px;
   padding: 6px;
   border-radius: 12px;
 }
 
-.character:not(.character--active):has(a:focus-visible),
-.character:not(.character--active):hover {
+.character:not(.character--active):is(:focus-visible, :hover) {
 	outline: 1px solid var(--color-rgb);
 	outline-offset: 0;
 }
 
-.character a:focus-visible {
+.character:focus-visible {
 	outline: none;
-}
-
-.character h1 {
-  all: unset;
 }
 
 .character img {

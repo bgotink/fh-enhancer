@@ -371,22 +371,22 @@ function addHeader(document, characterName, title) {
   for (const [otherCharacterName, otherCharacter] of characters) {
     const isActive = otherCharacterName === characterName;
 
-    let el = characterList.appendChild(document.createElement("li"));
-    el.classList.add("character");
-    el.classList.toggle("character--active", isActive);
+    let anchor = characterList.appendChild(document.createElement("li"))
+    	.appendChild(document.createElement("a"));
+    anchor.classList.add("character");
+    anchor.classList.toggle("character--active", isActive);
 
     if (otherCharacter.meta.color) {
-      el.style.setProperty("--color-rgb", otherCharacter.meta.color.rgb);
+      anchor.style.setProperty("--color-rgb", otherCharacter.meta.color.rgb);
 
       if (otherCharacter.meta.color.filter) {
-        el.style.setProperty(
+        anchor.style.setProperty(
           "--color-filter",
           otherCharacter.meta.color.filter,
         );
       }
     }
 
-    const anchor = el.appendChild(document.createElement("a"));
 		anchor.href = `${characterName ? "../" : ""}${otherCharacterName}/${buildForDeployment ? "" : "index.html"}`;
 
     const icon = anchor.appendChild(document.createElement("img"));
