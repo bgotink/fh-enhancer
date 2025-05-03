@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // @ts-check
 
-import {copyFile, mkdir, readdir, readFile, writeFile} from "node:fs/promises";
+import {copyFile, readdir, readFile, writeFile} from "node:fs/promises";
+import {env} from "node:process";
 import {JSDOM} from "jsdom";
 
 import {
@@ -11,6 +12,9 @@ import {
   parsePlayerCharacter,
   Enhancement,
 } from "./model.js";
+import { fileURLToPath } from "node:url";
+
+const buildForDeployment = !!env.CI;
 
 const worldhavenFolder = new URL("../third_party/worldhaven/", import.meta.url);
 const rootFolder = new URL("../data/", import.meta.url);
@@ -108,6 +112,16 @@ await Promise.all(
   }),
 );
 
+{
+	const jsdom = await JSDOM.fromFile(fileURLToPath(new URL("template/index.html", import.meta.url)));
+	const { document } = jsdom.window;
+
+	installScriptAndStyle(document);
+  addHeader(document, null, "Frosthaven Enhancer");
+
+	await writeFile(new URL("index.html", rootFolder), jsdom.serialize());
+}
+
 for (const [characterName, character] of characters) {
   const jsdom = new JSDOM(`<!doctype html><html lang=en></html>`);
   const {document} = jsdom.window;
@@ -122,56 +136,12 @@ for (const [characterName, character] of characters) {
 
   document.head.appendChild(document.createElement("title")).textContent =
     prettyName;
-  const style = document.head.appendChild(document.createElement("style"));
-  style.textContent = styleText;
-  const script = document.head.appendChild(document.createElement("script"));
-  script.type = "module";
-  script.textContent = scriptText;
+  const favicon = document.head.appendChild(document.createElement("link"));
+  favicon.rel = "icon";
+  favicon.href = `icon.png`;
 
-  const header = document.body.appendChild(document.createElement("header"));
-
-  const characterList = header
-    .appendChild(document.createElement("nav"))
-    .appendChild(document.createElement("ul"));
-  characterList.className = "character-list";
-
-  for (const [otherCharacterName, otherCharacter] of characters) {
-    const isActive = otherCharacterName === characterName;
-
-    let el = characterList.appendChild(document.createElement("li"));
-    el.classList.add("character");
-    el.classList.toggle("character--active", isActive);
-
-    if (otherCharacter.meta.color) {
-      el.style.setProperty("--color-rgb", otherCharacter.meta.color.rgb);
-
-      if (otherCharacter.meta.color.filter) {
-        el.style.setProperty(
-          "--color-filter",
-          otherCharacter.meta.color.filter,
-        );
-      }
-    }
-
-    const anchor = el.appendChild(document.createElement("a"));
-    anchor.href = `../${otherCharacterName}/index.html`;
-
-    const icon = anchor.appendChild(document.createElement("img"));
-    icon.src = `../${otherCharacterName}/icon.png`;
-    icon.alt = otherCharacter.meta.name;
-    icon.title = otherCharacter.meta.name;
-  }
-
-  header.appendChild(document.createElement("h1")).textContent =
-    character.meta.name;
-
-  header.appendChild(document.createElement("fh-enhancer")).innerHTML = `
-	  <h2 id=enhancer>Enhancer Level</h2>
-	  <label><input type=radio name=enhancer value=1 checked></input>1</label>
-	  <label><input type=radio name=enhancer value=2></input>2</label>
-	  <label><input type=radio name=enhancer value=3></input>3</label>
-	  <label><input type=radio name=enhancer value=4></input>4</label>
-  `;
+  installScriptAndStyle(document);
+  addHeader(document, characterName, character.meta.name);
 
   for (const card of character.cards) {
     document.body.append(createCard(card));
@@ -380,4 +350,67 @@ for (const [characterName, character] of characters) {
 
     return line;
   }
+}
+
+/**
+ * @param {Document} document
+ * @param {string | null} characterName
+ * @param {string} title
+ */
+function addHeader(document, characterName, title) {
+  const header = document.body.insertBefore(
+    document.createElement("header"),
+    document.body.firstChild,
+  );
+
+  const characterList = header
+    .appendChild(document.createElement("nav"))
+    .appendChild(document.createElement("ul"));
+  characterList.className = "character-list";
+
+  for (const [otherCharacterName, otherCharacter] of characters) {
+    const isActive = otherCharacterName === characterName;
+
+    let el = characterList.appendChild(document.createElement("li"));
+    el.classList.add("character");
+    el.classList.toggle("character--active", isActive);
+
+    if (otherCharacter.meta.color) {
+      el.style.setProperty("--color-rgb", otherCharacter.meta.color.rgb);
+
+      if (otherCharacter.meta.color.filter) {
+        el.style.setProperty(
+          "--color-filter",
+          otherCharacter.meta.color.filter,
+        );
+      }
+    }
+
+    const anchor = el.appendChild(document.createElement("a"));
+		anchor.href = `${characterName ? "../" : ""}${otherCharacterName}/${buildForDeployment ? "" : "index.html"}`;
+
+    const icon = anchor.appendChild(document.createElement("img"));
+    icon.src = `${characterName ? "../" : ""}${otherCharacterName}/icon.png`;
+    icon.alt = otherCharacter.meta.name;
+    icon.title = otherCharacter.meta.name;
+  }
+
+  header.appendChild(document.createElement("h1")).textContent = title;
+
+  header.appendChild(document.createElement("fh-enhancer")).innerHTML = `
+	  <h2 id=enhancer>Enhancer Level</h2>
+	  <label><input type=radio name=enhancer value=1 checked></input>1</label>
+	  <label><input type=radio name=enhancer value=2></input>2</label>
+	  <label><input type=radio name=enhancer value=3></input>3</label>
+	  <label><input type=radio name=enhancer value=4></input>4</label>
+  `;
+}
+
+/** @param {Document} document */
+function installScriptAndStyle(document) {
+  const style = document.head.appendChild(document.createElement("style"));
+  style.textContent = styleText;
+  const script = document.head.appendChild(document.createElement("script"));
+  script.type = "module";
+  script.textContent = scriptText;
 }
