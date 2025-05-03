@@ -51,7 +51,7 @@ card 8 "draining arrows" level=1 image-path="images/fh-draining-arrows.png" {
 	bottom
 }
 card 9 "prudent preparation" level=1 image-path="images/fh-prudent-preparation.png" {
-	top persistent=#true{
+	top{
 		enhancement kind=diamond+ ability=attack
 		enhancement kind=diamond+ ability=retaliate
 	}
@@ -108,7 +108,7 @@ card 15 "destructive fury" level=X image-path="images/fh-destructive-fury.png" {
 }
 card 16 shockwave level=2 image-path="images/fh-shockwave.png" {
 	top
-	bottom persistent=#true{
+	bottom{
 		enhancement kind=circle ability=shield
 	}
 }
@@ -161,7 +161,7 @@ card 23 "break through" level=5 image-path="images/fh-break-through.png" {
 }
 card 24 "accurate strikes" level=6 image-path="images/fh-accurate-strikes.png" {
 	top
-	bottom persistent=#true{
+	bottom{
 		enhancement kind=circle ability=move
 	}
 }
@@ -169,7 +169,7 @@ card 25 "consume stamina" level=6 image-path="images/fh-consume-stamina.png" {
 	top{
 		enhancement kind=square ability=attack
 	}
-	bottom persistent=#true{
+	bottom{
 		enhancement kind=circle ability=retaliate
 	}
 }

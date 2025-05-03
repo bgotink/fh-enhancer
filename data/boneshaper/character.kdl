@@ -113,8 +113,8 @@ card 136 "bone dagger" level=2 image-path="images/fh-bone-dagger.png" {
 	top lost=#true{
 		enhancement kind=diamond ability=attack
 	}
-	bottom persistent=#true{
-		enhancement kind=square ability="range"
+	bottom{
+		enhancement kind=square ability=range
 	}
 }
 card 137 "grave digging" level=3 image-path="images/fh-grave-digging.png" {
@@ -134,7 +134,7 @@ card 139 "critical failure" level=4 image-path="images/fh-critical-failure.png" 
 	bottom
 }
 card 140 "flesh shield" level=4 image-path="images/fh-flesh-shield.png" {
-	top persistent=#true{
+	top{
 		enhancement kind=diamond+ ability=retaliate
 	}
 	bottom
@@ -150,7 +150,7 @@ card 141 "unforgivable methods" level=5 image-path="images/fh-unforgivable-metho
 card 142 "solid bones" level=5 image-path="images/fh-solid-bones.png" {
 	top
 	bottom{
-		enhancement kind=square ability="move"
+		enhancement kind=square ability=move
 	}
 }
 card 143 "rotting multitude" level=6 image-path="images/fh-rotting-multitude.png" {
@@ -185,12 +185,12 @@ card 147 "endless numbers" level=8 image-path="images/fh-endless-numbers.png" {
 }
 card 148 "wailing from beyond" level=8 image-path="images/fh-wailing-from-beyond.png" {
 	top{
-		enhancement kind=square ability="attack"
-		enhancement kind=square ability="target"
+		enhancement kind=square ability=attack
+		enhancement kind=square ability=target
 	}
 	bottom{
-		enhancement kind=circle ability="move"
-		enhancement kind=diamond+ ability="heal"
+		enhancement kind=circle ability=move
+		enhancement kind=diamond+ ability=heal
 	}
 }
 card 149 "unholy prowess" level=9 image-path="images/fh-unholy-prowess.png" {

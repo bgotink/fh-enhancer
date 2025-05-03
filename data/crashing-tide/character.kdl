@@ -12,7 +12,7 @@ card 474 "overwhelming wave" level=1 image-path="images/fh-overwhelming-wave.png
 card 475 "soft flesh" level=1 image-path="images/fh-soft-flesh.png" {
 	top
 	bottom{
-		enhancement kind=circle ability="move"
+		enhancement kind=circle ability=move
 	}
 }
 card 476 "rancid brine" level=1 image-path="images/fh-rancid-brine.png" {
@@ -22,7 +22,7 @@ card 476 "rancid brine" level=1 image-path="images/fh-rancid-brine.png" {
 card 477 "sharp chitin" level=1 image-path="images/fh-sharp-chitin.png" {
 	top
 	bottom{
-		enhancement kind=circle ability="move"
+		enhancement kind=circle ability=move
 	}
 }
 card 478 "down to the depths" level=1 image-path="images/fh-down-to-the-depths.png" {
@@ -61,7 +61,7 @@ card 483 "crashing surge" level=1 image-path="images/fh-crashing-surge.png" {
 }
 card 484 "mighty claws" level=1 image-path="images/fh-mighty-claws.png" {
 	top
-	bottom persistent=#true lost=#true{
+	bottom lost=#true{
 		enhancement kind=circle ability=move
 		enhancement kind=circle ability=shield
 		enhancement kind=circle ability=retaliate
@@ -87,7 +87,7 @@ card 487 undertow level=X image-path="images/fh-undertow.png" {
 }
 card 488 "crush armor" level=X image-path="images/fh-crush-armor.png" {
 	top
-	bottom persistent=#true{
+	bottom{
 		enhancement kind=circle ability=move
 	}
 }
@@ -186,7 +186,7 @@ card 503 "high tide" level=9 image-path="images/fh-high-tide.png" {
 }
 card 504 "low tide" level=9 image-path="images/fh-low-tide.png" {
 	top
-	bottom persistent=#true{
+	bottom{
 		enhancement kind=circle ability=move
 	}
 }
