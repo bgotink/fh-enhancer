@@ -4,40 +4,70 @@ meta {
 }
 
 card 120 "life in death" level=1 image-path="images/fh-life-in-death.png" {
-	top
+	top persistent=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
 	bottom
 }
 card 121 "returned servant" level=1 image-path="images/fh-returned-servant.png" {
-	top
-	bottom
+	top persistent=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card 122 "damned horde" level=1 image-path="images/fh-damned-horde.png" {
-	top
-	bottom
+	top persistent=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom{
+		enhancement kind=square ability=target
+		enhancement kind=square ability=range
+	}
 }
 card 123 "transfer of essence" level=1 image-path="images/fh-transfer-of-essence.png" {
 	top
 	bottom
 }
 card 124 "decaying will" level=1 image-path="images/fh-decaying-will.png" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card 125 "dark tidings" level=1 image-path="images/fh-dark-tidings.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card 126 "angry spirits" level=1 image-path="images/fh-angry-spirits.png" {
-	top
+	top persistent=#true lost=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon range"
+	}
 	bottom
 }
 card 127 "fell remedy" level=1 image-path="images/fh-fell-remedy.png" {
-	top
+	top{
+		enhancement kind=diamond+ ability=heal
+	}
 	bottom
 }
 card 128 "flow of the black river" level=1 image-path="images/fh-flow-of-the-black-river.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=move
+	}
 }
 card 129 "command the wretched" level=1 image-path="images/fh-command-the-wretched.png" {
 	top
@@ -48,15 +78,23 @@ card 130 "eternal torment" level=1 image-path="images/fh-eternal-torment.png" {
 	bottom
 }
 card 131 "malicious conversion" level=1 image-path="images/fh-malicious-conversion.png" {
-	top
+	top lost=#true{
+		enhancement kind=circle ability=attack
+	}
 	bottom
 }
 card 132 "approach oblivion" level=X image-path="images/fh-approach-oblivion.png" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond+ ability=heal multiple=#true
+	}
+	bottom{
+		enhancement kind=square ability=move
+	}
 }
 card 133 "exploding corpse" level=X image-path="images/fh-exploding-corpse.png" {
-	top
+	top lost=#true{
+		enhancement kind=diamond ability=attack multiple=#true
+	}
 	bottom
 }
 card 134 "wrath of the turned earth" level=X image-path="images/fh-wrath-of-the-turned-earth.png" {
@@ -64,15 +102,27 @@ card 134 "wrath of the turned earth" level=X image-path="images/fh-wrath-of-the-
 	bottom
 }
 card 135 "unearthed horror" level=2 image-path="images/fh-unearthed-horror.png" {
-	top
+	top persistent=#true lost=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
 	bottom
 }
 card 136 "bone dagger" level=2 image-path="images/fh-bone-dagger.png" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack
+	}
+	bottom persistent=#true{
+		enhancement kind=square ability="range"
+	}
 }
 card 137 "grave digging" level=3 image-path="images/fh-grave-digging.png" {
-	top
+	top persistent=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
 	bottom
 }
 card 138 "putrid cloud" level=3 image-path="images/fh-putrid-cloud.png" {
@@ -84,24 +134,38 @@ card 139 "critical failure" level=4 image-path="images/fh-critical-failure.png" 
 	bottom
 }
 card 140 "flesh shield" level=4 image-path="images/fh-flesh-shield.png" {
-	top
+	top persistent=#true{
+		enhancement kind=diamond+ ability=retaliate
+	}
 	bottom
 }
 card 141 "unforgivable methods" level=5 image-path="images/fh-unforgivable-methods.png" {
-	top
+	top persistent=#true lost=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
 	bottom
 }
 card 142 "solid bones" level=5 image-path="images/fh-solid-bones.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability="move"
+	}
 }
 card 143 "rotting multitude" level=6 image-path="images/fh-rotting-multitude.png" {
-	top
+	top persistent=#true{
+		enhancement kind=square ability="summon hp" multiple=#true
+		enhancement kind=square ability="summon move" multiple=#true
+		enhancement kind=square ability="summon attack" multiple=#true
+	}
 	bottom
 }
 card 144 "twisted decree" level=6 image-path="images/fh-twisted-decree.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=diamond ability=attack
+	}
 }
 card 145 "recycled limbs" level=7 image-path="images/fh-recycled-limbs.png" {
 	top
@@ -112,15 +176,30 @@ card 146 "soul claim" level=7 image-path="images/fh-soul-claim.png" {
 	bottom
 }
 card 147 "endless numbers" level=8 image-path="images/fh-endless-numbers.png" {
-	top
+	top persistent=#true lost=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
 	bottom
 }
 card 148 "wailing from beyond" level=8 image-path="images/fh-wailing-from-beyond.png" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability="attack"
+		enhancement kind=square ability="target"
+	}
+	bottom{
+		enhancement kind=circle ability="move"
+		enhancement kind=diamond+ ability="heal"
+	}
 }
 card 149 "unholy prowess" level=9 image-path="images/fh-unholy-prowess.png" {
-	top
+	top persistent=#true lost=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+		enhancement kind=square ability="summon range"
+	}
 	bottom
 }
 card 150 "behold the shrouded sun" level=9 image-path="images/fh-behold-the-shrouded-sun.png" {
