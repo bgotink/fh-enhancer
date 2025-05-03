@@ -5,18 +5,26 @@ meta {
 
 card 1 "crushing weight" level=1 image-path="images/fh-crushing-weight.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=heal
+	}
 }
 card 2 "sustained momentum" level=1 image-path="images/fh-sustained-momentum.png" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card 3 "precision aim" level=1 image-path="images/fh-precision-aim.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card 4 "continuous health" level=1 image-path="images/fh-continuous-health.png" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card 5 relentless level=1 image-path="images/fh-relentless.png" {
@@ -28,87 +36,152 @@ card 6 unbreakable level=1 image-path="images/fh-unbreakable.png" {
 	bottom
 }
 card 7 "vile assault" level=1 image-path="images/fh-vile-assault.png" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card 8 "draining arrows" level=1 image-path="images/fh-draining-arrows.png" {
-	top
+	top{
+		enhancement kind=square ability=attack multiple=#true
+	}
 	bottom
 }
 card 9 "prudent preparation" level=1 image-path="images/fh-prudent-preparation.png" {
-	top
-	bottom
+	top persistent=#true{
+		enhancement kind=diamond+ ability=attack
+		enhancement kind=diamond+ ability=retaliate
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card 10 "deadly shot" level=1 image-path="images/fh-deadly-shot.png" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card 11 bloodletting level=1 image-path="images/fh-bloodletting.png" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=attack
+	}
 }
 card 12 "violent inheritance" level=1 image-path="images/fh-violent-inheritance.png" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true{
+		enhancement kind=circle ability=move
+		enhancement kind=diamond ability=attack
+	}
 }
 card 13 fortitude level=X image-path="images/fh-fortitude.png" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card 14 "no remorse" level=X image-path="images/fh-no-remorse.png" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond+ ability=heal
+	}
+	bottom lost=#true{
+		enhancement kind=square ability=move
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=move
+	}
 }
 card 15 "destructive fury" level=X image-path="images/fh-destructive-fury.png" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom lost=#true{
+		enhancement kind=diamond ability=attack multiple=#true
+	}
 }
 card 16 shockwave level=2 image-path="images/fh-shockwave.png" {
 	top
-	bottom
+	bottom persistent=#true{
+		enhancement kind=circle ability=shield
+	}
 }
 card 17 "ever forward" level=2 image-path="images/fh-ever-forward.png" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond+ ability=#null
+	}
+	bottom{
+		enhancement kind=circle ability=heal
+	}
 }
 card 18 "fierce barrage" level=3 image-path="images/fh-fierce-barrage.png" {
-	top
+	top{
+		enhancement kind=diamond ability=attack multiple=#true
+	}
 	bottom
 }
 card 19 "dual bow" level=3 image-path="images/fh-dual-bow.png" {
-	top
+	top{
+		enhancement kind=square ability=attack
+	}
 	bottom
 }
 card 20 "chunk of flesh" level=4 image-path="images/fh-chunk-of-flesh.png" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=diamond+ ability=heal
+	}
 	bottom
 }
 card 21 "gift of the prey" level=4 image-path="images/fh-gift-of-the-prey.png" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card 22 survivalist level=5 image-path="images/fh-survivalist.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card 23 "break through" level=5 image-path="images/fh-break-through.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card 24 "accurate strikes" level=6 image-path="images/fh-accurate-strikes.png" {
 	top
-	bottom
+	bottom persistent=#true{
+		enhancement kind=circle ability=move
+	}
 }
 card 25 "consume stamina" level=6 image-path="images/fh-consume-stamina.png" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=attack
+	}
+	bottom persistent=#true{
+		enhancement kind=circle ability=retaliate
+	}
 }
 card 26 "like the wind" level=7 image-path="images/fh-like-the-wind.png" {
 	top
 	bottom
 }
 card 27 "unending fight" level=7 image-path="images/fh-unending-fight.png" {
-	top
+	top{
+		enhancement kind=square ability=attack
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card 28 "against all odds" level=8 image-path="images/fh-against-all-odds.png" {
@@ -116,14 +189,22 @@ card 28 "against all odds" level=8 image-path="images/fh-against-all-odds.png" {
 	bottom
 }
 card 29 "inevitable conclusion" level=8 image-path="images/fh-inevitable-conclusion.png" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom{
+		enhancement kind=diamond ability=attack
+	}
 }
 card 30 everlasting level=9 image-path="images/fh-everlasting.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=diamond+ ability=heal
+	}
 }
 card 31 "use every part" level=9 image-path="images/fh-use-every-part.png" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
