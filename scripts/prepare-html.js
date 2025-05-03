@@ -467,9 +467,12 @@ function addHeader(document, characterName, title) {
 		}
 	}
 
-	header.appendChild(document.createElement("h1")).textContent = title;
+	const titleContainer = header.appendChild(document.createElement("div"));
+	titleContainer.className = "header__title";
 
-	header.appendChild(document.createElement("fh-enhancer")).innerHTML = `
+	titleContainer.appendChild(document.createElement("h1")).textContent = title;
+
+	titleContainer.appendChild(document.createElement("fh-enhancer")).innerHTML = `
 	  <h2 id=enhancer>Enhancer Level</h2>
 	  <label><input type=radio name=enhancer value=1 checked></input>1</label>
 	  <label><input type=radio name=enhancer value=2></input>2</label>
