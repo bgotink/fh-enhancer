@@ -11,6 +11,9 @@ card 61 "at all costs" level=1 image-path="images/fh-at-all-costs.png" {
 }
 
 card 62 "rallying cry" level=1 image-path="images/fh-rallying-cry.png" {
+	top{
+		enhancement kind=hex number-of-hexes=1
+	}
 	bottom persistent=#true lost=#true {
 		enhancement kind=square ability="summon hp"
 	}
@@ -184,6 +187,7 @@ card 84 tri-thrust level=7 image-path="images/fh-tri-thrust.png" {
 		enhancement kind=diamond ability=attack
 	}
 	bottom {
+		enhancement kind=circle ability=move
 		enhancement kind=square ability=attack multiple=#true
 	}
 }

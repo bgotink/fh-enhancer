@@ -179,7 +179,7 @@ card 115 "hungry grasps" level=7 image-path="images/fh-hungry-grasps.png" {
 		enhancement kind=square ability=range
 		enhancement kind=square ability=pull
 	}
-	bottom{
+	bottom lost=#true{
 		enhancement kind=diamond+ ability=heal
 	}
 }

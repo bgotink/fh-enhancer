@@ -157,10 +157,10 @@ card 237 "obsidian shield" level=6 image-path="images/fh-obsidian-shield.png" {
 card 238 "erupting rage" level=7 image-path="images/fh-erupting-rage.png" {
 	top{
 		enhancement kind=diamond ability=attack
-		enhancement kind=diamond ability=push
+		enhancement kind=square ability=push
 	}
 	bottom{
-		enhancement kind=square ability=attack
+		enhancement kind=square ability=move
 	}
 }
 card 239 swelter level=7 image-path="images/fh-swelter.png" {
@@ -175,7 +175,7 @@ card 240 "feed the beast" level=8 image-path="images/fh-feed-the-beast.png" {
 }
 card 241 "cinder lance" level=8 image-path="images/fh-cinder-lance.png" {
 	top{
-		enhancement kind=square ability=attack
+		enhancement kind=diamond ability=attack
 	}
 	bottom{
 		enhancement kind=square ability=attack multiple=#true

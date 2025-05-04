@@ -163,8 +163,8 @@ card 323 "phantom limb" level=6 image-path="images/fh-phantom-limb.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
-	bottom{
-		enhancement kind=circle ability=heal
+	bottom lost=#true{
+		enhancement kind=circle ability=heal multiple=#true
 	}
 }
 card 324 "reject the gift" level=7 image-path="images/fh-reject-the-gift.png" {
