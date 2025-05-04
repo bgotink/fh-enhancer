@@ -31,7 +31,7 @@ card 478 "down to the depths" level=1 image-path="images/fh-down-to-the-depths.p
 }
 card 479 "pool of power" level=1 image-path="images/fh-pool-of-power.png" {
 	top lost=#true{
-		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack multiple=#true
 	}
 	bottom
 }
@@ -126,8 +126,8 @@ card 494 "clean sweep" level=4 image-path="images/fh-clean-sweep.png" {
 }
 card 495 "tidal blast" level=5 image-path="images/fh-tidal-blast.png" {
 	top lost=#true{
-		enhancement kind=diamond ability=attack
-		enhancement kind=square ability=range
+		enhancement kind=diamond ability=attack multiple=#true
+		enhancement kind=square ability=range multiple=#true
 	}
 	bottom
 }
@@ -136,7 +136,7 @@ card 496 "sodden soil" level=5 image-path="images/fh-sodden-soil.png" {
 		enhancement kind=square ability=attack
 	}
 	bottom lost=#true{
-		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack multiple=#true
 	}
 }
 card 497 "powerful pincer" level=6 image-path="images/fh-powerful-pincer.png" {
@@ -160,7 +160,7 @@ card 500 "drown beneath the waves" level=7 image-path="images/fh-drown-beneath-t
 		enhancement kind=diamond ability=attack
 	}
 	bottom{
-		enhancement kind=square ability=pull
+		enhancement kind=square ability=pull multiple=#true
 	}
 }
 card 501 "death on all sides" level=8 image-path="images/fh-death-on-all-sides.png" {
@@ -171,7 +171,7 @@ card 501 "death on all sides" level=8 image-path="images/fh-death-on-all-sides.p
 }
 card 502 "ebb and flow" level=8 image-path="images/fh-ebb-and-flow.png" {
 	top lost=#true{
-		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack multiple=#true
 	}
 	bottom{
 		enhancement kind=circle ability=move

@@ -319,7 +319,7 @@ for (const [characterName, character] of characters) {
 						action,
 						enhancement,
 						baseCostPerAbility[enhancement.ability],
-						enhancement.multiple,
+						enhancement.multiple && (enhancement.ability !== 'target'),
 					),
 				);
 

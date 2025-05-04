@@ -97,7 +97,7 @@ card 46 "reckless augmentation" level=2 image-path="images/fh-reckless-augmentat
 }
 card 47 "make it count" level=3 image-path="images/fh-make-it-count.png" {
 	top {
-		enhancement kind=circle ability=heal
+		enhancement kind=circle ability=heal multiple=#true
 	}
 	bottom {
 		enhancement kind=circle ability=attack
@@ -133,8 +133,8 @@ card 51 "breakneck speed" level=5 image-path="images/fh-breakneck-speed.png" {
 }
 card 52 "flashing flurry" level=5 image-path="images/fh-flashing-flurry.png" {
 	top
-	bottom {
-		enhancement kind=diamond ability=#null
+	bottom lost=#true {
+		enhancement kind=diamond ability=#null multiple=#true
 	}
 }
 card 53 "stab them all" level=6 image-path="images/fh-stab-them-all.png" {

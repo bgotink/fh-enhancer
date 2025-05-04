@@ -28,8 +28,8 @@ card 122 "damned horde" level=1 image-path="images/fh-damned-horde.png" {
 		enhancement kind=square ability="summon attack"
 	}
 	bottom{
-		enhancement kind=square ability=target
-		enhancement kind=square ability=range
+		enhancement kind=square ability=target multiple=#true
+		enhancement kind=square ability=range multiple=#true
 	}
 }
 card 123 "transfer of essence" level=1 image-path="images/fh-transfer-of-essence.png" {
@@ -185,8 +185,8 @@ card 147 "endless numbers" level=8 image-path="images/fh-endless-numbers.png" {
 }
 card 148 "wailing from beyond" level=8 image-path="images/fh-wailing-from-beyond.png" {
 	top{
-		enhancement kind=square ability=attack
-		enhancement kind=square ability=target
+		enhancement kind=square ability=attack multiple=#true
+		enhancement kind=square ability=target multiple=#true
 	}
 	bottom{
 		enhancement kind=circle ability=move

@@ -174,7 +174,7 @@ card 82 barricade level=6 image-path="images/fh-barricade.png" {
 
 card 83 "bolstering shout" level=6 image-path="images/fh-bolstering-shout.png" {
 	top {
-		enhancement kind=square ability=range
+		enhancement kind=square ability=range multiple=#true
 	}
 	bottom {
 		enhancement kind=circle ability=move
@@ -230,7 +230,7 @@ card 88 "take no prisoners" level=9 image-path="images/fh-take-no-prisoners.png"
 
 card 89 "hail of spears" level=9 image-path="images/fh-hail-of-spears.png" {
 	top {
-		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack multiple=#true
 	}
 	bottom lost=#true
 }

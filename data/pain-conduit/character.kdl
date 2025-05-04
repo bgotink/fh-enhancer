@@ -98,7 +98,7 @@ card 313 "pleasure in pain" level=X image-path="images/fh-pleasure-in-pain.png" 
 	}
 	bottom{
 		enhancement kind=circle ability=move
-		enhancement kind=diamond ability=#null
+		enhancement kind=diamond ability=#null multiple=#true
 	}
 }
 card 314 "reversal of fate" level=2 image-path="images/fh-reversal-of-fate.png" {

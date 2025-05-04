@@ -135,8 +135,8 @@ card 234 "rain of fire" level=5 image-path="images/fh-rain-of-fire.png" {
 }
 card 235 "magma orbs" level=5 image-path="images/fh-magma-orbs.png" {
 	top{
-		enhancement kind=square ability=attack
-		enhancement kind=square ability=range
+		enhancement kind=square ability=attack multiple=#true
+		enhancement kind=square ability=range multiple=#true
 	}
 	bottom
 }

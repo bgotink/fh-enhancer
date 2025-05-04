@@ -117,13 +117,13 @@ card 288 pyrotechnics level=3 image-path="images/fh-pyrotechnics.png" {
 }
 card 289 "dangerous ground" level=4 image-path="images/fh-dangerous-ground.png" {
 	top{
-		enhancement kind=square ability=range
+		enhancement kind=square ability=range multiple=#true
 	}
 	bottom
 }
 card 290 "stalker's spoils" level=4 image-path="images/fh-stalkers-spoils.png" {
 	top{
-		enhancement kind=square ability=range
+		enhancement kind=square ability=range multiple=#true
 	}
 	bottom
 }
@@ -166,7 +166,7 @@ card 295 "grasping hazards" level=7 image-path="images/fh-grasping-hazards.png" 
 }
 card 296 foxhole level=7 image-path="images/fh-foxhole.png" {
 	top{
-		enhancement kind=square ability=range
+		enhancement kind=square ability=range multiple=#true
 	}
 	bottom
 }
@@ -178,11 +178,11 @@ card 297 "spike strip" level=8 image-path="images/fh-spike-strip.png" {
 }
 card 298 "magnetic shards" level=8 image-path="images/fh-magnetic-shards.png" {
 	top{
-		enhancement kind=square ability=attack
-		enhancement kind=square ability=push
+		enhancement kind=square ability=attack multiple=#true
+		enhancement kind=square ability=push multiple=#true
 	}
 	bottom{
-		enhancement kind=square ability=heal
+		enhancement kind=square ability=heal multiple=#true
 	}
 }
 card 299 "dangerous cargo" level=9 image-path="images/fh-dangerous-cargo.png" {

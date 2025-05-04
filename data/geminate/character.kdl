@@ -44,7 +44,7 @@ card 155 "flailing tendrils" level=1 image-path="images/fh-flailing-tendrils.png
 }
 card 156 "drag down" level=1 image-path="images/fh-drag-down.png" {
 	top{
-		enhancement kind=square ability=attack
+		enhancement kind=square ability=attack multiple=#true
 		enhancement kind=hex number-of-hexes=3
 	}
 	bottom lost=#true{
@@ -161,14 +161,14 @@ card 173 "thresh and flail" level=4 image-path="images/fh-thresh-and-flail.png" 
 		enhancement kind=diamond ability=attack
 	}
 	bottom{
-		enhancement kind=square ability=pull
-		enhancement kind=square ability=range
+		enhancement kind=square ability=pull multiple=#true
+		enhancement kind=square ability=range multiple=#true
 	}
 }
 card 174 "luminous descent" level=4 image-path="images/fh-luminous-descent.png" {
 	top{
-		enhancement kind=diamond+ ability=heal
-		enhancement kind=square ability=range
+		enhancement kind=diamond+ ability=heal multiple=#true
+		enhancement kind=square ability=range multiple=#true
 	}
 	bottom lost=#true{
 		enhancement kind=circle ability=jump

@@ -117,7 +117,7 @@ card 17 "ever forward" level=2 image-path="images/fh-ever-forward.png" {
 		enhancement kind=diamond+ ability=#null
 	}
 	bottom{
-		enhancement kind=circle ability=heal
+		enhancement kind=circle ability=heal multiple=#true
 	}
 }
 card 18 "fierce barrage" level=3 image-path="images/fh-fierce-barrage.png" {
@@ -128,7 +128,7 @@ card 18 "fierce barrage" level=3 image-path="images/fh-fierce-barrage.png" {
 }
 card 19 "dual bow" level=3 image-path="images/fh-dual-bow.png" {
 	top{
-		enhancement kind=square ability=attack
+		enhancement kind=square ability=attack multiple=#true
 	}
 	bottom
 }
@@ -199,7 +199,7 @@ card 29 "inevitable conclusion" level=8 image-path="images/fh-inevitable-conclus
 card 30 everlasting level=9 image-path="images/fh-everlasting.png" {
 	top
 	bottom{
-		enhancement kind=diamond+ ability=heal
+		enhancement kind=diamond+ ability=heal multiple=#true
 	}
 }
 card 31 "use every part" level=9 image-path="images/fh-use-every-part.png" {
