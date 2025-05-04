@@ -215,13 +215,13 @@ card 180 "alluring pheromones" level=7 image-path="images/fh-alluring-pheromones
 }
 card 181 "accelerated metabolism" level=8 image-path="images/fh-accelerated-metabolism.png" {
 	top
-	bottom persistent=#true lost=#true{
+	bottom lost=#true{
 		enhancement kind=circle ability=move
 		enhancement kind=circle ability=move
 	}
 }
 card 182 "oscillating entity" level=8 image-path="images/fh-oscillating-entity.png" {
-	top persistent=#true lost=#true{
+	top lost=#true{
 		enhancement kind=diamond ability=attack
 		enhancement kind=diamond ability=attack
 	}
