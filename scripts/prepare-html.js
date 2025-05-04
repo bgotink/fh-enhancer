@@ -8,11 +8,11 @@ import {JSDOM} from "jsdom";
 import sharp from "sharp";
 
 import {
-  PlayerCharacter,
-  Card,
-  Action,
-  parsePlayerCharacter,
-  Enhancement,
+	PlayerCharacter,
+	Card,
+	Action,
+	parsePlayerCharacter,
+	Enhancement,
 } from "./model.js";
 import {posix} from "node:path";
 
@@ -24,62 +24,38 @@ const sharedFolder = new URL("_shared/", rootFolder);
 
 /** @type {Record<Enhancement['ability'] & string, number>} */
 const baseCostPerAbility = {
-  move: 30,
-  jump: 30,
-  attack: 50,
-  range: 30,
-  target: 75,
-  shield: 80,
-  retaliate: 60,
-  pierce: 30,
-  heal: 30,
-  push: 30,
-  pull: 20,
-  teleport: 50,
+	move: 30,
+	jump: 30,
+	attack: 50,
+	range: 30,
+	target: 75,
+	shield: 80,
+	retaliate: 60,
+	pierce: 30,
+	heal: 30,
+	push: 30,
+	pull: 20,
+	teleport: 50,
 
-  "summon hp": 40,
-  "summon move": 50,
-  "summon attack": 100,
-  "summon range": 50,
-};
-
-/** @type {Record<Enhancement['ability'] & string, string | null>} */
-const iconsPerAbility = {
-  move: "move icon",
-  // Jump is not a separate thing, we just separate it to
-  // discard the "add jump" enhancement
-  jump: "move icon",
-
-  attack: "attack icon",
-  range: "range icon",
-  target: "target icon",
-  shield: "shield icon",
-  retaliate: "retaliate icon",
-  pierce: "pierce icon",
-  heal: "heal icon",
-  push: "push icon",
-  pull: "pull icon",
-  teleport: "teleport icon",
-
-  "summon hp": null,
-  "summon move": "move icon",
-  "summon attack": "attack icon",
-  "summon range": "range icon",
+	"summon hp": 40,
+	"summon move": 50,
+	"summon attack": 100,
+	"summon range": 50,
 };
 
 const baseCostPositiveConditions = {
-  regenerate: 40,
-  ward: 75,
-  strengthen: 100,
-  bless: 75,
+	regenerate: 40,
+	ward: 75,
+	strengthen: 100,
+	bless: 75,
 };
 
 const baseCostNegativeConditions = {
-  wound: 75,
-  poison: 50,
-  immobilize: 150,
-  muddle: 40,
-  curse: 150,
+	wound: 75,
+	poison: 50,
+	immobilize: 150,
+	muddle: 40,
+	curse: 150,
 };
 
 const elements = ["air", "dark", "earth", "fire", "ice", "light"];
@@ -91,411 +67,479 @@ const baseCostJump = 60;
 
 /** @param {number} numberOfHexes */
 function baseCostAttackHex(numberOfHexes) {
-  return Math.ceil(200 / numberOfHexes);
+	return Math.ceil(200 / numberOfHexes);
 }
 
 const [scriptText, styleText] = await Promise.all([
-  readFile(new URL("template/runtime.js", import.meta.url), "utf8"),
-  readFile(new URL("template/styles.css", import.meta.url), "utf8"),
+	readFile(new URL("template/runtime.js", import.meta.url), "utf8"),
+	readFile(new URL("template/styles.css", import.meta.url), "utf8"),
 ]);
 
 /** @type {Map<string, PlayerCharacter>} */
 const characters = new Map();
 
 for (const characterName of await readdir(rootFolder)) {
-  let characterString;
+	let characterString;
 
-  try {
-    characterString = await readFile(
-      new URL(`${characterName}/character.kdl`, rootFolder),
-      "utf8",
-    );
-  } catch {
-    continue;
-  }
+	try {
+		characterString = await readFile(
+			new URL(`${characterName}/character.kdl`, rootFolder),
+			"utf8",
+		);
+	} catch {
+		continue;
+	}
 
-  characters.set(characterName, parsePlayerCharacter(characterString));
+	characters.set(characterName, parsePlayerCharacter(characterString));
 }
 
 const art = new Map(
-  /** @type {{expansion: string; name: string; image: string;}[]} */ (
-    JSON.parse(await readFile(new URL("data/art.js", worldhavenFolder), "utf8"))
-  )
-    .filter((item) => item.expansion === "Frosthaven")
-    .map((item) => [item.name, `images/${item.image}`]),
+	/** @type {{expansion: string; name: string; image: string; xws: string;}[]} */ (
+		JSON.parse(await readFile(new URL("data/art.js", worldhavenFolder), "utf8"))
+	)
+		.filter(
+			(item) =>
+				item.expansion === "Frosthaven" && !item.xws.endsWith("coloricon"),
+		)
+		.map((item) => [item.name, `images/${item.image}`]),
 );
 
 const tokens = new Map(
-  /** @type {{expansion: string; name: string; image: string;}[]} */ (
-    JSON.parse(
-      await readFile(new URL("data/tokens.js", worldhavenFolder), "utf8"),
-    )
-  )
-    .filter((item) => item.expansion === "Frosthaven")
-    .map((item) => [item.name, `images/${item.image}`]),
+	/** @type {{expansion: string; name: string; image: string;}[]} */ (
+		JSON.parse(
+			await readFile(new URL("data/tokens.js", worldhavenFolder), "utf8"),
+		)
+	)
+		.filter((item) => item.expansion === "Frosthaven")
+		.map((item) => [item.name, `images/${item.image}`]),
 );
 
 await Promise.all(
-  Array.from(characters, async ([characterName, character]) => {
-    const icon = art.get(`${characterName.replaceAll("-", " ")} icon`);
+	Array.from(characters, async ([characterName, character]) => {
+		const icon = art.get(`${characterName.replaceAll("-", " ")} icon`);
 
-    if (icon == null) {
-      throw new Error(`Couldn't find icon for ${characterName}`);
-    }
+		if (icon == null) {
+			throw new Error(`Couldn't find icon for ${characterName}`);
+		}
 
-    const image = await readFile(new URL(icon, worldhavenFolder));
+		const image = await readFile(new URL(icon, worldhavenFolder));
 
-    await writeFile(new URL(`${characterName}/icon.png`, rootFolder), image);
+		await writeFile(new URL(`${characterName}/icon.png`, rootFolder), image);
 
-    const characterColor = character.meta.color?.rgb ?? "#999";
+		const characterColor = character.meta.color?.rgb ?? "#999";
 
-    for (const [filename, color] of [
-      ["icon.png", characterColor],
-      ["icon--white.png", "white"],
-      ["icon--black.png", "black"],
-    ]) {
-      await sharp(image)
-        .rotate()
-        .resize({
-          width: 280,
-          height: 280,
-          fit: "contain",
-          background: "transparent",
-        })
-        .composite([
-          {
-            input: Buffer.from(
-              `<svg><rect x="0" y="0" width="280" height="280" fill="${color}"/></svg>`,
-            ),
-            blend: "in",
-          },
-        ])
-        .toFile(
-          fileURLToPath(new URL(`${characterName}/${filename}`, rootFolder)),
-        );
-    }
+		for (const [filename, color] of [
+			["icon.png", characterColor],
+			["icon--white.png", "white"],
+			["icon--black.png", "black"],
+		]) {
+			await sharp(image)
+				.rotate()
+				.resize({
+					width: 280,
+					height: 280,
+					fit: "contain",
+					background: "transparent",
+				})
+				.composite([
+					{
+						input: Buffer.from(
+							`<svg><rect x="0" y="0" width="280" height="280" fill="${color}"/></svg>`,
+						),
+						blend: "in",
+					},
+				])
+				.toFile(
+					fileURLToPath(new URL(`${characterName}/${filename}`, rootFolder)),
+				);
+		}
 
-    await sharp(image)
-      .rotate()
-      .resize({
-        width: 280,
-        height: 280,
-        fit: "contain",
-        background: "transparent",
-      })
-      .extend({
-        background: "transparent",
-        top: 60,
-        right: 60,
-        bottom: 60,
-        left: 60,
-      })
-      .composite([
-        {
-          input: Buffer.from(
-            `<svg><rect x="0" y="0" width="400" height="400" rx="120" ry="120" fill="${characterColor}"/></svg>`,
-          ),
-          blend: "dest-atop",
-        },
-      ])
-      .toFile(
-        fileURLToPath(new URL(`${characterName}/favicon.png`, rootFolder)),
-      );
-  }),
+		await sharp(image)
+			.rotate()
+			.resize({
+				width: 280,
+				height: 280,
+				fit: "contain",
+				background: "transparent",
+			})
+			.extend({
+				background: "transparent",
+				top: 60,
+				right: 60,
+				bottom: 60,
+				left: 60,
+			})
+			.composite([
+				{
+					input: Buffer.from(
+						`<svg><rect x="0" y="0" width="400" height="400" rx="120" ry="120" fill="${characterColor}"/></svg>`,
+					),
+					blend: "dest-atop",
+				},
+			])
+			.toFile(
+				fileURLToPath(new URL(`${characterName}/favicon.png`, rootFolder)),
+			);
+	}),
 );
 
 {
-  const jsdom = await JSDOM.fromFile(
-    fileURLToPath(new URL("template/index.html", import.meta.url)),
-  );
-  const {document} = jsdom.window;
+	const jsdom = await JSDOM.fromFile(
+		fileURLToPath(new URL("template/index.html", import.meta.url)),
+	);
+	const {document} = jsdom.window;
 
-  installScriptAndStyle(document);
-  addHeader(document, null, "Frosthaven Enhancer");
+	installScriptAndStyle(document);
+	addHeader(document, null, "Frosthaven Enhancer");
 
-  await writeFile(new URL("index.html", rootFolder), jsdom.serialize());
+	await writeFile(new URL("index.html", rootFolder), jsdom.serialize());
 }
 
 /** @type {Map<string, Promise<unknown>>} */
 const sharedAssets = new Map();
 
 for (const [characterName, character] of characters) {
-  const jsdom = new JSDOM(`<!doctype html><html lang=en></html>`);
-  const {document} = jsdom.window;
+	const jsdom = new JSDOM(`<!doctype html><html lang=en></html>`);
+	const {document} = jsdom.window;
 
-  const prettyName = character.meta.name;
-  if (character.meta.color) {
-    document.documentElement.style.setProperty(
-      "--color",
-      character.meta.color.rgb,
-    );
-  }
+	const prettyName = character.meta.name;
+	if (character.meta.color) {
+		document.documentElement.style.setProperty(
+			"--color",
+			character.meta.color.rgb,
+		);
+	}
 
-  document.head.appendChild(document.createElement("title")).textContent =
-    prettyName;
-  const favicon = document.head.appendChild(document.createElement("link"));
-  favicon.rel = "icon";
-  favicon.href = `favicon.png`;
+	document.head.appendChild(document.createElement("title")).textContent =
+		prettyName;
+	const favicon = document.head.appendChild(document.createElement("link"));
+	favicon.rel = "icon";
+	favicon.href = `favicon.png`;
 
-  installScriptAndStyle(document);
-  addHeader(document, characterName, character.meta.name);
+	installScriptAndStyle(document);
+	addHeader(document, characterName, character.meta.name);
 
-  for (const card of character.cards) {
-    document.body.append(createCard(card));
-  }
+	for (const card of character.cards) {
+		document.body.append(createCard(card));
+	}
 
-  await writeFile(
-    new URL(`${characterName}/index.html`, rootFolder),
-    jsdom.serialize(),
-  );
+	await writeFile(
+		new URL(`${characterName}/index.html`, rootFolder),
+		jsdom.serialize(),
+	);
 
-  /** @param {Card} card */
-  function createCard(card) {
-    const el = document.createElement("div");
-    el.classList.add("card");
+	/** @param {Card} card */
+	function createCard(card) {
+		const el = document.createElement("div");
+		el.classList.add("card");
 
-    const image = el.appendChild(document.createElement("img"));
-    image.src = card.imagePath;
-    image.loading = "lazy";
+		const image = el.appendChild(document.createElement("img"));
+		image.src = card.imagePath;
+		image.loading = "lazy";
 
-    el.appendChild(document.createElement("h3")).textContent = card.name;
+		el.appendChild(document.createElement("h3")).textContent = card.name;
 
-    const top = document.createElement("div");
-    top.classList.add("action", "top");
-    const bottom = document.createElement("div");
-    bottom.classList.add("action", "bottom");
+		const top = document.createElement("div");
+		top.classList.add("action", "top");
+		const bottom = document.createElement("div");
+		bottom.classList.add("action", "bottom");
 
-    const section = document.createElement("section");
-    section.append(el, createAction(card, "top"), createAction(card, "bottom"));
+		const section = document.createElement("section");
+		section.append(el, createAction(card, "top"), createAction(card, "bottom"));
 
-    return section;
-  }
+		return section;
+	}
 
-  /**
-   * @param {Card} card
-   * @param {"top" | "bottom"} where
-   */
-  function createAction(card, where) {
-    const el = document.createElement("fh-action");
-    el.className = `action--${where}`;
+	/**
+	 * @param {Card} card
+	 * @param {"top" | "bottom"} where
+	 */
+	function createAction(card, where) {
+		const el = document.createElement("fh-action");
+		el.className = `action--${where}`;
 
-    const {lost, persistent, enhancements} = card[where] ?? {};
+		const {lost, persistent, enhancements} = card[where] ?? {};
 
-    el.classList.toggle("lost", lost ?? false);
-    el.classList.toggle("persistent", persistent ?? false);
+		el.classList.toggle("lost", lost ?? false);
+		el.classList.toggle("persistent", persistent ?? false);
 
-    for (const enhancement of enhancements ?? []) {
-      el.append(
-        createEnhancement(
-          card,
-          /** @type {Action} */ (card[where]),
-          enhancement,
-        ),
-      );
-    }
+		for (const enhancement of enhancements ?? []) {
+			el.append(
+				createEnhancement(
+					card,
+					/** @type {Action} */ (card[where]),
+					enhancement,
+				),
+			);
+		}
 
-    return el;
-  }
+		return el;
+	}
 
-  /**
-   * @param {Card} card
-   * @param {Action} action
-   * @param {Enhancement} enhancement
-   */
-  function createEnhancement(card, action, enhancement) {
-    const el = document.createElement("fh-enhancement");
+	/**
+	 * @param {Card} card
+	 * @param {Action} action
+	 * @param {Enhancement} enhancement
+	 */
+	function createEnhancement(card, action, enhancement) {
+		const el = document.createElement("fh-enhancement");
 
-    const kind = el.appendChild(document.createElement("div"));
-    kind.className = `kind kind--${enhancement.kind}`;
-    kind.textContent = enhancement.kind;
+		const kind = el.appendChild(document.createElement("div"));
+		kind.className = `kind kind--${enhancement.kind}`;
+		kind.textContent = enhancement.kind;
 
-    const costTable = document.createElement("div");
-    costTable.className = "cost-list";
+		const costTable = document.createElement("div");
+		costTable.className = "cost-list";
 
-    if (enhancement.kind === "hex") {
-      const numberOfHexes = /** @type {number} */ (enhancement.numberOfHexes);
-      costTable.append(
-        createCostComputation(
-          createEnhancementSticker(
-            "hex attack",
-            "add hex to attack",
-            `${numberOfHexes} → ${numberOfHexes + 1}`,
-          ),
-          card,
-          action,
-          enhancement,
-          baseCostAttackHex(numberOfHexes),
-        ),
-      );
-    } else {
-      const ability = el.appendChild(document.createElement("div"));
-      ability.className = `ability ability--${enhancement.ability}`;
-      ability.textContent = enhancement.ability ?? "no ability";
+		if (enhancement.kind === "hex") {
+			const numberOfHexes = /** @type {number} */ (enhancement.numberOfHexes);
+			costTable.append(
+				createCostComputation(
+					createEnhancementSticker(
+						"hex attack",
+						"add hex to attack",
+						`${numberOfHexes} → ${numberOfHexes + 1}`,
+					),
+					card,
+					action,
+					enhancement,
+					baseCostAttackHex(numberOfHexes),
+				),
+			);
+		} else {
+			const ability = el.appendChild(document.createElement("div"));
+			ability.className = `ability ability--${enhancement.ability}`;
+			ability.append(createAbility(enhancement.ability));
 
-      if (enhancement.ability != null) {
-        costTable.append(
-          createCostComputation(
-            createEnhancementSticker("plus one", "plus one"),
-            card,
-            action,
-            enhancement,
-            baseCostPerAbility[enhancement.ability],
-            enhancement.multiple,
-          ),
-        );
+			if (enhancement.ability != null) {
+				costTable.append(
+					createCostComputation(
+						createEnhancementSticker("plus one", "plus one"),
+						card,
+						action,
+						enhancement,
+						baseCostPerAbility[enhancement.ability],
+						enhancement.multiple,
+					),
+				);
 
-        if (enhancement.ability === "move") {
-          costTable.append(
-            createCostComputation(
-              createEnhancementSticker("jump", "add jump"),
-              card,
-              action,
-              enhancement,
-              baseCostJump,
-              enhancement.multiple,
-            ),
-          );
-        }
-      }
+				if (enhancement.ability === "move") {
+					costTable.append(
+						createCostComputation(
+							createEnhancementSticker("jump", "add jump"),
+							card,
+							action,
+							enhancement,
+							baseCostJump,
+							enhancement.multiple,
+						),
+					);
+				}
+			}
 
-      if (enhancement.kind !== "square") {
-        costTable.append(
-          createCostComputation(
-            elements
-              .map((element) =>
-                createEnhancementSticker(element, `create ${element}`),
-              )
-              .reduce((container, sticker) => {
-                if (container.firstChild) {
-                  container.append(" ", sticker);
-                } else {
-                  container.append(sticker);
-                }
-                return container;
-              }, document.createElement("div")),
-            card,
-            action,
-            enhancement,
-            baseCostOneElement,
-          ),
-        );
+			if (enhancement.kind !== "square") {
+				costTable.append(
+					createCostComputation(
+						elements
+							.map((element) =>
+								createEnhancementSticker(element, `create ${element}`),
+							)
+							.reduce((container, sticker) => {
+								if (container.firstChild) {
+									container.append(" ", sticker);
+								} else {
+									container.append(sticker);
+								}
+								return container;
+							}, document.createElement("div")),
+						card,
+						action,
+						enhancement,
+						baseCostOneElement,
+					),
+				);
 
-        costTable.append(
-          createCostComputation(
-            createEnhancementSticker("wild", "create any element"),
-            card,
-            action,
-            enhancement,
-            baseCostAnyElement,
-          ),
-        );
-      }
+				costTable.append(
+					createCostComputation(
+						createEnhancementSticker("wild", "create any element"),
+						card,
+						action,
+						enhancement,
+						baseCostAnyElement,
+					),
+				);
+			}
 
-      if (enhancement.kind === "diamond") {
-        for (const [name, cost] of Object.entries(baseCostNegativeConditions)) {
-          costTable.append(
-            createCostComputation(
-              createEnhancementSticker(name, `apply ${name}`),
-              card,
-              action,
-              enhancement,
-              cost,
-              enhancement.multiple,
-            ),
-          );
-        }
-      } else if (enhancement.kind === "diamond+") {
-        for (const [name, cost] of Object.entries(baseCostPositiveConditions)) {
-          costTable.append(
-            createCostComputation(
-              createEnhancementSticker(name, `apply ${name}`),
-              card,
-              action,
-              enhancement,
-              cost,
-              enhancement.multiple,
-            ),
-          );
-        }
-      }
-    }
+			if (enhancement.kind === "diamond") {
+				for (const [name, cost] of Object.entries(baseCostNegativeConditions)) {
+					costTable.append(
+						createCostComputation(
+							createEnhancementSticker(name, `apply ${name}`),
+							card,
+							action,
+							enhancement,
+							cost,
+							enhancement.multiple,
+						),
+					);
+				}
+			} else if (enhancement.kind === "diamond+") {
+				for (const [name, cost] of Object.entries(baseCostPositiveConditions)) {
+					costTable.append(
+						createCostComputation(
+							createEnhancementSticker(name, `apply ${name}`),
+							card,
+							action,
+							enhancement,
+							cost,
+							enhancement.multiple,
+						),
+					);
+				}
+			}
+		}
 
-    el.appendChild(costTable);
-    return el;
-  }
+		el.appendChild(costTable);
+		return el;
+	}
 
-  /**
-   * @param {string} name
-   * @param {string} alt
-   * @param {string=} extra
-   * @returns {HTMLElement}
-   */
-  function createEnhancementSticker(name, alt, extra) {
-    const imageName = name.replaceAll(" ", "-");
-    const imagePath = art.get(`${name} sticker`);
-    if (!imagePath) {
-      throw new Error(
-        `Failed to find asset for sticker ${JSON.stringify(name)}`,
-      );
-    }
+	/**
+	 * @param {Enhancement["ability"]} name
+	 * @returns {Node}
+	 */
+	function createAbility(name) {
+		if (!name) {
+			return document.createTextNode("blank");
+		}
 
-    copySharedAsset(imageName, imagePath);
+		let imageName;
+		if (name === "jump") {
+			// We mapped jump to move so we could skip the "add jump" enhancement,
+			// but we want to show the move icon
+			imageName = "move";
+		} else if (name.startsWith("summon ")) {
+			imageName = name.slice("summon ".length);
+		} else {
+			imageName = name;
+		}
 
-    const el = document.createElement("img");
-    el.className = "enhancement-sticker";
-    el.src = `../_shared/${imageName}.png`;
-    el.alt = alt;
-    el.title = alt;
+		if (imageName !== "hp") {
+			const imagePath = art.get(`${imageName} icon`);
+			if (!imagePath) {
+				throw new Error(
+					`Failed to find asset for sticker ${JSON.stringify(imageName)}`,
+				);
+			}
 
-    if (!extra) {
-      return el;
-    }
+			copySharedAsset(imageName, imagePath);
+		} else {
+			if (!sharedAssets.has("hp")) {
+				sharedAssets.set(
+					"hp",
+					readFile(new URL("" + art.get("heal icon"), worldhavenFolder)).then(
+						async (iconBuffer) => {
+							const modifiedIcon = await sharp(iconBuffer)
+								.composite([
+									{
+										input: Buffer.from(
+											`<svg width="400" height="600"><circle cx="200" cy="400" r="200" fill="#221e1f"/></svg>`,
+										),
+										blend: "over",
+									},
+								])
+								.toBuffer();
 
-    const wrapper = document.createElement("div");
-    wrapper.append(el, ` ${extra}`);
-    return wrapper;
-  }
+							await writeFile(new URL("hp.png", sharedFolder), modifiedIcon);
+						},
+					),
+				);
+			}
+		}
 
-  /**
-   * @param {Element} name
-   * @param {Card} card
-   * @param {Action} action
-   * @param {Enhancement} enhancement
-   * @param {number} baseCost
-   * @param {boolean=} multiple
-   */
-  function createCostComputation(
-    name,
-    card,
-    action,
-    enhancement,
-    baseCost,
-    multiple = false,
-  ) {
-    const line = document.createElement("div");
-    line.className = "computation";
+		const el = document.createElement("img");
+		el.className = "ability-icon";
+		el.src = `../_shared/${imageName}.png`;
+		el.alt = name;
+		el.title = name;
 
-    line.appendChild(name);
+		return el;
+	}
 
-    const computation = line.appendChild(document.createElement("fh-cost"));
+	/**
+	 * @param {string} name
+	 * @param {string} alt
+	 * @param {string=} extra
+	 * @returns {HTMLElement}
+	 */
+	function createEnhancementSticker(name, alt, extra) {
+		const imageName = name.replaceAll(" ", "-");
+		const imagePath = art.get(`${name} sticker`);
+		if (!imagePath) {
+			throw new Error(
+				`Failed to find asset for sticker ${JSON.stringify(name)}`,
+			);
+		}
 
-    computation.setAttribute("base-cost", String(baseCost));
-    computation.setAttribute("card-level", String(card.level));
+		copySharedAsset(imageName, imagePath);
 
-    if (multiple) {
-      computation.setAttribute("target-multiple", "");
-    }
+		const el = document.createElement("img");
+		el.className = "enhancement-sticker";
+		el.src = `../_shared/${imageName}.png`;
+		el.alt = alt;
+		el.title = alt;
 
-    if (action.lost && !action.persistent) {
-      computation.setAttribute("lost", "");
-    }
+		if (!extra) {
+			return el;
+		}
 
-    if (action.persistent && !enhancement.ability?.startsWith("summon")) {
-      computation.setAttribute("persistent", "");
-    }
+		const wrapper = document.createElement("div");
+		wrapper.append(el, ` ${extra}`);
+		return wrapper;
+	}
 
-    return line;
-  }
+	/**
+	 * @param {Element} name
+	 * @param {Card} card
+	 * @param {Action} action
+	 * @param {Enhancement} enhancement
+	 * @param {number} baseCost
+	 * @param {boolean=} multiple
+	 */
+	function createCostComputation(
+		name,
+		card,
+		action,
+		enhancement,
+		baseCost,
+		multiple = false,
+	) {
+		const line = document.createElement("div");
+		line.className = "computation";
+
+		line.appendChild(name);
+
+		const computation = line.appendChild(document.createElement("fh-cost"));
+
+		computation.setAttribute("base-cost", String(baseCost));
+		computation.setAttribute("card-level", String(card.level));
+
+		if (multiple) {
+			computation.setAttribute("target-multiple", "");
+		}
+
+		if (action.lost && !action.persistent) {
+			computation.setAttribute("lost", "");
+		}
+
+		if (
+			action.persistent &&
+			!enhancement.ability?.startsWith("summon")
+		) {
+			computation.setAttribute("persistent", "");
+		}
+
+		return line;
+	}
 }
 
 await Promise.all(sharedAssets.values());
@@ -505,23 +549,23 @@ await Promise.all(sharedAssets.values());
  * @param {string} assetPath
  */
 function copySharedAsset(assetName, assetPath) {
-  if (sharedAssets.has(assetName)) {
-    return;
-  }
+	if (sharedAssets.has(assetName)) {
+		return;
+	}
 
-  if (!assetPath.endsWith(".png")) {
-    throw new Error(`Expected png but got ${JSON.stringify(assetPath)}`);
-  }
+	if (!assetPath.endsWith(".png")) {
+		throw new Error(`Expected png but got ${JSON.stringify(assetPath)}`);
+	}
 
-  sharedAssets.set(
-    assetName,
-    mkdir(sharedFolder, {recursive: true}).then(() =>
-      copyFile(
-        new URL(assetPath, worldhavenFolder),
-        new URL(`${assetName}.png`, sharedFolder),
-      ),
-    ),
-  );
+	sharedAssets.set(
+		assetName,
+		mkdir(sharedFolder, {recursive: true}).then(() =>
+			copyFile(
+				new URL(assetPath, worldhavenFolder),
+				new URL(`${assetName}.png`, sharedFolder),
+			),
+		),
+	);
 }
 
 /**
@@ -530,62 +574,62 @@ function copySharedAsset(assetName, assetPath) {
  * @param {string} title
  */
 function addHeader(document, characterName, title) {
-  const header = document.body.insertBefore(
-    document.createElement("header"),
-    document.body.firstChild,
-  );
+	const header = document.body.insertBefore(
+		document.createElement("header"),
+		document.body.firstChild,
+	);
 
-  const characterList = header
-    .appendChild(document.createElement("nav"))
-    .appendChild(document.createElement("ul"));
-  characterList.className = "character-list";
+	const characterList = header
+		.appendChild(document.createElement("nav"))
+		.appendChild(document.createElement("ul"));
+	characterList.className = "character-list";
 
-  for (const [otherCharacterName, otherCharacter] of characters) {
-    const isActive = otherCharacterName === characterName;
+	for (const [otherCharacterName, otherCharacter] of characters) {
+		const isActive = otherCharacterName === characterName;
 
-    let anchor = characterList
-      .appendChild(document.createElement("li"))
-      .appendChild(document.createElement("a"));
-    anchor.classList.add("character");
-    anchor.classList.toggle("character--active", isActive);
+		let anchor = characterList
+			.appendChild(document.createElement("li"))
+			.appendChild(document.createElement("a"));
+		anchor.classList.add("character");
+		anchor.classList.toggle("character--active", isActive);
 
-    anchor.style.setProperty(
-      "--color",
-      otherCharacter.meta.color?.rgb ?? "#999",
-    );
+		anchor.style.setProperty(
+			"--color",
+			otherCharacter.meta.color?.rgb ?? "#999",
+		);
 
-    anchor.href = `${characterName ? "../" : ""}${otherCharacterName}/${buildForDeployment ? "" : "index.html"}`;
+		anchor.href = `${characterName ? "../" : ""}${otherCharacterName}/${buildForDeployment ? "" : "index.html"}`;
 
-    if (!isActive) {
-      const icon = anchor.appendChild(document.createElement("img"));
-      icon.src = `${characterName ? "../" : ""}${otherCharacterName}/icon.png`;
-      icon.alt = otherCharacter.meta.name;
-      icon.title = otherCharacter.meta.name;
-    } else {
-      const iconContainer = anchor.appendChild(
-        document.createElement("picture"),
-      );
+		if (!isActive) {
+			const icon = anchor.appendChild(document.createElement("img"));
+			icon.src = `${characterName ? "../" : ""}${otherCharacterName}/icon.png`;
+			icon.alt = otherCharacter.meta.name;
+			icon.title = otherCharacter.meta.name;
+		} else {
+			const iconContainer = anchor.appendChild(
+				document.createElement("picture"),
+			);
 
-      const altIcon = iconContainer.appendChild(
-        document.createElement("source"),
-      );
-      altIcon.srcset = `${characterName ? "../" : ""}${otherCharacterName}/icon--black.png`;
-      altIcon.media = "(prefers-color-scheme: dark)";
+			const altIcon = iconContainer.appendChild(
+				document.createElement("source"),
+			);
+			altIcon.srcset = `${characterName ? "../" : ""}${otherCharacterName}/icon--black.png`;
+			altIcon.media = "(prefers-color-scheme: dark)";
 
-      const icon = iconContainer.appendChild(document.createElement("img"));
-      icon.src = `${characterName ? "../" : ""}${otherCharacterName}/icon--white.png`;
-      icon.alt = otherCharacter.meta.name;
-      icon.title = otherCharacter.meta.name;
-    }
-  }
+			const icon = iconContainer.appendChild(document.createElement("img"));
+			icon.src = `${characterName ? "../" : ""}${otherCharacterName}/icon--white.png`;
+			icon.alt = otherCharacter.meta.name;
+			icon.title = otherCharacter.meta.name;
+		}
+	}
 
-  const titleContainer = header.appendChild(document.createElement("div"));
-  titleContainer.className = "header__title";
+	const titleContainer = header.appendChild(document.createElement("div"));
+	titleContainer.className = "header__title";
 
-  titleContainer.appendChild(document.createElement("h1")).textContent = title;
+	titleContainer.appendChild(document.createElement("h1")).textContent = title;
 
-  titleContainer.appendChild(document.createElement("fh-enhancer")).innerHTML =
-    `
+	titleContainer.appendChild(document.createElement("fh-enhancer")).innerHTML =
+		`
 	  <h2 id=enhancer>Enhancer Level</h2>
 	  <label><input type=radio name=enhancer value=1 checked></input>1</label>
 	  <label><input type=radio name=enhancer value=2></input>2</label>
@@ -596,14 +640,14 @@ function addHeader(document, characterName, title) {
 
 /** @param {Document} document */
 function installScriptAndStyle(document) {
-  const style = document.head.appendChild(document.createElement("style"));
-  style.textContent = styleText;
+	const style = document.head.appendChild(document.createElement("style"));
+	style.textContent = styleText;
 
-  const script = document.head.appendChild(document.createElement("script"));
-  script.type = "module";
-  script.textContent = scriptText;
+	const script = document.head.appendChild(document.createElement("script"));
+	script.type = "module";
+	script.textContent = scriptText;
 
-  const meta = document.head.appendChild(document.createElement("meta"));
-  meta.name = "viewport";
-  meta.content = "width=device-width, initial-scale=1";
+	const meta = document.head.appendChild(document.createElement("meta"));
+	meta.name = "viewport";
+	meta.content = "width=device-width, initial-scale=1";
 }

@@ -10,10 +10,9 @@ body {
 	display: grid;
 	margin: 0;
 	gap: 32px;
-	grid-template-columns: [l] repeat(
-			auto-fit,
-			min(400px, calc(100vw - 32px))
-		) [r];
+	grid-template-columns:
+		[l] repeat(auto-fit, min(400px, calc(100vw - 32px)))
+		[r];
 	grid-template-rows: min-content;
 	justify-content: center;
 
@@ -159,10 +158,17 @@ fh-cost {
 	justify-self: end;
 }
 
+.ability-icon,
 .enhancement-sticker {
 	height: 1em;
 	height: 1lh;
 	width: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+	.ability-icon {
+		filter: invert();
+	}
 }
 
 /* Animations :) */
