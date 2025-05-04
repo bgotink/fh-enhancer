@@ -563,7 +563,7 @@ for (const [characterName, character] of characters) {
 		}
 
 		if (
-			(enhancement.persitent ?? action.persistent) &&
+			(enhancement.persistent ?? action.persistent) &&
 			!enhancement.ability?.startsWith("summon")
 		) {
 			computation.setAttribute("persistent", "");

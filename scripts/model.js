@@ -93,7 +93,7 @@ export class Enhancement {
 		this.ability = ability;
 		this.numberOfHexes = numberOfHexes;
 		this.multiple = multiple;
-		this.persitent = persistent;
+		this.persistent = persistent;
 	}
 
 	/** @param {SerializationContext} ctx */
