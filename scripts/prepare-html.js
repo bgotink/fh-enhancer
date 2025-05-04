@@ -286,7 +286,7 @@ for (const [characterName, character] of characters) {
 
 		const kind = el.appendChild(document.createElement("div"));
 		kind.className = `kind kind--${enhancement.kind}`;
-		kind.textContent = enhancement.kind;
+		kind.append(createEnhancementKind(enhancement.kind));
 
 		const costTable = document.createElement("div");
 		costTable.className = "cost-list";
@@ -401,6 +401,37 @@ for (const [characterName, character] of characters) {
 
 		el.appendChild(costTable);
 		return el;
+	}
+
+	/** @param {Enhancement["kind"]} kind */
+	function createEnhancementKind(kind) {
+		const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+		svg.classList.add("enhancement-kind");
+		svg.setAttribute("viewBox", "0 0 24 24");
+
+		switch (kind) {
+			case "square":
+				svg.innerHTML = `<rect x="6" y="6" width="12" height="12" stroke="currentColor"/>`;
+				break;
+			case "circle":
+				svg.innerHTML = `<circle cx="12" cy="12" r="6" stroke="currentColor" />`;
+				break;
+			case "diamond":
+				svg.innerHTML = `<rect x="-6" y="-6" width="12" height="12" stroke="currentColor" transform="rotate(45) translate(12, 12)" transform-origin="center"/>`;
+				break;
+			case "diamond+":
+				svg.innerHTML =
+					`<rect x="-6" y="-6" width="12" height="12" stroke="currentColor" transform="rotate(45) translate(12, 12)" transform-origin="center"/>` +
+					`<line stroke="currentColor" x1="12" y1="9" x2="12" y2="15" />` +
+					`<line stroke="currentColor" x1="9" y1="12" x2="15" y2="12" />`;
+				break;
+			case "hex":
+				svg.innerHTML = `<path stroke="currentColor" d="M12 19.1603L18.2009 15.5802L18.2009 8.41988L12 4.83975L5.79898 8.41988L5.79898 15.5801L12 19.1603Z" />`;
+		}
+
+		svg.insertBefore(document.createElementNS("http://www.w3.org/2000/svg", "title"), svg.firstChild).textContent = kind;
+
+		return svg;
 	}
 
 	/**
