@@ -155,6 +155,10 @@ fh-enhancement .cost-list .computation {
 	display: contents;
 }
 
+fh-cost {
+	justify-self: end;
+}
+
 /* Animations :) */
 
 @view-transition {
