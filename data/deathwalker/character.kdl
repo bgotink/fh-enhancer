@@ -196,8 +196,8 @@ card 117 "frozen in fear" level=8 image-path="images/fh-frozen-in-fear.png" {
 	}
 }
 card 118 "when your time comes" level=9 image-path="images/fh-when-your-time-comes.png" {
-	top{
-		enhancement kind=diamond ability=attack
+	top persistent=#true {
+		enhancement kind=diamond ability=attack persistent=#false
 	}
 	bottom
 }
