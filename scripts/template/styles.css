@@ -159,6 +159,12 @@ fh-cost {
 	justify-self: end;
 }
 
+.enhancement-sticker {
+	height: 1em;
+	height: 1lh;
+	width: auto;
+}
+
 /* Animations :) */
 
 @view-transition {
