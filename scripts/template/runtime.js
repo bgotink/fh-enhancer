@@ -62,22 +62,32 @@ customElements.define("fh-cost", class FhCompute extends HTMLElement {
 		const targetMultiple = this.hasAttribute("target-multiple");
 
 		let cost = baseCost;
+		let title = `Base cost of ${baseCost}g`;
 		if (lost && !persistent) {
 			cost /= 2;
+			title += `, halved because the action is lost but not persistent`;
 		}
 		if (persistent) {
 			cost *= 3;
+			title += `, tripled because the action is persistent`;
 		}
 		if (targetMultiple) {
 			cost *= 2;
+			title += `, doubled because the improvement has multiple targets`;
 		}
 
-		cost += (level - 1) * (enhancerLevel >= 3 ? 15 : 25);
+		const levelIncrement = (level - 1) * (enhancerLevel >= 3 ? 15 : 25);
+		if (levelIncrement) {
+			cost += levelIncrement;
+			title += `, plus an extra ${levelIncrement}g because the card is level ${level}`;
+		}
 
 		if (enhancerLevel >= 2) {
 			cost -= 10;
+			title += `, minus 10g for the enhancer level`;
 		}
 
 		this.innerText = `${Math.ceil(cost)}g`;
+		this.title = title;
 	}
 });
