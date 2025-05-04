@@ -5,58 +5,107 @@ meta {
 
 card 301 "shared affliction" level=1 image-path="images/fh-shared-affliction.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=move
+	}
 }
 card 302 "line of transference" level=1 image-path="images/fh-line-of-transference.png" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card 303 "transferred injury" level=1 image-path="images/fh-transferred-injury.png" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=range
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=circle ability=heal
+	}
 }
 card 304 "the agony of others" level=1 image-path="images/fh-the-agony-of-others.png" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card 305 "unending torment" level=1 image-path="images/fh-unending-torment.png" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=heal
+	}
+	bottom{
+		enhancement kind=square ability=heal
+	}
 }
 card 306 "blood ritual" level=1 image-path="images/fh-blood-ritual.png" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card 307 "scarred effigy" level=1 image-path="images/fh-scarred-effigy.png" {
-	top
-	bottom
+	top persistent=#true lost=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=retaliate
+	}
 }
 card 308 "explosive wounds" level=1 image-path="images/fh-explosive-wounds.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card 309 "cleansing fire" level=1 image-path="images/fh-cleansing-fire.png" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card 310 "swift vengeance" level=1 image-path="images/fh-swift-vengeance.png" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card 311 "delayed malady" level=X image-path="images/fh-delayed-malady.png" {
 	top
 	bottom
 }
 card 312 "unstable effigy" level=X image-path="images/fh-unstable-effigy.png" {
-	top
+	top persistent=#true lost=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
 	bottom
 }
 card 313 "pleasure in pain" level=X image-path="images/fh-pleasure-in-pain.png" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond+ ability=heal multiple=#true
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=diamond ability=#null
+	}
 }
 card 314 "reversal of fate" level=2 image-path="images/fh-reversal-of-fate.png" {
-	top
+	top lost=#true{
+		enhancement kind=diamond+ ability=heal
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card 315 "infection purge" level=2 image-path="images/fh-infection-purge.png" {
@@ -65,51 +114,86 @@ card 315 "infection purge" level=2 image-path="images/fh-infection-purge.png" {
 }
 card 316 "burned at both ends" level=3 image-path="images/fh-burned-at-both-ends.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=move
+	}
 }
 card 317 reprisal level=3 image-path="images/fh-reprisal.png" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=retaliate
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card 318 "mirrored misery" level=4 image-path="images/fh-mirrored-misery.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=move
+	}
 }
 card 319 "down to the dirt" level=4 image-path="images/fh-down-to-the-dirt.png" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card 320 "chained by spite" level=5 image-path="images/fh-chained-by-spite.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=retaliate
+	}
 }
 card 321 "chained by despair" level=5 image-path="images/fh-chained-by-despair.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card 322 hopelessness level=6 image-path="images/fh-hopelessness.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card 323 "phantom limb" level=6 image-path="images/fh-phantom-limb.png" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=heal
+	}
 }
 card 324 "reject the gift" level=7 image-path="images/fh-reject-the-gift.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card 325 penance level=7 image-path="images/fh-penance.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=retaliate
+	}
 }
 card 326 "wave of anguish" level=8 image-path="images/fh-wave-of-anguish.png" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=diamond ability=#null
+	}
 }
 card 327 "wracked with pain" level=8 image-path="images/fh-wracked-with-pain.png" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=heal
+	}
 }
 card 328 redemption level=9 image-path="images/fh-redemption.png" {
 	top
