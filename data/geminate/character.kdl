@@ -36,16 +36,16 @@ card 154 "changeling's boon" level=1 image-path="images/fh-changelings-boon.png"
 }
 card 155 "flailing tendrils" level=1 image-path="images/fh-flailing-tendrils.png" {
 	top{
-		enhancement kind="attack hex" number-of-hexes=6
-		enhancement kind="attack hex" number-of-hexes=7
-		enhancement kind="attack hex" number-of-hexes=8
+		enhancement kind=hex number-of-hexes=6
+		enhancement kind=hex number-of-hexes=7
+		enhancement kind=hex number-of-hexes=8
 	}
 	bottom
 }
 card 156 "drag down" level=1 image-path="images/fh-drag-down.png" {
 	top{
 		enhancement kind=square ability=attack
-		enhancement kind="attack hex" number-of-hexes=3
+		enhancement kind=hex number-of-hexes=3
 	}
 	bottom lost=#true{
 		enhancement kind=square ability=jump
@@ -92,7 +92,7 @@ card 162 "firefly swarm" level=1 image-path="images/fh-firefly-swarm.png" {
 card 163 "scarab flight" level=1 image-path="images/fh-scarab-flight.png" {
 	top{
 		enhancement kind=square ability=push multiple=#true
-		enhancement kind="attack hex" number-of-hexes=3
+		enhancement kind=hex number-of-hexes=3
 	}
 	bottom
 }
@@ -189,7 +189,7 @@ card 176 "chitinous horde" level=5 image-path="images/fh-chitinous-horde.png" {
 card 177 "corrosive acids" level=6 image-path="images/fh-corrosive-acids.png" {
 	top{
 		enhancement kind=square ability=attack multiple=#true
-		enhancement kind="attack hex" number-of-hexes=3
+		enhancement kind=hex number-of-hexes=3
 	}
 	bottom{
 		enhancement kind=square ability=move
@@ -209,7 +209,7 @@ card 179 "two-pronged entrapment" level=7 image-path="images/fh-two-pronged-entr
 }
 card 180 "alluring pheromones" level=7 image-path="images/fh-alluring-pheromones.png" {
 	top{
-		enhancement kind="attack hex" number-of-hexes=3
+		enhancement kind=hex number-of-hexes=3
 	}
 	bottom
 }

@@ -312,13 +312,13 @@ for (const [characterName, character] of characters) {
     const costTable = document.createElement("div");
     costTable.className = "cost-list";
 
-    if (enhancement.kind === "attack hex") {
+    if (enhancement.kind === "hex") {
       const numberOfHexes = /** @type {number} */ (enhancement.numberOfHexes);
       costTable.append(
         createCostComputation(
           createEnhancementSticker(
             "hex attack",
-            "add attack hex",
+            "add hex to attack",
             `${numberOfHexes} → ${numberOfHexes + 1}`,
           ),
           card,
@@ -452,7 +452,7 @@ for (const [characterName, character] of characters) {
     }
 
     const wrapper = document.createElement("div");
-    wrapper.append(el, document.createTextNode(extra));
+    wrapper.append(el, ` ${extra}`);
     return wrapper;
   }
 

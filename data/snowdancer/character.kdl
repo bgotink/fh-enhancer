@@ -94,8 +94,8 @@ card 340 "cold therapy" level=1 image-path="images/fh-cold-therapy.png" {
 
 card 341 "white winds" level=X image-path="images/fh-white-winds.png" {
 	top lost=#true {
-		enhancement kind="attack hex" number-of-hexes=6
-		enhancement kind="attack hex" number-of-hexes=7
+		enhancement kind=hex number-of-hexes=6
+		enhancement kind=hex number-of-hexes=7
 	}
 	bottom {
 		enhancement kind=square ability=heal
@@ -106,7 +106,7 @@ card 341 "white winds" level=X image-path="images/fh-white-winds.png" {
 card 342 "blinding vortex" level=X image-path="images/fh-blinding-vortex.png" {
 	top lost=#true {
 		enhancement kind=diamond ability=attack multiple=#true
-		enhancement kind="attack hex" number-of-hexes=6
+		enhancement kind=hex number-of-hexes=6
 	}
 	bottom {
 		enhancement kind=circle ability=jump

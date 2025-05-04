@@ -7,7 +7,7 @@ import {deserialize, format, KdlDeserializeError} from "@bgotink/kdl/dessert";
 
 export class Enhancement {
   /**
-   * @type {'square' | 'circle' | 'diamond' | 'diamond+' | 'attack hex'}
+   * @type {'square' | 'circle' | 'diamond' | 'diamond+' | 'hex'}
    */
   kind;
 
@@ -33,13 +33,13 @@ export class Enhancement {
       "circle",
       "diamond",
       "diamond+",
-      "attack hex",
+      "hex",
     );
 
     let ability = null;
     let numberOfHexes = undefined;
 
-    if (kind !== "attack hex") {
+    if (kind !== "hex") {
       ability = ctx.property.required.enum(
         "ability",
         "move",
@@ -89,7 +89,7 @@ export class Enhancement {
     ctx.source(this.#ctx);
 
     ctx.property("kind", this.kind);
-    if (this.kind !== "attack hex") {
+    if (this.kind !== "hex") {
       ctx.property("ability", this.ability);
     } else {
       ctx.property(

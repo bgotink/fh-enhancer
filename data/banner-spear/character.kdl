@@ -40,7 +40,7 @@ card 65 "deflecting maneuver" level=1 image-path="images/fh-deflecting-maneuver.
 
 card 66 "tip of the spear" level=1 image-path="images/fh-tip-of-the-spear.png" {
 	top {
-		enhancement kind="attack hex" number-of-hexes=2
+		enhancement kind=hex number-of-hexes=2
 	}
 	bottom {
 		enhancement kind=circle ability=move
