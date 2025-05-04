@@ -40,7 +40,6 @@ header {
 .header__title {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
 }
@@ -50,6 +49,7 @@ header nav {
 }
 
 header h1 {
+	flex: 1 1 auto;
 	margin: unset;
 	view-transition-name: title;
 	font-weight: 500;
