@@ -230,14 +230,23 @@ for (const [characterName, character] of characters) {
 
 	/** @param {Card} card */
 	function createCard(card) {
-		const el = document.createElement("div");
-		el.classList.add("card");
+		const cardContainer = document.createElement("div");
+		cardContainer.classList.add("card");
 
-		const image = el.appendChild(document.createElement("img"));
-		image.src = card.imagePath;
-		image.loading = "lazy";
+		const cardImage = cardContainer.appendChild(document.createElement("img"));
+		cardImage.src = card.imagePath;
+		cardImage.loading = "lazy";
 
-		el.appendChild(document.createElement("h3")).textContent = card.name;
+		const cardTitle = cardContainer.appendChild(document.createElement("h3"));
+		cardTitle.textContent = card.name;
+		cardTitle.id = card.name.replaceAll(" ", "-").toLowerCase();
+
+		const cardLink = cardContainer.appendChild(document.createElement("a"));
+		cardLink.href = `#${cardTitle.id}`;
+		const cardLinkImage = cardLink.appendChild(document.createElement("img"));
+		copySharedAsset("link", "" + art.get("linked icon"));
+		cardLinkImage.src = "../_shared/link.png";
+		cardLinkImage.alt = `link to card ${card.name}`;
 
 		const top = document.createElement("div");
 		top.classList.add("action", "top");
@@ -245,7 +254,7 @@ for (const [characterName, character] of characters) {
 		bottom.classList.add("action", "bottom");
 
 		const section = document.createElement("section");
-		section.append(el, createAction(card, "top"), createAction(card, "bottom"));
+		section.append(cardContainer, createAction(card, "top"), createAction(card, "bottom"));
 
 		return section;
 	}

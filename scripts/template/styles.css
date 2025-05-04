@@ -113,8 +113,11 @@ body > section {
 	grid-template-areas: "cell";
 }
 
-.card h3 {
+.card > * {
 	grid-area: cell;
+}
+
+.card h3 {
 	margin: 0;
 	padding-top: 20px;
 	align-self: start;
@@ -122,11 +125,37 @@ body > section {
 	color: transparent;
 }
 
-.card img {
-	grid-area: cell;
+.card > img {
 	width: 100%;
 	aspect-ratio: 10 / 14;
 	border-radius: 12px;
+}
+
+.card a {
+	display: block;
+	padding: 12px;
+
+	opacity: 0;
+	transition: opacity .3s ease-in;
+
+	align-self: start;
+	justify-self: start;
+	background: var(--color);
+	line-height: 0;
+
+	border-radius: 12px 0 12px 0;
+	border: 0px solid #221e1f;
+	border-width: 0 1px 1px 0;
+}
+
+.card a img {
+	width: 20px;
+	height: auto;
+}
+
+.card a:focus-visible,
+.card a:hover {
+	opacity: 1;
 }
 
 fh-action {
