@@ -17,7 +17,7 @@ card 216 "quenched rage" level=1 image-path="images/fh-quenched-rage.png" {
 }
 card 217 "flowing fire" level=1 image-path="images/fh-flowing-fire.png" {
 	top{
-		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack multiple=#true
 	}
 	bottom{
 		enhancement kind=circle ability=move
