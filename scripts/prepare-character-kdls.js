@@ -65,8 +65,8 @@ for (const card of allAbilityCardList) {
 
 await Promise.all(
 	Object.entries(abilitiesPerCharacter).map(async ([name, character]) => {
-		const characterFolder = new URL(
-			`${name.replaceAll(" ", "-")}/`,
+		const characterFile = new URL(
+			`${name.replaceAll(" ", "-")}.kdl`,
 			dataFolder,
 		);
 
@@ -74,7 +74,7 @@ await Promise.all(
 
 		try {
 			const existingCharacter = parsePlayerCharacter(
-				await readFile(new URL("character.kdl", characterFolder), "utf8"),
+				await readFile(characterFile, "utf8"),
 			);
 			merge(existingCharacter, character);
 			character = existingCharacter;
@@ -82,10 +82,7 @@ await Promise.all(
 			// ignore
 		}
 
-		await writeFile(
-			new URL("character.kdl", characterFolder),
-			format(character),
-		);
+		await writeFile(characterFile, format(character));
 	}),
 );
 
