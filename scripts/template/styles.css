@@ -8,18 +8,29 @@
 
 body {
 	display: grid;
-	margin: 0;
+	margin: 0 auto;
+	padding: 0 32px 16px;
 	gap: 32px;
 	grid-template-columns:
-		[l] repeat(auto-fit, min(300px, calc(100vw - 32px)))
+		[l] repeat(auto-fit, 300px)
 		[r];
 	grid-template-rows: min-content;
 	justify-content: center;
+	max-width: 1360px; /* 32px * 4 * (300px + 32px) */
 
 	font-family:
 		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
 		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	font-weight: 300;
+}
+
+@media (width < 696px) {
+	body {
+		padding: 0 8px 16px;
+		margin: 0 auto;
+		grid-template-columns: [l] 1fr [r];
+		width: max(300px, min(520px, 100vw));
+	}
 }
 
 header {
