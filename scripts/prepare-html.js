@@ -31,6 +31,10 @@ import {
 const buildForDeployment = !!env.CI;
 
 const sharedFolder = new URL("_shared/", outputFolder);
+await mkdir(sharedFolder, {recursive: true});
+
+/** @type {Map<string, Promise<unknown>>} */
+const createdAssets = new Map();
 
 /** @type {Record<Enhancement['ability'] & string, number>} */
 const baseCostPerAbility = {
@@ -106,6 +110,10 @@ for (const characterFilename of await readdir(dataFolder)) {
 	}
 
 	characters.set(characterName, parsePlayerCharacter(characterString));
+
+	await mkdir(new URL(`${characterName}/cards/`, outputFolder), {
+		recursive: true,
+	});
 }
 
 const art = new Map(
@@ -129,9 +137,6 @@ await Promise.all(
 
 		const image = await readFile(new URL(icon, worldhavenImagesFolder));
 
-		await mkdir(new URL(characterName, outputFolder), {recursive: true});
-		await writeFile(new URL(`${characterName}/icon.png`, outputFolder), image);
-
 		const characterColor = character.meta.color?.rgb ?? "#999";
 
 		for (const [filename, color] of [
@@ -139,53 +144,53 @@ await Promise.all(
 			["icon--white.png", "white"],
 			["icon--black.png", "black"],
 		]) {
-			await sharp(image)
+			makeAsset(`${characterName}/${filename}`, (url) =>
+				sharp(image)
+					.rotate()
+					.resize({
+						width: 280,
+						height: 280,
+						fit: "contain",
+						background: "transparent",
+					})
+					.composite([
+						{
+							input: Buffer.from(
+								`<svg><rect x="0" y="0" width="280" height="280" fill="${color}"/></svg>`,
+							),
+							blend: "in",
+						},
+					])
+					.toFile(fileURLToPath(url)),
+			);
+		}
+
+		makeAsset(`${characterName}/favicon.png`, (url) =>
+			sharp(image)
 				.rotate()
 				.resize({
-					width: 280,
-					height: 280,
+					width: 70,
+					height: 70,
 					fit: "contain",
 					background: "transparent",
+				})
+				.extend({
+					background: "transparent",
+					top: 15,
+					right: 15,
+					bottom: 15,
+					left: 15,
 				})
 				.composite([
 					{
 						input: Buffer.from(
-							`<svg><rect x="0" y="0" width="280" height="280" fill="${color}"/></svg>`,
+							`<svg><rect x="0" y="0" width="100" height="100" fill="${characterColor}"/></svg>`,
 						),
-						blend: "in",
+						blend: "dest-atop",
 					},
 				])
-				.toFile(
-					fileURLToPath(new URL(`${characterName}/${filename}`, outputFolder)),
-				);
-		}
-
-		await sharp(image)
-			.rotate()
-			.resize({
-				width: 280,
-				height: 280,
-				fit: "contain",
-				background: "transparent",
-			})
-			.extend({
-				background: "transparent",
-				top: 60,
-				right: 60,
-				bottom: 60,
-				left: 60,
-			})
-			.composite([
-				{
-					input: Buffer.from(
-						`<svg><rect x="0" y="0" width="400" height="400" rx="120" ry="120" fill="${characterColor}"/></svg>`,
-					),
-					blend: "dest-atop",
-				},
-			])
-			.toFile(
-				fileURLToPath(new URL(`${characterName}/favicon.png`, outputFolder)),
-			);
+				.toFile(fileURLToPath(url)),
+		);
 	}),
 );
 
@@ -200,9 +205,6 @@ await Promise.all(
 
 	await writeFile(new URL("index.html", outputFolder), jsdom.serialize());
 }
-
-/** @type {Map<string, Promise<unknown>>} */
-const sharedAssets = new Map();
 
 for (const [characterName, character] of characters) {
 	const jsdom = new JSDOM(`<!doctype html><html lang=en></html>`);
@@ -226,6 +228,15 @@ for (const [characterName, character] of characters) {
 	addHeader(document, characterName, character.meta.name);
 
 	for (const card of character.cards) {
+		makeAsset(
+			`${characterName}/cards/${card.name.replaceAll(" ", "-")}.jpg`,
+			async (url) =>
+				sharp(await readFile(new URL(card.imagePath, worldhavenImagesFolder)))
+					.resize({width: 300})
+					.jpeg({quality: 75, mozjpeg: buildForDeployment})
+					.toFile(fileURLToPath(url)),
+		);
+
 		document.body.append(createCard(card));
 	}
 
@@ -234,15 +245,9 @@ for (const [characterName, character] of characters) {
 		jsdom.serialize(),
 	);
 
-	await mkdir(new URL(`${characterName}/cards/`, outputFolder));
-	await Promise.all(
-		character.cards.map((card) =>
-			copyFile(
-				new URL(card.imagePath, worldhavenImagesFolder),
-				new URL(`${characterName}/cards/${card.name}.png`, outputFolder),
-			),
-		),
-	);
+	await mkdir(new URL(`${characterName}/cards/`, outputFolder), {
+		recursive: true,
+	});
 
 	/** @param {Card} card */
 	function createCard(card) {
@@ -250,7 +255,7 @@ for (const [characterName, character] of characters) {
 		cardContainer.classList.add("card");
 
 		const cardImage = cardContainer.appendChild(document.createElement("img"));
-		cardImage.src = `cards/${card.name}.png`;
+		cardImage.src = `cards/${card.name.replaceAll(" ", "-")}.jpg`;
 		cardImage.loading = "lazy";
 		cardImage.alt = "card";
 
@@ -261,7 +266,7 @@ for (const [characterName, character] of characters) {
 		const cardLink = cardContainer.appendChild(document.createElement("a"));
 		cardLink.href = `#${cardTitle.id}`;
 		const cardLinkImage = cardLink.appendChild(document.createElement("img"));
-		copySharedAsset("link", "" + art.get("linked icon"));
+		copySharedIcon("link", "" + art.get("linked icon"));
 		cardLinkImage.src = "../_shared/link.png";
 		cardLinkImage.alt = `link to card "${card.name}"`;
 
@@ -495,31 +500,25 @@ for (const [characterName, character] of characters) {
 				);
 			}
 
-			copySharedAsset(imageName, imagePath);
+			copySharedIcon(imageName, imagePath);
 		} else {
-			if (!sharedAssets.has("hp")) {
-				const url = new URL("hp.png", sharedFolder);
-				sharedAssets.set(
-					"hp",
-					stat(url).catch(async () => {
-						const iconBuffer = await readFile(
-							new URL("" + art.get("heal icon"), worldhavenImagesFolder),
-						);
-						const modifiedIcon = await sharp(iconBuffer)
-							.composite([
-								{
-									input: Buffer.from(
-										`<svg width="400" height="600"><circle cx="200" cy="400" r="200" fill="#221e1f"/></svg>`,
-									),
-									blend: "over",
-								},
-							])
-							.toBuffer();
-
-						await writeFile(url, modifiedIcon);
-					}),
-				);
-			}
+			makeAsset(`_shared/hp.png`, async (url) =>
+				sharp(
+					await readFile(
+						new URL("" + art.get("heal icon"), worldhavenImagesFolder),
+					),
+				)
+					.resize({height: 60})
+					.composite([
+						{
+							input: Buffer.from(
+								`<svg width="40" height="60"><circle cx="20" cy="40" r="20" fill="#221e1f"/></svg>`,
+							),
+							blend: "over",
+						},
+					])
+					.toFile(fileURLToPath(url)),
+			);
 		}
 
 		const el = document.createElement("img");
@@ -546,7 +545,7 @@ for (const [characterName, character] of characters) {
 			);
 		}
 
-		copySharedAsset(imageName, imagePath);
+		copySharedIcon(imageName, imagePath);
 
 		const el = document.createElement("img");
 		el.className = "enhancement-sticker";
@@ -608,27 +607,17 @@ for (const [characterName, character] of characters) {
 	}
 }
 
-await Promise.all(sharedAssets.values());
+await Promise.all(createdAssets.values());
 
 /**
  * @param {string} assetName
  * @param {string} assetPath
  */
-function copySharedAsset(assetName, assetPath) {
-	if (sharedAssets.has(assetName)) {
-		return;
-	}
-
-	if (!assetPath.endsWith(".png")) {
-		throw new Error(`Expected png but got ${JSON.stringify(assetPath)}`);
-	}
-
-	const url = new URL(`${assetName}.png`, sharedFolder);
-	sharedAssets.set(
-		assetName,
-		stat(url).catch(() =>
-			copyFile(new URL(assetPath, worldhavenImagesFolder), url),
-		),
+function copySharedIcon(assetName, assetPath) {
+	makeAsset(`_shared/${assetName}.png`, async (url) =>
+		sharp(await readFile(new URL(assetPath, worldhavenImagesFolder)))
+			.resize({height: 60})
+			.toFile(fileURLToPath(url)),
 	);
 }
 
@@ -694,12 +683,12 @@ function addHeader(document, characterName, title) {
 
 	titleContainer.appendChild(document.createElement("fh-enhancer")).innerHTML =
 		`
-	  <h2 id=enhancer>Enhancer Level</h2>
-	  <label><input type=radio name=enhancer value=1 checked></input>1</label>
-	  <label><input type=radio name=enhancer value=2></input>2</label>
-	  <label><input type=radio name=enhancer value=3></input>3</label>
-	  <label><input type=radio name=enhancer value=4></input>4</label>
-  `;
+		  <h2 id=enhancer>Enhancer Level</h2>
+		  <label><input type=radio name=enhancer value=1 checked></input>1</label>
+		  <label><input type=radio name=enhancer value=2></input>2</label>
+		  <label><input type=radio name=enhancer value=3></input>3</label>
+		  <label><input type=radio name=enhancer value=4></input>4</label>
+	  `;
 }
 
 /** @param {Document} document */
@@ -714,4 +703,18 @@ function installScriptAndStyle(document) {
 	const meta = document.head.appendChild(document.createElement("meta"));
 	meta.name = "viewport";
 	meta.content = "width=device-width, initial-scale=1";
+}
+
+/**
+ * @param {string} assetName
+ * @param {(url: URL) => Promise<unknown>} create
+ */
+function makeAsset(assetName, create) {
+	if (!createdAssets.has(assetName)) {
+		const assetUrl = new URL(assetName, outputFolder);
+		createdAssets.set(
+			assetName,
+			stat(assetUrl).catch(() => create(assetUrl)),
+		);
+	}
 }
