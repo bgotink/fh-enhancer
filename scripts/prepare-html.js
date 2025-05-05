@@ -232,7 +232,6 @@ for (const [characterName, character] of characters) {
 			`${characterName}/cards/${card.name.replaceAll(" ", "-")}.jpg`,
 			async (url) =>
 				sharp(await readFile(new URL(card.imagePath, worldhavenImagesFolder)))
-					.resize({width: 300})
 					.jpeg({quality: 75, mozjpeg: buildForDeployment})
 					.toFile(fileURLToPath(url)),
 		);
