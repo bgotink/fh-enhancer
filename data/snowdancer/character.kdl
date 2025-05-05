@@ -3,7 +3,7 @@ meta {
 	color "#7ca9b4"
 }
 
-card 330 blizzard level=1 image-path="images/fh-blizzard.png" {
+card 330 blizzard level=1 image-path="character-ability-cards/frosthaven/SD/fh-blizzard.png" {
 	top lost=#true {
 		enhancement kind=diamond ability=attack multiple=#true
 	}
@@ -12,7 +12,7 @@ card 330 blizzard level=1 image-path="images/fh-blizzard.png" {
 	}
 }
 
-card 331 "enticing breeze" level=1 image-path="images/fh-enticing-breeze.png" {
+card 331 "enticing breeze" level=1 image-path="character-ability-cards/frosthaven/SD/fh-enticing-breeze.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -21,18 +21,18 @@ card 331 "enticing breeze" level=1 image-path="images/fh-enticing-breeze.png" {
 	}
 }
 
-card 332 "chilling impact" level=1 image-path="images/fh-chilling-impact.png" {
+card 332 "chilling impact" level=1 image-path="character-ability-cards/frosthaven/SD/fh-chilling-impact.png" {
 	top lost=#true persistent=#true
 	bottom {
 		enhancement kind=square ability=move
 	}
 }
 
-card 333 "gathering force" level=1 image-path="images/fh-gathering-force.png" {
+card 333 "gathering force" level=1 image-path="character-ability-cards/frosthaven/SD/fh-gathering-force.png" {
 	top lost=#true persistent=#true
 }
 
-card 334 "nature's breath" level=1 image-path="images/fh-natures-breath.png" {
+card 334 "nature's breath" level=1 image-path="character-ability-cards/frosthaven/SD/fh-natures-breath.png" {
 	top lost=#true persistent=#true {
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
@@ -43,7 +43,7 @@ card 334 "nature's breath" level=1 image-path="images/fh-natures-breath.png" {
 	}
 }
 
-card 335 "lifting gust" level=1 image-path="images/fh-lifting-gust.png" {
+card 335 "lifting gust" level=1 image-path="character-ability-cards/frosthaven/SD/fh-lifting-gust.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -52,14 +52,14 @@ card 335 "lifting gust" level=1 image-path="images/fh-lifting-gust.png" {
 	}
 }
 
-card 336 snowball level=1 image-path="images/fh-snowball.png" {
+card 336 snowball level=1 image-path="character-ability-cards/frosthaven/SD/fh-snowball.png" {
 	top {
 		enhancement kind=diamond+ ability=heal
 	}
 	bottom lost=#true persistent=#true
 }
 
-card 337 whiteout level=1 image-path="images/fh-whiteout.png" {
+card 337 whiteout level=1 image-path="character-ability-cards/frosthaven/SD/fh-whiteout.png" {
 	top lost=#true {
 		enhancement kind=diamond ability=attack multiple=#true
 		enhancement kind=square ability=target
@@ -69,7 +69,7 @@ card 337 whiteout level=1 image-path="images/fh-whiteout.png" {
 	}
 }
 
-card 338 "cross winds" level=1 image-path="images/fh-cross-winds.png" {
+card 338 "cross winds" level=1 image-path="character-ability-cards/frosthaven/SD/fh-cross-winds.png" {
 	top {
 		enhancement kind=square ability=move
 		enhancement kind=square ability=attack
@@ -79,20 +79,20 @@ card 338 "cross winds" level=1 image-path="images/fh-cross-winds.png" {
 	}
 }
 
-card 339 "frigid growth" level=1 image-path="images/fh-frigid-growth.png" {
+card 339 "frigid growth" level=1 image-path="character-ability-cards/frosthaven/SD/fh-frigid-growth.png" {
 	bottom {
 		enhancement kind=square ability=jump
 	}
 }
 
-card 340 "cold therapy" level=1 image-path="images/fh-cold-therapy.png" {
+card 340 "cold therapy" level=1 image-path="character-ability-cards/frosthaven/SD/fh-cold-therapy.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
 	bottom lost=#true persistent=#true
 }
 
-card 341 "white winds" level=X image-path="images/fh-white-winds.png" {
+card 341 "white winds" level=X image-path="character-ability-cards/frosthaven/SD/fh-white-winds.png" {
 	top lost=#true {
 		enhancement kind=hex number-of-hexes=6
 		enhancement kind=hex number-of-hexes=7
@@ -103,7 +103,7 @@ card 341 "white winds" level=X image-path="images/fh-white-winds.png" {
 	}
 }
 
-card 342 "blinding vortex" level=X image-path="images/fh-blinding-vortex.png" {
+card 342 "blinding vortex" level=X image-path="character-ability-cards/frosthaven/SD/fh-blinding-vortex.png" {
 	top lost=#true {
 		enhancement kind=diamond ability=attack multiple=#true
 		enhancement kind=hex number-of-hexes=6
@@ -113,7 +113,7 @@ card 342 "blinding vortex" level=X image-path="images/fh-blinding-vortex.png" {
 	}
 }
 
-card 343 "the spirit's call" level=X image-path="images/fh-the-spirits-call.png" {
+card 343 "the spirit's call" level=X image-path="character-ability-cards/frosthaven/SD/fh-the-spirits-call.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -122,7 +122,7 @@ card 343 "the spirit's call" level=X image-path="images/fh-the-spirits-call.png"
 	}
 }
 
-card 344 "birds in a tempest" level=2 image-path="images/fh-birds-in-a-tempest.png" {
+card 344 "birds in a tempest" level=2 image-path="character-ability-cards/frosthaven/SD/fh-birds-in-a-tempest.png" {
 	top lost=#true persistent=#true {
 		enhancement kind=square ability="summon hp" multiple=#true
 		enhancement kind=square ability="summon move" multiple=#true
@@ -133,7 +133,7 @@ card 344 "birds in a tempest" level=2 image-path="images/fh-birds-in-a-tempest.p
 	}
 }
 
-card 345 tornado level=2 image-path="images/fh-tornado.png" {
+card 345 tornado level=2 image-path="character-ability-cards/frosthaven/SD/fh-tornado.png" {
 	top lost=#true {
 		enhancement kind=diamond ability=attack multiple=#true
 	}
@@ -142,13 +142,13 @@ card 345 tornado level=2 image-path="images/fh-tornado.png" {
 	}
 }
 
-card 346 "cold snap" level=3 image-path="images/fh-cold-snap.png" {
+card 346 "cold snap" level=3 image-path="character-ability-cards/frosthaven/SD/fh-cold-snap.png" {
 	bottom {
 		enhancement kind=diamond+ ability=heal
 	}
 }
 
-card 347 "polar vortex" level=3 image-path="images/fh-polar-vortex.png" {
+card 347 "polar vortex" level=3 image-path="character-ability-cards/frosthaven/SD/fh-polar-vortex.png" {
 	top {
 		enhancement kind=circle ability=pull multiple=#true
 	}
@@ -157,14 +157,14 @@ card 347 "polar vortex" level=3 image-path="images/fh-polar-vortex.png" {
 	}
 }
 
-card 348 "zephyr barrier" level=4 image-path="images/fh-zephyr-barrier.png" {
+card 348 "zephyr barrier" level=4 image-path="character-ability-cards/frosthaven/SD/fh-zephyr-barrier.png" {
 	top {
 		enhancement kind=square ability=heal multiple=#true
 	}
 	bottom lost=#true persistent=#true
 }
 
-card 349 "biting frost" level=4 image-path="images/fh-biting-frost.png" {
+card 349 "biting frost" level=4 image-path="character-ability-cards/frosthaven/SD/fh-biting-frost.png" {
 	top lost=#true {
 		enhancement kind=square ability=move
 		enhancement kind=diamond ability=attack
@@ -174,7 +174,7 @@ card 349 "biting frost" level=4 image-path="images/fh-biting-frost.png" {
 	}
 }
 
-card 350 "whipping gale" level=5 image-path="images/fh-whipping-gale.png" {
+card 350 "whipping gale" level=5 image-path="character-ability-cards/frosthaven/SD/fh-whipping-gale.png" {
 	top {
 		enhancement kind=square ability=attack multiple=#true
 		enhancement kind=square ability=pull multiple=#true
@@ -182,13 +182,13 @@ card 350 "whipping gale" level=5 image-path="images/fh-whipping-gale.png" {
 	bottom lost=#true persistent=#true
 }
 
-card 351 "shifting snow" level=5 image-path="images/fh-shifting-snow.png" {
+card 351 "shifting snow" level=5 image-path="character-ability-cards/frosthaven/SD/fh-shifting-snow.png" {
 	bottom {
 		enhancement kind=square ability=move
 	}
 }
 
-card 352 "refreshing flurry" level=6 image-path="images/fh-refreshing-flurry.png" {
+card 352 "refreshing flurry" level=6 image-path="character-ability-cards/frosthaven/SD/fh-refreshing-flurry.png" {
 	top {
 		enhancement kind=diamond+ ability=heal
 	}
@@ -199,14 +199,14 @@ card 352 "refreshing flurry" level=6 image-path="images/fh-refreshing-flurry.png
 	}
 }
 
-card 353 "frozen brand" level=6 image-path="images/fh-frozen-brand.png" {
+card 353 "frozen brand" level=6 image-path="character-ability-cards/frosthaven/SD/fh-frozen-brand.png" {
 	top lost=#true
 	bottom {
 		enhancement kind=square ability=jump
 	}
 }
 
-card 354 "freezing storm" level=7 image-path="images/fh-freezing-storm.png" {
+card 354 "freezing storm" level=7 image-path="character-ability-cards/frosthaven/SD/fh-freezing-storm.png" {
 	top lost=#true {
 		enhancement kind=diamond ability=attack multiple=#true
 	}
@@ -215,11 +215,11 @@ card 354 "freezing storm" level=7 image-path="images/fh-freezing-storm.png" {
 	}
 }
 
-card 355 "storm wall" level=7 image-path="images/fh-storm-wall.png" {
+card 355 "storm wall" level=7 image-path="character-ability-cards/frosthaven/SD/fh-storm-wall.png" {
 	bottom lost=#true
 }
 
-card 356 "surging blow" level=8 image-path="images/fh-surging-blow.png" {
+card 356 "surging blow" level=8 image-path="character-ability-cards/frosthaven/SD/fh-surging-blow.png" {
 	top {
 		enhancement kind=square ability=range
 		enhancement kind=square ability=push
@@ -231,13 +231,13 @@ card 356 "surging blow" level=8 image-path="images/fh-surging-blow.png" {
 	}
 }
 
-card 357 "the endless white" level=8 image-path="images/fh-the-endless-white.png" {
+card 357 "the endless white" level=8 image-path="character-ability-cards/frosthaven/SD/fh-the-endless-white.png" {
 	bottom {
 		enhancement kind=square ability=move
 	}
 }
 
-card 358 "winds of change" level=9 image-path="images/fh-winds-of-change.png" {
+card 358 "winds of change" level=9 image-path="character-ability-cards/frosthaven/SD/fh-winds-of-change.png" {
 	top lost=#true {
 		enhancement kind=diamond ability=attack multiple=#true
 		enhancement kind=square ability=target
@@ -247,7 +247,7 @@ card 358 "winds of change" level=9 image-path="images/fh-winds-of-change.png" {
 	}
 }
 
-card 359 snowblind level=9 image-path="images/fh-snowblind.png" {
+card 359 snowblind level=9 image-path="character-ability-cards/frosthaven/SD/fh-snowblind.png" {
 	top {
 		enhancement kind=diamond ability=attack multiple=#true
 	}

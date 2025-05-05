@@ -4,7 +4,4 @@
 
 node_modules
 
-/data/*/images
-/data/*/index.html
-/data/index.html
-/data/*/*.png
+/output

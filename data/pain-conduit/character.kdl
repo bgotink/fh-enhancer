@@ -3,13 +3,13 @@ meta {
 	color "#646699"
 }
 
-card 301 "shared affliction" level=1 image-path="images/fh-shared-affliction.png" {
+card 301 "shared affliction" level=1 image-path="character-ability-cards/frosthaven/PC/fh-shared-affliction.png" {
 	top
 	bottom{
 		enhancement kind=square ability=move
 	}
 }
-card 302 "line of transference" level=1 image-path="images/fh-line-of-transference.png" {
+card 302 "line of transference" level=1 image-path="character-ability-cards/frosthaven/PC/fh-line-of-transference.png" {
 	top{
 		enhancement kind=diamond ability=attack
 		enhancement kind=square ability=range
@@ -18,7 +18,7 @@ card 302 "line of transference" level=1 image-path="images/fh-line-of-transferen
 		enhancement kind=circle ability=move
 	}
 }
-card 303 "transferred injury" level=1 image-path="images/fh-transferred-injury.png" {
+card 303 "transferred injury" level=1 image-path="character-ability-cards/frosthaven/PC/fh-transferred-injury.png" {
 	top{
 		enhancement kind=square ability=range
 		enhancement kind=square ability=range
@@ -27,13 +27,13 @@ card 303 "transferred injury" level=1 image-path="images/fh-transferred-injury.p
 		enhancement kind=circle ability=heal
 	}
 }
-card 304 "the agony of others" level=1 image-path="images/fh-the-agony-of-others.png" {
+card 304 "the agony of others" level=1 image-path="character-ability-cards/frosthaven/PC/fh-the-agony-of-others.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
 	bottom
 }
-card 305 "unending torment" level=1 image-path="images/fh-unending-torment.png" {
+card 305 "unending torment" level=1 image-path="character-ability-cards/frosthaven/PC/fh-unending-torment.png" {
 	top{
 		enhancement kind=square ability=heal
 	}
@@ -41,13 +41,13 @@ card 305 "unending torment" level=1 image-path="images/fh-unending-torment.png" 
 		enhancement kind=square ability=heal
 	}
 }
-card 306 "blood ritual" level=1 image-path="images/fh-blood-ritual.png" {
+card 306 "blood ritual" level=1 image-path="character-ability-cards/frosthaven/PC/fh-blood-ritual.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
 	bottom
 }
-card 307 "scarred effigy" level=1 image-path="images/fh-scarred-effigy.png" {
+card 307 "scarred effigy" level=1 image-path="character-ability-cards/frosthaven/PC/fh-scarred-effigy.png" {
 	top persistent=#true lost=#true{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
@@ -58,13 +58,13 @@ card 307 "scarred effigy" level=1 image-path="images/fh-scarred-effigy.png" {
 		enhancement kind=square ability=retaliate
 	}
 }
-card 308 "explosive wounds" level=1 image-path="images/fh-explosive-wounds.png" {
+card 308 "explosive wounds" level=1 image-path="character-ability-cards/frosthaven/PC/fh-explosive-wounds.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 309 "cleansing fire" level=1 image-path="images/fh-cleansing-fire.png" {
+card 309 "cleansing fire" level=1 image-path="character-ability-cards/frosthaven/PC/fh-cleansing-fire.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
@@ -72,7 +72,7 @@ card 309 "cleansing fire" level=1 image-path="images/fh-cleansing-fire.png" {
 		enhancement kind=circle ability=move
 	}
 }
-card 310 "swift vengeance" level=1 image-path="images/fh-swift-vengeance.png" {
+card 310 "swift vengeance" level=1 image-path="character-ability-cards/frosthaven/PC/fh-swift-vengeance.png" {
 	top{
 		enhancement kind=square ability=range
 	}
@@ -80,11 +80,11 @@ card 310 "swift vengeance" level=1 image-path="images/fh-swift-vengeance.png" {
 		enhancement kind=circle ability=move
 	}
 }
-card 311 "delayed malady" level=X image-path="images/fh-delayed-malady.png" {
+card 311 "delayed malady" level=X image-path="character-ability-cards/frosthaven/PC/fh-delayed-malady.png" {
 	top
 	bottom
 }
-card 312 "unstable effigy" level=X image-path="images/fh-unstable-effigy.png" {
+card 312 "unstable effigy" level=X image-path="character-ability-cards/frosthaven/PC/fh-unstable-effigy.png" {
 	top persistent=#true lost=#true{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
@@ -92,7 +92,7 @@ card 312 "unstable effigy" level=X image-path="images/fh-unstable-effigy.png" {
 	}
 	bottom
 }
-card 313 "pleasure in pain" level=X image-path="images/fh-pleasure-in-pain.png" {
+card 313 "pleasure in pain" level=X image-path="character-ability-cards/frosthaven/PC/fh-pleasure-in-pain.png" {
 	top{
 		enhancement kind=diamond+ ability=heal multiple=#true
 	}
@@ -101,24 +101,24 @@ card 313 "pleasure in pain" level=X image-path="images/fh-pleasure-in-pain.png" 
 		enhancement kind=diamond ability=#null multiple=#true
 	}
 }
-card 314 "reversal of fate" level=2 image-path="images/fh-reversal-of-fate.png" {
+card 314 "reversal of fate" level=2 image-path="character-ability-cards/frosthaven/PC/fh-reversal-of-fate.png" {
 	top lost=#true{
 		enhancement kind=diamond+ ability=heal
 		enhancement kind=diamond ability=attack
 	}
 	bottom
 }
-card 315 "infection purge" level=2 image-path="images/fh-infection-purge.png" {
+card 315 "infection purge" level=2 image-path="character-ability-cards/frosthaven/PC/fh-infection-purge.png" {
 	top
 	bottom
 }
-card 316 "burned at both ends" level=3 image-path="images/fh-burned-at-both-ends.png" {
+card 316 "burned at both ends" level=3 image-path="character-ability-cards/frosthaven/PC/fh-burned-at-both-ends.png" {
 	top
 	bottom{
 		enhancement kind=square ability=move
 	}
 }
-card 317 reprisal level=3 image-path="images/fh-reprisal.png" {
+card 317 reprisal level=3 image-path="character-ability-cards/frosthaven/PC/fh-reprisal.png" {
 	top{
 		enhancement kind=square ability=retaliate
 	}
@@ -126,13 +126,13 @@ card 317 reprisal level=3 image-path="images/fh-reprisal.png" {
 		enhancement kind=circle ability=move
 	}
 }
-card 318 "mirrored misery" level=4 image-path="images/fh-mirrored-misery.png" {
+card 318 "mirrored misery" level=4 image-path="character-ability-cards/frosthaven/PC/fh-mirrored-misery.png" {
 	top
 	bottom{
 		enhancement kind=square ability=move
 	}
 }
-card 319 "down to the dirt" level=4 image-path="images/fh-down-to-the-dirt.png" {
+card 319 "down to the dirt" level=4 image-path="character-ability-cards/frosthaven/PC/fh-down-to-the-dirt.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
@@ -140,26 +140,26 @@ card 319 "down to the dirt" level=4 image-path="images/fh-down-to-the-dirt.png" 
 		enhancement kind=circle ability=move
 	}
 }
-card 320 "chained by spite" level=5 image-path="images/fh-chained-by-spite.png" {
+card 320 "chained by spite" level=5 image-path="character-ability-cards/frosthaven/PC/fh-chained-by-spite.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 		enhancement kind=square ability=retaliate
 	}
 }
-card 321 "chained by despair" level=5 image-path="images/fh-chained-by-despair.png" {
+card 321 "chained by despair" level=5 image-path="character-ability-cards/frosthaven/PC/fh-chained-by-despair.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 322 hopelessness level=6 image-path="images/fh-hopelessness.png" {
+card 322 hopelessness level=6 image-path="character-ability-cards/frosthaven/PC/fh-hopelessness.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 323 "phantom limb" level=6 image-path="images/fh-phantom-limb.png" {
+card 323 "phantom limb" level=6 image-path="character-ability-cards/frosthaven/PC/fh-phantom-limb.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
@@ -167,20 +167,20 @@ card 323 "phantom limb" level=6 image-path="images/fh-phantom-limb.png" {
 		enhancement kind=circle ability=heal multiple=#true
 	}
 }
-card 324 "reject the gift" level=7 image-path="images/fh-reject-the-gift.png" {
+card 324 "reject the gift" level=7 image-path="character-ability-cards/frosthaven/PC/fh-reject-the-gift.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 325 penance level=7 image-path="images/fh-penance.png" {
+card 325 penance level=7 image-path="character-ability-cards/frosthaven/PC/fh-penance.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 		enhancement kind=square ability=retaliate
 	}
 }
-card 326 "wave of anguish" level=8 image-path="images/fh-wave-of-anguish.png" {
+card 326 "wave of anguish" level=8 image-path="character-ability-cards/frosthaven/PC/fh-wave-of-anguish.png" {
 	top{
 		enhancement kind=diamond ability=attack
 		enhancement kind=square ability=range
@@ -189,17 +189,17 @@ card 326 "wave of anguish" level=8 image-path="images/fh-wave-of-anguish.png" {
 		enhancement kind=diamond ability=#null
 	}
 }
-card 327 "wracked with pain" level=8 image-path="images/fh-wracked-with-pain.png" {
+card 327 "wracked with pain" level=8 image-path="character-ability-cards/frosthaven/PC/fh-wracked-with-pain.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=heal
 	}
 }
-card 328 redemption level=9 image-path="images/fh-redemption.png" {
+card 328 redemption level=9 image-path="character-ability-cards/frosthaven/PC/fh-redemption.png" {
 	top
 	bottom
 }
-card 329 "the end of everything" level=9 image-path="images/fh-the-end-of-everything.png" {
+card 329 "the end of everything" level=9 image-path="character-ability-cards/frosthaven/PC/fh-the-end-of-everything.png" {
 	top
 	bottom
 }

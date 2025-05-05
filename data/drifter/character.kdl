@@ -3,39 +3,39 @@ meta {
 	color "#7f6e62"
 }
 
-card 1 "crushing weight" level=1 image-path="images/fh-crushing-weight.png" {
+card 1 "crushing weight" level=1 image-path="character-ability-cards/frosthaven/DF/fh-crushing-weight.png" {
 	top
 	bottom{
 		enhancement kind=square ability=heal
 	}
 }
-card 2 "sustained momentum" level=1 image-path="images/fh-sustained-momentum.png" {
+card 2 "sustained momentum" level=1 image-path="character-ability-cards/frosthaven/DF/fh-sustained-momentum.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
 	bottom
 }
-card 3 "precision aim" level=1 image-path="images/fh-precision-aim.png" {
+card 3 "precision aim" level=1 image-path="character-ability-cards/frosthaven/DF/fh-precision-aim.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 4 "continuous health" level=1 image-path="images/fh-continuous-health.png" {
+card 4 "continuous health" level=1 image-path="character-ability-cards/frosthaven/DF/fh-continuous-health.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
 	bottom
 }
-card 5 relentless level=1 image-path="images/fh-relentless.png" {
+card 5 relentless level=1 image-path="character-ability-cards/frosthaven/DF/fh-relentless.png" {
 	top
 	bottom
 }
-card 6 unbreakable level=1 image-path="images/fh-unbreakable.png" {
+card 6 unbreakable level=1 image-path="character-ability-cards/frosthaven/DF/fh-unbreakable.png" {
 	top
 	bottom
 }
-card 7 "vile assault" level=1 image-path="images/fh-vile-assault.png" {
+card 7 "vile assault" level=1 image-path="character-ability-cards/frosthaven/DF/fh-vile-assault.png" {
 	top lost=#true{
 		enhancement kind=diamond ability=attack
 		enhancement kind=diamond ability=attack
@@ -44,13 +44,13 @@ card 7 "vile assault" level=1 image-path="images/fh-vile-assault.png" {
 		enhancement kind=circle ability=move
 	}
 }
-card 8 "draining arrows" level=1 image-path="images/fh-draining-arrows.png" {
+card 8 "draining arrows" level=1 image-path="character-ability-cards/frosthaven/DF/fh-draining-arrows.png" {
 	top{
 		enhancement kind=square ability=attack multiple=#true
 	}
 	bottom
 }
-card 9 "prudent preparation" level=1 image-path="images/fh-prudent-preparation.png" {
+card 9 "prudent preparation" level=1 image-path="character-ability-cards/frosthaven/DF/fh-prudent-preparation.png" {
 	top{
 		enhancement kind=diamond+ ability=attack
 		enhancement kind=diamond+ ability=retaliate
@@ -59,13 +59,13 @@ card 9 "prudent preparation" level=1 image-path="images/fh-prudent-preparation.p
 		enhancement kind=circle ability=move
 	}
 }
-card 10 "deadly shot" level=1 image-path="images/fh-deadly-shot.png" {
+card 10 "deadly shot" level=1 image-path="character-ability-cards/frosthaven/DF/fh-deadly-shot.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
 	bottom
 }
-card 11 bloodletting level=1 image-path="images/fh-bloodletting.png" {
+card 11 bloodletting level=1 image-path="character-ability-cards/frosthaven/DF/fh-bloodletting.png" {
 	top{
 		enhancement kind=square ability=attack
 	}
@@ -73,7 +73,7 @@ card 11 bloodletting level=1 image-path="images/fh-bloodletting.png" {
 		enhancement kind=square ability=attack
 	}
 }
-card 12 "violent inheritance" level=1 image-path="images/fh-violent-inheritance.png" {
+card 12 "violent inheritance" level=1 image-path="character-ability-cards/frosthaven/DF/fh-violent-inheritance.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
@@ -82,13 +82,13 @@ card 12 "violent inheritance" level=1 image-path="images/fh-violent-inheritance.
 		enhancement kind=diamond ability=attack
 	}
 }
-card 13 fortitude level=X image-path="images/fh-fortitude.png" {
+card 13 fortitude level=X image-path="character-ability-cards/frosthaven/DF/fh-fortitude.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
 	bottom
 }
-card 14 "no remorse" level=X image-path="images/fh-no-remorse.png" {
+card 14 "no remorse" level=X image-path="character-ability-cards/frosthaven/DF/fh-no-remorse.png" {
 	top{
 		enhancement kind=diamond+ ability=heal
 	}
@@ -98,7 +98,7 @@ card 14 "no remorse" level=X image-path="images/fh-no-remorse.png" {
 		enhancement kind=square ability=move
 	}
 }
-card 15 "destructive fury" level=X image-path="images/fh-destructive-fury.png" {
+card 15 "destructive fury" level=X image-path="character-ability-cards/frosthaven/DF/fh-destructive-fury.png" {
 	top lost=#true{
 		enhancement kind=diamond ability=attack multiple=#true
 	}
@@ -106,13 +106,13 @@ card 15 "destructive fury" level=X image-path="images/fh-destructive-fury.png" {
 		enhancement kind=diamond ability=attack multiple=#true
 	}
 }
-card 16 shockwave level=2 image-path="images/fh-shockwave.png" {
+card 16 shockwave level=2 image-path="character-ability-cards/frosthaven/DF/fh-shockwave.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=shield
 	}
 }
-card 17 "ever forward" level=2 image-path="images/fh-ever-forward.png" {
+card 17 "ever forward" level=2 image-path="character-ability-cards/frosthaven/DF/fh-ever-forward.png" {
 	top{
 		enhancement kind=diamond+ ability=#null
 	}
@@ -120,26 +120,26 @@ card 17 "ever forward" level=2 image-path="images/fh-ever-forward.png" {
 		enhancement kind=circle ability=heal multiple=#true
 	}
 }
-card 18 "fierce barrage" level=3 image-path="images/fh-fierce-barrage.png" {
+card 18 "fierce barrage" level=3 image-path="character-ability-cards/frosthaven/DF/fh-fierce-barrage.png" {
 	top{
 		enhancement kind=diamond ability=attack multiple=#true
 	}
 	bottom
 }
-card 19 "dual bow" level=3 image-path="images/fh-dual-bow.png" {
+card 19 "dual bow" level=3 image-path="character-ability-cards/frosthaven/DF/fh-dual-bow.png" {
 	top{
 		enhancement kind=square ability=attack multiple=#true
 	}
 	bottom
 }
-card 20 "chunk of flesh" level=4 image-path="images/fh-chunk-of-flesh.png" {
+card 20 "chunk of flesh" level=4 image-path="character-ability-cards/frosthaven/DF/fh-chunk-of-flesh.png" {
 	top{
 		enhancement kind=diamond ability=attack
 		enhancement kind=diamond+ ability=heal
 	}
 	bottom
 }
-card 21 "gift of the prey" level=4 image-path="images/fh-gift-of-the-prey.png" {
+card 21 "gift of the prey" level=4 image-path="character-ability-cards/frosthaven/DF/fh-gift-of-the-prey.png" {
 	top{
 		enhancement kind=square ability=attack
 	}
@@ -147,25 +147,25 @@ card 21 "gift of the prey" level=4 image-path="images/fh-gift-of-the-prey.png" {
 		enhancement kind=circle ability=move
 	}
 }
-card 22 survivalist level=5 image-path="images/fh-survivalist.png" {
+card 22 survivalist level=5 image-path="character-ability-cards/frosthaven/DF/fh-survivalist.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 23 "break through" level=5 image-path="images/fh-break-through.png" {
+card 23 "break through" level=5 image-path="character-ability-cards/frosthaven/DF/fh-break-through.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 24 "accurate strikes" level=6 image-path="images/fh-accurate-strikes.png" {
+card 24 "accurate strikes" level=6 image-path="character-ability-cards/frosthaven/DF/fh-accurate-strikes.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 25 "consume stamina" level=6 image-path="images/fh-consume-stamina.png" {
+card 25 "consume stamina" level=6 image-path="character-ability-cards/frosthaven/DF/fh-consume-stamina.png" {
 	top{
 		enhancement kind=square ability=attack
 	}
@@ -173,22 +173,22 @@ card 25 "consume stamina" level=6 image-path="images/fh-consume-stamina.png" {
 		enhancement kind=circle ability=retaliate
 	}
 }
-card 26 "like the wind" level=7 image-path="images/fh-like-the-wind.png" {
+card 26 "like the wind" level=7 image-path="character-ability-cards/frosthaven/DF/fh-like-the-wind.png" {
 	top
 	bottom
 }
-card 27 "unending fight" level=7 image-path="images/fh-unending-fight.png" {
+card 27 "unending fight" level=7 image-path="character-ability-cards/frosthaven/DF/fh-unending-fight.png" {
 	top{
 		enhancement kind=square ability=attack
 		enhancement kind=diamond ability=attack
 	}
 	bottom
 }
-card 28 "against all odds" level=8 image-path="images/fh-against-all-odds.png" {
+card 28 "against all odds" level=8 image-path="character-ability-cards/frosthaven/DF/fh-against-all-odds.png" {
 	top
 	bottom
 }
-card 29 "inevitable conclusion" level=8 image-path="images/fh-inevitable-conclusion.png" {
+card 29 "inevitable conclusion" level=8 image-path="character-ability-cards/frosthaven/DF/fh-inevitable-conclusion.png" {
 	top lost=#true{
 		enhancement kind=diamond ability=attack multiple=#true
 	}
@@ -196,13 +196,13 @@ card 29 "inevitable conclusion" level=8 image-path="images/fh-inevitable-conclus
 		enhancement kind=diamond ability=attack
 	}
 }
-card 30 everlasting level=9 image-path="images/fh-everlasting.png" {
+card 30 everlasting level=9 image-path="character-ability-cards/frosthaven/DF/fh-everlasting.png" {
 	top
 	bottom{
 		enhancement kind=diamond+ ability=heal multiple=#true
 	}
 }
-card 31 "use every part" level=9 image-path="images/fh-use-every-part.png" {
+card 31 "use every part" level=9 image-path="character-ability-cards/frosthaven/DF/fh-use-every-part.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}

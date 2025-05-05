@@ -3,29 +3,29 @@ meta {
 	color "#6f7a8a"
 }
 
-card 90 "call to the abyss" level=1 image-path="images/fh-call-to-the-abyss.png" {
+card 90 "call to the abyss" level=1 image-path="character-ability-cards/frosthaven/DW/fh-call-to-the-abyss.png" {
 	top
 	bottom
 }
-card 91 "anger of the dead" level=1 image-path="images/fh-anger-of-the-dead.png" {
+card 91 "anger of the dead" level=1 image-path="character-ability-cards/frosthaven/DW/fh-anger-of-the-dead.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
 	bottom
 }
-card 92 "sunless apparition" level=1 image-path="images/fh-sunless-apparition.png" {
+card 92 "sunless apparition" level=1 image-path="character-ability-cards/frosthaven/DW/fh-sunless-apparition.png" {
 	top persistent=#true{
 		enhancement kind=square ability="summon hp"
 	}
 	bottom
 }
-card 93 "fluid night" level=1 image-path="images/fh-fluid-night.png" {
+card 93 "fluid night" level=1 image-path="character-ability-cards/frosthaven/DW/fh-fluid-night.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
 	bottom
 }
-card 94 "dark fog" level=1 image-path="images/fh-dark-fog.png" {
+card 94 "dark fog" level=1 image-path="character-ability-cards/frosthaven/DW/fh-dark-fog.png" {
 	top lost=#true{
 		enhancement kind=diamond ability=attack multiple=#true
 	}
@@ -33,7 +33,7 @@ card 94 "dark fog" level=1 image-path="images/fh-dark-fog.png" {
 		enhancement kind=square ability=jump
 	}
 }
-card 95 "black barrage" level=1 image-path="images/fh-black-barrage.png" {
+card 95 "black barrage" level=1 image-path="character-ability-cards/frosthaven/DW/fh-black-barrage.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
@@ -41,7 +41,7 @@ card 95 "black barrage" level=1 image-path="images/fh-black-barrage.png" {
 		enhancement kind=square ability=jump
 	}
 }
-card 96 "call of doom" level=1 image-path="images/fh-call-of-doom.png" {
+card 96 "call of doom" level=1 image-path="character-ability-cards/frosthaven/DW/fh-call-of-doom.png" {
 	top{
 		enhancement kind=square ability=attack multiple=#true
 	}
@@ -49,13 +49,13 @@ card 96 "call of doom" level=1 image-path="images/fh-call-of-doom.png" {
 		enhancement kind=circle ability=move
 	}
 }
-card 97 eclipse level=1 image-path="images/fh-eclipse.png" {
+card 97 eclipse level=1 image-path="character-ability-cards/frosthaven/DW/fh-eclipse.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 98 "lingering rot" level=1 image-path="images/fh-lingering-rot.png" {
+card 98 "lingering rot" level=1 image-path="character-ability-cards/frosthaven/DW/fh-lingering-rot.png" {
 	top lost=#true{
 		enhancement kind=diamond ability=attack multiple=#true
 	}
@@ -63,7 +63,7 @@ card 98 "lingering rot" level=1 image-path="images/fh-lingering-rot.png" {
 		enhancement kind=square ability=move
 	}
 }
-card 99 "shadow step" level=1 image-path="images/fh-shadow-step.png" {
+card 99 "shadow step" level=1 image-path="character-ability-cards/frosthaven/DW/fh-shadow-step.png" {
 	top{
 		enhancement kind=square ability=move
 		enhancement kind=diamond ability=move
@@ -72,28 +72,28 @@ card 99 "shadow step" level=1 image-path="images/fh-shadow-step.png" {
 		enhancement kind=circle ability=move
 	}
 }
-card 100 "strength of the abyss" level=1 image-path="images/fh-strength-of-the-abyss.png" {
+card 100 "strength of the abyss" level=1 image-path="character-ability-cards/frosthaven/DW/fh-strength-of-the-abyss.png" {
 	top
 	bottom
 }
-card 101 "wave of anguish" level=X image-path="images/fh-wave-of-anguish.png" {
+card 101 "wave of anguish" level=X image-path="character-ability-cards/frosthaven/DW/fh-wave-of-anguish.png" {
 	top
 	bottom{
 		enhancement kind=square ability=move
 		enhancement kind=square ability=jump multiple=#true
 	}
 }
-card 102 "forceful spirits" level=X image-path="images/fh-forceful-spirits.png" {
+card 102 "forceful spirits" level=X image-path="character-ability-cards/frosthaven/DW/fh-forceful-spirits.png" {
 	top
 	bottom
 }
-card 103 "rest in the shade" level=X image-path="images/fh-rest-in-the-shade.png" {
+card 103 "rest in the shade" level=X image-path="character-ability-cards/frosthaven/DW/fh-rest-in-the-shade.png" {
 	top{
 		enhancement kind=diamond+ ability=heal multiple=#true
 	}
 	bottom
 }
-card 104 "restless spirits" level=2 image-path="images/fh-restless-spirits.png" {
+card 104 "restless spirits" level=2 image-path="character-ability-cards/frosthaven/DW/fh-restless-spirits.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
@@ -101,7 +101,7 @@ card 104 "restless spirits" level=2 image-path="images/fh-restless-spirits.png" 
 		enhancement kind=square ability=jump
 	}
 }
-card 105 "deepening despair" level=2 image-path="images/fh-deepening-despair.png" {
+card 105 "deepening despair" level=2 image-path="character-ability-cards/frosthaven/DW/fh-deepening-despair.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
@@ -109,7 +109,7 @@ card 105 "deepening despair" level=2 image-path="images/fh-deepening-despair.png
 		enhancement kind=circle ability=move
 	}
 }
-card 106 "dead bolt" level=3 image-path="images/fh-dead-bolt.png" {
+card 106 "dead bolt" level=3 image-path="character-ability-cards/frosthaven/DW/fh-dead-bolt.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
@@ -117,7 +117,7 @@ card 106 "dead bolt" level=3 image-path="images/fh-dead-bolt.png" {
 		enhancement kind=square ability=jump multiple=#true
 	}
 }
-card 107 "ritual sacrifice" level=3 image-path="images/fh-ritual-sacrifice.png" {
+card 107 "ritual sacrifice" level=3 image-path="character-ability-cards/frosthaven/DW/fh-ritual-sacrifice.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
@@ -125,25 +125,25 @@ card 107 "ritual sacrifice" level=3 image-path="images/fh-ritual-sacrifice.png" 
 		enhancement kind=square ability=move
 	}
 }
-card 108 "fleeting dusk" level=4 image-path="images/fh-fleeting-dusk.png" {
+card 108 "fleeting dusk" level=4 image-path="character-ability-cards/frosthaven/DW/fh-fleeting-dusk.png" {
 	top lost=#true{
 		enhancement kind=diamond ability=attack multiple=#true
 	}
 	bottom
 }
-card 109 "pulled across" level=4 image-path="images/fh-pulled-across.png" {
+card 109 "pulled across" level=4 image-path="character-ability-cards/frosthaven/DW/fh-pulled-across.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 110 medium level=5 image-path="images/fh-medium.png" {
+card 110 medium level=5 image-path="character-ability-cards/frosthaven/DW/fh-medium.png" {
 	top{
 		enhancement kind=square ability=attack
 	}
 	bottom
 }
-card 111 dominate level=5 image-path="images/fh-dominate.png" {
+card 111 dominate level=5 image-path="character-ability-cards/frosthaven/DW/fh-dominate.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
@@ -151,7 +151,7 @@ card 111 dominate level=5 image-path="images/fh-dominate.png" {
 		enhancement kind=circle ability=move
 	}
 }
-card 112 "the night takes shape" level=6 image-path="images/fh-the-night-takes-shape.png" {
+card 112 "the night takes shape" level=6 image-path="character-ability-cards/frosthaven/DW/fh-the-night-takes-shape.png" {
 	top persistent=#true{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon attack"
@@ -160,20 +160,20 @@ card 112 "the night takes shape" level=6 image-path="images/fh-the-night-takes-s
 		enhancement kind=square ability=jump
 	}
 }
-card 113 "vengeful storm" level=6 image-path="images/fh-vengeful-storm.png" {
+card 113 "vengeful storm" level=6 image-path="character-ability-cards/frosthaven/DW/fh-vengeful-storm.png" {
 	top{
 		enhancement kind=square ability=range multiple=#true
 	}
 	bottom
 }
-card 114 "proliferation of the abyss" level=7 image-path="images/fh-proliferation-of-the-abyss.png" {
+card 114 "proliferation of the abyss" level=7 image-path="character-ability-cards/frosthaven/DW/fh-proliferation-of-the-abyss.png" {
 	top
 	bottom{
 		enhancement kind=square ability=move
 		enhancement kind=square ability=jump multiple=#true
 	}
 }
-card 115 "hungry grasps" level=7 image-path="images/fh-hungry-grasps.png" {
+card 115 "hungry grasps" level=7 image-path="character-ability-cards/frosthaven/DW/fh-hungry-grasps.png" {
 	top{
 		enhancement kind=diamond ability=attack multiple=#true
 		enhancement kind=square ability=range multiple=#true
@@ -183,25 +183,25 @@ card 115 "hungry grasps" level=7 image-path="images/fh-hungry-grasps.png" {
 		enhancement kind=diamond+ ability=heal multiple=#true
 	}
 }
-card 116 "lashing tendrils" level=8 image-path="images/fh-lashing-tendrils.png" {
+card 116 "lashing tendrils" level=8 image-path="character-ability-cards/frosthaven/DW/fh-lashing-tendrils.png" {
 	top
 	bottom{
 		enhancement kind=square ability=jump multiple=#true
 	}
 }
-card 117 "frozen in fear" level=8 image-path="images/fh-frozen-in-fear.png" {
+card 117 "frozen in fear" level=8 image-path="character-ability-cards/frosthaven/DW/fh-frozen-in-fear.png" {
 	top
 	bottom lost=#true{
 		enhancement kind=square ability=jump multiple=#true
 	}
 }
-card 118 "when your time comes" level=9 image-path="images/fh-when-your-time-comes.png" {
+card 118 "when your time comes" level=9 image-path="character-ability-cards/frosthaven/DW/fh-when-your-time-comes.png" {
 	top persistent=#true {
 		enhancement kind=diamond ability=attack persistent=#false
 	}
 	bottom
 }
-card 119 "black lance" level=9 image-path="images/fh-black-lance.png" {
+card 119 "black lance" level=9 image-path="character-ability-cards/frosthaven/DW/fh-black-lance.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=jump

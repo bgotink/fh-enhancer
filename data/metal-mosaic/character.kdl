@@ -3,115 +3,115 @@ meta {
 	color "#a48d68"
 }
 
-card 417 "steam armor" level=1 image-path="images/fh-steam-armor.png" {
+card 417 "steam armor" level=1 image-path="character-ability-cards/frosthaven/ME/fh-steam-armor.png" {
 	top
 	bottom
 }
-card 418 "ancient drill" level=1 image-path="images/fh-ancient-drill.png" {
+card 418 "ancient drill" level=1 image-path="character-ability-cards/frosthaven/ME/fh-ancient-drill.png" {
 	top
 	bottom
 }
-card 419 "rocket boots" level=1 image-path="images/fh-rocket-boots.png" {
+card 419 "rocket boots" level=1 image-path="character-ability-cards/frosthaven/ME/fh-rocket-boots.png" {
 	top
 	bottom
 }
-card 420 "power core" level=1 image-path="images/fh-power-core.png" {
+card 420 "power core" level=1 image-path="character-ability-cards/frosthaven/ME/fh-power-core.png" {
 	top
 	bottom
 }
-card 421 "steel piston" level=1 image-path="images/fh-steel-piston.png" {
+card 421 "steel piston" level=1 image-path="character-ability-cards/frosthaven/ME/fh-steel-piston.png" {
 	top
 	bottom
 }
-card 422 "pressure build-up" level=1 image-path="images/fh-pressure-build-up.png" {
+card 422 "pressure build-up" level=1 image-path="character-ability-cards/frosthaven/ME/fh-pressure-build-up.png" {
 	top
 	bottom
 }
-card 423 "beam axe" level=1 image-path="images/fh-beam-axe.png" {
+card 423 "beam axe" level=1 image-path="character-ability-cards/frosthaven/ME/fh-beam-axe.png" {
 	top
 	bottom
 }
-card 424 "memory drive" level=1 image-path="images/fh-memory-drive.png" {
+card 424 "memory drive" level=1 image-path="character-ability-cards/frosthaven/ME/fh-memory-drive.png" {
 	top
 	bottom
 }
-card 425 "super heat transfer" level=1 image-path="images/fh-super-heat-transfer.png" {
+card 425 "super heat transfer" level=1 image-path="character-ability-cards/frosthaven/ME/fh-super-heat-transfer.png" {
 	top
 	bottom
 }
-card 426 processing level=X image-path="images/fh-processing.png" {
+card 426 processing level=X image-path="character-ability-cards/frosthaven/ME/fh-processing.png" {
 	top
 	bottom
 }
-card 427 recursion level=X image-path="images/fh-recursion.png" {
+card 427 recursion level=X image-path="character-ability-cards/frosthaven/ME/fh-recursion.png" {
 	top
 	bottom
 }
-card 428 "curious gear" level=X image-path="images/fh-curious-gear.png" {
+card 428 "curious gear" level=X image-path="character-ability-cards/frosthaven/ME/fh-curious-gear.png" {
 	top
 	bottom
 }
-card 429 "release valve" level=2 image-path="images/fh-release-valve.png" {
+card 429 "release valve" level=2 image-path="character-ability-cards/frosthaven/ME/fh-release-valve.png" {
 	top
 	bottom
 }
-card 430 "bronze plating" level=2 image-path="images/fh-bronze-plating.png" {
+card 430 "bronze plating" level=2 image-path="character-ability-cards/frosthaven/ME/fh-bronze-plating.png" {
 	top
 	bottom
 }
-card 431 "stress vents" level=3 image-path="images/fh-stress-vents.png" {
+card 431 "stress vents" level=3 image-path="character-ability-cards/frosthaven/ME/fh-stress-vents.png" {
 	top
 	bottom
 }
-card 432 "electrical discharge" level=3 image-path="images/fh-electrical-discharge.png" {
+card 432 "electrical discharge" level=3 image-path="character-ability-cards/frosthaven/ME/fh-electrical-discharge.png" {
 	top
 	bottom
 }
-card 433 "energy conversion" level=4 image-path="images/fh-energy-conversion.png" {
+card 433 "energy conversion" level=4 image-path="character-ability-cards/frosthaven/ME/fh-energy-conversion.png" {
 	top
 	bottom
 }
-card 434 "magnetic field" level=4 image-path="images/fh-magnetic-field.png" {
+card 434 "magnetic field" level=4 image-path="character-ability-cards/frosthaven/ME/fh-magnetic-field.png" {
 	top
 	bottom
 }
-card 435 radiation level=5 image-path="images/fh-radiation.png" {
+card 435 radiation level=5 image-path="character-ability-cards/frosthaven/ME/fh-radiation.png" {
 	top
 	bottom
 }
-card 436 "heat conduction" level=5 image-path="images/fh-heat-conduction.png" {
+card 436 "heat conduction" level=5 image-path="character-ability-cards/frosthaven/ME/fh-heat-conduction.png" {
 	top
 	bottom
 }
-card 437 "scalding blast" level=6 image-path="images/fh-scalding-blast.png" {
+card 437 "scalding blast" level=6 image-path="character-ability-cards/frosthaven/ME/fh-scalding-blast.png" {
 	top
 	bottom
 }
-card 438 "steam core" level=6 image-path="images/fh-steam-core.png" {
+card 438 "steam core" level=6 image-path="character-ability-cards/frosthaven/ME/fh-steam-core.png" {
 	top
 	bottom
 }
-card 439 "heated drill" level=7 image-path="images/fh-heated-drill.png" {
+card 439 "heated drill" level=7 image-path="character-ability-cards/frosthaven/ME/fh-heated-drill.png" {
 	top
 	bottom
 }
-card 440 "cryogenic hibernation" level=7 image-path="images/fh-cryogenic-hibernation.png" {
+card 440 "cryogenic hibernation" level=7 image-path="character-ability-cards/frosthaven/ME/fh-cryogenic-hibernation.png" {
 	top
 	bottom
 }
-card 441 "piston barrage" level=8 image-path="images/fh-piston-barrage.png" {
+card 441 "piston barrage" level=8 image-path="character-ability-cards/frosthaven/ME/fh-piston-barrage.png" {
 	top
 	bottom
 }
-card 442 "curious machinery" level=8 image-path="images/fh-curious-machinery.png" {
+card 442 "curious machinery" level=8 image-path="character-ability-cards/frosthaven/ME/fh-curious-machinery.png" {
 	top
 	bottom
 }
-card 443 "polarity shift" level=9 image-path="images/fh-polarity-shift.png" {
+card 443 "polarity shift" level=9 image-path="character-ability-cards/frosthaven/ME/fh-polarity-shift.png" {
 	top
 	bottom
 }
-card 444 "unstable core" level=9 image-path="images/fh-unstable-core.png" {
+card 444 "unstable core" level=9 image-path="character-ability-cards/frosthaven/ME/fh-unstable-core.png" {
 	top
 	bottom
 }

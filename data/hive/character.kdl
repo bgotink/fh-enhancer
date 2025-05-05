@@ -3,123 +3,123 @@ meta {
 	color "#c6a54f"
 }
 
-card 387 "plated defense" level=1 image-path="images/fh-plated-defense.png" {
+card 387 "plated defense" level=1 image-path="character-ability-cards/frosthaven/HV/fh-plated-defense.png" {
 	top
 	bottom
 }
-card 388 "reconstructive aid" level=1 image-path="images/fh-reconstructive-aid.png" {
+card 388 "reconstructive aid" level=1 image-path="character-ability-cards/frosthaven/HV/fh-reconstructive-aid.png" {
 	top
 	bottom
 }
-card 389 hunter-killer level=1 image-path="images/fh-hunter-killer.png" {
+card 389 hunter-killer level=1 image-path="character-ability-cards/frosthaven/HV/fh-hunter-killer.png" {
 	top
 	bottom
 }
-card 390 "coiled limbs" level=1 image-path="images/fh-coiled-limbs.png" {
+card 390 "coiled limbs" level=1 image-path="character-ability-cards/frosthaven/HV/fh-coiled-limbs.png" {
 	top
 	bottom
 }
-card 391 "aimed assault" level=1 image-path="images/fh-aimed-assault.png" {
+card 391 "aimed assault" level=1 image-path="character-ability-cards/frosthaven/HV/fh-aimed-assault.png" {
 	top
 	bottom
 }
-card 392 "launch pod" level=1 image-path="images/fh-launch-pod.png" {
+card 392 "launch pod" level=1 image-path="character-ability-cards/frosthaven/HV/fh-launch-pod.png" {
 	top
 	bottom
 }
-card 393 "faceless entity" level=1 image-path="images/fh-faceless-entity.png" {
+card 393 "faceless entity" level=1 image-path="character-ability-cards/frosthaven/HV/fh-faceless-entity.png" {
 	top
 	bottom
 }
-card 394 "prepare for deployment" level=1 image-path="images/fh-prepare-for-deployment.png" {
+card 394 "prepare for deployment" level=1 image-path="character-ability-cards/frosthaven/HV/fh-prepare-for-deployment.png" {
 	top
 	bottom
 }
-card 395 "reaper function" level=1 image-path="images/fh-reaper-function.png" {
+card 395 "reaper function" level=1 image-path="character-ability-cards/frosthaven/HV/fh-reaper-function.png" {
 	top
 	bottom
 }
-card 396 "high impact projectiles" level=1 image-path="images/fh-high-impact-projectiles.png" {
+card 396 "high impact projectiles" level=1 image-path="character-ability-cards/frosthaven/HV/fh-high-impact-projectiles.png" {
 	top
 	bottom
 }
-card 397 interference level=1 image-path="images/fh-interference.png" {
+card 397 interference level=1 image-path="character-ability-cards/frosthaven/HV/fh-interference.png" {
 	top
 	bottom
 }
-card 398 "shocking pulse" level=X image-path="images/fh-shocking-pulse.png" {
+card 398 "shocking pulse" level=X image-path="character-ability-cards/frosthaven/HV/fh-shocking-pulse.png" {
 	top
 	bottom
 }
-card 399 "remote control" level=X image-path="images/fh-remote-control.png" {
+card 399 "remote control" level=X image-path="character-ability-cards/frosthaven/HV/fh-remote-control.png" {
 	top
 	bottom
 }
-card 400 reassemble level=X image-path="images/fh-reassemble.png" {
+card 400 reassemble level=X image-path="character-ability-cards/frosthaven/HV/fh-reassemble.png" {
 	top
 	bottom
 }
-card 401 "force field" level=2 image-path="images/fh-force-field.png" {
+card 401 "force field" level=2 image-path="character-ability-cards/frosthaven/HV/fh-force-field.png" {
 	top
 	bottom
 }
-card 402 "long-range missile" level=2 image-path="images/fh-long-range-missile.png" {
+card 402 "long-range missile" level=2 image-path="character-ability-cards/frosthaven/HV/fh-long-range-missile.png" {
 	top
 	bottom
 }
-card 403 "rapid fire" level=3 image-path="images/fh-rapid-fire.png" {
+card 403 "rapid fire" level=3 image-path="character-ability-cards/frosthaven/HV/fh-rapid-fire.png" {
 	top
 	bottom
 }
-card 404 hijack level=3 image-path="images/fh-hijack.png" {
+card 404 hijack level=3 image-path="character-ability-cards/frosthaven/HV/fh-hijack.png" {
 	top
 	bottom
 }
-card 405 "plague protocol" level=4 image-path="images/fh-plague-protocol.png" {
+card 405 "plague protocol" level=4 image-path="character-ability-cards/frosthaven/HV/fh-plague-protocol.png" {
 	top
 	bottom
 }
-card 406 "divergent destruction" level=4 image-path="images/fh-divergent-destruction.png" {
+card 406 "divergent destruction" level=4 image-path="character-ability-cards/frosthaven/HV/fh-divergent-destruction.png" {
 	top
 	bottom
 }
-card 407 "net dispersal" level=5 image-path="images/fh-net-dispersal.png" {
+card 407 "net dispersal" level=5 image-path="character-ability-cards/frosthaven/HV/fh-net-dispersal.png" {
 	top
 	bottom
 }
-card 408 "code geminate" level=5 image-path="images/fh-code-geminate.png" {
+card 408 "code geminate" level=5 image-path="character-ability-cards/frosthaven/HV/fh-code-geminate.png" {
 	top
 	bottom
 }
-card 409 "spinning blades" level=6 image-path="images/fh-spinning-blades.png" {
+card 409 "spinning blades" level=6 image-path="character-ability-cards/frosthaven/HV/fh-spinning-blades.png" {
 	top
 	bottom
 }
-card 410 "triage program" level=6 image-path="images/fh-triage-program.png" {
+card 410 "triage program" level=6 image-path="character-ability-cards/frosthaven/HV/fh-triage-program.png" {
 	top
 	bottom
 }
-card 411 "mortar shells" level=7 image-path="images/fh-mortar-shells.png" {
+card 411 "mortar shells" level=7 image-path="character-ability-cards/frosthaven/HV/fh-mortar-shells.png" {
 	top
 	bottom
 }
-card 412 recall level=7 image-path="images/fh-recall.png" {
+card 412 recall level=7 image-path="character-ability-cards/frosthaven/HV/fh-recall.png" {
 	top
 	bottom
 }
-card 413 "swarming bulwark" level=8 image-path="images/fh-swarming-bulwark.png" {
+card 413 "swarming bulwark" level=8 image-path="character-ability-cards/frosthaven/HV/fh-swarming-bulwark.png" {
 	top
 	bottom
 }
-card 414 "burning slash" level=8 image-path="images/fh-burning-slash.png" {
+card 414 "burning slash" level=8 image-path="character-ability-cards/frosthaven/HV/fh-burning-slash.png" {
 	top
 	bottom
 }
-card 415 "heavy metal" level=9 image-path="images/fh-heavy-metal.png" {
+card 415 "heavy metal" level=9 image-path="character-ability-cards/frosthaven/HV/fh-heavy-metal.png" {
 	top
 	bottom
 }
-card 416 disassemble level=9 image-path="images/fh-disassemble.png" {
+card 416 disassemble level=9 image-path="character-ability-cards/frosthaven/HV/fh-disassemble.png" {
 	top
 	bottom
 }

@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 // @ts-check
 
-import {copyFile, mkdir, readFile, writeFile} from "node:fs/promises";
+import {readFile, writeFile} from "node:fs/promises";
 import {format} from "@bgotink/kdl/dessert";
-import {posix} from "node:path";
 
+import {dataFolder, worldhavenDataFolder} from "./constants.js";
 import {
 	PlayerCharacter,
 	Card,
@@ -13,15 +13,12 @@ import {
 	CharacterMeta,
 } from "./model.js";
 
-const rootFolder = new URL("../third_party/worldhaven/", import.meta.url);
-const targetFolder = new URL("../data/", import.meta.url);
-
 /**
  * @type {{name: string; level: string; expansion: string; image: string; "character-xws": string; cardno: string}[]}
  */
 const allAbilityCardList = JSON.parse(
 	await readFile(
-		new URL("data/character-ability-cards.js", rootFolder),
+		new URL("character-ability-cards.js", worldhavenDataFolder),
 		"utf8",
 	),
 );
@@ -70,22 +67,7 @@ await Promise.all(
 	Object.entries(abilitiesPerCharacter).map(async ([name, character]) => {
 		const characterFolder = new URL(
 			`${name.replaceAll(" ", "-")}/`,
-			targetFolder,
-		);
-		const imagesFolder = new URL("images/", characterFolder);
-
-		await mkdir(imagesFolder, {recursive: true});
-
-		await Promise.all(
-			character.cards.map(async (card) => {
-				const filename = posix.basename(card.imagePath);
-				await copyFile(
-					new URL("images/" + card.imagePath, rootFolder),
-					new URL(filename, imagesFolder),
-				);
-
-				card.imagePath = `images/${filename}`;
-			}),
+			dataFolder,
 		);
 
 		character.cards.sort((a, b) => a.number - b.number);
