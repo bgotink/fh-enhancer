@@ -236,6 +236,7 @@ for (const [characterName, character] of characters) {
 		const cardImage = cardContainer.appendChild(document.createElement("img"));
 		cardImage.src = card.imagePath;
 		cardImage.loading = "lazy";
+		cardImage.alt = "card";
 
 		const cardTitle = cardContainer.appendChild(document.createElement("h3"));
 		cardTitle.textContent = card.name;
@@ -246,7 +247,7 @@ for (const [characterName, character] of characters) {
 		const cardLinkImage = cardLink.appendChild(document.createElement("img"));
 		copySharedAsset("link", "" + art.get("linked icon"));
 		cardLinkImage.src = "../_shared/link.png";
-		cardLinkImage.alt = `link to card ${card.name}`;
+		cardLinkImage.alt = `link to card "${card.name}"`;
 
 		const top = document.createElement("div");
 		top.classList.add("action", "top");

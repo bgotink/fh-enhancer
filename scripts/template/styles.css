@@ -154,7 +154,8 @@ body > section {
 }
 
 .card a:focus-visible,
-.card a:hover {
+.card h3:target + a,
+.card:hover a {
 	opacity: 1;
 }
 
