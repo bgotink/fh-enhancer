@@ -177,18 +177,26 @@ fh-action {
 	border-radius: 12px;
 	border: 1px dashed var(--color, hotpink);
 	gap: 12px 8px;
-	grid-template-columns: max-content max-content 1fr max-content;
+	grid-template-columns: max-content max-content [l] 1fr max-content [r];
 	align-content: start;
+}
+
+fh-action:has(fh-enhancement.multiple) {
+	grid-template-columns: max-content max-content max-content [l] 1fr max-content [r];
 }
 
 fh-enhancement {
 	display: contents;
 }
 
+fh-enhancement input {
+	align-self: self-start;
+}
+
 fh-enhancement .cost-list {
 	display: grid;
 	grid-template-columns: subgrid;
-	grid-column: 3 / 5;
+	grid-column: l / r;
 	gap: 8px;
 }
 

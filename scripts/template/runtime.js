@@ -1,6 +1,8 @@
+// @ts-check
+
 const reEnhancerLevel = /\|enhancer-level=(\d)\|/;
 
-customElements.define("fh-enhancer", class FhEnhancer extends HTMLElement {
+class FhEnhancer extends HTMLElement {
 	#level = +(reEnhancerLevel.exec(window.name)?.[1] ?? 1);
 
 	get level() {
@@ -8,52 +10,123 @@ customElements.define("fh-enhancer", class FhEnhancer extends HTMLElement {
 	}
 
 	connectedCallback() {
-		this.addEventListener('change', this);
+		this.addEventListener("change", this);
 
 		const levelStr = String(this.#level);
-		for (const input of this.querySelectorAll('input')) {
+		for (const input of this.querySelectorAll("input")) {
 			input.checked = input.value === levelStr;
 		}
 	}
 
 	/** @param {Event} event */
 	handleEvent(event) {
-		if (event.type !== 'change') {
+		if (event.type !== "change") {
 			return;
 		}
 
 		event.stopPropagation();
 
-		this.#level = +/** @type {HTMLInputElement} */(event.target).value;
+		this.#level = +(/** @type {HTMLInputElement} */ (event.target).value);
 		if (reEnhancerLevel.test(window.name)) {
-			window.name = window.name.replace(reEnhancerLevel, `|enhancer-level=${this.#level}|`);
+			window.name = window.name.replace(
+				reEnhancerLevel,
+				`|enhancer-level=${this.#level}|`,
+			);
 		} else {
 			window.name += `|enhancer-level=${this.#level}|`;
 		}
 
-		for (const el of document.querySelectorAll("fh-cost")) {
+		for (const el of /** @type {NodeListOf<FhCost>} */ (
+			document.querySelectorAll("fh-cost")
+		)) {
 			el.recompute();
 		}
 	}
-});
+}
+customElements.define("fh-enhancer", FhEnhancer);
 
-customElements.define("fh-action", class FhAction extends HTMLElement {
+class FhAction extends HTMLElement {
+	connectedCallback() {
+		this.addEventListener("change", this);
+	}
 
-});
+	disconnectedCallback() {
+		this.removeEventListener("change", this);
+	}
 
-customElements.define("fh-cost", class FhCompute extends HTMLElement {
+	/** @param {Event} event */
+	handleEvent(event) {
+		if (
+			event.type !== "change" ||
+			!(event.target instanceof HTMLElement) ||
+			!event.target.closest("fh-enhancement")
+		) {
+			return;
+		}
+
+		console.log(this.numberOfBoughtEnhancements);
+
+		for (const cost of /** @type {NodeListOf<FhCost>} */ (
+			this.querySelectorAll("fh-cost")
+		)) {
+			cost.recompute();
+		}
+	}
+
+	get numberOfBoughtEnhancements() {
+		return Array.from(
+			/** @type {NodeListOf<FhEnhancement>} */ (
+				this.querySelectorAll("fh-enhancement")
+			),
+		).filter((el) => el.bought).length;
+	}
+}
+customElements.define("fh-action", FhAction);
+
+class FhEnhancement extends HTMLElement {
+	#input = document.createElement("input");
+
+	connectedCallback() {
+		if (!this.matches(":only-of-type")) {
+			this.classList.add("multiple");
+
+			this.insertBefore(this.#input, this.firstChild);
+			this.#input.type = "checkbox";
+			this.#input.ariaLabel = "enhancement bought";
+		}
+	}
+
+	get bought() {
+		return this.#input.checked;
+	}
+}
+customElements.define("fh-enhancement", FhEnhancement);
+
+class FhCost extends HTMLElement {
 	/** @type {FhEnhancer?} */
 	#enhancer;
+	/** @type {FhAction?} */
+	#action;
+	/** @type {FhEnhancement?} */
+	#enhancement;
 
 	connectedCallback() {
 		this.#enhancer = document.querySelector("fh-enhancer");
+		this.#action = this.closest("fh-action");
+		this.#enhancement = this.closest("fh-enhancement");
 
 		this.recompute();
 	}
 
 	recompute() {
-		const baseCost = +this.getAttribute("base-cost");
-		const levelStr = this.getAttribute("card-level");
+		if (this.#enhancement?.bought) {
+			this.innerText = "";
+			this.title = "";
+			return;
+		}
+
+		const baseCost = +(/** @type {string} */ (this.getAttribute("base-cost")));
+		const levelStr = /** @type {string} */ (this.getAttribute("card-level"));
 		const level = +(levelStr === "X" ? 1 : levelStr);
 		const enhancerLevel = this.#enhancer?.level ?? 1;
 
@@ -87,7 +160,23 @@ customElements.define("fh-cost", class FhCompute extends HTMLElement {
 			title += `, minus 10g for the enhancer level`;
 		}
 
+		const numberOfBoughtEnhancements = this.#action?.numberOfBoughtEnhancements;
+		if (numberOfBoughtEnhancements) {
+			const increment =
+				numberOfBoughtEnhancements * (enhancerLevel >= 4 ? 50 : 75);
+			cost += increment;
+
+			if (numberOfBoughtEnhancements > 1) {
+				title += `, with an additional ${increment}g for the ${numberOfBoughtEnhancements} previously bought enhancement${
+					numberOfBoughtEnhancements > 1 ? "s" : ""
+				}`;
+			} else {
+				title += `, with an additional ${increment}g for the previously bought enhancement`;
+			}
+		}
+
 		this.innerText = `${Math.ceil(cost)}g`;
 		this.title = title;
 	}
-});
+}
+customElements.define("fh-cost", FhCost);
