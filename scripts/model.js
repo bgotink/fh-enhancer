@@ -292,6 +292,8 @@ export class Color {
 export class CharacterMeta {
 	name;
 
+	spoilerFreeName;
+
 	color;
 
 	/** @type {DeserializationContext=} */
@@ -299,8 +301,14 @@ export class CharacterMeta {
 
 	/** @param {DeserializationContext} ctx */
 	static deserialize(ctx) {
+		const [name, spoilerFreeName] = ctx.child.required.single("name", (c) => [
+			c.argument.required("string"),
+			c.property("spoiler", "string"),
+		]);
+
 		const meta = new CharacterMeta(
-			ctx.child.required.single("name", (c) => c.argument.required("string")),
+			name,
+			spoilerFreeName,
 			ctx.child.single("color", Color),
 		);
 		meta.#ctx = ctx;
@@ -309,10 +317,12 @@ export class CharacterMeta {
 
 	/**
 	 * @param {string} name
+	 * @param {string=} spoilerFreeName
 	 * @param {Color=} color
 	 */
-	constructor(name, color) {
+	constructor(name, spoilerFreeName, color) {
 		this.name = name;
+		this.spoilerFreeName = spoilerFreeName;
 		this.color = color;
 	}
 
@@ -320,7 +330,12 @@ export class CharacterMeta {
 	serialize(ctx) {
 		ctx.source(this.#ctx);
 
-		ctx.child("name", (c) => c.argument(this.name));
+		ctx.child("name", (c) => {
+			c.argument(this.name);
+			if (this.spoilerFreeName) {
+				c.property("spoiler", this.spoilerFreeName);
+			}
+		});
 		if (this.color) {
 			ctx.child("color", this.color);
 		}

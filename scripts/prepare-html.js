@@ -637,6 +637,11 @@ function addHeader(document, characterName, title) {
 
 		let anchor = characterList
 			.appendChild(document.createElement("li"))
+			.appendChild(document.createElement(
+				otherCharacter.meta.spoilerFreeName ?
+					"fh-character-link-with-spoiler" :
+					"fh-character-link"
+			))
 			.appendChild(document.createElement("a"));
 		anchor.classList.add("character");
 		anchor.classList.toggle("character--active", isActive);
@@ -651,8 +656,8 @@ function addHeader(document, characterName, title) {
 		if (!isActive) {
 			const icon = anchor.appendChild(document.createElement("img"));
 			icon.src = `${characterName ? "../" : ""}${otherCharacterName}/icon.png`;
-			icon.alt = otherCharacter.meta.name;
-			icon.title = otherCharacter.meta.name;
+			icon.alt =
+			icon.title = otherCharacter.meta.spoilerFreeName ?? otherCharacter.meta.name;
 		} else {
 			const iconContainer = anchor.appendChild(
 				document.createElement("picture"),
@@ -666,7 +671,7 @@ function addHeader(document, characterName, title) {
 
 			const icon = iconContainer.appendChild(document.createElement("img"));
 			icon.src = `${characterName ? "../" : ""}${otherCharacterName}/icon--white.png`;
-			icon.alt = otherCharacter.meta.name;
+			icon.alt =
 			icon.title = otherCharacter.meta.name;
 		}
 	}

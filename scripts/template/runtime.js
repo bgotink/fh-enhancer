@@ -180,3 +180,25 @@ class FhCost extends HTMLElement {
 	}
 }
 customElements.define("fh-cost", FhCost);
+
+customElements.define("fh-character-link-with-spoiler", class extends HTMLElement {
+	/** @type {string=} */
+	#link;
+
+	constructor() {
+		super();
+
+		this.addEventListener("click", this, { capture: true });
+	}
+
+	connectedCallback() {
+		this.#link = /** @type {HTMLAnchorElement} */ (this.firstElementChild).href;
+		/** @type {HTMLAnchorElement} */ (this.firstElementChild).href = "#";
+	}
+
+	handleEvent(event) {
+		if (this.#link) {
+			/** @type {HTMLAnchorElement} */ (this.firstElementChild).href = this.#link;
+		}
+	}
+});
