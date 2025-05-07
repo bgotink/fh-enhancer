@@ -4,122 +4,232 @@ meta {
 }
 
 card 387 "plated defense" level=1 image-path="character-ability-cards/frosthaven/HV/fh-plated-defense.png" {
-	top
-	bottom
+	top lost=#true persistent=#true {
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom {
+		enhancement kind=square ability=shield
+		enhancement kind=square ability=retaliate
+	}
 }
+
 card 388 "reconstructive aid" level=1 image-path="character-ability-cards/frosthaven/HV/fh-reconstructive-aid.png" {
-	top
-	bottom
+	top lost=#true persistent=#true {
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon range"
+	}
+	bottom {
+		enhancement kind=circle ability=heal
+	}
 }
+
 card 389 hunter-killer level=1 image-path="character-ability-cards/frosthaven/HV/fh-hunter-killer.png" {
-	top
-	bottom
+	top lost=#true persistent=#true {
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom {
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=attack
+	}
 }
+
 card 390 "coiled limbs" level=1 image-path="character-ability-cards/frosthaven/HV/fh-coiled-limbs.png" {
-	top
-	bottom
+	top lost=#true persistent=#true {
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom {
+		enhancement kind=circle ability=jump
+	}
 }
+
 card 391 "aimed assault" level=1 image-path="character-ability-cards/frosthaven/HV/fh-aimed-assault.png" {
-	top
-	bottom
+	top lost=#true persistent=#true {
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon range"
+	}
+	bottom {
+		enhancement kind=square ability=range
+	}
 }
+
 card 392 "launch pod" level=1 image-path="character-ability-cards/frosthaven/HV/fh-launch-pod.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=circle ability=heal
+	}
 }
-card 393 "faceless entity" level=1 image-path="character-ability-cards/frosthaven/HV/fh-faceless-entity.png" {
-	top
-	bottom
-}
+
+card 393 "faceless entity" level=1 image-path="character-ability-cards/frosthaven/HV/fh-faceless-entity.png"
+
 card 394 "prepare for deployment" level=1 image-path="character-ability-cards/frosthaven/HV/fh-prepare-for-deployment.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond+ ability=heal
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
-card 395 "reaper function" level=1 image-path="character-ability-cards/frosthaven/HV/fh-reaper-function.png" {
-	top
-	bottom
-}
+
+card 395 "reaper function" level=1 image-path="character-ability-cards/frosthaven/HV/fh-reaper-function.png"
+
 card 396 "high impact projectiles" level=1 image-path="character-ability-cards/frosthaven/HV/fh-high-impact-projectiles.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=target
+	}
+	bottom {
+		enhancement kind=square ability=jump multiple=#true
+	}
 }
+
 card 397 interference level=1 image-path="character-ability-cards/frosthaven/HV/fh-interference.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond+ ability=heal
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 398 "shocking pulse" level=X image-path="character-ability-cards/frosthaven/HV/fh-shocking-pulse.png" {
-	top
-	bottom
+	top lost=#true persistent=#true {
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+	}
 }
-card 399 "remote control" level=X image-path="character-ability-cards/frosthaven/HV/fh-remote-control.png" {
-	top
-	bottom
-}
+
+card 399 "remote control" level=X image-path="character-ability-cards/frosthaven/HV/fh-remote-control.png"
+
 card 400 reassemble level=X image-path="character-ability-cards/frosthaven/HV/fh-reassemble.png" {
-	top
-	bottom
+	bottom lost=#true {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 401 "force field" level=2 image-path="character-ability-cards/frosthaven/HV/fh-force-field.png" {
-	top
-	bottom
+	top lost=#true persistent=#true {
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon range"
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
-card 402 "long-range missile" level=2 image-path="character-ability-cards/frosthaven/HV/fh-long-range-missile.png" {
-	top
-	bottom
-}
+
+card 402 "long-range missile" level=2 image-path="character-ability-cards/frosthaven/HV/fh-long-range-missile.png"
+
 card 403 "rapid fire" level=3 image-path="character-ability-cards/frosthaven/HV/fh-rapid-fire.png" {
-	top
-	bottom
+	top lost=#true persistent=#true {
+		enhancement kind=square ability="summon hp"
+	}
+	bottom {
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=move multiple=#true
+	}
 }
-card 404 hijack level=3 image-path="character-ability-cards/frosthaven/HV/fh-hijack.png" {
-	top
-	bottom
-}
+
+card 404 hijack level=3 image-path="character-ability-cards/frosthaven/HV/fh-hijack.png"
+
 card 405 "plague protocol" level=4 image-path="character-ability-cards/frosthaven/HV/fh-plague-protocol.png" {
-	top
-	bottom
+	top lost=#true persistent=#true {
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 406 "divergent destruction" level=4 image-path="character-ability-cards/frosthaven/HV/fh-divergent-destruction.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 407 "net dispersal" level=5 image-path="character-ability-cards/frosthaven/HV/fh-net-dispersal.png" {
-	top
-	bottom
+	top lost=#true persistent=#true {
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon attack"
+	}
 }
+
 card 408 "code geminate" level=5 image-path="character-ability-cards/frosthaven/HV/fh-code-geminate.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=move
+	}
 }
+
 card 409 "spinning blades" level=6 image-path="character-ability-cards/frosthaven/HV/fh-spinning-blades.png" {
-	top
-	bottom
+	top persistent=#true {
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 410 "triage program" level=6 image-path="character-ability-cards/frosthaven/HV/fh-triage-program.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond+ ability=heal
+	}
+	bottom {
+		enhancement kind=circle ability=heal
+	}
 }
+
 card 411 "mortar shells" level=7 image-path="character-ability-cards/frosthaven/HV/fh-mortar-shells.png" {
-	top
-	bottom
+	top lost=#true persistent=#true {
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon range" multiple=#true
+	}
+	bottom {
+		enhancement kind=square ability=range
+	}
 }
+
 card 412 recall level=7 image-path="character-ability-cards/frosthaven/HV/fh-recall.png" {
-	top
-	bottom
+	top lost=#true
 }
+
 card 413 "swarming bulwark" level=8 image-path="character-ability-cards/frosthaven/HV/fh-swarming-bulwark.png" {
-	top
-	bottom
+	top lost=#true persistent=#true {
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom {
+		enhancement kind=square ability=move
+		enhancement kind=square ability=move
+	}
 }
+
 card 414 "burning slash" level=8 image-path="character-ability-cards/frosthaven/HV/fh-burning-slash.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 415 "heavy metal" level=9 image-path="character-ability-cards/frosthaven/HV/fh-heavy-metal.png" {
-	top
-	bottom
+	top lost=#true persistent=#true {
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
-card 416 disassemble level=9 image-path="character-ability-cards/frosthaven/HV/fh-disassemble.png" {
-	top
-	bottom
-}
+
+card 416 disassemble level=9 image-path="character-ability-cards/frosthaven/HV/fh-disassemble.png"
