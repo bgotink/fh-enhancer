@@ -7,16 +7,24 @@
 }
 
 body {
+	/* Using a line height for width? Yes, because we use a lot of square things sized to 1lh
+	   <checkbox> <kind (square)> <ability (at most 2:1)> <max 6 improvements + space> <max 3 digits + "g">
+	      1lh          1lh                2lh                         8lh                      4lh
+			 */
+
+	--card-size: 16lh;
+	--card-spacing: 1.5lh;
+
 	display: grid;
 	margin: 0 auto;
-	padding: 0 32px 16px;
-	gap: 32px;
+	padding: 0 1.5lh 1lh;
+	gap: 1.5lh;
 	grid-template-columns:
-		[l] repeat(auto-fit, 300px)
+		[l] repeat(auto-fit, var(--card-size))
 		[r];
 	grid-template-rows: min-content;
 	justify-content: center;
-	max-width: 1360px; /* 32px * 4 * (300px + 32px) */
+	max-width: calc(1.5lh + 4 * var(--card-size) + 3 * var(--card-spacing) + 1.5lh);
 
 	font-family:
 		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
@@ -24,12 +32,12 @@ body {
 	font-weight: 300;
 }
 
-@media (width < 696px) {
+@media (width < ) {
 	body {
 		padding: 0 8px 16px;
 		margin: 0 auto;
 		grid-template-columns: [l] 1fr [r];
-		width: max(300px, min(520px, 100vw));
+		width: max(var(--card-size), min(calc(1.5 * var(--card-size)), 100vw));
 	}
 }
 
@@ -43,16 +51,16 @@ header {
 	flex-flow: column;
 	align-items: stretch;
 	background: Canvas;
-	padding: 20px 0;
-	margin-bottom: -20px;
-	gap: 20px;
+	padding: 1lh 0;
+	margin-bottom: -1lh;
+	gap: .5lh;
 }
 
 .header__title {
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;
-	gap: 20px;
+	gap: 1lh;
 }
 
 header nav {
@@ -81,7 +89,7 @@ body > section {
 	grid-row: span 3;
 	grid-template-columns: subgrid;
 	grid-template-rows: subgrid;
-	gap: 12px;
+	gap: .5lh;
 }
 
 .character-list {
@@ -90,14 +98,14 @@ body > section {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	gap: 16px;
+	gap: .5lh;
 }
 
 .character {
 	display: block;
-	height: 40px;
-	padding: 6px;
-	border-radius: 12px;
+	height: max(2lh, 40px);
+	padding: .3lh;
+	border-radius: .5lh;
 }
 
 .character:not(.character--active):is(:focus-visible, :hover) {
@@ -110,8 +118,8 @@ body > section {
 }
 
 .character img {
-	width: 28px;
-	height: 28px;
+	width: 1.5lh;
+	height: 1.5lh;
 	object-fit: contain;
 }
 
@@ -131,7 +139,7 @@ body > section {
 
 .card h3 {
 	margin: 0;
-	padding-top: 20px;
+	padding-top: 1lh;
 	align-self: start;
 	text-align: center;
 	color: transparent;
@@ -140,12 +148,12 @@ body > section {
 .card > img {
 	width: 100%;
 	aspect-ratio: 10 / 14;
-	border-radius: 12px;
+	border-radius: .75lh;
 }
 
 .card a {
 	display: block;
-	padding: 12px;
+	padding: .75lh;
 
 	opacity: 0;
 	transition: opacity 0.3s ease-in;
@@ -155,13 +163,13 @@ body > section {
 	background: var(--color);
 	line-height: 0;
 
-	border-radius: 12px 0 12px 0;
+	border-radius: .75lh 0 .75lh 0;
 	border: 0px solid #221e1f;
 	border-width: 0 1px 1px 0;
 }
 
 .card a img {
-	width: 20px;
+	width: 1lh;
 	height: auto;
 }
 
@@ -173,10 +181,10 @@ body > section {
 
 fh-action {
 	display: grid;
-	padding: 12px;
-	border-radius: 12px;
+	padding: .75lh;
+	border-radius: .75lh;
 	border: 1px dashed var(--color, hotpink);
-	gap: 12px 8px;
+	gap: .75lh .5lh;
 	grid-template-columns: max-content max-content [l] 1fr max-content [r];
 	align-content: start;
 }
@@ -197,7 +205,7 @@ fh-enhancement .cost-list {
 	display: grid;
 	grid-template-columns: subgrid;
 	grid-column: l / r;
-	gap: 8px;
+	gap: .5lh;
 }
 
 fh-enhancement .cost-list .computation {
@@ -208,10 +216,14 @@ fh-cost {
 	justify-self: end;
 }
 
+.element-list {
+	display: flex;
+	gap: calc(1lh / 6);
+}
+
 .ability-icon,
 .enhancement-kind,
 .enhancement-sticker {
-	height: 1em;
 	height: 1lh;
 	width: auto;
 }

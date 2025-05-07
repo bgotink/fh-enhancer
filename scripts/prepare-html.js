@@ -372,20 +372,16 @@ for (const [characterName, character] of characters) {
 			}
 
 			if (enhancement.kind !== "square") {
+				const elementContainer = document.createElement("div");
+				elementContainer.className = "element-list";
+
+				for (const element of elements) {
+					elementContainer.appendChild(createEnhancementSticker(element, `create ${element}`));
+				}
+
 				costTable.append(
 					createCostComputation(
-						elements
-							.map((element) =>
-								createEnhancementSticker(element, `create ${element}`),
-							)
-							.reduce((container, sticker) => {
-								if (container.firstChild) {
-									container.append(" ", sticker);
-								} else {
-									container.append(sticker);
-								}
-								return container;
-							}, document.createElement("div")),
+						elementContainer,
 						card,
 						action,
 						enhancement,
