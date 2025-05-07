@@ -15,6 +15,7 @@ import {JSDOM} from "jsdom";
 import sharp from "sharp";
 
 import {
+	characterOrder,
 	dataFolder,
 	outputFolder,
 	worldhavenDataFolder,
@@ -92,17 +93,12 @@ const [scriptText, styleText] = await Promise.all([
 /** @type {Map<string, PlayerCharacter>} */
 const characters = new Map();
 
-for (const characterFilename of await readdir(dataFolder)) {
-	if (!characterFilename.endsWith(".kdl")) {
-		continue;
-	}
-
-	const characterName = characterFilename.slice(0, -4);
+for (const characterName of characterOrder) {
 	let characterString;
 
 	try {
 		characterString = await readFile(
-			new URL(characterFilename, dataFolder),
+			new URL(`${characterName}.kdl`, dataFolder),
 			"utf8",
 		);
 	} catch {
@@ -376,7 +372,9 @@ for (const [characterName, character] of characters) {
 				elementContainer.className = "element-list";
 
 				for (const element of elements) {
-					elementContainer.appendChild(createEnhancementSticker(element, `create ${element}`));
+					elementContainer.appendChild(
+						createEnhancementSticker(element, `create ${element}`),
+					);
 				}
 
 				costTable.append(
@@ -637,11 +635,13 @@ function addHeader(document, characterName, title) {
 
 		let anchor = characterList
 			.appendChild(document.createElement("li"))
-			.appendChild(document.createElement(
-				otherCharacter.meta.spoilerFreeName ?
-					"fh-character-link-with-spoiler" :
-					"fh-character-link"
-			))
+			.appendChild(
+				document.createElement(
+					otherCharacter.meta.spoilerFreeName ?
+						"fh-character-link-with-spoiler"
+					:	"fh-character-link",
+				),
+			)
 			.appendChild(document.createElement("a"));
 		anchor.classList.add("character");
 		anchor.classList.toggle("character--active", isActive);
@@ -656,8 +656,8 @@ function addHeader(document, characterName, title) {
 		if (!isActive) {
 			const icon = anchor.appendChild(document.createElement("img"));
 			icon.src = `${characterName ? "../" : ""}${otherCharacterName}/icon.png`;
-			icon.alt =
-			icon.title = otherCharacter.meta.spoilerFreeName ?? otherCharacter.meta.name;
+			icon.alt = icon.title =
+				otherCharacter.meta.spoilerFreeName ?? otherCharacter.meta.name;
 		} else {
 			const iconContainer = anchor.appendChild(
 				document.createElement("picture"),
@@ -671,8 +671,7 @@ function addHeader(document, characterName, title) {
 
 			const icon = iconContainer.appendChild(document.createElement("img"));
 			icon.src = `${characterName ? "../" : ""}${otherCharacterName}/icon--white.png`;
-			icon.alt =
-			icon.title = otherCharacter.meta.name;
+			icon.alt = icon.title = otherCharacter.meta.name;
 		}
 	}
 
