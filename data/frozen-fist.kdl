@@ -4,110 +4,182 @@ meta {
 }
 
 card 360 "one with the mountain" level=1 image-path="character-ability-cards/frosthaven/FF/fh-one-with-the-mountain.png" {
-	top
-	bottom
+	top lost=#true persistent=#true
+	bottom {
+		enhancement kind=diamond+ ability=heal
+	}
 }
+
 card 361 "cold boulder" level=1 image-path="character-ability-cards/frosthaven/FF/fh-cold-boulder.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=square ability=move
+	}
 }
-card 362 "frost eruption" level=1 image-path="character-ability-cards/frosthaven/FF/fh-frost-eruption.png" {
-	top
-	bottom
-}
+
+card 362 "frost eruption" level=1 image-path="character-ability-cards/frosthaven/FF/fh-frost-eruption.png"
+
 card 363 "fury of the mountain" level=1 image-path="character-ability-cards/frosthaven/FF/fh-fury-of-the-mountain.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=square ability=move
+	}
 }
-card 364 "encased punch" level=1 image-path="character-ability-cards/frosthaven/FF/fh-encased-punch.png" {
-	top
-	bottom
-}
-card 365 "voice from below" level=1 image-path="character-ability-cards/frosthaven/FF/fh-voice-from-below.png" {
-	top
-	bottom
-}
+
+card 364 "encased punch" level=1 image-path="character-ability-cards/frosthaven/FF/fh-encased-punch.png"
+
+card 365 "voice from below" level=1 image-path="character-ability-cards/frosthaven/FF/fh-voice-from-below.png"
+
 card 366 "piercing pummel" level=1 image-path="character-ability-cards/frosthaven/FF/fh-piercing-pummel.png" {
-	top
-	bottom
+	bottom lost=#true {
+		enhancement kind=circle ability=jump
+		enhancement kind=diamond ability=attack
+		enhancement kind=diamond+ ability=heal
+	}
 }
+
 card 367 "ice blast" level=1 image-path="character-ability-cards/frosthaven/FF/fh-ice-blast.png" {
-	top
-	bottom
+	top lost=#true {
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom {
+		enhancement kind=square ability=move
+	}
 }
+
 card 368 "shard launch" level=X image-path="character-ability-cards/frosthaven/FF/fh-shard-launch.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=range multiple=#true
+	}
 }
-card 369 "primal bellow" level=X image-path="character-ability-cards/frosthaven/FF/fh-primal-bellow.png" {
-	top
-	bottom
-}
+
+card 369 "primal bellow" level=X image-path="character-ability-cards/frosthaven/FF/fh-primal-bellow.png"
+
 card 370 "freezing shell" level=X image-path="character-ability-cards/frosthaven/FF/fh-freezing-shell.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=square ability=move
+	}
 }
+
 card 371 "draw of the bedrock" level=2 image-path="character-ability-cards/frosthaven/FF/fh-draw-of-the-bedrock.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=square ability=pull
+		enhancement kind=square ability=range
+	}
 }
+
 card 372 "crushing crystals" level=2 image-path="character-ability-cards/frosthaven/FF/fh-crushing-crystals.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=square ability=move
+	}
 }
+
 card 373 "lacerating eruption" level=3 image-path="character-ability-cards/frosthaven/FF/fh-lacerating-eruption.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=square ability=move
+	}
 }
+
 card 374 "frozen over" level=3 image-path="character-ability-cards/frosthaven/FF/fh-frozen-over.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond+ ability=#null
+	}
 }
+
 card 375 "the mountain's fist" level=4 image-path="character-ability-cards/frosthaven/FF/fh-the-mountains-fist.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=square ability=move
+	}
 }
+
 card 376 "packed solid" level=4 image-path="character-ability-cards/frosthaven/FF/fh-packed-solid.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=square ability=shield
+		enhancement kind=square ability=retaliate
+	}
 }
+
 card 377 "preserved fury" level=5 image-path="character-ability-cards/frosthaven/FF/fh-preserved-fury.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
 }
+
 card 378 "ice uppercut" level=5 image-path="character-ability-cards/frosthaven/FF/fh-ice-uppercut.png" {
-	top
-	bottom
+	top {
+		enhancement kind=circle ability=attack
+	}
+	bottom {
+		enhancement kind=square ability=move
+	}
 }
+
 card 379 "thick frost" level=6 image-path="character-ability-cards/frosthaven/FF/fh-thick-frost.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=heal
+	}
+	bottom {
+		enhancement kind=square ability=move
+	}
 }
+
 card 380 "glacier slam" level=6 image-path="character-ability-cards/frosthaven/FF/fh-glacier-slam.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=square ability=move
+	}
 }
+
 card 381 "gift of the mountain" level=7 image-path="character-ability-cards/frosthaven/FF/fh-gift-of-the-mountain.png" {
-	top
-	bottom
+	bottom lost=#true persistent=#true {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 382 "seeing stars" level=7 image-path="character-ability-cards/frosthaven/FF/fh-seeing-stars.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=circle ability=jump
+		enhancement kind=square ability=attack
+	}
 }
+
 card 383 "shattering blow" level=8 image-path="character-ability-cards/frosthaven/FF/fh-shattering-blow.png" {
-	top
-	bottom
+	top lost=#true {
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=heal
+	}
 }
+
 card 384 "draw strength" level=8 image-path="character-ability-cards/frosthaven/FF/fh-draw-strength.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack multiple=#true
+	}
 }
+
 card 385 "bring down the mountain" level=9 image-path="character-ability-cards/frosthaven/FF/fh-bring-down-the-mountain.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=attack multiple=#true
+	}
+	bottom {
+		enhancement kind=square ability=shield
+		enhancement kind=square ability=retaliate
+	}
 }
+
 card 386 "frozen spike" level=9 image-path="character-ability-cards/frosthaven/FF/fh-frozen-spike.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=attack multiple=#true
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }

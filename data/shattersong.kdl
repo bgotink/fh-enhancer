@@ -4,118 +4,198 @@ meta {
 }
 
 card 244 "unrelenting wail" level=1 image-path="character-ability-cards/frosthaven/SH/fh-unrelenting-wail.png" {
-	top
-	bottom
+	top lost=#true {
+		enhancement kind=circle ability=attack multiple=#true
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
-card 245 "lifting voice" level=1 image-path="character-ability-cards/frosthaven/SH/fh-lifting-voice.png" {
-	top
-	bottom
-}
+
+card 245 "lifting voice" level=1 image-path="character-ability-cards/frosthaven/SH/fh-lifting-voice.png"
+
 card 246 "heartening harmony" level=1 image-path="character-ability-cards/frosthaven/SH/fh-heartening-harmony.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=attack
+	}
 }
+
 card 247 "forceful vibrations" level=1 image-path="character-ability-cards/frosthaven/SH/fh-forceful-vibrations.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=attack
+	}
+	bottom lost=#true {
+		enhancement kind=circle ability=jump
+	}
 }
-card 248 "resonant frequency" level=1 image-path="character-ability-cards/frosthaven/SH/fh-resonant-frequency.png" {
-	top
-	bottom
-}
+
+card 248 "resonant frequency" level=1 image-path="character-ability-cards/frosthaven/SH/fh-resonant-frequency.png"
+
 card 249 "foreboding tremors" level=1 image-path="character-ability-cards/frosthaven/SH/fh-foreboding-tremors.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 250 "sonic shock" level=1 image-path="character-ability-cards/frosthaven/SH/fh-sonic-shock.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 251 "precious gems" level=1 image-path="character-ability-cards/frosthaven/SH/fh-precious-gems.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=square ability=move
+	}
 }
+
 card 252 "empowering pulse" level=1 image-path="character-ability-cards/frosthaven/SH/fh-empowering-pulse.png" {
-	top
-	bottom
+	top lost=#true {
+		enhancement kind=diamond ability=attack
+	}
 }
+
 card 253 "devastating shout" level=1 image-path="character-ability-cards/frosthaven/SH/fh-devastating-shout.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=range
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 254 "calamitous yawp" level=X image-path="character-ability-cards/frosthaven/SH/fh-calamitous-yawp.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=square ability=move
+	}
 }
+
 card 255 "din of battle" level=X image-path="character-ability-cards/frosthaven/SH/fh-din-of-battle.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=attack multiple=#true
+	}
 }
+
 card 256 "illuminative tone" level=X image-path="character-ability-cards/frosthaven/SH/fh-illuminative-tone.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true {
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=attack multiple=#true
+	}
 }
+
 card 257 transparency level=2 image-path="character-ability-cards/frosthaven/SH/fh-transparency.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
 }
-card 258 "befuddling bellow" level=2 image-path="character-ability-cards/frosthaven/SH/fh-befuddling-bellow.png" {
-	top
-	bottom
-}
+
+card 258 "befuddling bellow" level=2 image-path="character-ability-cards/frosthaven/SH/fh-befuddling-bellow.png"
+
 card 259 "shape the path" level=3 image-path="character-ability-cards/frosthaven/SH/fh-shape-the-path.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 260 "stealth vibrations" level=3 image-path="character-ability-cards/frosthaven/SH/fh-stealth-vibrations.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 261 "concentrated blast" level=4 image-path="character-ability-cards/frosthaven/SH/fh-concentrated-blast.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=attack multiple=#true
+	}
+	bottom {
+		enhancement kind=square ability=move
+	}
 }
+
 card 262 "elemental pulse" level=4 image-path="character-ability-cards/frosthaven/SH/fh-elemental-pulse.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
 }
+
 card 263 "shrieking chakram" level=5 image-path="character-ability-cards/frosthaven/SH/fh-shrieking-chakram.png" {
-	top
-	bottom
+	top lost=#true
 }
+
 card 264 "empowering note" level=5 image-path="character-ability-cards/frosthaven/SH/fh-empowering-note.png" {
-	top
-	bottom
+	top lost=#true persistent=#true
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
-card 265 "unsustainable wave" level=6 image-path="character-ability-cards/frosthaven/SH/fh-unsustainable-wave.png" {
-	top
-	bottom
-}
+
+card 265 "unsustainable wave" level=6 image-path="character-ability-cards/frosthaven/SH/fh-unsustainable-wave.png"
+
 card 266 "future sense" level=6 image-path="character-ability-cards/frosthaven/SH/fh-future-sense.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=attack multiple=#true
+	}
+	bottom lost=#true {
+		enhancement kind=circle ability=jump
+	}
 }
+
 card 267 "sound therapy" level=7 image-path="character-ability-cards/frosthaven/SH/fh-sound-therapy.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=square ability=heal
+	}
 }
+
 card 268 "cloaking refraction" level=7 image-path="character-ability-cards/frosthaven/SH/fh-cloaking-refraction.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 269 "soft spots" level=8 image-path="character-ability-cards/frosthaven/SH/fh-soft-spots.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=range
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 270 feedback level=8 image-path="character-ability-cards/frosthaven/SH/fh-feedback.png" {
-	top
-	bottom
+	top lost=#true persistent=#true
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 271 "barbaric yawp" level=9 image-path="character-ability-cards/frosthaven/SH/fh-barbaric-yawp.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 272 "violent vibrations" level=9 image-path="character-ability-cards/frosthaven/SH/fh-violent-vibrations.png" {
-	top
-	bottom
+	top lost=#true
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }

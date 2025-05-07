@@ -4,118 +4,225 @@ meta {
 }
 
 card 445 "skull collection" level=1 image-path="character-ability-cards/frosthaven/DT/fh-skull-collection.png" {
-	top
-	bottom
+	top lost=#true persistent=#true
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 446 "hollow aura" level=1 image-path="character-ability-cards/frosthaven/DT/fh-hollow-aura.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=square ability=move
+	}
 }
+
 card 447 "skewer the flesh" level=1 image-path="character-ability-cards/frosthaven/DT/fh-skewer-the-flesh.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=attack
+		enhancement kind=square ability=attack
+	}
+	bottom {
+		enhancement kind=square ability=teleport
+	}
 }
+
 card 448 "succumb to fear" level=1 image-path="character-ability-cards/frosthaven/DT/fh-succumb-to-fear.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=square ability=teleport
+	}
 }
+
 card 449 "ink cloud" level=1 image-path="character-ability-cards/frosthaven/DT/fh-ink-cloud.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=attack multiple=#true
+	}
+	bottom lost=#true
 }
+
 card 450 "lacerating stabs" level=1 image-path="character-ability-cards/frosthaven/DT/fh-lacerating-stabs.png" {
-	top
-	bottom
+	top lost=#true {
+		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=square ability=teleport
+	}
 }
+
 card 451 "staring into the abyss" level=1 image-path="character-ability-cards/frosthaven/DT/fh-staring-into-the-abyss.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=square ability=move
+	}
 }
+
 card 452 "mantle of dread" level=1 image-path="character-ability-cards/frosthaven/DT/fh-mantle-of-dread.png" {
-	top
-	bottom
+	top {
+		enhancement kind=circle ability=#null multiple=#true
+	}
+	bottom lost=#true persistent=#true
 }
+
 card 453 "black scythe" level=1 image-path="character-ability-cards/frosthaven/DT/fh-black-scythe.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
 }
+
 card 454 "tumultuous panic" level=1 image-path="character-ability-cards/frosthaven/DT/fh-tumultuous-panic.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=attack
+		enhancement kind=square ability=move
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true {
+		enhancement kind=circle ability=teleport
+		enhancement kind=square ability=teleport
+	}
 }
+
 card 455 "soul hunger" level=X image-path="character-ability-cards/frosthaven/DT/fh-soul-hunger.png" {
-	top
-	bottom
+	top lost=#true {
+		enhancement kind=diamond+ ability=heal
+	}
 }
+
 card 456 "morbid camouflage" level=X image-path="character-ability-cards/frosthaven/DT/fh-morbid-camouflage.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=attack
+	}
+	bottom {
+		enhancement kind=square ability=move
+	}
 }
+
 card 457 "haunting brutality" level=X image-path="character-ability-cards/frosthaven/DT/fh-haunting-brutality.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=attack
+	}
+	bottom lost=#true {
+		enhancement kind=circle ability=teleport
+	}
 }
+
 card 458 "slipping into death" level=2 image-path="character-ability-cards/frosthaven/DT/fh-slipping-into-death.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=square ability=move
+	}
 }
+
 card 459 "lie in wait" level=2 image-path="character-ability-cards/frosthaven/DT/fh-lie-in-wait.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=square ability=teleport
+	}
 }
+
 card 460 "crippling terror" level=3 image-path="character-ability-cards/frosthaven/DT/fh-crippling-terror.png" {
-	top
-	bottom
+	top lost=#true {
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom {
+		enhancement kind=square ability=teleport
+	}
 }
+
 card 461 "pinning spines" level=3 image-path="character-ability-cards/frosthaven/DT/fh-pinning-spines.png" {
-	top
-	bottom
+	top {
+		enhancement kind=circle ability=attack
+		enhancement kind=circle ability=attack
+	}
+	bottom lost=#true
 }
+
 card 462 "crushing darkness" level=4 image-path="character-ability-cards/frosthaven/DT/fh-crushing-darkness.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
 }
-card 463 "grim trophies" level=4 image-path="character-ability-cards/frosthaven/DT/fh-grim-trophies.png" {
-	top
-	bottom
-}
+
+card 463 "grim trophies" level=4 image-path="character-ability-cards/frosthaven/DT/fh-grim-trophies.png"
+
 card 464 "extra decoration" level=5 image-path="character-ability-cards/frosthaven/DT/fh-extra-decoration.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 465 "death spiral" level=5 image-path="character-ability-cards/frosthaven/DT/fh-death-spiral.png" {
-	top
-	bottom
+	top persistent=#true
+	bottom {
+		enhancement kind=circle ability=teleport
+	}
 }
+
 card 466 "claw of doom" level=6 image-path="character-ability-cards/frosthaven/DT/fh-claw-of-doom.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=attack
+	}
+	bottom {
+		enhancement kind=circle ability=teleport
+	}
 }
+
 card 467 "the remorseless deep" level=6 image-path="character-ability-cards/frosthaven/DT/fh-the-remorseless-deep.png" {
-	top
-	bottom
+	bottom {
+		enhancement kind=square ability=teleport
+	}
 }
+
 card 468 "hasten the end" level=7 image-path="character-ability-cards/frosthaven/DT/fh-hasten-the-end.png" {
-	top
-	bottom
+	bottom lost=#true {
+		enhancement kind=circle ability=teleport
+	}
 }
+
 card 469 "dire frenzy" level=7 image-path="character-ability-cards/frosthaven/DT/fh-dire-frenzy.png" {
-	top
-	bottom
+	top {
+		enhancement kind=square ability=attack
+		enhancement kind=diamond ability=attack
+	}
+	bottom {
+		enhancement kind=circle ability=move
+	}
 }
+
 card 470 "unseen horror" level=8 image-path="character-ability-cards/frosthaven/DT/fh-unseen-horror.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true persistent=#true
 }
+
 card 471 "rip from the bone" level=8 image-path="character-ability-cards/frosthaven/DT/fh-rip-from-the-bone.png" {
-	top
-	bottom
+	top {
+		enhancement kind=circle ability=attack multiple=#true
+	}
+	bottom {
+		enhancement kind=square ability=teleport
+	}
 }
+
 card 472 "black night of the deep" level=9 image-path="character-ability-cards/frosthaven/DT/fh-black-night-of-the-deep.png" {
-	top
-	bottom
+	top {
+		enhancement kind=circle ability=attack multiple=#true
+	}
+	bottom {
+		enhancement kind=circle ability=teleport
+	}
 }
+
 card 473 "consume the helpless" level=9 image-path="character-ability-cards/frosthaven/DT/fh-consume-the-helpless.png" {
-	top
-	bottom
+	top {
+		enhancement kind=diamond ability=pull
+	}
+	bottom lost=#true persistent=#true
 }
