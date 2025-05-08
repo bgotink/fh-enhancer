@@ -6,7 +6,7 @@ meta {
 card 215 cooling level=1 image-path="character-ability-cards/frosthaven/PY/fh-cooling.png" {
 	top
 	bottom{
-		enhancement kind=circle ability=move
+		enhancement kind=circle ability=heal
 	}
 }
 card 216 "quenched rage" level=1 image-path="character-ability-cards/frosthaven/PY/fh-quenched-rage.png" {
