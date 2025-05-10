@@ -593,7 +593,8 @@ for (const [characterName, character] of characters) {
 			(enhancement.persistent ?? action.persistent) &&
 			!enhancement.ability?.startsWith("summon")
 		) {
-			computation.setAttribute("persistent", "");
+			throw new Error(`Frosthaven doesn't have persistent enhancements but card ${card.name} has a ${enhancement.kind} enhancement that's supposedly persistent`);
+			// computation.setAttribute("persistent", "");
 		}
 
 		return line;

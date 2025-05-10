@@ -135,7 +135,7 @@ card 380 "glacier slam" level=6 image-path="character-ability-cards/frosthaven/F
 
 card 381 "gift of the mountain" level=7 image-path="character-ability-cards/frosthaven/FF/fh-gift-of-the-mountain.png" {
 	bottom lost=#true persistent=#true {
-		enhancement kind=circle ability=move
+		enhancement kind=circle ability=move persistent=#false
 	}
 }
 
