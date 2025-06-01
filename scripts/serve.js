@@ -11,46 +11,46 @@ const root = new URL("../src/", import.meta.url);
 const urlMap = new Map();
 /** @param {string} path */
 function resolve(path) {
-  let value = urlMap.get(path);
-  if (value == null) {
-    const originalPath = path;
-    if (path === "/") {
-      path = "index.html";
-    } else if (path.startsWith("/")) {
-      path = path.slice(1);
-    }
+	let value = urlMap.get(path);
+	if (value == null) {
+		const originalPath = path;
+		if (path === "/") {
+			path = "index.html";
+		} else if (path.startsWith("/")) {
+			path = path.slice(1);
+		}
 
-    value = new URL(path, root);
-    urlMap.set(originalPath, value);
-  }
+		value = new URL(path, root);
+		urlMap.set(originalPath, value);
+	}
 
-  return value;
+	return value;
 }
 
 const server = createServer((req, res) => {
-  const path = resolve(new URL(req.url, "http://localhost:3000").pathname);
+	const path = resolve(new URL(req.url, "http://localhost:3000").pathname);
 
-  stat(path).then(
-    () => {
-      res.setHeader(
-        "Content-Type",
-        {
-          ".html": "text/html",
-          ".js": "text/javascript",
-          ".png": "image/png",
-          ".css": "text/css",
-          ".json": "application/json",
-        }[extname(path.pathname)] ?? "application/text",
-      );
-      res.writeHead(200);
+	stat(path).then(
+		() => {
+			res.setHeader(
+				"Content-Type",
+				{
+					".html": "text/html",
+					".js": "text/javascript",
+					".png": "image/png",
+					".css": "text/css",
+					".json": "application/json",
+				}[extname(path.pathname)] ?? "application/text",
+			);
+			res.writeHead(200);
 
-      createReadStream(path).pipe(res);
-    },
-    () => {
-      res.writeHead(404);
-      res.end();
-    },
-  );
+			createReadStream(path).pipe(res);
+		},
+		() => {
+			res.writeHead(404);
+			res.end();
+		},
+	);
 });
 
 server.listen(3000);

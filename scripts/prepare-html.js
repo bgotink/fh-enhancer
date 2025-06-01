@@ -593,7 +593,9 @@ for (const [characterName, character] of characters) {
 			(enhancement.persistent ?? action.persistent) &&
 			!enhancement.ability?.startsWith("summon")
 		) {
-			throw new Error(`Frosthaven doesn't have persistent enhancements but card ${card.name} has a ${enhancement.kind} enhancement that's supposedly persistent`);
+			throw new Error(
+				`Frosthaven doesn't have persistent enhancements but card ${card.name} has a ${enhancement.kind} enhancement that's supposedly persistent`,
+			);
 			// computation.setAttribute("persistent", "");
 		}
 
@@ -688,6 +690,8 @@ function addHeader(document, characterName, title) {
 		  <label><input type=radio name=enhancer value=2></input>2</label>
 		  <label><input type=radio name=enhancer value=3></input>3</label>
 		  <label><input type=radio name=enhancer value=4></input>4</label>
+		  <br>
+		  <label>Temporary Enhancement<input type=checkbox name="temporary"></input></label>
 	  `;
 }
 

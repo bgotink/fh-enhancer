@@ -1,12 +1,18 @@
 // @ts-check
 
 const reEnhancerLevel = /\|enhancer-level=(\d)\|/;
+const reEnhancerTemporary = /\|temporary\|/;
 
 class FhEnhancer extends HTMLElement {
 	#level = +(reEnhancerLevel.exec(window.name)?.[1] ?? 1);
+	#temporary = reEnhancerTemporary.test(window.name);
 
 	get level() {
 		return this.#level;
+	}
+
+	get temporary() {
+		return this.#temporary;
 	}
 
 	connectedCallback() {
@@ -14,7 +20,11 @@ class FhEnhancer extends HTMLElement {
 
 		const levelStr = String(this.#level);
 		for (const input of this.querySelectorAll("input")) {
-			input.checked = input.value === levelStr;
+			if (input.name == "temporary") {
+				input.checked = this.#temporary;
+			} else {
+				input.checked = input.value === levelStr;
+			}
 		}
 	}
 
@@ -26,14 +36,23 @@ class FhEnhancer extends HTMLElement {
 
 		event.stopPropagation();
 
-		this.#level = +(/** @type {HTMLInputElement} */ (event.target).value);
-		if (reEnhancerLevel.test(window.name)) {
-			window.name = window.name.replace(
-				reEnhancerLevel,
-				`|enhancer-level=${this.#level}|`,
-			);
+		if (/** @type {HTMLInputElement} */ (event.target).name === "temporary") {
+			this.#temporary = /** @type {HTMLInputElement} */ (event.target).checked;
+			if (reEnhancerTemporary.test(window.name)) {
+				window.name = window.name.replace(reEnhancerTemporary, ``);
+			} else {
+				window.name += `|temporary|`;
+			}
 		} else {
-			window.name += `|enhancer-level=${this.#level}|`;
+			this.#level = +(/** @type {HTMLInputElement} */ (event.target).value);
+			if (reEnhancerLevel.test(window.name)) {
+				window.name = window.name.replace(
+					reEnhancerLevel,
+					`|enhancer-level=${this.#level}|`,
+				);
+			} else {
+				window.name += `|enhancer-level=${this.#level}|`;
+			}
 		}
 
 		for (const el of /** @type {NodeListOf<FhCost>} */ (
@@ -129,6 +148,7 @@ class FhCost extends HTMLElement {
 		const levelStr = /** @type {string} */ (this.getAttribute("card-level"));
 		const level = +(levelStr === "X" ? 1 : levelStr);
 		const enhancerLevel = this.#enhancer?.level ?? 1;
+		const temporaryEnhancement = this.#enhancer?.temporary ?? false;
 
 		const lost = this.hasAttribute("lost");
 		const persistent = this.hasAttribute("persistent");
@@ -175,30 +195,46 @@ class FhCost extends HTMLElement {
 			}
 		}
 
+		if (temporaryEnhancement) {
+			let reduction = 0;
+			if (numberOfBoughtEnhancements) {
+				reduction = 20;
+			}
+			reduction += Math.ceil((cost - reduction) * 0.2);
+			cost -= reduction;
+			title += `, reduced by ${reduction}g since it's temporary`;
+		}
+
 		this.innerText = `${Math.ceil(cost)}g`;
 		this.title = title;
 	}
 }
 customElements.define("fh-cost", FhCost);
 
-customElements.define("fh-character-link-with-spoiler", class extends HTMLElement {
-	/** @type {string=} */
-	#link;
+customElements.define(
+	"fh-character-link-with-spoiler",
+	class extends HTMLElement {
+		/** @type {string=} */
+		#link;
 
-	constructor() {
-		super();
+		constructor() {
+			super();
 
-		this.addEventListener("click", this, { capture: true });
-	}
-
-	connectedCallback() {
-		this.#link = /** @type {HTMLAnchorElement} */ (this.firstElementChild).href;
-		/** @type {HTMLAnchorElement} */ (this.firstElementChild).href = "#";
-	}
-
-	handleEvent(event) {
-		if (this.#link) {
-			/** @type {HTMLAnchorElement} */ (this.firstElementChild).href = this.#link;
+			this.addEventListener("click", this, {capture: true});
 		}
-	}
-});
+
+		connectedCallback() {
+			this.#link = /** @type {HTMLAnchorElement} */ (
+				this.firstElementChild
+			).href;
+			/** @type {HTMLAnchorElement} */ (this.firstElementChild).href = "#";
+		}
+
+		handleEvent(event) {
+			if (this.#link) {
+				/** @type {HTMLAnchorElement} */ (this.firstElementChild).href =
+					this.#link;
+			}
+		}
+	},
+);
