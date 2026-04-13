@@ -5,7 +5,7 @@ meta {
 
 card 273 caltrops level=1 image-path="character-ability-cards/frosthaven/TA/fh-caltrops.png" {
 	top{
-		enhancement kind=square ability=range
+		enhancement kind=square ability=range multiple=#true
 	}
 	bottom{
 		enhancement kind=circle ability=move
