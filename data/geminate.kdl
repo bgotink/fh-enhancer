@@ -30,8 +30,8 @@ card 154 "changeling's boon" level=1 image-path="character-ability-cards/frostha
 		enhancement kind=square ability=attack
 		enhancement kind=diamond ability=attack
 	}
-	bottom persistent=#true lost=#true{
-		enhancement kind=diamond+ ability=#null persistent=#false
+	bottom lost=#true{
+		enhancement kind=diamond+ ability=#null
 	}
 }
 card 155 "flailing tendrils" level=1 image-path="character-ability-cards/frosthaven/GE/fh-flailing-tendrils.png" {
@@ -215,13 +215,13 @@ card 180 "alluring pheromones" level=7 image-path="character-ability-cards/frost
 }
 card 181 "accelerated metabolism" level=8 image-path="character-ability-cards/frosthaven/GE/fh-accelerated-metabolism.png" {
 	top
-	bottom lost=#true persistent=#true {
+	bottom lost=#true{
 		enhancement kind=circle ability=move persistent=#false
 		enhancement kind=circle ability=move persistent=#false
 	}
 }
 card 182 "oscillating entity" level=8 image-path="character-ability-cards/frosthaven/GE/fh-oscillating-entity.png" {
-	top lost=#true persistent=#true {
+	top lost=#true{
 		enhancement kind=diamond ability=attack persistent=#false
 		enhancement kind=diamond ability=attack persistent=#false
 	}
