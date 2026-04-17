@@ -118,7 +118,7 @@ const art = new Map(
 	)
 		.filter(
 			(item) =>
-				item.expansion === "Frosthaven" && !item.xws.endsWith("coloricon"),
+				item.expansion === "frosthaven" && !item.xws.endsWith("coloricon"),
 		)
 		.map((item) => [item.name, item.image]),
 );

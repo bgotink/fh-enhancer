@@ -38,10 +38,6 @@ for (const card of allAbilityCardList) {
 	seenCardNumbers.add(card.cardno);
 
 	let characterName = card["character-xws"];
-	// typo in the data file?
-	if (characterName === "deminate") {
-		characterName = "geminate";
-	}
 
 	const character = (abilitiesPerCharacter[characterName] ??=
 		new PlayerCharacter(new CharacterMeta(characterName)));
