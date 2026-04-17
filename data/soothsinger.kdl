@@ -1,0 +1,125 @@
+meta {
+	game gloomhaven2
+	name Soothsinger
+	color "#75524E"
+}
+card #nan "mobilizing measure" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/mobilizing-measure.jpeg" {
+	top
+	bottom
+}
+card #nan "bewildering instrumental" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/bewildering-instrumental.jpeg" {
+	top
+	bottom
+}
+card #nan "wearying chant" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/wearying-chant.jpeg" {
+	top
+	bottom
+}
+card #nan "power ballad" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/power-ballad.jpeg" {
+	top
+	bottom
+}
+card #nan "dissonant rhythm" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/dissonant-rhythm.jpeg" {
+	top
+	bottom
+}
+card #nan "increase cadence" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/increase-cadence.jpeg" {
+	top
+	bottom
+}
+card #nan "intensifying amplitude" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/intensifying-amplitude.jpeg" {
+	top
+	bottom
+}
+card #nan "marching beat" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/marching-beat.jpeg" {
+	top
+	bottom
+}
+card #nan "tuning the outcome" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/tuning-the-outcome.jpeg" {
+	top
+	bottom
+}
+card #nan "call to action" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/call-to-action.jpeg" {
+	top
+	bottom
+}
+card #nan "singing arrow" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/singing-arrow.jpeg" {
+	top
+	bottom
+}
+card #nan "defensive ditty" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/defensive-ditty.jpeg" {
+	top
+	bottom
+}
+card #nan "echoing aria" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/echoing-aria.jpeg" {
+	top
+	bottom
+}
+card #nan "provoke terror" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/provoke-terror.jpeg" {
+	top
+	bottom
+}
+card #nan "onward to battle" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/onward-to-battle.jpeg" {
+	top
+	bottom
+}
+card #nan "soothing lullaby" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/soothing-lullaby.jpeg" {
+	top
+	bottom
+}
+card #nan "symphonic medley" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/symphonic-medley.jpeg" {
+	top
+	bottom
+}
+card #nan "ode to the gambler" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/ode-to-the-gambler.jpeg" {
+	top
+	bottom
+}
+card #nan "hymn of the oak" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/hymn-of-the-oak.jpeg" {
+	top
+	bottom
+}
+card #nan "alluring serenade" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/alluring-serenade.jpeg" {
+	top
+	bottom
+}
+card #nan "change tempo" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/change-tempo.jpeg" {
+	top
+	bottom
+}
+card #nan "thrilling solo" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/thrilling-solo.jpeg" {
+	top
+	bottom
+}
+card #nan "pull the strings" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/pull-the-strings.jpeg" {
+	top
+	bottom
+}
+card #nan "disorienting dirge" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/disorienting-dirge.jpeg" {
+	top
+	bottom
+}
+card #nan "inspiring anthem" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/inspiring-anthem.jpeg" {
+	top
+	bottom
+}
+card #nan "wistful wounding" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/wistful-wounding.jpeg" {
+	top
+	bottom
+}
+card #nan "commanding presence" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/commanding-presence.jpeg" {
+	top
+	bottom
+}
+card #nan "toughening trill" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/toughening-trill.jpeg" {
+	top
+	bottom
+}
+card #nan "grand finale" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/grand-finale.jpeg" {
+	top
+	bottom
+}
+card #nan "captivating performance" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/captivating-performance.jpeg" {
+	top
+	bottom
+}

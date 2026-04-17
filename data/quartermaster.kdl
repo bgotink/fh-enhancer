@@ -1,0 +1,161 @@
+meta {
+	game gloomhaven2
+	name Quartermaster
+	color "#815527"
+}
+card #nan "booster pack" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/booster-pack.jpeg" {
+	top
+	bottom
+}
+card #nan "readied blade" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/readied-blade.jpeg" {
+	top
+	bottom
+}
+card #nan "crushing hammer" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/crushing-hammer.jpeg" {
+	top
+	bottom
+}
+card #nan "hastened step" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/hastened-step.jpeg" {
+	top
+	bottom
+}
+card #nan "bladed boomerang" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/bladed-boomerang.jpeg" {
+	top
+	bottom
+}
+card #nan "impaling spear" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/impaling-spear.jpeg" {
+	top
+	bottom
+}
+card #nan "light javelin" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/light-javelin.jpeg" {
+	top
+	bottom
+}
+card #nan "cleave and thrust" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/cleave-and-thrust.jpeg" {
+	top
+	bottom
+}
+card #nan "iron bulwark" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/iron-bulwark.jpeg" {
+	top
+	bottom
+}
+card #nan proficiency level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/proficiency.jpeg" {
+	top
+	bottom
+}
+card #nan provisions level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/provisions.jpeg" {
+	top
+	bottom
+}
+card #nan "caustic bolt" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/caustic-bolt.jpeg" {
+	top
+	bottom
+}
+card #nan "scroll of recall" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/scroll-of-recall.jpeg" {
+	top
+	bottom
+}
+card #nan "sharpening kit" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/sharpening-kit.jpeg" {
+	top
+	bottom
+}
+card #nan "scroll case" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/scroll-case.jpeg" {
+	top
+	bottom
+}
+card #nan "lethal arsenal" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/lethal-arsenal.jpeg" {
+	top
+	bottom
+}
+card #nan "quiver of arrows" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/quiver-of-arrows.jpeg" {
+	top
+	bottom
+}
+card #nan "concussive snare" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/concussive-snare.jpeg" {
+	top
+	bottom
+}
+card #nan "hammer and anvil" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/hammer-and-anvil.jpeg" {
+	top
+	bottom
+}
+card #nan "giant club" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/giant-club.jpeg" {
+	top
+	bottom
+}
+card #nan "scroll of judgement" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/scroll-of-judgement.jpeg" {
+	top
+	bottom
+}
+card #nan "set up shop" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/set-up-shop.jpeg" {
+	top
+	bottom
+}
+card #nan "scroll of lightning" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/scroll-of-lightning.jpeg" {
+	top
+	bottom
+}
+card #nan "continual supply" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/continual-supply.jpeg" {
+	top
+	bottom
+}
+card #nan "twin lances" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/twin-lances.jpeg" {
+	top
+	bottom
+}
+card #nan "tools of war" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/tools-of-war.jpeg" {
+	top
+	bottom
+}
+card #nan "scroll of blizzards" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/scroll-of-blizzards.jpeg" {
+	top
+	bottom
+}
+card #nan "armed to the teeth" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/armed-to-the-teeth.jpeg" {
+	top
+	bottom
+}
+card #nan "reinforced steel" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/reinforced-steel.jpeg" {
+	top
+	bottom
+}
+card #nan "bag of holding" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/bag-of-holding.jpeg" {
+	top
+	bottom
+}
+card #nan "sharpened dirk" level=10 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/sharpened-dirk.jpeg" {
+	top
+	bottom
+}
+card #nan "sturdy spear" level=10 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/sturdy-spear.jpeg" {
+	top
+	bottom
+}
+card #nan "scroll of embers" level=10 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/scroll-of-embers.jpeg" {
+	top
+	bottom
+}
+card #nan "weighted bolas" level=10 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/weighted-bolas.jpeg" {
+	top
+	bottom
+}
+card #nan "scroll of relocation" level=10 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/scroll-of-relocation.jpeg" {
+	top
+	bottom
+}
+card #nan "corrosive coating" level=10 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/corrosive-coating.jpeg" {
+	top
+	bottom
+}
+card #nan "iront plate" level=10 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/iront-plate.jpeg" {
+	top
+	bottom
+}
+card #nan "barbed strip" level=10 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/barbed-strip.jpeg" {
+	top
+	bottom
+}
+card #nan "scroll of foresight" level=10 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/scroll-of-foresight.jpeg" {
+	top
+	bottom
+}

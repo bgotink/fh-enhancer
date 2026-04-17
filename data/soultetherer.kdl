@@ -1,0 +1,129 @@
+meta {
+	game gloomhaven2
+	name Soultetherer
+	color "#713B5C"
+}
+card #nan "ethereal gust" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/ethereal-gust.jpeg" {
+	top
+	bottom
+}
+card #nan "forged ferocity" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/forged-ferocity.jpeg" {
+	top
+	bottom
+}
+card #nan "living night" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/living-night.jpeg" {
+	top
+	bottom
+}
+card #nan "wild animation" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/wild-animation.jpeg" {
+	top
+	bottom
+}
+card #nan "planar protection" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/planar-protection.jpeg" {
+	top
+	bottom
+}
+card #nan "mighty bond" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/mighty-bond.jpeg" {
+	top
+	bottom
+}
+card #nan "bonded might" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/bonded-might.jpeg" {
+	top
+	bottom
+}
+card #nan "burning passion" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/burning-passion.jpeg" {
+	top
+	bottom
+}
+card #nan "unending dominance" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/unending-dominance.jpeg" {
+	top
+	bottom
+}
+card #nan "shadow dart" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/shadow-dart.jpeg" {
+	top
+	bottom
+}
+card #nan "burning tether" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/burning-tether.jpeg" {
+	top
+	bottom
+}
+card #nan "primal assault" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/primal-assault.jpeg" {
+	top
+	bottom
+}
+card #nan "drifting stingers" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/drifting-stingers.jpeg" {
+	top
+	bottom
+}
+card #nan "biting wind" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/biting-wind.jpeg" {
+	top
+	bottom
+}
+card #nan "unwavering hand" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/unwavering-hand.jpeg" {
+	top
+	bottom
+}
+card #nan "intervening apparitions" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/intervening-apparitions.jpeg" {
+	top
+	bottom
+}
+card #nan "void imbuement" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/void-imbuement.jpeg" {
+	top
+	bottom
+}
+card #nan "shaping the void" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/shaping-the-void.jpeg" {
+	top
+	bottom
+}
+card #nan "deadly mischief" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/deadly-mischief.jpeg" {
+	top
+	bottom
+}
+card #nan "strength in numbers" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/strength-in-numbers.jpeg" {
+	top
+	bottom
+}
+card #nan "volatile flame" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/volatile-flame.jpeg" {
+	top
+	bottom
+}
+card #nan "living mountain" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/living-mountain.jpeg" {
+	top
+	bottom
+}
+card #nan "primal infusion" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/primal-infusion.jpeg" {
+	top
+	bottom
+}
+card #nan "tear the fabric" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/tear-the-fabric.jpeg" {
+	top
+	bottom
+}
+card #nan "oozing manifestation" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/oozing-manifestation.jpeg" {
+	top
+	bottom
+}
+card #nan "divided mind" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/divided-mind.jpeg" {
+	top
+	bottom
+}
+card #nan "negative energy" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/negative-energy.jpeg" {
+	top
+	bottom
+}
+card #nan "otherworldly rage" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/otherworldly-rage.jpeg" {
+	top
+	bottom
+}
+card #nan "interplanar mastery" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/interplanar-mastery.jpeg" {
+	top
+	bottom
+}
+card #nan "imposed will" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/imposed-will.jpeg" {
+	top
+	bottom
+}
+card #nan "horned nightmare" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/horned-nightmare.jpeg" {
+	top
+	bottom
+}

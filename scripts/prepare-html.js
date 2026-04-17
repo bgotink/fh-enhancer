@@ -1,14 +1,7 @@
 #!/usr/bin/env node
 // @ts-check
 
-import {
-	copyFile,
-	mkdir,
-	readdir,
-	readFile,
-	stat,
-	writeFile,
-} from "node:fs/promises";
+import {mkdir, readFile, stat, writeFile} from "node:fs/promises";
 import {env} from "node:process";
 import {fileURLToPath} from "node:url";
 import {JSDOM} from "jsdom";

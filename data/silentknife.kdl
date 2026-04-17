@@ -1,0 +1,117 @@
+meta {
+	game gloomhaven2
+	name SilentKnife
+	color "#2F4C2A"
+}
+card #nan "single out" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/single-out.jpeg" {
+	top
+	bottom
+}
+card #nan "flanking strike" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/flanking-strike.jpeg" {
+	top
+	bottom
+}
+card #nan "swift bow" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/swift-bow.jpeg" {
+	top
+	bottom
+}
+card #nan "quick hands" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/quick-hands.jpeg" {
+	top
+	bottom
+}
+card #nan "sinister opportunity" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/sinister-opportunity.jpeg" {
+	top
+	bottom
+}
+card #nan "venom shiv" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/venom-shiv.jpeg" {
+	top
+	bottom
+}
+card #nan "throwing knives" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/throwing-knives.jpeg" {
+	top
+	bottom
+}
+card #nan "practiced reflexes" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/practiced-reflexes.jpeg" {
+	top
+	bottom
+}
+card #nan "special mixture" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/special-mixture.jpeg" {
+	top
+	bottom
+}
+card #nan backstab level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/backstab.jpeg" {
+	top
+	bottom
+}
+card #nan "smoke bomb" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/smoke-bomb.jpeg" {
+	top
+	bottom
+}
+card #nan "trickster's reversal" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/tricksters-reversal.jpeg" {
+	top
+	bottom
+}
+card #nan "open wound" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/open-wound.jpeg" {
+	top
+	bottom
+}
+card #nan "stick to the shadows" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/stick-to-the-shadows.jpeg" {
+	top
+	bottom
+}
+card #nan "hidden daggers" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/hidden-daggers.jpeg" {
+	top
+	bottom
+}
+card #nan flintlock level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/flintlock.jpeg" {
+	top
+	bottom
+}
+card #nan "flurry of blades" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/flurry-of-blades.jpeg" {
+	top
+	bottom
+}
+card #nan "gruesome advantage" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/gruesome-advantage.jpeg" {
+	top
+	bottom
+}
+card #nan "duelist's advantage" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/duelists-advantage.jpeg" {
+	top
+	bottom
+}
+card #nan "serrated arrow" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/serrated-arrow.jpeg" {
+	top
+	bottom
+}
+card #nan "dance of daggers" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/dance-of-daggers.jpeg" {
+	top
+	bottom
+}
+card #nan "cull the weak" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/cull-the-weak.jpeg" {
+	top
+	bottom
+}
+card #nan "stiletto storm" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/stiletto-storm.jpeg" {
+	top
+	bottom
+}
+card #nan "spring the trap" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/spring-the-trap.jpeg" {
+	top
+	bottom
+}
+card #nan "visage of the inevitable" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/visage-of-the-inevitable.jpeg" {
+	top
+	bottom
+}
+card #nan "crippling poison" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/crippling-poison.jpeg" {
+	top
+	bottom
+}
+card #nan "hired help" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/hired-help.jpeg" {
+	top
+	bottom
+}
+card #nan "watch it burn" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/watch-it-burn.jpeg" {
+	top
+	bottom
+}

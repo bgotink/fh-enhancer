@@ -1,0 +1,117 @@
+meta {
+	game gloomhaven2
+	name Berserker
+	color "#71382F"
+}
+card #nan "numb the pain" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/numb-the-pain.jpeg" {
+	top
+	bottom
+}
+card #nan "shiny distraction" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/shiny-distraction.jpeg" {
+	top
+	bottom
+}
+card #nan "strength in agony" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/strength-in-agony.jpeg" {
+	top
+	bottom
+}
+card #nan "defiance of death" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/defiance-of-death.jpeg" {
+	top
+	bottom
+}
+card #nan "resolute stand" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/resolute-stand.jpeg" {
+	top
+	bottom
+}
+card #nan "blood pact" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/blood-pact.jpeg" {
+	top
+	bottom
+}
+card #nan cauterize level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/cauterize.jpeg" {
+	top
+	bottom
+}
+card #nan "dazing wound" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/dazing-wound.jpeg" {
+	top
+	bottom
+}
+card #nan "unbridled power" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/unbridled-power.jpeg" {
+	top
+	bottom
+}
+card #nan "from the brink" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/from-the-brink.jpeg" {
+	top
+	bottom
+}
+card #nan "glass hammer" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/glass-hammer.jpeg" {
+	top
+	bottom
+}
+card #nan "growing rage" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/growing-rage.jpeg" {
+	top
+	bottom
+}
+card #nan "reckless offensive" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/reckless-offensive.jpeg" {
+	top
+	bottom
+}
+card #nan "into the fight" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/into-the-fight.jpeg" {
+	top
+	bottom
+}
+card #nan "final fight" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/final-fight.jpeg" {
+	top
+	bottom
+}
+card #nan "tireless retribution" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/tireless-retribution.jpeg" {
+	top
+	bottom
+}
+card #nan "unstoppable destruction" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/unstoppable-destruction.jpeg" {
+	top
+	bottom
+}
+card #nan "inner fire" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/inner-fire.jpeg" {
+	top
+	bottom
+}
+card #nan "seeing red" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/seeing-red.jpeg" {
+	top
+	bottom
+}
+card #nan "vengeful barrage" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/vengeful-barrage.jpeg" {
+	top
+	bottom
+}
+card #nan "flurry of axes" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/flurry-of-axes.jpeg" {
+	top
+	bottom
+}
+card #nan "devil horns" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/devil-horns.jpeg" {
+	top
+	bottom
+}
+card #nan "careless charge" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/careless-charge.jpeg" {
+	top
+	bottom
+}
+card #nan "fueled by pain" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/fueled-by-pain.jpeg" {
+	top
+	bottom
+}
+card #nan "bone breaker" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/bone-breaker.jpeg" {
+	top
+	bottom
+}
+card #nan "spiked armor" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/spiked-armor.jpeg" {
+	top
+	bottom
+}
+card #nan "burning hatred" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/burning-hatred.jpeg" {
+	top
+	bottom
+}
+card #nan "bathe in blood" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/bathe-in-blood.jpeg" {
+	top
+	bottom
+}

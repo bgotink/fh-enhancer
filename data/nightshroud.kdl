@@ -1,0 +1,117 @@
+meta {
+	game gloomhaven2
+	name Nightshroud
+	color "#49475F"
+}
+card #nan "spirit of the night" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/spirit-of-the-night.jpeg" {
+	top
+	bottom
+}
+card #nan "slice through" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/slice-through.jpeg" {
+	top
+	bottom
+}
+card #nan "eyes of the night" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/eyes-of-the-night.jpeg" {
+	top
+	bottom
+}
+card #nan "armor of the night" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/armor-of-the-night.jpeg" {
+	top
+	bottom
+}
+card #nan "swallowed by fear" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/swallowed-by-fear.jpeg" {
+	top
+	bottom
+}
+card #nan "dancing shadows" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/dancing-shadows.jpeg" {
+	top
+	bottom
+}
+card #nan "silent force" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/silent-force.jpeg" {
+	top
+	bottom
+}
+card #nan "black knives" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/black-knives.jpeg" {
+	top
+	bottom
+}
+card #nan "enervating wound" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/enervating-wound.jpeg" {
+	top
+	bottom
+}
+card #nan nightfall level=X image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/nightfall.jpeg" {
+	top
+	bottom
+}
+card #nan "empowering void" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/empowering-void.jpeg" {
+	top
+	bottom
+}
+card #nan "marked for death" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/marked-for-death.jpeg" {
+	top
+	bottom
+}
+card #nan "unseen dread" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/unseen-dread.jpeg" {
+	top
+	bottom
+}
+card #nan "shroud in shade" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/shroud-in-shade.jpeg" {
+	top
+	bottom
+}
+card #nan "terror blade" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/terror-blade.jpeg" {
+	top
+	bottom
+}
+card #nan "prepare for the kill" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/prepare-for-the-kill.jpeg" {
+	top
+	bottom
+}
+card #nan "lurking ruin" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/lurking-ruin.jpeg" {
+	top
+	bottom
+}
+card #nan "cursed blades" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/cursed-blades.jpeg" {
+	top
+	bottom
+}
+card #nan "into the night" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/into-the-night.jpeg" {
+	top
+	bottom
+}
+card #nan "seeping tendrils" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/seeping-tendrils.jpeg" {
+	top
+	bottom
+}
+card #nan "claws of the night" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/claws-of-the-night.jpeg" {
+	top
+	bottom
+}
+card #nan "dark cloud" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/dark-cloud.jpeg" {
+	top
+	bottom
+}
+card #nan "messenger of death" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/messenger-of-death.jpeg" {
+	top
+	bottom
+}
+card #nan "concealed dominance" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/concealed-dominance.jpeg" {
+	top
+	bottom
+}
+card #nan "prey on the weak" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/prey-on-the-weak.jpeg" {
+	top
+	bottom
+}
+card #nan shadowstrike level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/shadowstrike.jpeg" {
+	top
+	bottom
+}
+card #nan "swallowed by night" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/swallowed-by-night.jpeg" {
+	top
+	bottom
+}
+card #nan "voice of the night" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/voice-of-the-night.jpeg" {
+	top
+	bottom
+}

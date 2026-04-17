@@ -1,0 +1,121 @@
+meta {
+	game gloomhaven2
+	name Wildfury
+	color "#634031"
+}
+card #nan "concentrated rage" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/concentrated-rage.jpeg" {
+	top
+	bottom
+}
+card #nan maul level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/maul.jpeg" {
+	top
+	bottom
+}
+card #nan "howling bolts" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/howling-bolts.jpeg" {
+	top
+	bottom
+}
+card #nan "nature's gift" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/natures-gift.jpeg" {
+	top
+	bottom
+}
+card #nan "focused aggression" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/focused-aggression.jpeg" {
+	top
+	bottom
+}
+card #nan gnaw level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/gnaw.jpeg" {
+	top
+	bottom
+}
+card #nan "disorienting roar" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/disorienting-roar.jpeg" {
+	top
+	bottom
+}
+card #nan "vitality siphon" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/vitality-siphon.jpeg" {
+	top
+	bottom
+}
+card #nan "spirit swap" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/spirit-swap.jpeg" {
+	top
+	bottom
+}
+card #nan "invocation of endurance" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/invocation-of-endurance.jpeg" {
+	top
+	bottom
+}
+card #nan "invocation of spirit" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/invocation-of-spirit.jpeg" {
+	top
+	bottom
+}
+card #nan "gust sigil" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/gust-sigil.jpeg" {
+	top
+	bottom
+}
+card #nan "forceful swipe" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/forceful-swipe.jpeg" {
+	top
+	bottom
+}
+card #nan "energizing strike" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/energizing-strike.jpeg" {
+	top
+	bottom
+}
+card #nan "earthen spikes" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/earthen-spikes.jpeg" {
+	top
+	bottom
+}
+card #nan "punch through" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/punch-through.jpeg" {
+	top
+	bottom
+}
+card #nan "stone sigil" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/stone-sigil.jpeg" {
+	top
+	bottom
+}
+card #nan "unstoppable beast" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/unstoppable-beast.jpeg" {
+	top
+	bottom
+}
+card #nan "forest's blessing" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/forests-blessing.jpeg" {
+	top
+	bottom
+}
+card #nan rampage level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/rampage.jpeg" {
+	top
+	bottom
+}
+card #nan "invocation of domination" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/invocation-of-domination.jpeg" {
+	top
+	bottom
+}
+card #nan "blood hunger" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/blood-hunger.jpeg" {
+	top
+	bottom
+}
+card #nan "ancient ward" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/ancient-ward.jpeg" {
+	top
+	bottom
+}
+card #nan "invocation of absorption" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/invocation-of-absorption.jpeg" {
+	top
+	bottom
+}
+card #nan "unleashed fury" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/unleashed-fury.jpeg" {
+	top
+	bottom
+}
+card #nan "lash out" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/lash-out.jpeg" {
+	top
+	bottom
+}
+card #nan "unbreakable bond" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/unbreakable-bond.jpeg" {
+	top
+	bottom
+}
+card #nan "spirit sigil" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/spirit-sigil.jpeg" {
+	top
+	bottom
+}
+card #nan "jaws of death" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/WF2/jaws-of-death.jpeg" {
+	top
+	bottom
+}

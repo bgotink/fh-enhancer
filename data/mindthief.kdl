@@ -1,0 +1,121 @@
+meta {
+	game gloomhaven2
+	name Mindthief
+	color "#374458"
+}
+card #nan "submissive affliction" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/submissive-affliction.jpeg" {
+	top
+	bottom
+}
+card #nan "hidden in the shadows" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/hidden-in-the-shadows.jpeg" {
+	top
+	bottom
+}
+card #nan scurry level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/scurry.jpeg" {
+	top
+	bottom
+}
+card #nan "withering claw" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/withering-claw.jpeg" {
+	top
+	bottom
+}
+card #nan "frigid apparition" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/frigid-apparition.jpeg" {
+	top
+	bottom
+}
+card #nan "the mind's weakness" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/the-minds-weakness.jpeg" {
+	top
+	bottom
+}
+card #nan pilfer level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/pilfer.jpeg" {
+	top
+	bottom
+}
+card #nan "perverse edge" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/perverse-edge.jpeg" {
+	top
+	bottom
+}
+card #nan "empathetic assault" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/empathetic-assault.jpeg" {
+	top
+	bottom
+}
+card #nan "psychic blade" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/psychic-blade.jpeg" {
+	top
+	bottom
+}
+card #nan "feedback loops" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/feedback-loops.jpeg" {
+	top
+	bottom
+}
+card #nan possession level=X image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/possession.jpeg" {
+	top
+	bottom
+}
+card #nan "gnawing horde" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/gnawing-horde.jpeg" {
+	top
+	bottom
+}
+card #nan "fearsome blade" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/fearsome-blade.jpeg" {
+	top
+	bottom
+}
+card #nan "hostile takeover" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/hostile-takeover.jpeg" {
+	top
+	bottom
+}
+card #nan "brain leech" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/brain-leech.jpeg" {
+	top
+	bottom
+}
+card #nan "cranium overload" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/cranium-overload.jpeg" {
+	top
+	bottom
+}
+card #nan "frozen shiv" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/frozen-shiv.jpeg" {
+	top
+	bottom
+}
+card #nan "silent scream" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/silent-scream.jpeg" {
+	top
+	bottom
+}
+card #nan "mass hysteria" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/mass-hysteria.jpeg" {
+	top
+	bottom
+}
+card #nan "gangling abomination" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/gangling-abomination.jpeg" {
+	top
+	bottom
+}
+card #nan "telepathic command" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/telepathic-command.jpeg" {
+	top
+	bottom
+}
+card #nan "dark frenzy" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/dark-frenzy.jpeg" {
+	top
+	bottom
+}
+card #nan domination level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/domination.jpeg" {
+	top
+	bottom
+}
+card #nan "psychic projection" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/psychic-projection.jpeg" {
+	top
+	bottom
+}
+card #nan "shared nightmare" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/shared-nightmare.jpeg" {
+	top
+	bottom
+}
+card #nan "corrupting embrace" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/corrupting-embrace.jpeg" {
+	top
+	bottom
+}
+card #nan "many as one" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/many-as-one.jpeg" {
+	top
+	bottom
+}
+card #nan "phantasmal killer" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/phantasmal-killer.jpeg" {
+	top
+	bottom
+}

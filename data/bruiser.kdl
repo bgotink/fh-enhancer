@@ -1,0 +1,121 @@
+meta {
+	game gloomhaven2
+	name Bruiser
+	color "#16395A"
+}
+card #nan trample level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/trample.jpeg" {
+	top
+	bottom
+}
+card #nan "eye for an eye" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/eye-for-an-eye.jpeg" {
+	top
+	bottom
+}
+card #nan skewer level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/skewer.jpeg" {
+	top
+	bottom
+}
+card #nan "overwhelming assault" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/overwhelming-assault.jpeg" {
+	top
+	bottom
+}
+card #nan "balanced measure" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/balanced-measure.jpeg" {
+	top
+	bottom
+}
+card #nan "grab and go" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/grab-and-go.jpeg" {
+	top
+	bottom
+}
+card #nan "warding strength" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/warding-strength.jpeg" {
+	top
+	bottom
+}
+card #nan "shield bash" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/shield-bash.jpeg" {
+	top
+	bottom
+}
+card #nan "leaping cleave" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/leaping-cleave.jpeg" {
+	top
+	bottom
+}
+card #nan "spare dagger" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/spare-dagger.jpeg" {
+	top
+	bottom
+}
+card #nan "sweeping blow" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/sweeping-blow.jpeg" {
+	top
+	bottom
+}
+card #nan "fearsome taunt" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/fearsome-taunt.jpeg" {
+	top
+	bottom
+}
+card #nan "provoking roar" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/provoking-roar.jpeg" {
+	top
+	bottom
+}
+card #nan "intimidating growl" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/intimidating-growl.jpeg" {
+	top
+	bottom
+}
+card #nan juggernaut level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/juggernaut.jpeg" {
+	top
+	bottom
+}
+card #nan "hook and chain" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/hook-and-chain.jpeg" {
+	top
+	bottom
+}
+card #nan "unstoppable charge" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/unstoppable-charge.jpeg" {
+	top
+	bottom
+}
+card #nan whirlwind level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/whirlwind.jpeg" {
+	top
+	bottom
+}
+card #nan "push through" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/push-through.jpeg" {
+	top
+	bottom
+}
+card #nan "skirmishing maneuver" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/skirmishing-maneuver.jpeg" {
+	top
+	bottom
+}
+card #nan "defensive tactics" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/defensive-tactics.jpeg" {
+	top
+	bottom
+}
+card #nan "run through" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/run-through.jpeg" {
+	top
+	bottom
+}
+card #nan "immovable phalanx" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/immovable-phalanx.jpeg" {
+	top
+	bottom
+}
+card #nan "leg fly" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/leg-fly.jpeg" {
+	top
+	bottom
+}
+card #nan "selfish retribution" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/selfish-retribution.jpeg" {
+	top
+	bottom
+}
+card #nan "frenzied onslaught" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/frenzied-onslaught.jpeg" {
+	top
+	bottom
+}
+card #nan "crippling offensive" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/crippling-offensive.jpeg" {
+	top
+	bottom
+}
+card #nan "brute force" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/brute-force.jpeg" {
+	top
+	bottom
+}
+card #nan "face your end" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/face-your-end.jpeg" {
+	top
+	bottom
+}

@@ -7,6 +7,15 @@ export const worldhavenImagesFolder = new URL(
 	import.meta.url,
 );
 
+export const gloomhavenCardBrowserDataFolder = new URL(
+	"../third_party/gloomhaven-card-browser/data/",
+	import.meta.url,
+);
+export const gloomhavenCardBrowserImagesFolder = new URL(
+	"../third_party/gloomhaven-card-browser-images/images/",
+	import.meta.url,
+);
+
 export const dataFolder = new URL("../data/", import.meta.url);
 export const outputFolder = new URL("../output/", import.meta.url);
 

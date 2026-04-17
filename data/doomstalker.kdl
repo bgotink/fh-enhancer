@@ -1,0 +1,125 @@
+meta {
+	game gloomhaven2
+	name Doomstalker
+	color "#3D7584"
+}
+card #nan "rain of arrows" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/rain-of-arrows.jpeg" {
+	top
+	bottom
+}
+card #nan "race to the grave" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/race-to-the-grave.jpeg" {
+	top
+	bottom
+}
+card #nan "gut shot" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/gut-shot.jpeg" {
+	top
+	bottom
+}
+card #nan detonation level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/detonation.jpeg" {
+	top
+	bottom
+}
+card #nan "murderous stalker" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/murderous-stalker.jpeg" {
+	top
+	bottom
+}
+card #nan "a moment's peace" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/a-moments-peace.jpeg" {
+	top
+	bottom
+}
+card #nan "the hunt begins" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/the-hunt-begins.jpeg" {
+	top
+	bottom
+}
+card #nan "solid bow" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/solid-bow.jpeg" {
+	top
+	bottom
+}
+card #nan "foot snare" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/foot-snare.jpeg" {
+	top
+	bottom
+}
+card #nan "forward momentum" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/forward-momentum.jpeg" {
+	top
+	bottom
+}
+card #nan "hidden danger" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/hidden-danger.jpeg" {
+	top
+	bottom
+}
+card #nan "give chase" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/give-chase.jpeg" {
+	top
+	bottom
+}
+card #nan "feral aid" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/feral-aid.jpeg" {
+	top
+	bottom
+}
+card #nan "fierce fighter" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/fierce-fighter.jpeg" {
+	top
+	bottom
+}
+card #nan "relentless offensive" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/relentless-offensive.jpeg" {
+	top
+	bottom
+}
+card #nan "dual shot" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/dual-shot.jpeg" {
+	top
+	bottom
+}
+card #nan "walking bastion" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/walking-bastion.jpeg" {
+	top
+	bottom
+}
+card #nan "swift trickery" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/swift-trickery.jpeg" {
+	top
+	bottom
+}
+card #nan camouflage level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/camouflage.jpeg" {
+	top
+	bottom
+}
+card #nan "coated arrows" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/coated-arrows.jpeg" {
+	top
+	bottom
+}
+card #nan "felling swoop" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/felling-swoop.jpeg" {
+	top
+	bottom
+}
+card #nan expose level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/expose.jpeg" {
+	top
+	bottom
+}
+card #nan "wild command" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/wild-command.jpeg" {
+	top
+	bottom
+}
+card #nan "impending end" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/impending-end.jpeg" {
+	top
+	bottom
+}
+card #nan "charging beast" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/charging-beast.jpeg" {
+	top
+	bottom
+}
+card #nan "darkened skies" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/darkened-skies.jpeg" {
+	top
+	bottom
+}
+card #nan "feral instincts" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/feral-instincts.jpeg" {
+	top
+	bottom
+}
+card #nan "press the attack" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/press-the-attack.jpeg" {
+	top
+	bottom
+}
+card #nan "predator and prey" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/predator-and-prey.jpeg" {
+	top
+	bottom
+}
+card #nan "heart of doom" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/heart-of-doom.jpeg" {
+	top
+	bottom
+}

@@ -1,0 +1,121 @@
+meta {
+	game gloomhaven2
+	name Elementalist
+	color "#474747"
+}
+card #nan "ice spikes" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/ice-spikes.jpeg" {
+	top
+	bottom
+}
+card #nan "malleable evocation" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/malleable-evocation.jpeg" {
+	top
+	bottom
+}
+card #nan "formless power" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/formless-power.jpeg" {
+	top
+	bottom
+}
+card #nan "shaping the ether" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/shaping-the-ether.jpeg" {
+	top
+	bottom
+}
+card #nan "stoking hail" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/stoking-hail.jpeg" {
+	top
+	bottom
+}
+card #nan "magma scales" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/magma-scales.jpeg" {
+	top
+	bottom
+}
+card #nan "infernal vortex" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/infernal-vortex.jpeg" {
+	top
+	bottom
+}
+card #nan "frigid torrent" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/frigid-torrent.jpeg" {
+	top
+	bottom
+}
+card #nan "pulsing cores" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/pulsing-cores.jpeg" {
+	top
+	bottom
+}
+card #nan "dual nature" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/dual-nature.jpeg" {
+	top
+	bottom
+}
+card #nan "lingering essence" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/lingering-essence.jpeg" {
+	top
+	bottom
+}
+card #nan "flash of brilliance" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/flash-of-brilliance.jpeg" {
+	top
+	bottom
+}
+card #nan "encompassing shadow" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/encompassing-shadow.jpeg" {
+	top
+	bottom
+}
+card #nan "gravel guard" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/gravel-guard.jpeg" {
+	top
+	bottom
+}
+card #nan "wave of frost" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/wave-of-frost.jpeg" {
+	top
+	bottom
+}
+card #nan "arresting gale" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/arresting-gale.jpeg" {
+	top
+	bottom
+}
+card #nan "empowering flame" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/empowering-flame.jpeg" {
+	top
+	bottom
+}
+card #nan burial level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/burial.jpeg" {
+	top
+	bottom
+}
+card #nan "chain lightning" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/chain-lightning.jpeg" {
+	top
+	bottom
+}
+card #nan "obsidian shards" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/obsidian-shards.jpeg" {
+	top
+	bottom
+}
+card #nan "winter's edge" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/winters-edge.jpeg" {
+	top
+	bottom
+}
+card #nan "pragmatic reinforcement" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/pragmatic-reinforcement.jpeg" {
+	top
+	bottom
+}
+card #nan duskstorm level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/duskstorm.jpeg" {
+	top
+	bottom
+}
+card #nan "elemental juggernaut" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/elemental-juggernaut.jpeg" {
+	top
+	bottom
+}
+card #nan "confluence of elements" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/confluence-of-elements.jpeg" {
+	top
+	bottom
+}
+card #nan "prismatic barrage" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/prismatic-barrage.jpeg" {
+	top
+	bottom
+}
+card #nan "eye of the hurricane" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/eye-of-the-hurricane.jpeg" {
+	top
+	bottom
+}
+card #nan "ethereal manifestation" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/ethereal-manifestation.jpeg" {
+	top
+	bottom
+}
+card #nan "primal duality" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/primal-duality.jpeg" {
+	top
+	bottom
+}

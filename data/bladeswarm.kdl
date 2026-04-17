@@ -1,0 +1,125 @@
+meta {
+	game gloomhaven2
+	name Bladeswarm
+	color "#403129"
+}
+card #nan "focused scourge" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/focused-scourge.jpeg" {
+	top
+	bottom
+}
+card #nan "deflecting blades" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/deflecting-blades.jpeg" {
+	top
+	bottom
+}
+card #nan "omniscient assault" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/omniscient-assault.jpeg" {
+	top
+	bottom
+}
+card #nan "hive mind" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/hive-mind.jpeg" {
+	top
+	bottom
+}
+card #nan "corrupting parasites" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/corrupting-parasites.jpeg" {
+	top
+	bottom
+}
+card #nan "death march" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/death-march.jpeg" {
+	top
+	bottom
+}
+card #nan "engulfing stingers" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/engulfing-stingers.jpeg" {
+	top
+	bottom
+}
+card #nan "swarming minions" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/swarming-minions.jpeg" {
+	top
+	bottom
+}
+card #nan "scattered defense" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/scattered-defense.jpeg" {
+	top
+	bottom
+}
+card #nan "call of the grave" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/call-of-the-grave.jpeg" {
+	top
+	bottom
+}
+card #nan "the storms edge" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/the-storms-edge.jpeg" {
+	top
+	bottom
+}
+card #nan "unstoppable army" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/unstoppable-army.jpeg" {
+	top
+	bottom
+}
+card #nan "grasping advance" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/grasping-advance.jpeg" {
+	top
+	bottom
+}
+card #nan "tomb of the immortal" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/tomb-of-the-immortal.jpeg" {
+	top
+	bottom
+}
+card #nan "pressing pursuit" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/pressing-pursuit.jpeg" {
+	top
+	bottom
+}
+card #nan infest level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/infest.jpeg" {
+	top
+	bottom
+}
+card #nan "putrid grubs" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/putrid-grubs.jpeg" {
+	top
+	bottom
+}
+card #nan "overwhelming offensive" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/overwhelming-offensive.jpeg" {
+	top
+	bottom
+}
+card #nan "vampiric tempest" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/vampiric-tempest.jpeg" {
+	top
+	bottom
+}
+card #nan incubation level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/incubation.jpeg" {
+	top
+	bottom
+}
+card #nan bioluminescence level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/bioluminescence.jpeg" {
+	top
+	bottom
+}
+card #nan "cyclone of blades" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/cyclone-of-blades.jpeg" {
+	top
+	bottom
+}
+card #nan sunstroke level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/sunstroke.jpeg" {
+	top
+	bottom
+}
+card #nan "blood drain" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/blood-drain.jpeg" {
+	top
+	bottom
+}
+card #nan "fury of the horde" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/fury-of-the-horde.jpeg" {
+	top
+	bottom
+}
+card #nan "repulsive host" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/repulsive-host.jpeg" {
+	top
+	bottom
+}
+card #nan "bone daggers" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/bone-daggers.jpeg" {
+	top
+	bottom
+}
+card #nan "endless biting" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/endless-biting.jpeg" {
+	top
+	bottom
+}
+card #nan wasteland level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/wasteland.jpeg" {
+	top
+	bottom
+}
+card #nan oasis level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/oasis.jpeg" {
+	top
+	bottom
+}

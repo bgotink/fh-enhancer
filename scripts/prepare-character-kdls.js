@@ -4,47 +4,47 @@
 import {readFile, writeFile} from "node:fs/promises";
 import {format} from "@bgotink/kdl/dessert";
 
-import {dataFolder, worldhavenDataFolder} from "./constants.js";
+import {
+	dataFolder,
+	gloomhavenCardBrowserDataFolder,
+	worldhavenDataFolder,
+} from "./constants.js";
 import {
 	PlayerCharacter,
 	Card,
 	Action,
 	parsePlayerCharacter,
 	CharacterMeta,
+	Color,
 } from "./model.js";
 
-/**
- * @type {{name: string; level: string; expansion: string; image: string; "character-xws": string; assetno: string}[]}
- */
-const allAbilityCardList = JSON.parse(
-	await readFile(
-		new URL("character-ability-cards.js", worldhavenDataFolder),
-		"utf8",
-	),
-);
+const frosthavenAbilityCardList =
+	/** @type {{name: string; level: string; expansion: string; image: string; "character-xws": string; assetno: string}[]} */
+	(
+		JSON.parse(
+			await readFile(
+				new URL("character-ability-cards.js", worldhavenDataFolder),
+				"utf8",
+			),
+		)
+	).filter((card) => card.expansion === "frosthaven");
 
 /** @type {Record<string, PlayerCharacter>} */
 const abilitiesPerCharacter = {};
 
-const seenCardNumbers = new Set();
-for (const card of allAbilityCardList) {
-	if (
-		card.expansion !== "frosthaven" ||
-		card.level === "#" ||
-		seenCardNumbers.has(card.assetno)
-	) {
+const seenFrosthavenCardNumbers = new Set();
+for (const card of frosthavenAbilityCardList) {
+	if (card.level === "#" || seenFrosthavenCardNumbers.has(card.assetno)) {
 		continue;
 	}
-	seenCardNumbers.add(card.assetno);
+	seenFrosthavenCardNumbers.add(card.assetno);
 
 	const characterName = card["character-xws"];
 	const character = (abilitiesPerCharacter[characterName] ??=
 		new PlayerCharacter(new CharacterMeta("frosthaven", characterName)));
 
 	const level =
-		card.level === "x" ?
-			"X"
-		:	/** @type {Card['level']} */ (+card.level);
+		card.level === "x" ? "X" : /** @type {Card['level']} */ (+card.level);
 
 	character.cards.push(
 		new Card(
@@ -55,6 +55,64 @@ for (const card of allAbilityCardList) {
 			new Action(),
 			new Action(),
 		),
+	);
+}
+
+/** @param {string} file */
+async function importGloomhavenFile(file) {
+	const path = new URL(file, gloomhavenCardBrowserDataFolder);
+
+	try {
+		return await import(path.href);
+	} catch (e) {
+		if (
+			/** @type {NodeJS.ErrnoException} */ (e)?.code !== "ERR_MODULE_NOT_FOUND"
+		) {
+			throw e;
+		}
+
+		await writeFile(
+			path,
+			(await readFile(path, "utf-8")).replace(/^import /, "import type "),
+		);
+
+		path.searchParams.append("edited", "true");
+		return await import(path.href);
+	}
+}
+
+const gloomhaven2Characters = new Map(
+	/** @type {{name: string; class: string; colour: string}[]} */
+	((await importGloomhavenFile("characters.ts")).characters).map(
+		(character) => [character.class, character],
+	),
+);
+/** @type {{name: string; class: string; image: string; level: number}[]} */
+const gloomhaven2AbilityCards = Object.values(
+	(await importGloomhavenFile("character-ability-cards.ts"))
+		.characterAbilityCards.gh2,
+).flat();
+for (const card of gloomhaven2AbilityCards) {
+	const characterInfo = gloomhaven2Characters.get(card.class);
+	if (!characterInfo) {
+		continue;
+	}
+
+	const character = (abilitiesPerCharacter[characterInfo.name.toLowerCase()] ??=
+		new PlayerCharacter(
+			new CharacterMeta(
+				"gloomhaven2",
+				characterInfo.name,
+				undefined,
+				new Color(characterInfo.colour),
+			),
+		));
+
+	const level =
+		card.level === 1.5 ? "X" : /** @type {Card['level']} */ (+card.level);
+
+	character.cards.push(
+		new Card(NaN, card.name, level, card.image, new Action(), new Action()),
 	);
 }
 
@@ -87,11 +145,26 @@ await Promise.all(
  */
 function merge(target, source) {
 	const targetCardsByNumber = new Map(
-		target.cards.map((card) => [card.number, card]),
+		target.cards.flatMap(
+			/** @returns {[string | number, Card][]} */
+			(card) => {
+				if (!isNaN(card.number)) {
+					return [
+						[card.number, card],
+						[card.name, card],
+					];
+				} else {
+					return [[card.name, card]];
+				}
+			},
+		),
 	);
 
 	target.cards = source.cards.map((card) => {
-		const targetCard = targetCardsByNumber.get(card.number);
+		const targetCard =
+			isNaN(card.number) ?
+				targetCardsByNumber.get(card.name)
+			:	targetCardsByNumber.get(card.number);
 		if (targetCard == null) {
 			return card;
 		}

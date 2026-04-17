@@ -1,0 +1,125 @@
+meta {
+	game gloomhaven2
+	name Sunkeeper
+	color "#7E6C34"
+}
+card #nan "hammer blow" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/hammer-blow.jpeg" {
+	top
+	bottom
+}
+card #nan "holy strike" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/holy-strike.jpeg" {
+	top
+	bottom
+}
+card #nan "empowering command" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/empowering-command.jpeg" {
+	top
+	bottom
+}
+card #nan "dazzling charge" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/dazzling-charge.jpeg" {
+	top
+	bottom
+}
+card #nan "lay on hands" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/lay-on-hands.jpeg" {
+	top
+	bottom
+}
+card #nan "tactical order" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/tactical-order.jpeg" {
+	top
+	bottom
+}
+card #nan "brilliant prayer" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/brilliant-prayer.jpeg" {
+	top
+	bottom
+}
+card #nan "soothing light" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/soothing-light.jpeg" {
+	top
+	bottom
+}
+card #nan "purifying aura" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/purifying-aura.jpeg" {
+	top
+	bottom
+}
+card #nan "protective blessing" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/protective-blessing.jpeg" {
+	top
+	bottom
+}
+card #nan "defensive stance" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/defensive-stance.jpeg" {
+	top
+	bottom
+}
+card #nan daybreak level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/daybreak.jpeg" {
+	top
+	bottom
+}
+card #nan sanctify level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/sanctify.jpeg" {
+	top
+	bottom
+}
+card #nan "beacon of light" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/beacon-of-light.jpeg" {
+	top
+	bottom
+}
+card #nan "holy defense" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/holy-defense.jpeg" {
+	top
+	bottom
+}
+card #nan "mobilizing axiom" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/mobilizing-axiom.jpeg" {
+	top
+	bottom
+}
+card #nan "engulfing radiance" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/engulfing-radiance.jpeg" {
+	top
+	bottom
+}
+card #nan "burning flash" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/burning-flash.jpeg" {
+	top
+	bottom
+}
+card #nan "righteous strength" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/righteous-strength.jpeg" {
+	top
+	bottom
+}
+card #nan "cautious advance" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/cautious-advance.jpeg" {
+	top
+	bottom
+}
+card #nan "arresting march" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/arresting-march.jpeg" {
+	top
+	bottom
+}
+card #nan "path of glory" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/path-of-glory.jpeg" {
+	top
+	bottom
+}
+card #nan "divine intervention" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/divine-intervention.jpeg" {
+	top
+	bottom
+}
+card #nan "scales of justice" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/scales-of-justice.jpeg" {
+	top
+	bottom
+}
+card #nan "bright aegis" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/bright-aegis.jpeg" {
+	top
+	bottom
+}
+card #nan "illuminate the target" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/illuminate-the-target.jpeg" {
+	top
+	bottom
+}
+card #nan "warding blow" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/warding-blow.jpeg" {
+	top
+	bottom
+}
+card #nan "supportive chant" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/supportive-chant.jpeg" {
+	top
+	bottom
+}
+card #nan "divine ascension" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/divine-ascension.jpeg" {
+	top
+	bottom
+}
+card #nan "solar bastion" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/solar-bastion.jpeg" {
+	top
+	bottom
+}

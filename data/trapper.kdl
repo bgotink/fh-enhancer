@@ -1,4 +1,5 @@
 meta {
+	game frosthaven
 	name Trapper spoiler=Trap
 	color "#c0a277"
 }

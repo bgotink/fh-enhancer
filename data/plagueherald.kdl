@@ -1,0 +1,121 @@
+meta {
+	game gloomhaven2
+	name Plagueherald
+	color "#31514E"
+}
+card #nan "comorbid sting" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/comorbid-sting.jpeg" {
+	top
+	bottom
+}
+card #nan "biting gnats" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/biting-gnats.jpeg" {
+	top
+	bottom
+}
+card #nan "virulent strain" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/virulent-strain.jpeg" {
+	top
+	bottom
+}
+card #nan "contagious corpse" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/contagious-corpse.jpeg" {
+	top
+	bottom
+}
+card #nan "path of the pox" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/path-of-the-pox.jpeg" {
+	top
+	bottom
+}
+card #nan "vile pestilence" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/vile-pestilence.jpeg" {
+	top
+	bottom
+}
+card #nan "blistering buboes" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/blistering-buboes.jpeg" {
+	top
+	bottom
+}
+card #nan "festering sores" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/festering-sores.jpeg" {
+	top
+	bottom
+}
+card #nan "wretched yield" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/wretched-yield.jpeg" {
+	top
+	bottom
+}
+card #nan "accelerated end" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/accelerated-end.jpeg" {
+	top
+	bottom
+}
+card #nan "deliriums danse" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/deliriums-danse.jpeg" {
+	top
+	bottom
+}
+card #nan "gift of rot" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/gift-of-rot.jpeg" {
+	top
+	bottom
+}
+card #nan "spread the plague" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/spread-the-plague.jpeg" {
+	top
+	bottom
+}
+card #nan "sickening strength" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/sickening-strength.jpeg" {
+	top
+	bottom
+}
+card #nan "rot maggots" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/rot-maggots.jpeg" {
+	top
+	bottom
+}
+card #nan "nightmarish affliction" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/nightmarish-affliction.jpeg" {
+	top
+	bottom
+}
+card #nan "cloying miasma" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/cloying-miasma.jpeg" {
+	top
+	bottom
+}
+card #nan "rabid bite" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/rabid-bite.jpeg" {
+	top
+	bottom
+}
+card #nan "unwilling sacrifice" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/unwilling-sacrifice.jpeg" {
+	top
+	bottom
+}
+card #nan "wilt and wither" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/wilt-and-wither.jpeg" {
+	top
+	bottom
+}
+card #nan "compounding infection" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/compounding-infection.jpeg" {
+	top
+	bottom
+}
+card #nan "crippling malady" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/crippling-malady.jpeg" {
+	top
+	bottom
+}
+card #nan "succumb to the gift" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/succumb-to-the-gift.jpeg" {
+	top
+	bottom
+}
+card #nan "mass extinction" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/mass-extinction.jpeg" {
+	top
+	bottom
+}
+card #nan "tainted offering" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/tainted-offering.jpeg" {
+	top
+	bottom
+}
+card #nan "creeping lethargy" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/creeping-lethargy.jpeg" {
+	top
+	bottom
+}
+card #nan "convert the flock" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/convert-the-flock.jpeg" {
+	top
+	bottom
+}
+card #nan "disease vector" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/disease-vector.jpeg" {
+	top
+	bottom
+}
+card #nan "xorns embrace" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/xorns-embrace.jpeg" {
+	top
+	bottom
+}

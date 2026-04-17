@@ -1,0 +1,125 @@
+meta {
+	game gloomhaven2
+	name Cragheart
+	color "#656A33"
+}
+card #nan "opposing strike" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/opposing-strike.jpeg" {
+	top
+	bottom
+}
+card #nan "crushing grasp" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/crushing-grasp.jpeg" {
+	top
+	bottom
+}
+card #nan avalanche level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/avalanche.jpeg" {
+	top
+	bottom
+}
+card #nan "rumbling advance" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/rumbling-advance.jpeg" {
+	top
+	bottom
+}
+card #nan "massive boulder" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/massive-boulder.jpeg" {
+	top
+	bottom
+}
+card #nan "backup ammunition" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/backup-ammunition.jpeg" {
+	top
+	bottom
+}
+card #nan "earthen bulwark" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/earthen-bulwark.jpeg" {
+	top
+	bottom
+}
+card #nan "unstable upheaval" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/unstable-upheaval.jpeg" {
+	top
+	bottom
+}
+card #nan crater level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/crater.jpeg" {
+	top
+	bottom
+}
+card #nan "dirt tornado" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/dirt-tornado.jpeg" {
+	top
+	bottom
+}
+card #nan "earthen clod" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/earthen-clod.jpeg" {
+	top
+	bottom
+}
+card #nan "heaving swing" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/heaving-swing.jpeg" {
+	top
+	bottom
+}
+card #nan petrify level=X image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/petrify.jpeg" {
+	top
+	bottom
+}
+card #nan burrow level=X image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/burrow.jpeg" {
+	top
+	bottom
+}
+card #nan "mud eruption" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/mud-eruption.jpeg" {
+	top
+	bottom
+}
+card #nan "sentient growth" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/sentient-growth.jpeg" {
+	top
+	bottom
+}
+card #nan "clear the way" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/clear-the-way.jpeg" {
+	top
+	bottom
+}
+card #nan "blunt force" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/blunt-force.jpeg" {
+	top
+	bottom
+}
+card #nan "rock slide" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/rock-slide.jpeg" {
+	top
+	bottom
+}
+card #nan "kinetic assault" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/kinetic-assault.jpeg" {
+	top
+	bottom
+}
+card #nan solidify level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/solidify.jpeg" {
+	top
+	bottom
+}
+card #nan "stone pummel" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/stone-pummel.jpeg" {
+	top
+	bottom
+}
+card #nan "dig pit" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/dig-pit.jpeg" {
+	top
+	bottom
+}
+card #nan cataclysm level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/cataclysm.jpeg" {
+	top
+	bottom
+}
+card #nan meteor level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/meteor.jpeg" {
+	top
+	bottom
+}
+card #nan "brutal momentum" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/brutal-momentum.jpeg" {
+	top
+	bottom
+}
+card #nan "rocky end" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/rocky-end.jpeg" {
+	top
+	bottom
+}
+card #nan entomb level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/entomb.jpeg" {
+	top
+	bottom
+}
+card #nan "wave of destruction" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/wave-of-destruction.jpeg" {
+	top
+	bottom
+}
+card #nan "earth's embrace" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/earths-embrace.jpeg" {
+	top
+	bottom
+}

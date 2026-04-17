@@ -1,3 +1,14 @@
 [submodule "third_party/worldhaven"]
 	path = third_party/worldhaven
 	url = https://github.com/any2cards/worldhaven.git
+	shallow = true
+[submodule "third_party/gloomhaven-card-browser-images"]
+	path = third_party/gloomhaven-card-browser-images
+	url = https://github.com/cmlenius/gloomhaven-card-browser
+	branch = images
+	shallow = true
+[submodule "third_party/gloomhaven-card-browser"]
+	path = third_party/gloomhaven-card-browser
+	url = https://github.com/cmlenius/gloomhaven-card-browser
+	shallow = true
+	ignore = dirty

@@ -1,4 +1,5 @@
 meta {
+	game frosthaven
 	name "Frozen Fist" spoiler=Fist
 	color "#6a92b2"
 }

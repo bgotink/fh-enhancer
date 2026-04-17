@@ -1,0 +1,113 @@
+meta {
+	game gloomhaven2
+	name Spellweaver
+	color "#583D72"
+}
+card #nan "reviving ether" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/reviving-ether.jpeg" {
+	top
+	bottom
+}
+card #nan "fire orbs" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/fire-orbs.jpeg" {
+	top
+	bottom
+}
+card #nan "arcane bolt" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/arcane-bolt.jpeg" {
+	top
+	bottom
+}
+card #nan "flame strike" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/flame-strike.jpeg" {
+	top
+	bottom
+}
+card #nan "icy blast" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/icy-blast.jpeg" {
+	top
+	bottom
+}
+card #nan "aid from the ether" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/aid-from-the-ether.jpeg" {
+	top
+	bottom
+}
+card #nan "frost strike" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/frost-strike.jpeg" {
+	top
+	bottom
+}
+card #nan emberfrost level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/emberfrost.jpeg" {
+	top
+	bottom
+}
+card #nan flameswell level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/flameswell.jpeg" {
+	top
+	bottom
+}
+card #nan "ice armor" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/ice-armor.jpeg" {
+	top
+	bottom
+}
+card #nan "impaling eruption" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/impaling-eruption.jpeg" {
+	top
+	bottom
+}
+card #nan "freezing nova" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/freezing-nova.jpeg" {
+	top
+	bottom
+}
+card #nan "etheric echo" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/etheric-echo.jpeg" {
+	top
+	bottom
+}
+card #nan heatwave level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/heatwave.jpeg" {
+	top
+	bottom
+}
+card #nan "arctic shards" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/arctic-shards.jpeg" {
+	top
+	bottom
+}
+card #nan "dancing gales" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/dancing-gales.jpeg" {
+	top
+	bottom
+}
+card #nan "cold fire" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/cold-fire.jpeg" {
+	top
+	bottom
+}
+card #nan "warm up" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/warm-up.jpeg" {
+	top
+	bottom
+}
+card #nan "cool down" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/cool-down.jpeg" {
+	top
+	bottom
+}
+card #nan "elemental rays" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/elemental-rays.jpeg" {
+	top
+	bottom
+}
+card #nan "searing glacier" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/searing-glacier.jpeg" {
+	top
+	bottom
+}
+card #nan "spell mastery" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/spell-mastery.jpeg" {
+	top
+	bottom
+}
+card #nan "chromatic explosion" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/chromatic-explosion.jpeg" {
+	top
+	bottom
+}
+card #nan "frostflare orbs" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/frostflare-orbs.jpeg" {
+	top
+	bottom
+}
+card #nan "twin beams" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/twin-beams.jpeg" {
+	top
+	bottom
+}
+card #nan "freezing vortex" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/freezing-vortex.jpeg" {
+	top
+	bottom
+}
+card #nan inferno level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/inferno.jpeg" {
+	top
+	bottom
+}

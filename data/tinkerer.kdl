@@ -1,0 +1,129 @@
+meta {
+	game gloomhaven2
+	name Tinkerer
+	color "#6C5A45"
+}
+card #nan "potent potables" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/potent-potables.jpeg" {
+	top
+	bottom
+}
+card #nan "harmless contraption" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/harmless-contraption.jpeg" {
+	top
+	bottom
+}
+card #nan flamethrower level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/flamethrower.jpeg" {
+	top
+	bottom
+}
+card #nan "disorienting flash" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/disorienting-flash.jpeg" {
+	top
+	bottom
+}
+card #nan "ink bomb" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/ink-bomb.jpeg" {
+	top
+	bottom
+}
+card #nan "net shooter" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/net-shooter.jpeg" {
+	top
+	bottom
+}
+card #nan "stun shot" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/stun-shot.jpeg" {
+	top
+	bottom
+}
+card #nan "reinvigorating elixir" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/reinvigorating-elixir.jpeg" {
+	top
+	bottom
+}
+card #nan "restorative mist" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/restorative-mist.jpeg" {
+	top
+	bottom
+}
+card #nan "jet propulsion" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/jet-propulsion.jpeg" {
+	top
+	bottom
+}
+card #nan "enhancement field" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/enhancement-field.jpeg" {
+	top
+	bottom
+}
+card #nan "toxic bolt" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/toxic-bolt.jpeg" {
+	top
+	bottom
+}
+card #nan "gas canister" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/gas-canister.jpeg" {
+	top
+	bottom
+}
+card #nan "volatile concoction" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/volatile-concoction.jpeg" {
+	top
+	bottom
+}
+card #nan "hook gun" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/hook-gun.jpeg" {
+	top
+	bottom
+}
+card #nan "repulsor gun" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/repulsor-gun.jpeg" {
+	top
+	bottom
+}
+card #nan "crank bow" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/crank-bow.jpeg" {
+	top
+	bottom
+}
+card #nan "teleportation pad" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/teleportation-pad.jpeg" {
+	top
+	bottom
+}
+card #nan "stamina booster" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/stamina-booster.jpeg" {
+	top
+	bottom
+}
+card #nan "dangerous contraption" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/dangerous-contraption.jpeg" {
+	top
+	bottom
+}
+card #nan "proximity mine" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/proximity-mine.jpeg" {
+	top
+	bottom
+}
+card #nan "noxious vials" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/noxious-vials.jpeg" {
+	top
+	bottom
+}
+card #nan "disintegration beam" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/disintegration-beam.jpeg" {
+	top
+	bottom
+}
+card #nan "invigorating aerosol" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/invigorating-aerosol.jpeg" {
+	top
+	bottom
+}
+card #nan "auto turret" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/auto-turret.jpeg" {
+	top
+	bottom
+}
+card #nan "murderous contraption" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/murderous-contraption.jpeg" {
+	top
+	bottom
+}
+card #nan "pernicious fogger" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/pernicious-fogger.jpeg" {
+	top
+	bottom
+}
+card #nan "cryonic snare" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/cryonic-snare.jpeg" {
+	top
+	bottom
+}
+card #nan "harsh stimulants" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/harsh-stimulants.jpeg" {
+	top
+	bottom
+}
+card #nan "gravity bomb" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/gravity-bomb.jpeg" {
+	top
+	bottom
+}
+card #nan "chimeric formula" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/chimeric-formula.jpeg" {
+	top
+	bottom
+}

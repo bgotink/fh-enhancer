@@ -1,0 +1,145 @@
+meta {
+	game gloomhaven2
+	name Sawbones
+	color "#3E3E3E"
+}
+card #nan "battlefield medicine" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/battlefield-medicine.jpeg" {
+	top
+	bottom
+}
+card #nan "first aid" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/first-aid.jpeg" {
+	top
+	bottom
+}
+card #nan "curative mixture" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/curative-mixture.jpeg" {
+	top
+	bottom
+}
+card #nan "bloody saw" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/bloody-saw.jpeg" {
+	top
+	bottom
+}
+card #nan "prevention is key" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/prevention-is-key.jpeg" {
+	top
+	bottom
+}
+card #nan "hand of the surgeon" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/hand-of-the-surgeon.jpeg" {
+	top
+	bottom
+}
+card #nan "booster shot" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/booster-shot.jpeg" {
+	top
+	bottom
+}
+card #nan syringe level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/syringe.jpeg" {
+	top
+	bottom
+}
+card #nan "needle gun" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/needle-gun.jpeg" {
+	top
+	bottom
+}
+card #nan "vital strikes" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/vital-strikes.jpeg" {
+	top
+	bottom
+}
+card #nan vaccine level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/vaccine.jpeg" {
+	top
+	bottom
+}
+card #nan teamwork level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/teamwork.jpeg" {
+	top
+	bottom
+}
+card #nan "prep for surgery" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/prep-for-surgery.jpeg" {
+	top
+	bottom
+}
+card #nan hamstring level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/hamstring.jpeg" {
+	top
+	bottom
+}
+card #nan precaution level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/precaution.jpeg" {
+	top
+	bottom
+}
+card #nan "regenerative tissue" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/regenerative-tissue.jpeg" {
+	top
+	bottom
+}
+card #nan "blood transfusion" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/blood-transfusion.jpeg" {
+	top
+	bottom
+}
+card #nan "experimental stimulants" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/experimental-stimulants.jpeg" {
+	top
+	bottom
+}
+card #nan "do no harm" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/do-no-harm.jpeg" {
+	top
+	bottom
+}
+card #nan "hack to bits" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/hack-to-bits.jpeg" {
+	top
+	bottom
+}
+card #nan "fortifying injection" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/fortifying-injection.jpeg" {
+	top
+	bottom
+}
+card #nan amputate level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/amputate.jpeg" {
+	top
+	bottom
+}
+card #nan "return the favor" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/return-the-favor.jpeg" {
+	top
+	bottom
+}
+card #nan "surgeons satchel" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/surgeons-satchel.jpeg" {
+	top
+	bottom
+}
+card #nan "exacting anger" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/exacting-anger.jpeg" {
+	top
+	bottom
+}
+card #nan "take your medicine" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/take-your-medicine.jpeg" {
+	top
+	bottom
+}
+card #nan euthanize level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/euthanize.jpeg" {
+	top
+	bottom
+}
+card #nan "secret of the oak" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/secret-of-the-oak.jpeg" {
+	top
+	bottom
+}
+card #nan "grisly trauma" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/grisly-trauma.jpeg" {
+	top
+	bottom
+}
+card #nan "medical pack 1" level=0.25 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-1.jpeg" {
+	top
+	bottom
+}
+card #nan "medical pack 2" level=0.25 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-2.jpeg" {
+	top
+	bottom
+}
+card #nan "medical pack 3" level=0.25 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-3.jpeg" {
+	top
+	bottom
+}
+card #nan "medical pack 4" level=0.25 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-4.jpeg" {
+	top
+	bottom
+}
+card #nan "medical pack 5" level=0.25 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-5.jpeg" {
+	top
+	bottom
+}
+card #nan "medical pack 6" level=0.25 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-6.jpeg" {
+	top
+	bottom
+}
