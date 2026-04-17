@@ -1,33 +1,33 @@
 meta {
-	name Infuser spoiler="Astral"
+	name Infuser spoiler=Astral
 	color "#78ae54"
 }
 
-card 185 "boon of the tempest" level=1 image-path="character-ability-cards/frosthaven/IF/fh-boon-of-the-tempest.png" {
+card 185 "boon of the tempest" level=1 image-path="character-ability-cards/frosthaven/if/fh-boon-of-the-tempest.png" {
 	top lost=#true persistent=#true
 	bottom {
 		enhancement kind=square ability=move
 	}
 }
 
-card 186 "bounty of the earth" level=1 image-path="character-ability-cards/frosthaven/IF/fh-bounty-of-the-earth.png" {
+card 186 "bounty of the earth" level=1 image-path="character-ability-cards/frosthaven/if/fh-bounty-of-the-earth.png" {
 	bottom lost=#true persistent=#true
 }
 
-card 187 "caress of the night" level=1 image-path="character-ability-cards/frosthaven/IF/fh-caress-of-the-night.png" {
+card 187 "caress of the night" level=1 image-path="character-ability-cards/frosthaven/if/fh-caress-of-the-night.png" {
 	top lost=#true persistent=#true
 }
 
-card 188 "formless bladestorm" level=1 image-path="character-ability-cards/frosthaven/IF/fh-formless-bladestorm.png" {
+card 188 "formless bladestorm" level=1 image-path="character-ability-cards/frosthaven/if/fh-formless-bladestorm.png" {
 	top lost=#true
 	bottom {
 		enhancement kind=square ability=move
 	}
 }
 
-card 189 "emerald edge" level=1 image-path="character-ability-cards/frosthaven/IF/fh-emerald-edge.png"
+card 189 "emerald edge" level=1 image-path="character-ability-cards/frosthaven/if/fh-emerald-edge.png"
 
-card 190 "torrential cleave" level=1 image-path="character-ability-cards/frosthaven/IF/fh-torrential-cleave.png" {
+card 190 "torrential cleave" level=1 image-path="character-ability-cards/frosthaven/if/fh-torrential-cleave.png" {
 	top {
 		enhancement kind=square ability=push
 		enhancement kind=hex number-of-hexes=2
@@ -37,7 +37,7 @@ card 190 "torrential cleave" level=1 image-path="character-ability-cards/frostha
 	}
 }
 
-card 191 "onyx shards" level=1 image-path="character-ability-cards/frosthaven/IF/fh-onyx-shards.png" {
+card 191 "onyx shards" level=1 image-path="character-ability-cards/frosthaven/if/fh-onyx-shards.png" {
 	top {
 		enhancement kind=diamond ability=#null
 		enhancement kind=square ability=range
@@ -45,7 +45,7 @@ card 191 "onyx shards" level=1 image-path="character-ability-cards/frosthaven/IF
 	bottom lost=#true
 }
 
-card 192 "unstoppable impulse" level=1 image-path="character-ability-cards/frosthaven/IF/fh-unstoppable-impulse.png" {
+card 192 "unstoppable impulse" level=1 image-path="character-ability-cards/frosthaven/if/fh-unstoppable-impulse.png" {
 	top {
 		enhancement kind=square ability=attack
 	}
@@ -54,7 +54,7 @@ card 192 "unstoppable impulse" level=1 image-path="character-ability-cards/frost
 	}
 }
 
-card 193 "slashing cyclone" level=1 image-path="character-ability-cards/frosthaven/IF/fh-slashing-cyclone.png" {
+card 193 "slashing cyclone" level=1 image-path="character-ability-cards/frosthaven/if/fh-slashing-cyclone.png" {
 	top {
 		enhancement kind=square ability=attack multiple=#true
 	}
@@ -63,7 +63,7 @@ card 193 "slashing cyclone" level=1 image-path="character-ability-cards/frosthav
 	}
 }
 
-card 194 "rising momentum" level=1 image-path="character-ability-cards/frosthaven/IF/fh-rising-momentum.png" {
+card 194 "rising momentum" level=1 image-path="character-ability-cards/frosthaven/if/fh-rising-momentum.png" {
 	top {
 		enhancement kind=square ability=attack
 	}
@@ -72,7 +72,7 @@ card 194 "rising momentum" level=1 image-path="character-ability-cards/frosthave
 	}
 }
 
-card 195 "stoic vigilance" level=1 image-path="character-ability-cards/frosthaven/IF/fh-stoic-vigilance.png" {
+card 195 "stoic vigilance" level=1 image-path="character-ability-cards/frosthaven/if/fh-stoic-vigilance.png" {
 	top {
 		enhancement kind=square ability=attack
 		enhancement kind=square ability=shield
@@ -82,7 +82,7 @@ card 195 "stoic vigilance" level=1 image-path="character-ability-cards/frosthave
 	}
 }
 
-card 196 "imbue with life" level=X image-path="character-ability-cards/frosthaven/IF/fh-imbue-with-life.png" {
+card 196 "imbue with life" level=X image-path="character-ability-cards/frosthaven/if/fh-imbue-with-life.png" {
 	top persistent=#true {
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
@@ -92,23 +92,23 @@ card 196 "imbue with life" level=X image-path="character-ability-cards/frosthave
 	}
 }
 
-card 197 "battle prowess" level=X image-path="character-ability-cards/frosthaven/IF/fh-battle-prowess.png" {
+card 197 "battle prowess" level=X image-path="character-ability-cards/frosthaven/if/fh-battle-prowess.png" {
 	top {
 		enhancement kind=square ability=attack
 	}
 	bottom lost=#true
 }
 
-card 198 "crystalline aegis" level=X image-path="character-ability-cards/frosthaven/IF/fh-crystalline-aegis.png"
+card 198 "crystalline aegis" level=X image-path="character-ability-cards/frosthaven/if/fh-crystalline-aegis.png"
 
-card 199 "veil of protection" level=2 image-path="character-ability-cards/frosthaven/IF/fh-veil-of-protection.png" {
+card 199 "veil of protection" level=2 image-path="character-ability-cards/frosthaven/if/fh-veil-of-protection.png" {
 	top {
 		enhancement kind=square ability=range
 	}
 	bottom lost=#true persistent=#true
 }
 
-card 200 "remote impact" level=2 image-path="character-ability-cards/frosthaven/IF/fh-remote-impact.png" {
+card 200 "remote impact" level=2 image-path="character-ability-cards/frosthaven/if/fh-remote-impact.png" {
 	top {
 		enhancement kind=square ability=move
 		enhancement kind=hex number-of-hexes=3
@@ -116,13 +116,13 @@ card 200 "remote impact" level=2 image-path="character-ability-cards/frosthaven/
 	}
 }
 
-card 201 "reinforced riposte" level=3 image-path="character-ability-cards/frosthaven/IF/fh-reinforced-riposte.png" {
+card 201 "reinforced riposte" level=3 image-path="character-ability-cards/frosthaven/if/fh-reinforced-riposte.png" {
 	bottom {
 		enhancement kind=square ability=move
 	}
 }
 
-card 202 "guide the flow" level=3 image-path="character-ability-cards/frosthaven/IF/fh-guide-the-flow.png" {
+card 202 "guide the flow" level=3 image-path="character-ability-cards/frosthaven/if/fh-guide-the-flow.png" {
 	top {
 		enhancement kind=square ability=move
 	}
@@ -131,7 +131,7 @@ card 202 "guide the flow" level=3 image-path="character-ability-cards/frosthaven
 	}
 }
 
-card 203 "coalescing darkness" level=4 image-path="character-ability-cards/frosthaven/IF/fh-coalescing-darkness.png" {
+card 203 "coalescing darkness" level=4 image-path="character-ability-cards/frosthaven/if/fh-coalescing-darkness.png" {
 	top lost=#true persistent=#true
 	bottom {
 		enhancement kind=square ability=pull
@@ -139,7 +139,7 @@ card 203 "coalescing darkness" level=4 image-path="character-ability-cards/frost
 	}
 }
 
-card 204 "desperate throw" level=4 image-path="character-ability-cards/frosthaven/IF/fh-desperate-throw.png" {
+card 204 "desperate throw" level=4 image-path="character-ability-cards/frosthaven/if/fh-desperate-throw.png" {
 	top {
 		enhancement kind=diamond ability=attack
 		enhancement kind=diamond+ ability=#null
@@ -149,7 +149,7 @@ card 204 "desperate throw" level=4 image-path="character-ability-cards/frosthave
 	}
 }
 
-card 205 "gemstone resonance" level=5 image-path="character-ability-cards/frosthaven/IF/fh-gemstone-resonance.png" {
+card 205 "gemstone resonance" level=5 image-path="character-ability-cards/frosthaven/if/fh-gemstone-resonance.png" {
 	top {
 		enhancement kind=square ability=heal
 	}
@@ -158,7 +158,7 @@ card 205 "gemstone resonance" level=5 image-path="character-ability-cards/frosth
 	}
 }
 
-card 206 "obsidian spear" level=5 image-path="character-ability-cards/frosthaven/IF/fh-obsidian-spear.png" {
+card 206 "obsidian spear" level=5 image-path="character-ability-cards/frosthaven/if/fh-obsidian-spear.png" {
 	top {
 		enhancement kind=diamond ability=attack
 		enhancement kind=hex number-of-hexes=2
@@ -169,14 +169,14 @@ card 206 "obsidian spear" level=5 image-path="character-ability-cards/frosthaven
 	}
 }
 
-card 207 "propulsive tailwind" level=6 image-path="character-ability-cards/frosthaven/IF/fh-propulsive-tailwind.png" {
+card 207 "propulsive tailwind" level=6 image-path="character-ability-cards/frosthaven/if/fh-propulsive-tailwind.png" {
 	top lost=#true persistent=#true
 	bottom {
 		enhancement kind=square ability=move
 	}
 }
 
-card 208 "gale barrage" level=6 image-path="character-ability-cards/frosthaven/IF/fh-gale-barrage.png" {
+card 208 "gale barrage" level=6 image-path="character-ability-cards/frosthaven/if/fh-gale-barrage.png" {
 	top {
 		enhancement kind=square ability=pierce
 	}
@@ -185,14 +185,14 @@ card 208 "gale barrage" level=6 image-path="character-ability-cards/frosthaven/I
 	}
 }
 
-card 209 diamondization level=7 image-path="character-ability-cards/frosthaven/IF/fh-diamondization.png" {
+card 209 diamondization level=7 image-path="character-ability-cards/frosthaven/if/fh-diamondization.png" {
 	top {
 		enhancement kind=square ability=shield
 	}
 	bottom lost=#true
 }
 
-card 210 "malachite shockwave" level=7 image-path="character-ability-cards/frosthaven/IF/fh-malachite-shockwave.png" {
+card 210 "malachite shockwave" level=7 image-path="character-ability-cards/frosthaven/if/fh-malachite-shockwave.png" {
 	top lost=#true {
 		enhancement kind=diamond ability=attack
 	}
@@ -201,7 +201,7 @@ card 210 "malachite shockwave" level=7 image-path="character-ability-cards/frost
 	}
 }
 
-card 211 "untether the shackles" level=8 image-path="character-ability-cards/frosthaven/IF/fh-untether-the-shackles.png" {
+card 211 "untether the shackles" level=8 image-path="character-ability-cards/frosthaven/if/fh-untether-the-shackles.png" {
 	top lost=#true persistent=#true {
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
@@ -211,7 +211,7 @@ card 211 "untether the shackles" level=8 image-path="character-ability-cards/fro
 	}
 }
 
-card 212 "swift pivot" level=8 image-path="character-ability-cards/frosthaven/IF/fh-swift-pivot.png" {
+card 212 "swift pivot" level=8 image-path="character-ability-cards/frosthaven/if/fh-swift-pivot.png" {
 	bottom lost=#true {
 		enhancement kind=square ability=move
 		enhancement kind=diamond ability=attack
@@ -219,14 +219,14 @@ card 212 "swift pivot" level=8 image-path="character-ability-cards/frosthaven/IF
 	}
 }
 
-card 213 "ancient rites of power" level=9 image-path="character-ability-cards/frosthaven/IF/fh-ancient-rites-of-power.png" {
+card 213 "ancient rites of power" level=9 image-path="character-ability-cards/frosthaven/if/fh-ancient-rites-of-power.png" {
 	top lost=#true persistent=#true
 	bottom {
 		enhancement kind=diamond+ ability=heal multiple=#true
 	}
 }
 
-card 214 "sky-splitting strike" level=9 image-path="character-ability-cards/frosthaven/IF/fh-sky-splitting-strike.png" {
+card 214 "sky-splitting strike" level=9 image-path="character-ability-cards/frosthaven/if/fh-sky-splitting-strike.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}

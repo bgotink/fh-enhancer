@@ -3,7 +3,7 @@ meta {
 	color "#4e9c5c"
 }
 
-card 120 "life in death" level=1 image-path="character-ability-cards/frosthaven/BO/fh-life-in-death.png" {
+card 120 "life in death" level=1 image-path="character-ability-cards/frosthaven/bo/fh-life-in-death.png" {
 	top persistent=#true{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
@@ -11,7 +11,7 @@ card 120 "life in death" level=1 image-path="character-ability-cards/frosthaven/
 	}
 	bottom
 }
-card 121 "returned servant" level=1 image-path="character-ability-cards/frosthaven/BO/fh-returned-servant.png" {
+card 121 "returned servant" level=1 image-path="character-ability-cards/frosthaven/bo/fh-returned-servant.png" {
 	top persistent=#true{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
@@ -21,7 +21,7 @@ card 121 "returned servant" level=1 image-path="character-ability-cards/frosthav
 		enhancement kind=circle ability=move
 	}
 }
-card 122 "damned horde" level=1 image-path="character-ability-cards/frosthaven/BO/fh-damned-horde.png" {
+card 122 "damned horde" level=1 image-path="character-ability-cards/frosthaven/bo/fh-damned-horde.png" {
 	top persistent=#true{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
@@ -32,23 +32,23 @@ card 122 "damned horde" level=1 image-path="character-ability-cards/frosthaven/B
 		enhancement kind=square ability=range multiple=#true
 	}
 }
-card 123 "transfer of essence" level=1 image-path="character-ability-cards/frosthaven/BO/fh-transfer-of-essence.png" {
+card 123 "transfer of essence" level=1 image-path="character-ability-cards/frosthaven/bo/fh-transfer-of-essence.png" {
 	top
 	bottom
 }
-card 124 "decaying will" level=1 image-path="character-ability-cards/frosthaven/BO/fh-decaying-will.png" {
+card 124 "decaying will" level=1 image-path="character-ability-cards/frosthaven/bo/fh-decaying-will.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
 	bottom
 }
-card 125 "dark tidings" level=1 image-path="character-ability-cards/frosthaven/BO/fh-dark-tidings.png" {
+card 125 "dark tidings" level=1 image-path="character-ability-cards/frosthaven/bo/fh-dark-tidings.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 126 "angry spirits" level=1 image-path="character-ability-cards/frosthaven/BO/fh-angry-spirits.png" {
+card 126 "angry spirits" level=1 image-path="character-ability-cards/frosthaven/bo/fh-angry-spirits.png" {
 	top persistent=#true lost=#true{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
@@ -56,34 +56,34 @@ card 126 "angry spirits" level=1 image-path="character-ability-cards/frosthaven/
 	}
 	bottom
 }
-card 127 "fell remedy" level=1 image-path="character-ability-cards/frosthaven/BO/fh-fell-remedy.png" {
+card 127 "fell remedy" level=1 image-path="character-ability-cards/frosthaven/bo/fh-fell-remedy.png" {
 	top{
 		enhancement kind=diamond+ ability=heal
 	}
 	bottom
 }
-card 128 "flow of the black river" level=1 image-path="character-ability-cards/frosthaven/BO/fh-flow-of-the-black-river.png" {
+card 128 "flow of the black river" level=1 image-path="character-ability-cards/frosthaven/bo/fh-flow-of-the-black-river.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 		enhancement kind=square ability=move
 	}
 }
-card 129 "command the wretched" level=1 image-path="character-ability-cards/frosthaven/BO/fh-command-the-wretched.png" {
+card 129 "command the wretched" level=1 image-path="character-ability-cards/frosthaven/bo/fh-command-the-wretched.png" {
 	top
 	bottom
 }
-card 130 "eternal torment" level=1 image-path="character-ability-cards/frosthaven/BO/fh-eternal-torment.png" {
+card 130 "eternal torment" level=1 image-path="character-ability-cards/frosthaven/bo/fh-eternal-torment.png" {
 	top
 	bottom
 }
-card 131 "malicious conversion" level=1 image-path="character-ability-cards/frosthaven/BO/fh-malicious-conversion.png" {
+card 131 "malicious conversion" level=1 image-path="character-ability-cards/frosthaven/bo/fh-malicious-conversion.png" {
 	top lost=#true{
 		enhancement kind=circle ability=attack
 	}
 	bottom
 }
-card 132 "approach oblivion" level=X image-path="character-ability-cards/frosthaven/BO/fh-approach-oblivion.png" {
+card 132 "approach oblivion" level=X image-path="character-ability-cards/frosthaven/bo/fh-approach-oblivion.png" {
 	top lost=#true{
 		enhancement kind=diamond+ ability=heal multiple=#true
 	}
@@ -91,17 +91,17 @@ card 132 "approach oblivion" level=X image-path="character-ability-cards/frostha
 		enhancement kind=square ability=move
 	}
 }
-card 133 "exploding corpse" level=X image-path="character-ability-cards/frosthaven/BO/fh-exploding-corpse.png" {
+card 133 "exploding corpse" level=X image-path="character-ability-cards/frosthaven/bo/fh-exploding-corpse.png" {
 	top lost=#true{
 		enhancement kind=diamond ability=attack multiple=#true
 	}
 	bottom
 }
-card 134 "wrath of the turned earth" level=X image-path="character-ability-cards/frosthaven/BO/fh-wrath-of-the-turned-earth.png" {
+card 134 "wrath of the turned earth" level=X image-path="character-ability-cards/frosthaven/bo/fh-wrath-of-the-turned-earth.png" {
 	top
 	bottom
 }
-card 135 "unearthed horror" level=2 image-path="character-ability-cards/frosthaven/BO/fh-unearthed-horror.png" {
+card 135 "unearthed horror" level=2 image-path="character-ability-cards/frosthaven/bo/fh-unearthed-horror.png" {
 	top persistent=#true lost=#true{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
@@ -109,7 +109,7 @@ card 135 "unearthed horror" level=2 image-path="character-ability-cards/frosthav
 	}
 	bottom
 }
-card 136 "bone dagger" level=2 image-path="character-ability-cards/frosthaven/BO/fh-bone-dagger.png" {
+card 136 "bone dagger" level=2 image-path="character-ability-cards/frosthaven/bo/fh-bone-dagger.png" {
 	top lost=#true{
 		enhancement kind=diamond ability=attack
 	}
@@ -117,7 +117,7 @@ card 136 "bone dagger" level=2 image-path="character-ability-cards/frosthaven/BO
 		enhancement kind=square ability=range
 	}
 }
-card 137 "grave digging" level=3 image-path="character-ability-cards/frosthaven/BO/fh-grave-digging.png" {
+card 137 "grave digging" level=3 image-path="character-ability-cards/frosthaven/bo/fh-grave-digging.png" {
 	top persistent=#true{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
@@ -125,21 +125,21 @@ card 137 "grave digging" level=3 image-path="character-ability-cards/frosthaven/
 	}
 	bottom
 }
-card 138 "putrid cloud" level=3 image-path="character-ability-cards/frosthaven/BO/fh-putrid-cloud.png" {
+card 138 "putrid cloud" level=3 image-path="character-ability-cards/frosthaven/bo/fh-putrid-cloud.png" {
 	top
 	bottom
 }
-card 139 "critical failure" level=4 image-path="character-ability-cards/frosthaven/BO/fh-critical-failure.png" {
+card 139 "critical failure" level=4 image-path="character-ability-cards/frosthaven/bo/fh-critical-failure.png" {
 	top
 	bottom
 }
-card 140 "flesh shield" level=4 image-path="character-ability-cards/frosthaven/BO/fh-flesh-shield.png" {
+card 140 "flesh shield" level=4 image-path="character-ability-cards/frosthaven/bo/fh-flesh-shield.png" {
 	top{
 		enhancement kind=diamond+ ability=retaliate
 	}
 	bottom
 }
-card 141 "unforgivable methods" level=5 image-path="character-ability-cards/frosthaven/BO/fh-unforgivable-methods.png" {
+card 141 "unforgivable methods" level=5 image-path="character-ability-cards/frosthaven/bo/fh-unforgivable-methods.png" {
 	top persistent=#true lost=#true{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
@@ -147,13 +147,13 @@ card 141 "unforgivable methods" level=5 image-path="character-ability-cards/fros
 	}
 	bottom
 }
-card 142 "solid bones" level=5 image-path="character-ability-cards/frosthaven/BO/fh-solid-bones.png" {
+card 142 "solid bones" level=5 image-path="character-ability-cards/frosthaven/bo/fh-solid-bones.png" {
 	top
 	bottom{
 		enhancement kind=square ability=move
 	}
 }
-card 143 "rotting multitude" level=6 image-path="character-ability-cards/frosthaven/BO/fh-rotting-multitude.png" {
+card 143 "rotting multitude" level=6 image-path="character-ability-cards/frosthaven/bo/fh-rotting-multitude.png" {
 	top persistent=#true{
 		enhancement kind=square ability="summon hp" multiple=#true
 		enhancement kind=square ability="summon move" multiple=#true
@@ -161,21 +161,21 @@ card 143 "rotting multitude" level=6 image-path="character-ability-cards/frostha
 	}
 	bottom
 }
-card 144 "twisted decree" level=6 image-path="character-ability-cards/frosthaven/BO/fh-twisted-decree.png" {
+card 144 "twisted decree" level=6 image-path="character-ability-cards/frosthaven/bo/fh-twisted-decree.png" {
 	top
 	bottom{
 		enhancement kind=diamond ability=attack
 	}
 }
-card 145 "recycled limbs" level=7 image-path="character-ability-cards/frosthaven/BO/fh-recycled-limbs.png" {
+card 145 "recycled limbs" level=7 image-path="character-ability-cards/frosthaven/bo/fh-recycled-limbs.png" {
 	top
 	bottom
 }
-card 146 "soul claim" level=7 image-path="character-ability-cards/frosthaven/BO/fh-soul-claim.png" {
+card 146 "soul claim" level=7 image-path="character-ability-cards/frosthaven/bo/fh-soul-claim.png" {
 	top
 	bottom
 }
-card 147 "endless numbers" level=8 image-path="character-ability-cards/frosthaven/BO/fh-endless-numbers.png" {
+card 147 "endless numbers" level=8 image-path="character-ability-cards/frosthaven/bo/fh-endless-numbers.png" {
 	top persistent=#true lost=#true{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
@@ -183,7 +183,7 @@ card 147 "endless numbers" level=8 image-path="character-ability-cards/frosthave
 	}
 	bottom
 }
-card 148 "wailing from beyond" level=8 image-path="character-ability-cards/frosthaven/BO/fh-wailing-from-beyond.png" {
+card 148 "wailing from beyond" level=8 image-path="character-ability-cards/frosthaven/bo/fh-wailing-from-beyond.png" {
 	top{
 		enhancement kind=square ability=attack multiple=#true
 		enhancement kind=square ability=target multiple=#true
@@ -193,7 +193,7 @@ card 148 "wailing from beyond" level=8 image-path="character-ability-cards/frost
 		enhancement kind=diamond+ ability=heal
 	}
 }
-card 149 "unholy prowess" level=9 image-path="character-ability-cards/frosthaven/BO/fh-unholy-prowess.png" {
+card 149 "unholy prowess" level=9 image-path="character-ability-cards/frosthaven/bo/fh-unholy-prowess.png" {
 	top persistent=#true lost=#true{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
@@ -202,7 +202,7 @@ card 149 "unholy prowess" level=9 image-path="character-ability-cards/frosthaven
 	}
 	bottom
 }
-card 150 "behold the shrouded sun" level=9 image-path="character-ability-cards/frosthaven/BO/fh-behold-the-shrouded-sun.png" {
+card 150 "behold the shrouded sun" level=9 image-path="character-ability-cards/frosthaven/bo/fh-behold-the-shrouded-sun.png" {
 	top
 	bottom
 }

@@ -14,7 +14,7 @@ import {
 } from "./model.js";
 
 /**
- * @type {{name: string; level: string; expansion: string; image: string; "character-xws": string; cardno: string}[]}
+ * @type {{name: string; level: string; expansion: string; image: string; "character-xws": string; assetno: string}[]}
  */
 const allAbilityCardList = JSON.parse(
 	await readFile(
@@ -29,27 +29,26 @@ const abilitiesPerCharacter = {};
 const seenCardNumbers = new Set();
 for (const card of allAbilityCardList) {
 	if (
-		card.expansion !== "Frosthaven" ||
-		card.level === "-" ||
-		seenCardNumbers.has(card.cardno)
+		card.expansion !== "frosthaven" ||
+		card.level === "#" ||
+		seenCardNumbers.has(card.assetno)
 	) {
 		continue;
 	}
-	seenCardNumbers.add(card.cardno);
+	seenCardNumbers.add(card.assetno);
 
-	let characterName = card["character-xws"];
-
+	const characterName = card["character-xws"];
 	const character = (abilitiesPerCharacter[characterName] ??=
-		new PlayerCharacter(new CharacterMeta(characterName)));
+		new PlayerCharacter(new CharacterMeta("frosthaven", characterName)));
 
 	const level =
-		card.level === "X" ?
-			card.level
+		card.level === "x" ?
+			"X"
 		:	/** @type {Card['level']} */ (+card.level);
 
 	character.cards.push(
 		new Card(
-			+card.cardno,
+			parseInt(card.assetno, 10),
 			card.name,
 			level,
 			card.image,

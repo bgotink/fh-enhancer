@@ -3,14 +3,14 @@ meta {
 	color "#cca643"
 }
 
-card 61 "at all costs" level=1 image-path="character-ability-cards/frosthaven/BN/fh-at-all-costs.png" {
+card 61 "at all costs" level=1 image-path="character-ability-cards/frosthaven/bn/fh-at-all-costs.png" {
 	bottom persistent=#true {
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
 	}
 }
 
-card 62 "rallying cry" level=1 image-path="character-ability-cards/frosthaven/BN/fh-rallying-cry.png" {
+card 62 "rallying cry" level=1 image-path="character-ability-cards/frosthaven/bn/fh-rallying-cry.png" {
 	top{
 		enhancement kind=hex number-of-hexes=1
 	}
@@ -19,11 +19,11 @@ card 62 "rallying cry" level=1 image-path="character-ability-cards/frosthaven/BN
 	}
 }
 
-card 63 "unbreakable wall" level=1 image-path="character-ability-cards/frosthaven/BN/fh-unbreakable-wall.png" {
+card 63 "unbreakable wall" level=1 image-path="character-ability-cards/frosthaven/bn/fh-unbreakable-wall.png" {
 	bottom persistent=#true lost=#true
 }
 
-card 64 javelin level=1 image-path="character-ability-cards/frosthaven/BN/fh-javelin.png" {
+card 64 javelin level=1 image-path="character-ability-cards/frosthaven/bn/fh-javelin.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -32,7 +32,7 @@ card 64 javelin level=1 image-path="character-ability-cards/frosthaven/BN/fh-jav
 	}
 }
 
-card 65 "deflecting maneuver" level=1 image-path="character-ability-cards/frosthaven/BN/fh-deflecting-maneuver.png" {
+card 65 "deflecting maneuver" level=1 image-path="character-ability-cards/frosthaven/bn/fh-deflecting-maneuver.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -41,7 +41,7 @@ card 65 "deflecting maneuver" level=1 image-path="character-ability-cards/frosth
 	}
 }
 
-card 66 "tip of the spear" level=1 image-path="character-ability-cards/frosthaven/BN/fh-tip-of-the-spear.png" {
+card 66 "tip of the spear" level=1 image-path="character-ability-cards/frosthaven/bn/fh-tip-of-the-spear.png" {
 	top {
 		enhancement kind=hex number-of-hexes=2
 	}
@@ -50,7 +50,7 @@ card 66 "tip of the spear" level=1 image-path="character-ability-cards/frosthave
 	}
 }
 
-card 67 "combined effort" level=1 image-path="character-ability-cards/frosthaven/BN/fh-combined-effort.png" {
+card 67 "combined effort" level=1 image-path="character-ability-cards/frosthaven/bn/fh-combined-effort.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -60,9 +60,9 @@ card 67 "combined effort" level=1 image-path="character-ability-cards/frosthaven
 	}
 }
 
-card 68 "set for the charge" level=1 image-path="character-ability-cards/frosthaven/BN/fh-set-for-the-charge.png"
+card 68 "set for the charge" level=1 image-path="character-ability-cards/frosthaven/bn/fh-set-for-the-charge.png"
 
-card 69 "pincer movement" level=1 image-path="character-ability-cards/frosthaven/BN/fh-pincer-movement.png" {
+card 69 "pincer movement" level=1 image-path="character-ability-cards/frosthaven/bn/fh-pincer-movement.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -71,7 +71,7 @@ card 69 "pincer movement" level=1 image-path="character-ability-cards/frosthaven
 	}
 }
 
-card 70 regroup level=1 image-path="character-ability-cards/frosthaven/BN/fh-regroup.png" {
+card 70 regroup level=1 image-path="character-ability-cards/frosthaven/bn/fh-regroup.png" {
 	top {
 		enhancement kind=diamond+ ability=heal
 	}
@@ -80,9 +80,9 @@ card 70 regroup level=1 image-path="character-ability-cards/frosthaven/BN/fh-reg
 	}
 }
 
-card 71 "resolved courage" level=X image-path="character-ability-cards/frosthaven/BN/fh-resolved-courage.png"
+card 71 "resolved courage" level=X image-path="character-ability-cards/frosthaven/bn/fh-resolved-courage.png"
 
-card 72 "incendiary throw" level=X image-path="character-ability-cards/frosthaven/BN/fh-incendiary-throw.png" {
+card 72 "incendiary throw" level=X image-path="character-ability-cards/frosthaven/bn/fh-incendiary-throw.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -92,7 +92,7 @@ card 72 "incendiary throw" level=X image-path="character-ability-cards/frosthave
 	}
 }
 
-card 73 "driving inspiration" level=X image-path="character-ability-cards/frosthaven/BN/fh-driving-inspiration.png" {
+card 73 "driving inspiration" level=X image-path="character-ability-cards/frosthaven/bn/fh-driving-inspiration.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -101,7 +101,7 @@ card 73 "driving inspiration" level=X image-path="character-ability-cards/frosth
 	}
 }
 
-card 74 "meat grinder" level=2 image-path="character-ability-cards/frosthaven/BN/fh-meat-grinder.png" {
+card 74 "meat grinder" level=2 image-path="character-ability-cards/frosthaven/bn/fh-meat-grinder.png" {
 	top {
 		enhancement kind=diamond ability=attack multiple=#true
 	}
@@ -110,7 +110,7 @@ card 74 "meat grinder" level=2 image-path="character-ability-cards/frosthaven/BN
 	}
 }
 
-card 75 "pinning charge" level=2 image-path="character-ability-cards/frosthaven/BN/fh-pinning-charge.png" {
+card 75 "pinning charge" level=2 image-path="character-ability-cards/frosthaven/bn/fh-pinning-charge.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -119,13 +119,13 @@ card 75 "pinning charge" level=2 image-path="character-ability-cards/frosthaven/
 	}
 }
 
-card 76 "let them come" level=3 image-path="character-ability-cards/frosthaven/BN/fh-let-them-come.png" {
+card 76 "let them come" level=3 image-path="character-ability-cards/frosthaven/bn/fh-let-them-come.png" {
 	bottom persistent=#true lost=#true {
 		enhancement kind=square ability="summon hp"
 	}
 }
 
-card 77 "head of the hammer" level=3 image-path="character-ability-cards/frosthaven/BN/fh-head-of-the-hammer.png" {
+card 77 "head of the hammer" level=3 image-path="character-ability-cards/frosthaven/bn/fh-head-of-the-hammer.png" {
 	top lost=#true {
 		enhancement kind=diamond ability=attack
 	}
@@ -134,14 +134,14 @@ card 77 "head of the hammer" level=3 image-path="character-ability-cards/frostha
 	}
 }
 
-card 78 "boldening blow" level=4 image-path="character-ability-cards/frosthaven/BN/fh-boldening-blow.png" {
+card 78 "boldening blow" level=4 image-path="character-ability-cards/frosthaven/bn/fh-boldening-blow.png" {
 	bottom {
 		enhancement kind=circle ability=move
 		enhancement kind=square ability=move multiple=#true
 	}
 }
 
-card 79 "air support" level=4 image-path="character-ability-cards/frosthaven/BN/fh-air-support.png" {
+card 79 "air support" level=4 image-path="character-ability-cards/frosthaven/bn/fh-air-support.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -152,11 +152,11 @@ card 79 "air support" level=4 image-path="character-ability-cards/frosthaven/BN/
 	}
 }
 
-card 80 "explosive epicenter" level=5 image-path="character-ability-cards/frosthaven/BN/fh-explosive-epicenter.png" {
+card 80 "explosive epicenter" level=5 image-path="character-ability-cards/frosthaven/bn/fh-explosive-epicenter.png" {
 	bottom lost=#true persistent=#true
 }
 
-card 81 "hold the line" level=5 image-path="character-ability-cards/frosthaven/BN/fh-hold-the-line.png" {
+card 81 "hold the line" level=5 image-path="character-ability-cards/frosthaven/bn/fh-hold-the-line.png" {
 	top {
 		enhancement kind=diamond+ ability=shield
 	}
@@ -166,13 +166,13 @@ card 81 "hold the line" level=5 image-path="character-ability-cards/frosthaven/B
 	}
 }
 
-card 82 barricade level=6 image-path="character-ability-cards/frosthaven/BN/fh-barricade.png" {
+card 82 barricade level=6 image-path="character-ability-cards/frosthaven/bn/fh-barricade.png" {
 	bottom lost=#true persistent=#true {
 		enhancement kind=square ability="summon hp"
 	}
 }
 
-card 83 "bolstering shout" level=6 image-path="character-ability-cards/frosthaven/BN/fh-bolstering-shout.png" {
+card 83 "bolstering shout" level=6 image-path="character-ability-cards/frosthaven/bn/fh-bolstering-shout.png" {
 	top {
 		enhancement kind=square ability=range multiple=#true
 	}
@@ -182,7 +182,7 @@ card 83 "bolstering shout" level=6 image-path="character-ability-cards/frosthave
 	}
 }
 
-card 84 tri-thrust level=7 image-path="character-ability-cards/frosthaven/BN/fh-tri-thrust.png" {
+card 84 tri-thrust level=7 image-path="character-ability-cards/frosthaven/bn/fh-tri-thrust.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -192,7 +192,7 @@ card 84 tri-thrust level=7 image-path="character-ability-cards/frosthaven/BN/fh-
 	}
 }
 
-card 85 "lead from afar" level=7 image-path="character-ability-cards/frosthaven/BN/fh-lead-from-afar.png" {
+card 85 "lead from afar" level=7 image-path="character-ability-cards/frosthaven/bn/fh-lead-from-afar.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -203,7 +203,7 @@ card 85 "lead from afar" level=7 image-path="character-ability-cards/frosthaven/
 	}
 }
 
-card 86 "sweeping aid" level=8 image-path="character-ability-cards/frosthaven/BN/fh-sweeping-aid.png" {
+card 86 "sweeping aid" level=8 image-path="character-ability-cards/frosthaven/bn/fh-sweeping-aid.png" {
 	top {
 		enhancement kind=diamond ability=attack multiple=#true
 	}
@@ -212,7 +212,7 @@ card 86 "sweeping aid" level=8 image-path="character-ability-cards/frosthaven/BN
 	}
 }
 
-card 87 "taunting howl" level=8 image-path="character-ability-cards/frosthaven/BN/fh-taunting-howl.png" {
+card 87 "taunting howl" level=8 image-path="character-ability-cards/frosthaven/bn/fh-taunting-howl.png" {
 	top lost=#true {
 		enhancement kind=square ability=pull multiple=#true
 	}
@@ -222,13 +222,13 @@ card 87 "taunting howl" level=8 image-path="character-ability-cards/frosthaven/B
 	}
 }
 
-card 88 "take no prisoners" level=9 image-path="character-ability-cards/frosthaven/BN/fh-take-no-prisoners.png" {
+card 88 "take no prisoners" level=9 image-path="character-ability-cards/frosthaven/bn/fh-take-no-prisoners.png" {
 	bottom lost=#true persistent=#true {
 		enhancement kind=square ability="summon hp"
 	}
 }
 
-card 89 "hail of spears" level=9 image-path="character-ability-cards/frosthaven/BN/fh-hail-of-spears.png" {
+card 89 "hail of spears" level=9 image-path="character-ability-cards/frosthaven/bn/fh-hail-of-spears.png" {
 	top {
 		enhancement kind=diamond ability=attack multiple=#true
 	}

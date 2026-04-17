@@ -1,21 +1,21 @@
 meta {
-	name Pyroclast spoiler="Meteor"
+	name Pyroclast spoiler=Meteor
 	color "#cb4a30"
 }
 
-card 215 cooling level=1 image-path="character-ability-cards/frosthaven/PY/fh-cooling.png" {
+card 215 cooling level=1 image-path="character-ability-cards/frosthaven/py/fh-cooling.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=heal
 	}
 }
-card 216 "quenched rage" level=1 image-path="character-ability-cards/frosthaven/PY/fh-quenched-rage.png" {
+card 216 "quenched rage" level=1 image-path="character-ability-cards/frosthaven/py/fh-quenched-rage.png" {
 	top{
 		enhancement kind=square ability=push
 	}
 	bottom
 }
-card 217 "flowing fire" level=1 image-path="character-ability-cards/frosthaven/PY/fh-flowing-fire.png" {
+card 217 "flowing fire" level=1 image-path="character-ability-cards/frosthaven/py/fh-flowing-fire.png" {
 	top{
 		enhancement kind=diamond ability=attack multiple=#true
 	}
@@ -23,13 +23,13 @@ card 217 "flowing fire" level=1 image-path="character-ability-cards/frosthaven/P
 		enhancement kind=circle ability=move
 	}
 }
-card 218 eruption level=1 image-path="character-ability-cards/frosthaven/PY/fh-eruption.png" {
+card 218 eruption level=1 image-path="character-ability-cards/frosthaven/py/fh-eruption.png" {
 	top
 	bottom{
 		enhancement kind=square ability=attack
 	}
 }
-card 219 "lava bomb" level=1 image-path="character-ability-cards/frosthaven/PY/fh-lava-bomb.png" {
+card 219 "lava bomb" level=1 image-path="character-ability-cards/frosthaven/py/fh-lava-bomb.png" {
 	top{
 		enhancement kind=square ability=attack
 		enhancement kind=square ability=range
@@ -38,23 +38,23 @@ card 219 "lava bomb" level=1 image-path="character-ability-cards/frosthaven/PY/f
 		enhancement kind=circle ability=move
 	}
 }
-card 220 "igneous path" level=1 image-path="character-ability-cards/frosthaven/PY/fh-igneous-path.png" {
+card 220 "igneous path" level=1 image-path="character-ability-cards/frosthaven/py/fh-igneous-path.png" {
 	top
 	bottom
 }
-card 221 "under pressure" level=1 image-path="character-ability-cards/frosthaven/PY/fh-under-pressure.png" {
+card 221 "under pressure" level=1 image-path="character-ability-cards/frosthaven/py/fh-under-pressure.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
 	bottom
 }
-card 222 "melted armor" level=1 image-path="character-ability-cards/frosthaven/PY/fh-melted-armor.png" {
+card 222 "melted armor" level=1 image-path="character-ability-cards/frosthaven/py/fh-melted-armor.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
 	bottom
 }
-card 223 "liquid stone" level=1 image-path="character-ability-cards/frosthaven/PY/fh-liquid-stone.png" {
+card 223 "liquid stone" level=1 image-path="character-ability-cards/frosthaven/py/fh-liquid-stone.png" {
 	top{
 		enhancement kind=diamond ability=attack
 		enhancement kind=square ability=push
@@ -63,37 +63,37 @@ card 223 "liquid stone" level=1 image-path="character-ability-cards/frosthaven/P
 		enhancement kind=circle ability=move
 	}
 }
-card 224 "cloud of ash" level=1 image-path="character-ability-cards/frosthaven/PY/fh-cloud-of-ash.png" {
+card 224 "cloud of ash" level=1 image-path="character-ability-cards/frosthaven/py/fh-cloud-of-ash.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 225 wildfire level=X image-path="character-ability-cards/frosthaven/PY/fh-wildfire.png" {
+card 225 wildfire level=X image-path="character-ability-cards/frosthaven/py/fh-wildfire.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 226 "force of the earth" level=X image-path="character-ability-cards/frosthaven/PY/fh-force-of-the-earth.png" {
+card 226 "force of the earth" level=X image-path="character-ability-cards/frosthaven/py/fh-force-of-the-earth.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
 	bottom
 }
-card 227 "metamorphic rock" level=X image-path="character-ability-cards/frosthaven/PY/fh-metamorphic-rock.png" {
+card 227 "metamorphic rock" level=X image-path="character-ability-cards/frosthaven/py/fh-metamorphic-rock.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 228 "searing smoke" level=2 image-path="character-ability-cards/frosthaven/PY/fh-searing-smoke.png" {
+card 228 "searing smoke" level=2 image-path="character-ability-cards/frosthaven/py/fh-searing-smoke.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=jump
 	}
 }
-card 229 "deep fury" level=2 image-path="character-ability-cards/frosthaven/PY/fh-deep-fury.png" {
+card 229 "deep fury" level=2 image-path="character-ability-cards/frosthaven/py/fh-deep-fury.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
@@ -101,19 +101,19 @@ card 229 "deep fury" level=2 image-path="character-ability-cards/frosthaven/PY/f
 		enhancement kind=diamond+ ability=heal
 	}
 }
-card 230 "living magma" level=3 image-path="character-ability-cards/frosthaven/PY/fh-living-magma.png" {
+card 230 "living magma" level=3 image-path="character-ability-cards/frosthaven/py/fh-living-magma.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 231 "hardened spike" level=3 image-path="character-ability-cards/frosthaven/PY/fh-hardened-spike.png" {
+card 231 "hardened spike" level=3 image-path="character-ability-cards/frosthaven/py/fh-hardened-spike.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 232 "hand of flame" level=4 image-path="character-ability-cards/frosthaven/PY/fh-hand-of-flame.png" {
+card 232 "hand of flame" level=4 image-path="character-ability-cards/frosthaven/py/fh-hand-of-flame.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
@@ -121,26 +121,26 @@ card 232 "hand of flame" level=4 image-path="character-ability-cards/frosthaven/
 		enhancement kind=square ability=attack
 	}
 }
-card 233 "heat wave" level=4 image-path="character-ability-cards/frosthaven/PY/fh-heat-wave.png" {
+card 233 "heat wave" level=4 image-path="character-ability-cards/frosthaven/py/fh-heat-wave.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 234 "rain of fire" level=5 image-path="character-ability-cards/frosthaven/PY/fh-rain-of-fire.png" {
+card 234 "rain of fire" level=5 image-path="character-ability-cards/frosthaven/py/fh-rain-of-fire.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=jump
 	}
 }
-card 235 "magma orbs" level=5 image-path="character-ability-cards/frosthaven/PY/fh-magma-orbs.png" {
+card 235 "magma orbs" level=5 image-path="character-ability-cards/frosthaven/py/fh-magma-orbs.png" {
 	top{
 		enhancement kind=square ability=attack multiple=#true
 		enhancement kind=square ability=range multiple=#true
 	}
 	bottom
 }
-card 236 "return to the source" level=6 image-path="character-ability-cards/frosthaven/PY/fh-return-to-the-source.png" {
+card 236 "return to the source" level=6 image-path="character-ability-cards/frosthaven/py/fh-return-to-the-source.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
@@ -148,13 +148,13 @@ card 236 "return to the source" level=6 image-path="character-ability-cards/fros
 		enhancement kind=circle ability=move
 	}
 }
-card 237 "obsidian shield" level=6 image-path="character-ability-cards/frosthaven/PY/fh-obsidian-shield.png" {
+card 237 "obsidian shield" level=6 image-path="character-ability-cards/frosthaven/py/fh-obsidian-shield.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 238 "erupting rage" level=7 image-path="character-ability-cards/frosthaven/PY/fh-erupting-rage.png" {
+card 238 "erupting rage" level=7 image-path="character-ability-cards/frosthaven/py/fh-erupting-rage.png" {
 	top{
 		enhancement kind=diamond ability=attack
 		enhancement kind=square ability=push
@@ -163,17 +163,17 @@ card 238 "erupting rage" level=7 image-path="character-ability-cards/frosthaven/
 		enhancement kind=square ability=move
 	}
 }
-card 239 swelter level=7 image-path="character-ability-cards/frosthaven/PY/fh-swelter.png" {
+card 239 swelter level=7 image-path="character-ability-cards/frosthaven/py/fh-swelter.png" {
 	top
 	bottom
 }
-card 240 "feed the beast" level=8 image-path="character-ability-cards/frosthaven/PY/fh-feed-the-beast.png" {
+card 240 "feed the beast" level=8 image-path="character-ability-cards/frosthaven/py/fh-feed-the-beast.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 241 "cinder lance" level=8 image-path="character-ability-cards/frosthaven/PY/fh-cinder-lance.png" {
+card 241 "cinder lance" level=8 image-path="character-ability-cards/frosthaven/py/fh-cinder-lance.png" {
 	top{
 		enhancement kind=diamond ability=attack
 	}
@@ -181,13 +181,13 @@ card 241 "cinder lance" level=8 image-path="character-ability-cards/frosthaven/P
 		enhancement kind=square ability=attack multiple=#true
 	}
 }
-card 242 "stone armor" level=9 image-path="character-ability-cards/frosthaven/PY/fh-stone-armor.png" {
+card 242 "stone armor" level=9 image-path="character-ability-cards/frosthaven/py/fh-stone-armor.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=jump
 	}
 }
-card 243 calamity level=9 image-path="character-ability-cards/frosthaven/PY/fh-calamity.png" {
+card 243 calamity level=9 image-path="character-ability-cards/frosthaven/py/fh-calamity.png" {
 	top
 	bottom
 }

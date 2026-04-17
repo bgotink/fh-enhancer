@@ -1,57 +1,57 @@
 meta {
-	name "Crashing Tide" spoiler="Coral"
+	name "Crashing Tide" spoiler=Coral
 	color "#5f988b"
 }
 
-card 474 "overwhelming wave" level=1 image-path="character-ability-cards/frosthaven/CR/fh-overwhelming-wave.png" {
+card 474 "overwhelming wave" level=1 image-path="character-ability-cards/frosthaven/cr/fh-overwhelming-wave.png" {
 	top{
 		enhancement kind=diamond ability=attack multiple=#true
 	}
 	bottom
 }
-card 475 "soft flesh" level=1 image-path="character-ability-cards/frosthaven/CR/fh-soft-flesh.png" {
+card 475 "soft flesh" level=1 image-path="character-ability-cards/frosthaven/cr/fh-soft-flesh.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 476 "rancid brine" level=1 image-path="character-ability-cards/frosthaven/CR/fh-rancid-brine.png" {
+card 476 "rancid brine" level=1 image-path="character-ability-cards/frosthaven/cr/fh-rancid-brine.png" {
 	top
 	bottom
 }
-card 477 "sharp chitin" level=1 image-path="character-ability-cards/frosthaven/CR/fh-sharp-chitin.png" {
+card 477 "sharp chitin" level=1 image-path="character-ability-cards/frosthaven/cr/fh-sharp-chitin.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 478 "down to the depths" level=1 image-path="character-ability-cards/frosthaven/CR/fh-down-to-the-depths.png" {
+card 478 "down to the depths" level=1 image-path="character-ability-cards/frosthaven/cr/fh-down-to-the-depths.png" {
 	top
 	bottom
 }
-card 479 "pool of power" level=1 image-path="character-ability-cards/frosthaven/CR/fh-pool-of-power.png" {
+card 479 "pool of power" level=1 image-path="character-ability-cards/frosthaven/cr/fh-pool-of-power.png" {
 	top lost=#true{
 		enhancement kind=diamond ability=attack multiple=#true
 	}
 	bottom
 }
-card 480 skitter level=1 image-path="character-ability-cards/frosthaven/CR/fh-skitter.png" {
+card 480 skitter level=1 image-path="character-ability-cards/frosthaven/cr/fh-skitter.png" {
 	top{
 		enhancement kind=square ability=attack
 	}
 	bottom
 }
-card 481 "cleansing swell" level=1 image-path="character-ability-cards/frosthaven/CR/fh-cleansing-swell.png" {
+card 481 "cleansing swell" level=1 image-path="character-ability-cards/frosthaven/cr/fh-cleansing-swell.png" {
 	top{
 		enhancement kind=diamond ability=attack multiple=#true
 	}
 	bottom
 }
-card 482 "cresting force" level=1 image-path="character-ability-cards/frosthaven/CR/fh-cresting-force.png" {
+card 482 "cresting force" level=1 image-path="character-ability-cards/frosthaven/cr/fh-cresting-force.png" {
 	top
 	bottom
 }
-card 483 "crashing surge" level=1 image-path="character-ability-cards/frosthaven/CR/fh-crashing-surge.png" {
+card 483 "crashing surge" level=1 image-path="character-ability-cards/frosthaven/cr/fh-crashing-surge.png" {
 	top lost=#true{
 		enhancement kind=circle ability=attack multiple=#true
 	}
@@ -59,7 +59,7 @@ card 483 "crashing surge" level=1 image-path="character-ability-cards/frosthaven
 		enhancement kind=circle ability=move
 	}
 }
-card 484 "mighty claws" level=1 image-path="character-ability-cards/frosthaven/CR/fh-mighty-claws.png" {
+card 484 "mighty claws" level=1 image-path="character-ability-cards/frosthaven/cr/fh-mighty-claws.png" {
 	top
 	bottom lost=#true{
 		enhancement kind=circle ability=move
@@ -67,7 +67,7 @@ card 484 "mighty claws" level=1 image-path="character-ability-cards/frosthaven/C
 		enhancement kind=circle ability=retaliate
 	}
 }
-card 485 submerge level=1 image-path="character-ability-cards/frosthaven/CR/fh-submerge.png" {
+card 485 submerge level=1 image-path="character-ability-cards/frosthaven/cr/fh-submerge.png" {
 	top{
 		enhancement kind=square ability=attack
 	}
@@ -75,27 +75,27 @@ card 485 submerge level=1 image-path="character-ability-cards/frosthaven/CR/fh-s
 		enhancement kind=circle ability=move
 	}
 }
-card 486 "rising flood" level=X image-path="character-ability-cards/frosthaven/CR/fh-rising-flood.png" {
+card 486 "rising flood" level=X image-path="character-ability-cards/frosthaven/cr/fh-rising-flood.png" {
 	top
 	bottom
 }
-card 487 undertow level=X image-path="character-ability-cards/frosthaven/CR/fh-undertow.png" {
+card 487 undertow level=X image-path="character-ability-cards/frosthaven/cr/fh-undertow.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=heal
 	}
 }
-card 488 "crush armor" level=X image-path="character-ability-cards/frosthaven/CR/fh-crush-armor.png" {
+card 488 "crush armor" level=X image-path="character-ability-cards/frosthaven/cr/fh-crush-armor.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 489 "smashing torrent" level=2 image-path="character-ability-cards/frosthaven/CR/fh-smashing-torrent.png" {
+card 489 "smashing torrent" level=2 image-path="character-ability-cards/frosthaven/cr/fh-smashing-torrent.png" {
 	top
 	bottom
 }
-card 490 "blood in the water" level=2 image-path="character-ability-cards/frosthaven/CR/fh-blood-in-the-water.png" {
+card 490 "blood in the water" level=2 image-path="character-ability-cards/frosthaven/cr/fh-blood-in-the-water.png" {
 	top lost=#true{
 		enhancement kind=circle ability=move
 		enhancement kind=diamond ability=attack
@@ -104,34 +104,34 @@ card 490 "blood in the water" level=2 image-path="character-ability-cards/frosth
 		enhancement kind=circle ability=move
 	}
 }
-card 491 shuck level=3 image-path="character-ability-cards/frosthaven/CR/fh-shuck.png" {
+card 491 shuck level=3 image-path="character-ability-cards/frosthaven/cr/fh-shuck.png" {
 	top
 	bottom
 }
-card 492 "endless cycle" level=3 image-path="character-ability-cards/frosthaven/CR/fh-endless-cycle.png" {
+card 492 "endless cycle" level=3 image-path="character-ability-cards/frosthaven/cr/fh-endless-cycle.png" {
 	top
 	bottom
 }
-card 493 "chaotic refraction" level=4 image-path="character-ability-cards/frosthaven/CR/fh-chaotic-refraction.png" {
+card 493 "chaotic refraction" level=4 image-path="character-ability-cards/frosthaven/cr/fh-chaotic-refraction.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 494 "clean sweep" level=4 image-path="character-ability-cards/frosthaven/CR/fh-clean-sweep.png" {
+card 494 "clean sweep" level=4 image-path="character-ability-cards/frosthaven/cr/fh-clean-sweep.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 495 "tidal blast" level=5 image-path="character-ability-cards/frosthaven/CR/fh-tidal-blast.png" {
+card 495 "tidal blast" level=5 image-path="character-ability-cards/frosthaven/cr/fh-tidal-blast.png" {
 	top lost=#true{
 		enhancement kind=diamond ability=attack multiple=#true
 		enhancement kind=square ability=range multiple=#true
 	}
 	bottom
 }
-card 496 "sodden soil" level=5 image-path="character-ability-cards/frosthaven/CR/fh-sodden-soil.png" {
+card 496 "sodden soil" level=5 image-path="character-ability-cards/frosthaven/cr/fh-sodden-soil.png" {
 	top{
 		enhancement kind=square ability=attack
 	}
@@ -139,23 +139,23 @@ card 496 "sodden soil" level=5 image-path="character-ability-cards/frosthaven/CR
 		enhancement kind=diamond ability=attack multiple=#true
 	}
 }
-card 497 "powerful pincer" level=6 image-path="character-ability-cards/frosthaven/CR/fh-powerful-pincer.png" {
+card 497 "powerful pincer" level=6 image-path="character-ability-cards/frosthaven/cr/fh-powerful-pincer.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move
 	}
 }
-card 498 "twilight grasp" level=6 image-path="character-ability-cards/frosthaven/CR/fh-twilight-grasp.png" {
+card 498 "twilight grasp" level=6 image-path="character-ability-cards/frosthaven/cr/fh-twilight-grasp.png" {
 	top{
 		enhancement kind=diamond ability=attack multiple=#true
 	}
 	bottom
 }
-card 499 "dug in" level=7 image-path="character-ability-cards/frosthaven/CR/fh-dug-in.png" {
+card 499 "dug in" level=7 image-path="character-ability-cards/frosthaven/cr/fh-dug-in.png" {
 	top
 	bottom
 }
-card 500 "drown beneath the waves" level=7 image-path="character-ability-cards/frosthaven/CR/fh-drown-beneath-the-waves.png" {
+card 500 "drown beneath the waves" level=7 image-path="character-ability-cards/frosthaven/cr/fh-drown-beneath-the-waves.png" {
 	top lost=#true{
 		enhancement kind=diamond ability=attack
 	}
@@ -163,13 +163,13 @@ card 500 "drown beneath the waves" level=7 image-path="character-ability-cards/f
 		enhancement kind=square ability=pull multiple=#true
 	}
 }
-card 501 "death on all sides" level=8 image-path="character-ability-cards/frosthaven/CR/fh-death-on-all-sides.png" {
+card 501 "death on all sides" level=8 image-path="character-ability-cards/frosthaven/cr/fh-death-on-all-sides.png" {
 	top
 	bottom{
 		enhancement kind=square ability=attack
 	}
 }
-card 502 "ebb and flow" level=8 image-path="character-ability-cards/frosthaven/CR/fh-ebb-and-flow.png" {
+card 502 "ebb and flow" level=8 image-path="character-ability-cards/frosthaven/cr/fh-ebb-and-flow.png" {
 	top lost=#true{
 		enhancement kind=diamond ability=attack multiple=#true
 	}
@@ -177,14 +177,14 @@ card 502 "ebb and flow" level=8 image-path="character-ability-cards/frosthaven/C
 		enhancement kind=circle ability=move
 	}
 }
-card 503 "high tide" level=9 image-path="character-ability-cards/frosthaven/CR/fh-high-tide.png" {
+card 503 "high tide" level=9 image-path="character-ability-cards/frosthaven/cr/fh-high-tide.png" {
 	top{
 		enhancement kind=circle ability=move
 		enhancement kind=diamond ability=attack
 	}
 	bottom
 }
-card 504 "low tide" level=9 image-path="character-ability-cards/frosthaven/CR/fh-low-tide.png" {
+card 504 "low tide" level=9 image-path="character-ability-cards/frosthaven/cr/fh-low-tide.png" {
 	top
 	bottom{
 		enhancement kind=circle ability=move

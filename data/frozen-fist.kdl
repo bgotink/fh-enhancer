@@ -1,34 +1,34 @@
 meta {
-	name "Frozen Fist" spoiler="Fist"
+	name "Frozen Fist" spoiler=Fist
 	color "#6a92b2"
 }
 
-card 360 "one with the mountain" level=1 image-path="character-ability-cards/frosthaven/FF/fh-one-with-the-mountain.png" {
+card 360 "one with the mountain" level=1 image-path="character-ability-cards/frosthaven/ff/fh-one-with-the-mountain.png" {
 	top lost=#true persistent=#true
 	bottom {
 		enhancement kind=diamond+ ability=heal
 	}
 }
 
-card 361 "cold boulder" level=1 image-path="character-ability-cards/frosthaven/FF/fh-cold-boulder.png" {
+card 361 "cold boulder" level=1 image-path="character-ability-cards/frosthaven/ff/fh-cold-boulder.png" {
 	bottom {
 		enhancement kind=square ability=move
 	}
 }
 
-card 362 "frost eruption" level=1 image-path="character-ability-cards/frosthaven/FF/fh-frost-eruption.png"
+card 362 "frost eruption" level=1 image-path="character-ability-cards/frosthaven/ff/fh-frost-eruption.png"
 
-card 363 "fury of the mountain" level=1 image-path="character-ability-cards/frosthaven/FF/fh-fury-of-the-mountain.png" {
+card 363 "fury of the mountain" level=1 image-path="character-ability-cards/frosthaven/ff/fh-fury-of-the-mountain.png" {
 	bottom {
 		enhancement kind=square ability=move
 	}
 }
 
-card 364 "encased punch" level=1 image-path="character-ability-cards/frosthaven/FF/fh-encased-punch.png"
+card 364 "encased punch" level=1 image-path="character-ability-cards/frosthaven/ff/fh-encased-punch.png"
 
-card 365 "voice from below" level=1 image-path="character-ability-cards/frosthaven/FF/fh-voice-from-below.png"
+card 365 "voice from below" level=1 image-path="character-ability-cards/frosthaven/ff/fh-voice-from-below.png"
 
-card 366 "piercing pummel" level=1 image-path="character-ability-cards/frosthaven/FF/fh-piercing-pummel.png" {
+card 366 "piercing pummel" level=1 image-path="character-ability-cards/frosthaven/ff/fh-piercing-pummel.png" {
 	bottom lost=#true {
 		enhancement kind=circle ability=jump
 		enhancement kind=diamond ability=attack
@@ -36,7 +36,7 @@ card 366 "piercing pummel" level=1 image-path="character-ability-cards/frosthave
 	}
 }
 
-card 367 "ice blast" level=1 image-path="character-ability-cards/frosthaven/FF/fh-ice-blast.png" {
+card 367 "ice blast" level=1 image-path="character-ability-cards/frosthaven/ff/fh-ice-blast.png" {
 	top lost=#true {
 		enhancement kind=diamond ability=attack multiple=#true
 	}
@@ -45,21 +45,21 @@ card 367 "ice blast" level=1 image-path="character-ability-cards/frosthaven/FF/f
 	}
 }
 
-card 368 "shard launch" level=X image-path="character-ability-cards/frosthaven/FF/fh-shard-launch.png" {
+card 368 "shard launch" level=X image-path="character-ability-cards/frosthaven/ff/fh-shard-launch.png" {
 	top {
 		enhancement kind=square ability=range multiple=#true
 	}
 }
 
-card 369 "primal bellow" level=X image-path="character-ability-cards/frosthaven/FF/fh-primal-bellow.png"
+card 369 "primal bellow" level=X image-path="character-ability-cards/frosthaven/ff/fh-primal-bellow.png"
 
-card 370 "freezing shell" level=X image-path="character-ability-cards/frosthaven/FF/fh-freezing-shell.png" {
+card 370 "freezing shell" level=X image-path="character-ability-cards/frosthaven/ff/fh-freezing-shell.png" {
 	bottom {
 		enhancement kind=square ability=move
 	}
 }
 
-card 371 "draw of the bedrock" level=2 image-path="character-ability-cards/frosthaven/FF/fh-draw-of-the-bedrock.png" {
+card 371 "draw of the bedrock" level=2 image-path="character-ability-cards/frosthaven/ff/fh-draw-of-the-bedrock.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -69,25 +69,25 @@ card 371 "draw of the bedrock" level=2 image-path="character-ability-cards/frost
 	}
 }
 
-card 372 "crushing crystals" level=2 image-path="character-ability-cards/frosthaven/FF/fh-crushing-crystals.png" {
+card 372 "crushing crystals" level=2 image-path="character-ability-cards/frosthaven/ff/fh-crushing-crystals.png" {
 	bottom {
 		enhancement kind=square ability=move
 	}
 }
 
-card 373 "lacerating eruption" level=3 image-path="character-ability-cards/frosthaven/FF/fh-lacerating-eruption.png" {
+card 373 "lacerating eruption" level=3 image-path="character-ability-cards/frosthaven/ff/fh-lacerating-eruption.png" {
 	bottom {
 		enhancement kind=square ability=move
 	}
 }
 
-card 374 "frozen over" level=3 image-path="character-ability-cards/frosthaven/FF/fh-frozen-over.png" {
+card 374 "frozen over" level=3 image-path="character-ability-cards/frosthaven/ff/fh-frozen-over.png" {
 	top {
 		enhancement kind=diamond+ ability=#null
 	}
 }
 
-card 375 "the mountain's fist" level=4 image-path="character-ability-cards/frosthaven/FF/fh-the-mountains-fist.png" {
+card 375 "the mountain's fist" level=4 image-path="character-ability-cards/frosthaven/ff/fh-the-mountains-fist.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -96,20 +96,20 @@ card 375 "the mountain's fist" level=4 image-path="character-ability-cards/frost
 	}
 }
 
-card 376 "packed solid" level=4 image-path="character-ability-cards/frosthaven/FF/fh-packed-solid.png" {
+card 376 "packed solid" level=4 image-path="character-ability-cards/frosthaven/ff/fh-packed-solid.png" {
 	bottom {
 		enhancement kind=square ability=shield
 		enhancement kind=square ability=retaliate
 	}
 }
 
-card 377 "preserved fury" level=5 image-path="character-ability-cards/frosthaven/FF/fh-preserved-fury.png" {
+card 377 "preserved fury" level=5 image-path="character-ability-cards/frosthaven/ff/fh-preserved-fury.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
 }
 
-card 378 "ice uppercut" level=5 image-path="character-ability-cards/frosthaven/FF/fh-ice-uppercut.png" {
+card 378 "ice uppercut" level=5 image-path="character-ability-cards/frosthaven/ff/fh-ice-uppercut.png" {
 	top {
 		enhancement kind=circle ability=attack
 	}
@@ -118,7 +118,7 @@ card 378 "ice uppercut" level=5 image-path="character-ability-cards/frosthaven/F
 	}
 }
 
-card 379 "thick frost" level=6 image-path="character-ability-cards/frosthaven/FF/fh-thick-frost.png" {
+card 379 "thick frost" level=6 image-path="character-ability-cards/frosthaven/ff/fh-thick-frost.png" {
 	top {
 		enhancement kind=square ability=heal
 	}
@@ -127,19 +127,19 @@ card 379 "thick frost" level=6 image-path="character-ability-cards/frosthaven/FF
 	}
 }
 
-card 380 "glacier slam" level=6 image-path="character-ability-cards/frosthaven/FF/fh-glacier-slam.png" {
+card 380 "glacier slam" level=6 image-path="character-ability-cards/frosthaven/ff/fh-glacier-slam.png" {
 	bottom {
 		enhancement kind=square ability=move
 	}
 }
 
-card 381 "gift of the mountain" level=7 image-path="character-ability-cards/frosthaven/FF/fh-gift-of-the-mountain.png" {
+card 381 "gift of the mountain" level=7 image-path="character-ability-cards/frosthaven/ff/fh-gift-of-the-mountain.png" {
 	bottom lost=#true persistent=#true {
 		enhancement kind=circle ability=move persistent=#false
 	}
 }
 
-card 382 "seeing stars" level=7 image-path="character-ability-cards/frosthaven/FF/fh-seeing-stars.png" {
+card 382 "seeing stars" level=7 image-path="character-ability-cards/frosthaven/ff/fh-seeing-stars.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -149,7 +149,7 @@ card 382 "seeing stars" level=7 image-path="character-ability-cards/frosthaven/F
 	}
 }
 
-card 383 "shattering blow" level=8 image-path="character-ability-cards/frosthaven/FF/fh-shattering-blow.png" {
+card 383 "shattering blow" level=8 image-path="character-ability-cards/frosthaven/ff/fh-shattering-blow.png" {
 	top lost=#true {
 		enhancement kind=diamond ability=attack
 	}
@@ -159,13 +159,13 @@ card 383 "shattering blow" level=8 image-path="character-ability-cards/frosthave
 	}
 }
 
-card 384 "draw strength" level=8 image-path="character-ability-cards/frosthaven/FF/fh-draw-strength.png" {
+card 384 "draw strength" level=8 image-path="character-ability-cards/frosthaven/ff/fh-draw-strength.png" {
 	top {
 		enhancement kind=diamond ability=attack multiple=#true
 	}
 }
 
-card 385 "bring down the mountain" level=9 image-path="character-ability-cards/frosthaven/FF/fh-bring-down-the-mountain.png" {
+card 385 "bring down the mountain" level=9 image-path="character-ability-cards/frosthaven/ff/fh-bring-down-the-mountain.png" {
 	top {
 		enhancement kind=square ability=attack multiple=#true
 	}
@@ -175,7 +175,7 @@ card 385 "bring down the mountain" level=9 image-path="character-ability-cards/f
 	}
 }
 
-card 386 "frozen spike" level=9 image-path="character-ability-cards/frosthaven/FF/fh-frozen-spike.png" {
+card 386 "frozen spike" level=9 image-path="character-ability-cards/frosthaven/ff/fh-frozen-spike.png" {
 	top {
 		enhancement kind=square ability=attack multiple=#true
 	}

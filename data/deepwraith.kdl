@@ -1,16 +1,16 @@
 meta {
-	name Deepwraith spoiler="Kelp"
+	name Deepwraith spoiler=Kelp
 	color "#77578e"
 }
 
-card 445 "skull collection" level=1 image-path="character-ability-cards/frosthaven/DT/fh-skull-collection.png" {
+card 445 "skull collection" level=1 image-path="character-ability-cards/frosthaven/dt/fh-skull-collection.png" {
 	top lost=#true persistent=#true
 	bottom {
 		enhancement kind=circle ability=move
 	}
 }
 
-card 446 "hollow aura" level=1 image-path="character-ability-cards/frosthaven/DT/fh-hollow-aura.png" {
+card 446 "hollow aura" level=1 image-path="character-ability-cards/frosthaven/dt/fh-hollow-aura.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -19,7 +19,7 @@ card 446 "hollow aura" level=1 image-path="character-ability-cards/frosthaven/DT
 	}
 }
 
-card 447 "skewer the flesh" level=1 image-path="character-ability-cards/frosthaven/DT/fh-skewer-the-flesh.png" {
+card 447 "skewer the flesh" level=1 image-path="character-ability-cards/frosthaven/dt/fh-skewer-the-flesh.png" {
 	top {
 		enhancement kind=square ability=attack
 		enhancement kind=square ability=attack
@@ -29,20 +29,20 @@ card 447 "skewer the flesh" level=1 image-path="character-ability-cards/frosthav
 	}
 }
 
-card 448 "succumb to fear" level=1 image-path="character-ability-cards/frosthaven/DT/fh-succumb-to-fear.png" {
+card 448 "succumb to fear" level=1 image-path="character-ability-cards/frosthaven/dt/fh-succumb-to-fear.png" {
 	bottom {
 		enhancement kind=square ability=teleport
 	}
 }
 
-card 449 "ink cloud" level=1 image-path="character-ability-cards/frosthaven/DT/fh-ink-cloud.png" {
+card 449 "ink cloud" level=1 image-path="character-ability-cards/frosthaven/dt/fh-ink-cloud.png" {
 	top {
 		enhancement kind=square ability=attack multiple=#true
 	}
 	bottom lost=#true
 }
 
-card 450 "lacerating stabs" level=1 image-path="character-ability-cards/frosthaven/DT/fh-lacerating-stabs.png" {
+card 450 "lacerating stabs" level=1 image-path="character-ability-cards/frosthaven/dt/fh-lacerating-stabs.png" {
 	top lost=#true {
 		enhancement kind=diamond ability=attack
 		enhancement kind=diamond ability=attack
@@ -53,26 +53,26 @@ card 450 "lacerating stabs" level=1 image-path="character-ability-cards/frosthav
 	}
 }
 
-card 451 "staring into the abyss" level=1 image-path="character-ability-cards/frosthaven/DT/fh-staring-into-the-abyss.png" {
+card 451 "staring into the abyss" level=1 image-path="character-ability-cards/frosthaven/dt/fh-staring-into-the-abyss.png" {
 	bottom {
 		enhancement kind=square ability=move
 	}
 }
 
-card 452 "mantle of dread" level=1 image-path="character-ability-cards/frosthaven/DT/fh-mantle-of-dread.png" {
+card 452 "mantle of dread" level=1 image-path="character-ability-cards/frosthaven/dt/fh-mantle-of-dread.png" {
 	top {
 		enhancement kind=circle ability=#null multiple=#true
 	}
 	bottom lost=#true persistent=#true
 }
 
-card 453 "black scythe" level=1 image-path="character-ability-cards/frosthaven/DT/fh-black-scythe.png" {
+card 453 "black scythe" level=1 image-path="character-ability-cards/frosthaven/dt/fh-black-scythe.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
 }
 
-card 454 "tumultuous panic" level=1 image-path="character-ability-cards/frosthaven/DT/fh-tumultuous-panic.png" {
+card 454 "tumultuous panic" level=1 image-path="character-ability-cards/frosthaven/dt/fh-tumultuous-panic.png" {
 	top {
 		enhancement kind=square ability=attack
 		enhancement kind=square ability=move
@@ -84,13 +84,13 @@ card 454 "tumultuous panic" level=1 image-path="character-ability-cards/frosthav
 	}
 }
 
-card 455 "soul hunger" level=X image-path="character-ability-cards/frosthaven/DT/fh-soul-hunger.png" {
+card 455 "soul hunger" level=X image-path="character-ability-cards/frosthaven/dt/fh-soul-hunger.png" {
 	top lost=#true {
 		enhancement kind=diamond+ ability=heal
 	}
 }
 
-card 456 "morbid camouflage" level=X image-path="character-ability-cards/frosthaven/DT/fh-morbid-camouflage.png" {
+card 456 "morbid camouflage" level=X image-path="character-ability-cards/frosthaven/dt/fh-morbid-camouflage.png" {
 	top {
 		enhancement kind=square ability=attack
 	}
@@ -99,7 +99,7 @@ card 456 "morbid camouflage" level=X image-path="character-ability-cards/frostha
 	}
 }
 
-card 457 "haunting brutality" level=X image-path="character-ability-cards/frosthaven/DT/fh-haunting-brutality.png" {
+card 457 "haunting brutality" level=X image-path="character-ability-cards/frosthaven/dt/fh-haunting-brutality.png" {
 	top {
 		enhancement kind=square ability=attack
 	}
@@ -108,7 +108,7 @@ card 457 "haunting brutality" level=X image-path="character-ability-cards/frosth
 	}
 }
 
-card 458 "slipping into death" level=2 image-path="character-ability-cards/frosthaven/DT/fh-slipping-into-death.png" {
+card 458 "slipping into death" level=2 image-path="character-ability-cards/frosthaven/dt/fh-slipping-into-death.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -117,13 +117,13 @@ card 458 "slipping into death" level=2 image-path="character-ability-cards/frost
 	}
 }
 
-card 459 "lie in wait" level=2 image-path="character-ability-cards/frosthaven/DT/fh-lie-in-wait.png" {
+card 459 "lie in wait" level=2 image-path="character-ability-cards/frosthaven/dt/fh-lie-in-wait.png" {
 	bottom {
 		enhancement kind=square ability=teleport
 	}
 }
 
-card 460 "crippling terror" level=3 image-path="character-ability-cards/frosthaven/DT/fh-crippling-terror.png" {
+card 460 "crippling terror" level=3 image-path="character-ability-cards/frosthaven/dt/fh-crippling-terror.png" {
 	top lost=#true {
 		enhancement kind=diamond ability=attack multiple=#true
 	}
@@ -132,7 +132,7 @@ card 460 "crippling terror" level=3 image-path="character-ability-cards/frosthav
 	}
 }
 
-card 461 "pinning spines" level=3 image-path="character-ability-cards/frosthaven/DT/fh-pinning-spines.png" {
+card 461 "pinning spines" level=3 image-path="character-ability-cards/frosthaven/dt/fh-pinning-spines.png" {
 	top {
 		enhancement kind=circle ability=attack
 		enhancement kind=circle ability=attack
@@ -140,15 +140,15 @@ card 461 "pinning spines" level=3 image-path="character-ability-cards/frosthaven
 	bottom lost=#true
 }
 
-card 462 "crushing darkness" level=4 image-path="character-ability-cards/frosthaven/DT/fh-crushing-darkness.png" {
+card 462 "crushing darkness" level=4 image-path="character-ability-cards/frosthaven/dt/fh-crushing-darkness.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
 }
 
-card 463 "grim trophies" level=4 image-path="character-ability-cards/frosthaven/DT/fh-grim-trophies.png"
+card 463 "grim trophies" level=4 image-path="character-ability-cards/frosthaven/dt/fh-grim-trophies.png"
 
-card 464 "extra decoration" level=5 image-path="character-ability-cards/frosthaven/DT/fh-extra-decoration.png" {
+card 464 "extra decoration" level=5 image-path="character-ability-cards/frosthaven/dt/fh-extra-decoration.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
@@ -157,14 +157,14 @@ card 464 "extra decoration" level=5 image-path="character-ability-cards/frosthav
 	}
 }
 
-card 465 "death spiral" level=5 image-path="character-ability-cards/frosthaven/DT/fh-death-spiral.png" {
+card 465 "death spiral" level=5 image-path="character-ability-cards/frosthaven/dt/fh-death-spiral.png" {
 	top persistent=#true
 	bottom {
 		enhancement kind=circle ability=teleport
 	}
 }
 
-card 466 "claw of doom" level=6 image-path="character-ability-cards/frosthaven/DT/fh-claw-of-doom.png" {
+card 466 "claw of doom" level=6 image-path="character-ability-cards/frosthaven/dt/fh-claw-of-doom.png" {
 	top {
 		enhancement kind=square ability=attack
 	}
@@ -173,19 +173,19 @@ card 466 "claw of doom" level=6 image-path="character-ability-cards/frosthaven/D
 	}
 }
 
-card 467 "the remorseless deep" level=6 image-path="character-ability-cards/frosthaven/DT/fh-the-remorseless-deep.png" {
+card 467 "the remorseless deep" level=6 image-path="character-ability-cards/frosthaven/dt/fh-the-remorseless-deep.png" {
 	bottom {
 		enhancement kind=square ability=teleport
 	}
 }
 
-card 468 "hasten the end" level=7 image-path="character-ability-cards/frosthaven/DT/fh-hasten-the-end.png" {
+card 468 "hasten the end" level=7 image-path="character-ability-cards/frosthaven/dt/fh-hasten-the-end.png" {
 	bottom lost=#true {
 		enhancement kind=circle ability=teleport
 	}
 }
 
-card 469 "dire frenzy" level=7 image-path="character-ability-cards/frosthaven/DT/fh-dire-frenzy.png" {
+card 469 "dire frenzy" level=7 image-path="character-ability-cards/frosthaven/dt/fh-dire-frenzy.png" {
 	top {
 		enhancement kind=square ability=attack
 		enhancement kind=diamond ability=attack
@@ -195,14 +195,14 @@ card 469 "dire frenzy" level=7 image-path="character-ability-cards/frosthaven/DT
 	}
 }
 
-card 470 "unseen horror" level=8 image-path="character-ability-cards/frosthaven/DT/fh-unseen-horror.png" {
+card 470 "unseen horror" level=8 image-path="character-ability-cards/frosthaven/dt/fh-unseen-horror.png" {
 	top {
 		enhancement kind=diamond ability=attack
 	}
 	bottom lost=#true persistent=#true
 }
 
-card 471 "rip from the bone" level=8 image-path="character-ability-cards/frosthaven/DT/fh-rip-from-the-bone.png" {
+card 471 "rip from the bone" level=8 image-path="character-ability-cards/frosthaven/dt/fh-rip-from-the-bone.png" {
 	top {
 		enhancement kind=circle ability=attack multiple=#true
 	}
@@ -211,7 +211,7 @@ card 471 "rip from the bone" level=8 image-path="character-ability-cards/frostha
 	}
 }
 
-card 472 "black night of the deep" level=9 image-path="character-ability-cards/frosthaven/DT/fh-black-night-of-the-deep.png" {
+card 472 "black night of the deep" level=9 image-path="character-ability-cards/frosthaven/dt/fh-black-night-of-the-deep.png" {
 	top {
 		enhancement kind=circle ability=attack multiple=#true
 	}
@@ -220,7 +220,7 @@ card 472 "black night of the deep" level=9 image-path="character-ability-cards/f
 	}
 }
 
-card 473 "consume the helpless" level=9 image-path="character-ability-cards/frosthaven/DT/fh-consume-the-helpless.png" {
+card 473 "consume the helpless" level=9 image-path="character-ability-cards/frosthaven/dt/fh-consume-the-helpless.png" {
 	top {
 		enhancement kind=diamond ability=pull
 	}
