@@ -19,7 +19,7 @@ export const gloomhavenCardBrowserImagesFolder = new URL(
 export const dataFolder = new URL("../data/", import.meta.url);
 export const outputFolder = new URL("../output/", import.meta.url);
 
-export const characterOrder = [
+export const frosthavenCharacterOrder = [
 	// Starting classes
 	"drifter",
 	"blinkblade",
@@ -40,4 +40,28 @@ export const characterOrder = [
 	"crashing-tide",
 	"hive",
 	"metal-mosaic",
+];
+
+export const gloomhaven2CharacterOrder = [
+	// Starting classes
+	"bruiser",
+	"tinkerer",
+	"spellweaver",
+	"silentknife",
+	"cragheart",
+	"mindthief",
+
+	// Unlocked classes
+	"sunkeeper",
+	"puartermaster",
+	"soultetherer",
+	"nightshroud",
+	"plagueherald",
+	"berserker",
+	"soothsinger",
+	"doomstalker",
+	"sawbones",
+	"elementalist",
+	"wildfury",
+	"bladeswarm",
 ];

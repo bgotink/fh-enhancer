@@ -8,11 +8,13 @@ import {JSDOM} from "jsdom";
 import sharp from "sharp";
 
 import {
-	characterOrder,
+	frosthavenCharacterOrder,
 	dataFolder,
 	outputFolder,
 	worldhavenDataFolder,
 	worldhavenImagesFolder,
+    gloomhaven2CharacterOrder,
+		gloomhavenCardBrowserImagesFolder,
 } from "./constants.js";
 import {
 	PlayerCharacter,
@@ -86,7 +88,7 @@ const [scriptText, styleText] = await Promise.all([
 /** @type {Map<string, PlayerCharacter>} */
 const characters = new Map();
 
-for (const characterName of characterOrder) {
+for (const characterName of [frosthavenCharacterOrder, gloomhaven2CharacterOrder].flat()) {
 	let characterString;
 
 	try {
@@ -118,13 +120,24 @@ const art = new Map(
 
 await Promise.all(
 	Array.from(characters, async ([characterName, character]) => {
-		const icon = art.get(`${characterName.replaceAll("-", " ")} icon`);
+		let imageUrl;
+		if (character.meta.game === 'frosthaven') {
+			const icon = art.get(`${characterName.replaceAll("-", " ")} icon`);
 
-		if (icon == null) {
-			throw new Error(`Couldn't find icon for ${characterName}`);
+			if (icon == null) {
+				throw new Error(`Couldn't find icon for ${characterName}`);
+			}
+
+			imageUrl = new URL(icon, worldhavenImagesFolder);
+		} else {
+			if (!character.meta.shortName) {
+				throw new Error(`Couldn't find icon for ${characterName}`);
+			}
+
+			imageUrl = new URL(`icons/characters/gh2/${character.meta.shortName}.png`, gloomhavenCardBrowserImagesFolder);
 		}
 
-		const image = await readFile(new URL(icon, worldhavenImagesFolder));
+		const image = await readFile(imageUrl);
 
 		const characterColor = character.meta.color?.rgb ?? "#999";
 
@@ -219,10 +232,18 @@ for (const [characterName, character] of characters) {
 	for (const card of character.cards) {
 		makeAsset(
 			`${characterName}/cards/${card.name.replaceAll(" ", "-")}.jpg`,
-			async (url) =>
-				sharp(await readFile(new URL(card.imagePath, worldhavenImagesFolder)))
-					.jpeg({quality: 75, mozjpeg: buildForDeployment})
-					.toFile(fileURLToPath(url)),
+			async (url) => {
+				let sourceUrl;
+				if (character.meta.game === 'frosthaven') {
+					sourceUrl = new URL(card.imagePath, worldhavenImagesFolder);
+				} else {
+					sourceUrl = new URL(card.imagePath, gloomhavenCardBrowserImagesFolder);
+				}
+
+				return sharp(await readFile(sourceUrl))
+					.jpeg({ quality: 75, mozjpeg: buildForDeployment })
+					.toFile(fileURLToPath(url));
+			},
 		);
 
 		document.body.append(createCard(card));

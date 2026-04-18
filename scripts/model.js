@@ -179,7 +179,7 @@ export class Action {
  */
 function isValidLevel(level) {
 	if (typeof level === "string") {
-		return level === "X";
+		return level === "X" || level === "M";
 	} else {
 		return level >= 1 && level <= 9;
 	}
@@ -192,7 +192,7 @@ export class Card {
 	/** @type {string} */
 	name;
 
-	/** @type {1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 'X'} */
+	/** @type {1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 'X' | 'M'} */
 	level;
 
 	/** @type {string} */
@@ -297,6 +297,8 @@ export class CharacterMeta {
 
 	spoilerFreeName;
 
+	shortName;
+
 	color;
 
 	/** @type {DeserializationContext=} */
@@ -308,15 +310,17 @@ export class CharacterMeta {
 			ctx.child.required.single("game", (c) =>
 				c.argument.required.enum("frosthaven", "gloomhaven2"),
 			);
-		const [name, spoilerFreeName] = ctx.child.required.single("name", (c) => [
+		const [name, spoilerFreeName, shortName] = ctx.child.required.single("name", (c) => [
 			c.argument.required("string"),
 			c.property("spoiler", "string"),
+			c.property("short", "string")
 		]);
 
 		const meta = new CharacterMeta(
 			game,
 			name,
 			spoilerFreeName,
+			shortName,
 			ctx.child.single("color", Color),
 		);
 		meta.#ctx = ctx;
@@ -327,12 +331,14 @@ export class CharacterMeta {
 	 * @param {"frosthaven" | "gloomhaven2"} game
 	 * @param {string} name
 	 * @param {string=} spoilerFreeName
+	 * @param {string=} shortName
 	 * @param {Color=} color
 	 */
-	constructor(game, name, spoilerFreeName, color) {
+	constructor(game, name, spoilerFreeName, shortName, color) {
 		this.game = game;
 		this.name = name;
 		this.spoilerFreeName = spoilerFreeName;
+		this.shortName = shortName;
 		this.color = color;
 	}
 
@@ -345,6 +351,9 @@ export class CharacterMeta {
 			c.argument(this.name);
 			if (this.spoilerFreeName) {
 				c.property("spoiler", this.spoilerFreeName);
+			}
+			if (this.shortName) {
+				c.property("short", this.shortName);
 			}
 		});
 		if (this.color) {

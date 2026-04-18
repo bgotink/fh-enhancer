@@ -1,6 +1,6 @@
 meta {
 	game gloomhaven2
-	name Nightshroud
+	name Nightshroud spoiler=Eclipse short=NS2
 	color "#49475F"
 }
 card #nan "spirit of the night" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/NS2/spirit-of-the-night.jpeg" {

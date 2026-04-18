@@ -1,6 +1,6 @@
 meta {
 	game gloomhaven2
-	name SilentKnife
+	name SilentKnife short=SC2
 	color "#2F4C2A"
 }
 card #nan "single out" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SC2/single-out.jpeg" {

@@ -1,6 +1,6 @@
 meta {
 	game gloomhaven2
-	name Doomstalker
+	name Doomstalker spoiler="Angry Face" short=DS2
 	color "#3D7584"
 }
 card #nan "rain of arrows" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/rain-of-arrows.jpeg" {

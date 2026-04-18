@@ -82,7 +82,7 @@ async function importGloomhavenFile(file) {
 }
 
 const gloomhaven2Characters = new Map(
-	/** @type {{name: string; class: string; colour: string}[]} */
+	/** @type {{name: string; altName: string; class: string; colour: string}[]} */
 	((await importGloomhavenFile("characters.ts")).characters).map(
 		(character) => [character.class, character],
 	),
@@ -97,19 +97,23 @@ for (const card of gloomhaven2AbilityCards) {
 	if (!characterInfo) {
 		continue;
 	}
+	if (card.level === 10) {
+		continue;
+	}
 
 	const character = (abilitiesPerCharacter[characterInfo.name.toLowerCase()] ??=
 		new PlayerCharacter(
 			new CharacterMeta(
 				"gloomhaven2",
 				characterInfo.name,
-				undefined,
+				characterInfo.altName,
+				card.class,
 				new Color(characterInfo.colour),
 			),
 		));
 
 	const level =
-		card.level === 1.5 ? "X" : /** @type {Card['level']} */ (+card.level);
+		card.level === 1.5 ? "X" : card.level === 0.25 ? "M" : /** @type {Card['level']} */ (+card.level);
 
 	character.cards.push(
 		new Card(NaN, card.name, level, card.image, new Action(), new Action()),

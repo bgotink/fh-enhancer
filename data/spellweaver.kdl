@@ -1,6 +1,6 @@
 meta {
 	game gloomhaven2
-	name Spellweaver
+	name Spellweaver short=SW2
 	color "#583D72"
 }
 card #nan "reviving ether" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SW2/reviving-ether.jpeg" {

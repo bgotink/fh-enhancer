@@ -1,6 +1,6 @@
 meta {
 	game gloomhaven2
-	name Mindthief
+	name Mindthief short=MT2
 	color "#374458"
 }
 card #nan "submissive affliction" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/submissive-affliction.jpeg" {

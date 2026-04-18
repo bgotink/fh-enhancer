@@ -1,6 +1,6 @@
 meta {
 	game gloomhaven2
-	name Bruiser
+	name Bruiser short=BR2
 	color "#16395A"
 }
 card #nan trample level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/trample.jpeg" {

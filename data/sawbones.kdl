@@ -1,6 +1,6 @@
 meta {
 	game gloomhaven2
-	name Sawbones
+	name Sawbones spoiler=Saw short=SB2
 	color "#3E3E3E"
 }
 card #nan "battlefield medicine" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/battlefield-medicine.jpeg" {
@@ -119,27 +119,27 @@ card #nan "grisly trauma" level=9 image-path="character-ability-cards/gloomhaven
 	top
 	bottom
 }
-card #nan "medical pack 1" level=0.25 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-1.jpeg" {
+card #nan "medical pack 1" level=M image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-1.jpeg" {
 	top
 	bottom
 }
-card #nan "medical pack 2" level=0.25 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-2.jpeg" {
+card #nan "medical pack 2" level=M image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-2.jpeg" {
 	top
 	bottom
 }
-card #nan "medical pack 3" level=0.25 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-3.jpeg" {
+card #nan "medical pack 3" level=M image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-3.jpeg" {
 	top
 	bottom
 }
-card #nan "medical pack 4" level=0.25 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-4.jpeg" {
+card #nan "medical pack 4" level=M image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-4.jpeg" {
 	top
 	bottom
 }
-card #nan "medical pack 5" level=0.25 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-5.jpeg" {
+card #nan "medical pack 5" level=M image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-5.jpeg" {
 	top
 	bottom
 }
-card #nan "medical pack 6" level=0.25 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-6.jpeg" {
+card #nan "medical pack 6" level=M image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/medical-pack-6.jpeg" {
 	top
 	bottom
 }

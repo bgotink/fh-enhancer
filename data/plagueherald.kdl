@@ -1,6 +1,6 @@
 meta {
 	game gloomhaven2
-	name Plagueherald
+	name Plagueherald spoiler=Cthulhu short=PH2
 	color "#31514E"
 }
 card #nan "comorbid sting" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/comorbid-sting.jpeg" {
