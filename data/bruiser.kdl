@@ -4,63 +4,116 @@ meta {
 	color "#16395A"
 }
 card #nan trample level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/trample.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true{
+		enhancement kind=square ability=jump
+	}
 }
 card #nan "eye for an eye" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/eye-for-an-eye.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=heal
+	}
 }
 card #nan skewer level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/skewer.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=attack multiple=#true
+	}
+	bottom lost=#true{
+		enhancement kind=square ability=move
+	}
 }
 card #nan "overwhelming assault" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/overwhelming-assault.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=jump
+	}
 }
 card #nan "balanced measure" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/balanced-measure.jpeg" {
 	top
 	bottom
 }
 card #nan "grab and go" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/grab-and-go.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=heal
+	}
+	bottom{
+		enhancement kind=square ability=move
+	}
 }
 card #nan "warding strength" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/warding-strength.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=attack
+	}
 	bottom
 }
 card #nan "shield bash" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/shield-bash.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=move
+	}
 }
 card #nan "leaping cleave" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/leaping-cleave.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=attack multiple=#true
+	}
+	bottom{
+		enhancement kind=square ability=jump
+		enhancement kind=square ability=push
+	}
 }
 card #nan "spare dagger" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/spare-dagger.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=pierce
+	}
 }
 card #nan "sweeping blow" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/sweeping-blow.jpeg" {
-	top
+	top{
+		enhancement kind=hex number-of-hexes=3
+	}
 	bottom
 }
 card #nan "fearsome taunt" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/fearsome-taunt.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=attack
+		enhancement kind=square ability=push
+	}
 	bottom
 }
 card #nan "provoking roar" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/provoking-roar.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=pull
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=pull
+		enhancement kind=square ability=range
+	}
 }
 card #nan "intimidating growl" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/intimidating-growl.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=attack
+		enhancement kind=hex number-of-hexes=3
+		enhancement kind=hex number-of-hexes=4
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan juggernaut level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/juggernaut.jpeg" {
-	top
+	top{
+		enhancement kind=circle ability=move
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan "hook and chain" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/hook-and-chain.jpeg" {
@@ -68,54 +121,106 @@ card #nan "hook and chain" level=3 image-path="character-ability-cards/gloomhave
 	bottom
 }
 card #nan "unstoppable charge" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/unstoppable-charge.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true{
+		enhancement kind=square ability=move
+		enhancement kind=diamond ability=#null
+	}
 }
 card #nan whirlwind level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/whirlwind.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=push
+	}
 }
 card #nan "push through" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/push-through.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond+ ability=heal
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "skirmishing maneuver" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/skirmishing-maneuver.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=attack
+		enhancement kind=circle ability=move
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=jump
+	}
 }
 card #nan "defensive tactics" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/defensive-tactics.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=target
+	}
 }
 card #nan "run through" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/run-through.jpeg" {
 	top
 	bottom
 }
 card #nan "immovable phalanx" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/immovable-phalanx.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=shield
+	}
 	bottom
 }
 card #nan "leg fly" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/leg-fly.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=attack
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "selfish retribution" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/selfish-retribution.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=circle ability=move
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=retaliate
+	}
 }
 card #nan "frenzied onslaught" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/frenzied-onslaught.jpeg" {
-	top
+	top{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=attack
+		enhancement kind=circle ability=move
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan "crippling offensive" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/crippling-offensive.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=shield
+	}
 }
 card #nan "brute force" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/brute-force.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=shield
+	}
 	bottom
 }
 card #nan "face your end" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/face-your-end.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom{
+		enhancement kind=diamond ability=attack
+	}
 }

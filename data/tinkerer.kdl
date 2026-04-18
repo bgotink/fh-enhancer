@@ -4,126 +4,240 @@ meta {
 	color "#6C5A45"
 }
 card #nan "potent potables" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/potent-potables.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan "harmless contraption" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/harmless-contraption.jpeg" {
-	top
-	bottom
+	top lost=#true persistent=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan flamethrower level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/flamethrower.jpeg" {
-	top
+	top lost=#true{
+		enhancement kind=diamond ability=attack
+		enhancement kind=hex number-of-hexes=3
+		enhancement kind=hex number-of-hexes=4
+	}
 	bottom
 }
 card #nan "disorienting flash" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/disorienting-flash.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=#null
+		enhancement kind=square ability=target
+	}
+	bottom{
+		enhancement kind=circle ability=heal
+	}
 }
 card #nan "ink bomb" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/ink-bomb.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack
+		enhancement kind=hex number-of-hexes=3
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "net shooter" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/net-shooter.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack
+		enhancement kind=hex number-of-hexes=3
+	}
+	bottom{
+		enhancement kind=diamond ability=#null
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "stun shot" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/stun-shot.jpeg" {
 	top
 	bottom
 }
 card #nan "reinvigorating elixir" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/reinvigorating-elixir.jpeg" {
-	top
+	top{
+		enhancement kind=diamond+ ability=heal
+	}
 	bottom
 }
 card #nan "restorative mist" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/restorative-mist.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond+ ability=heal
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "jet propulsion" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/jet-propulsion.jpeg" {
 	top
-	bottom
+	bottom lost=#true{
+		enhancement kind=circle ability=jump
+	}
 }
 card #nan "enhancement field" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/enhancement-field.jpeg" {
 	top
 	bottom
 }
 card #nan "toxic bolt" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/toxic-bolt.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom lost=#true{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
 }
 card #nan "gas canister" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/gas-canister.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "volatile concoction" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/volatile-concoction.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond+ ability=#null
+	}
+	bottom{
+		enhancement kind=square ability=attack
+	}
 }
 card #nan "hook gun" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/hook-gun.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "repulsor gun" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/repulsor-gun.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=push
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=push
+	}
 }
 card #nan "crank bow" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/crank-bow.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=heal
+	}
 }
 card #nan "teleportation pad" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/teleportation-pad.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=teleport
+	}
 }
 card #nan "stamina booster" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/stamina-booster.jpeg" {
-	top
+	top{
+		enhancement kind=diamond+ ability=heal
+	}
 	bottom
 }
 card #nan "dangerous contraption" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/dangerous-contraption.jpeg" {
-	top
-	bottom
+	top lost=#true persistent=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=diamond+ ability=shield
+	}
 }
 card #nan "proximity mine" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/proximity-mine.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=attack
+		enhancement kind=square ability=range
+	}
 }
 card #nan "noxious vials" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/noxious-vials.jpeg" {
 	top
-	bottom
+	bottom lost=#true{
+		enhancement kind=diamond ability=attack
+		enhancement kind=hex number-of-hexes=3
+	}
 }
 card #nan "disintegration beam" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/disintegration-beam.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=attack
+	}
 }
 card #nan "invigorating aerosol" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/invigorating-aerosol.jpeg" {
-	top
+	top{
+		enhancement kind=diamond+ ability=heal
+		enhancement kind=circle ability=move
+		enhancement kind=diamond+ ability=heal
+	}
 	bottom
 }
 card #nan "auto turret" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/auto-turret.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=diamond+ ability=#null
+		enhancement kind=circle ability=move
+		enhancement kind=diamond ability=#null
+	}
 }
 card #nan "murderous contraption" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/murderous-contraption.jpeg" {
-	top
-	bottom
+	top lost=#true persistent=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom{
+		enhancement kind=diamond+ ability=heal
+	}
 }
 card #nan "pernicious fogger" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/pernicious-fogger.jpeg" {
-	top
-	bottom
+	top{
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=diamond+ ability=#null
+	}
 }
 card #nan "cryonic snare" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/cryonic-snare.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=diamond+ ability=retaliate
+	}
 }
 card #nan "harsh stimulants" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/harsh-stimulants.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=move
+		enhancement kind=square ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=range
+	}
 }
 card #nan "gravity bomb" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/gravity-bomb.jpeg" {
 	top
 	bottom
 }
 card #nan "chimeric formula" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/chimeric-formula.jpeg" {
-	top
+	top{
+		enhancement kind=diamond+ ability=heal
+	}
 	bottom
 }
