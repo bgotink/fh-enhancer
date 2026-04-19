@@ -4,120 +4,240 @@ meta {
 	color "#656A33"
 }
 card #nan "opposing strike" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/opposing-strike.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom{
+		enhancement kind=hex number-of-hexes=2
+		enhancement kind=hex number-of-hexes=3
+	}
 }
 card #nan "crushing grasp" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/crushing-grasp.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan avalanche level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/avalanche.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack multiple=#true
+		enhancement kind=hex number-of-hexes=2
+	}
+	bottom{
+		enhancement kind=square ability=heal
+		enhancement kind=square ability=range
+	}
 }
 card #nan "rumbling advance" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/rumbling-advance.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond+ ability=heal
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "massive boulder" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/massive-boulder.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "backup ammunition" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/backup-ammunition.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "earthen bulwark" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/earthen-bulwark.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=range multiple=#true
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=heal
+		enhancement kind=square ability=range
+	}
 }
 card #nan "unstable upheaval" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/unstable-upheaval.jpeg" {
 	top
 	bottom
 }
 card #nan crater level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/crater.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom lost=#true{
+		enhancement kind=circle ability=jump
+	}
 }
 card #nan "dirt tornado" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/dirt-tornado.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "earthen clod" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/earthen-clod.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=attack
+	}
+	bottom lost=#true{
+		enhancement kind=diamond ability=attack
+	}
 }
 card #nan "heaving swing" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/heaving-swing.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=push
+	}
 	bottom
 }
 card #nan petrify level=X image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/petrify.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack
+		enhancement kind=hex number-of-hexes=3
+	}
+	bottom{
+		enhancement kind=square ability=attack
+		enhancement kind=square ability=range
+	}
 }
 card #nan burrow level=X image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/burrow.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=heal
+	}
+	bottom lost=#true{
+		enhancement kind=square ability=jump
+	}
 }
 card #nan "mud eruption" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/mud-eruption.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "sentient growth" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/sentient-growth.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=attack
+		enhancement kind=hex number-of-hexes=3
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=heal multiple=#true
+		enhancement kind=square ability=attack multiple=#true
+	}
 }
 card #nan "clear the way" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/clear-the-way.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=attack multiple=#true
+	}
+	bottom{
+		enhancement kind=circle ability=jump
+	}
 }
 card #nan "blunt force" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/blunt-force.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=heal
+	}
 }
 card #nan "rock slide" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/rock-slide.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=range multiple=#true
+	}
 	bottom
 }
 card #nan "kinetic assault" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/kinetic-assault.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=circle ability=move
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true{
+		enhancement kind=circle ability=move
+		enhancement kind=diamond+ ability=#null
+		enhancement kind=square ability=retaliate
+	}
 }
 card #nan solidify level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/solidify.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan "stone pummel" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/stone-pummel.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=attack
+		enhancement kind=hex number-of-hexes=4
+		enhancement kind=hex number-of-hexes=5
+	}
 	bottom
 }
 card #nan "dig pit" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/dig-pit.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=push
+	}
+	bottom{
+		enhancement kind=square ability=heal
+		enhancement kind=square ability=range
+	}
 }
 card #nan cataclysm level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/cataclysm.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack
+		enhancement kind=hex number-of-hexes=6
+		enhancement kind=hex number-of-hexes=7
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan meteor level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/meteor.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=jump
+	}
 }
 card #nan "brutal momentum" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/brutal-momentum.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=push
+	}
 	bottom
 }
 card #nan "rocky end" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/rocky-end.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom{
+		enhancement kind=square ability=push
+	}
 }
 card #nan entomb level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/entomb.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "wave of destruction" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/wave-of-destruction.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack multiple=#true
+		enhancement kind=hex number-of-hexes=9
+		enhancement kind=hex number-of-hexes=10
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "earth's embrace" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/earths-embrace.jpeg" {
 	top
