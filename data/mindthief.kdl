@@ -4,118 +4,231 @@ meta {
 	color "#374458"
 }
 card #nan "submissive affliction" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/submissive-affliction.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=move
+	}
 }
 card #nan "hidden in the shadows" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/hidden-in-the-shadows.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=diamond+ ability=#null
+	}
 	bottom
 }
 card #nan scurry level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/scurry.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=move
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan "withering claw" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/withering-claw.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=diamond ability=attack
+	}
 }
 card #nan "frigid apparition" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/frigid-apparition.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true{
+		enhancement kind=circle ability=move
+		enhancement kind=diamond ability=attack
+	}
 }
 card #nan "the mind's weakness" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/the-minds-weakness.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=attack
+	}
 }
 card #nan pilfer level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/pilfer.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan "perverse edge" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/perverse-edge.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=move
+	}
 }
 card #nan "empathetic assault" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/empathetic-assault.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=move
+		enhancement kind=square ability=heal
+	}
 }
 card #nan "psychic blade" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/psychic-blade.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=move
+	}
 }
 card #nan "feedback loops" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/feedback-loops.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=jump
+	}
 }
 card #nan possession level=X image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/possession.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=move
+		enhancement kind=square ability=move
+	}
 }
 card #nan "gnawing horde" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/gnawing-horde.jpeg" {
-	top
+	top lost=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
 	bottom
 }
 card #nan "fearsome blade" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/fearsome-blade.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=attack
+		enhancement kind=square ability=push
+	}
 	bottom
 }
 card #nan "hostile takeover" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/hostile-takeover.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=attack
+	}
 	bottom
 }
 card #nan "brain leech" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/brain-leech.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=move
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=attack
+		enhancement kind=diamond+ ability=#null
+	}
 }
 card #nan "cranium overload" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/cranium-overload.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=jump
+	}
 }
 card #nan "frozen shiv" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/frozen-shiv.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=pierce
+	}
+	bottom lost=#true{
+		enhancement kind=diamond ability=attack
+		enhancement kind=circle ability=move
+		enhancement kind=diamond ability=attack
+	}
 }
 card #nan "silent scream" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/silent-scream.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan "mass hysteria" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/mass-hysteria.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=jump
+	}
 }
 card #nan "gangling abomination" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/gangling-abomination.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=attack
+	}
 }
 card #nan "telepathic command" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/telepathic-command.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond+ ability=#null
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=move
+	}
 }
 card #nan "dark frenzy" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/dark-frenzy.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan domination level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/domination.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan "psychic projection" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/psychic-projection.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=attack
+	}
 }
 card #nan "shared nightmare" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/shared-nightmare.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=attack multiple=#true
+		enhancement kind=square ability=target
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
 }
 card #nan "corrupting embrace" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/corrupting-embrace.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=attack
+		enhancement kind=square ability=attack
+	}
 	bottom
 }
 card #nan "many as one" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/many-as-one.jpeg" {
-	top
+	top lost=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+	}
 	bottom
 }
 card #nan "phantasmal killer" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/phantasmal-killer.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
