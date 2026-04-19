@@ -4,92 +4,161 @@ meta {
 	color "#7E6C34"
 }
 card #nan "hammer blow" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/hammer-blow.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=diamond+ ability=#null
+	}
 }
 card #nan "holy strike" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/holy-strike.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true{
+		enhancement kind=diamond ability=attack
+	}
 }
 card #nan "empowering command" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/empowering-command.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond+ ability=#null
+	}
+	bottom{
+		enhancement kind=square ability=attack
+	}
 }
 card #nan "dazzling charge" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/dazzling-charge.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true{
+		enhancement kind=circle ability=move
+		enhancement kind=diamond ability=#null
+	}
 }
 card #nan "lay on hands" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/lay-on-hands.jpeg" {
 	top
 	bottom
 }
 card #nan "tactical order" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/tactical-order.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=move
+	}
 	bottom
 }
 card #nan "brilliant prayer" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/brilliant-prayer.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=move
+	}
 }
 card #nan "soothing light" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/soothing-light.jpeg" {
-	top
+	top{
+		enhancement kind=diamond+ ability=heal
+		enhancement kind=square ability=range
+	}
 	bottom
 }
 card #nan "purifying aura" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/purifying-aura.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=range multiple=#true
+	}
 }
 card #nan "protective blessing" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/protective-blessing.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=shield
+	}
 	bottom
 }
 card #nan "defensive stance" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/defensive-stance.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=attack
+	}
 	bottom
 }
 card #nan daybreak level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/daybreak.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=move
+	}
 }
 card #nan sanctify level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/sanctify.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=diamond ability=attack
+	}
 }
 card #nan "beacon of light" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/beacon-of-light.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=move
+	}
 }
 card #nan "holy defense" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/holy-defense.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=shield
+	}
+	bottom{
+		enhancement kind=square ability=move
+	}
 }
 card #nan "mobilizing axiom" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/mobilizing-axiom.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=diamond+ ability=#null
+	}
+	bottom lost=#true{
+		enhancement kind=square ability=move multiple=#true
+	}
 }
 card #nan "engulfing radiance" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/engulfing-radiance.jpeg" {
-	top
+	top lost=#true{
+		enhancement kind=diamond+ ability=heal multiple=#true
+	}
 	bottom
 }
 card #nan "burning flash" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/burning-flash.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "righteous strength" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/righteous-strength.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=heal multiple=#true
+	}
 }
 card #nan "cautious advance" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/cautious-advance.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=shield
+	}
 }
 card #nan "arresting march" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/arresting-march.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=move
+	}
 }
 card #nan "path of glory" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/path-of-glory.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "divine intervention" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/divine-intervention.jpeg" {
 	top
@@ -100,26 +169,42 @@ card #nan "scales of justice" level=6 image-path="character-ability-cards/gloomh
 	bottom
 }
 card #nan "bright aegis" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/bright-aegis.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=shield
+		enhancement kind=square ability=retaliate
+	}
 	bottom
 }
 card #nan "illuminate the target" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/illuminate-the-target.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=attack
+	}
 }
 card #nan "warding blow" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/warding-blow.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=diamond+ ability=#null
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "supportive chant" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/supportive-chant.jpeg" {
-	top
+	top lost=#true{
+		enhancement kind=diamond ability=attack multiple=#true
+	}
 	bottom
 }
 card #nan "divine ascension" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/divine-ascension.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=jump
+	}
 }
 card #nan "solar bastion" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/solar-bastion.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }

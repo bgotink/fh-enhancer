@@ -5,63 +5,110 @@ meta {
 }
 card #nan "ethereal gust" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/ethereal-gust.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=move
+	}
 }
 card #nan "forged ferocity" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/forged-ferocity.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom{
+		enhancement kind=diamond ability=#null
+	}
 }
 card #nan "living night" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/living-night.jpeg" {
-	top
+	top{
+		enhancement kind=square ability="summon hp" multiple=#true
+		enhancement kind=square ability="summon move" multiple=#true
+		enhancement kind=square ability="summon attack" multiple=#true
+	}
 	bottom
 }
 card #nan "wild animation" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/wild-animation.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=heal
+	}
+	bottom{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
 }
 card #nan "planar protection" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/planar-protection.jpeg" {
 	top
-	bottom
+	bottom lost=#true{
+		enhancement kind=square ability="summon hp"
+	}
 }
 card #nan "mighty bond" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/mighty-bond.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=teleport
+	}
 }
 card #nan "bonded might" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/bonded-might.jpeg" {
 	top
 	bottom
 }
 card #nan "burning passion" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/burning-passion.jpeg" {
-	top
+	top{
+		enhancement kind=diamond+ ability=#null
+	}
 	bottom
 }
 card #nan "unending dominance" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/unending-dominance.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond+ ability=#null
+	}
+	bottom{
+		enhancement kind=square ability=move
+		enhancement kind=square ability=move
+	}
 }
 card #nan "shadow dart" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/shadow-dart.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan "burning tether" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/burning-tether.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=teleport
+	}
 }
 card #nan "primal assault" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/primal-assault.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=heal
+		enhancement kind=square ability=range
+	}
 }
 card #nan "drifting stingers" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/drifting-stingers.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=square ability="summon hp"
+	}
+	bottom{
+		enhancement kind=square ability=teleport
+	}
 }
 card #nan "biting wind" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/biting-wind.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=push
+	}
 	bottom
 }
 card #nan "unwavering hand" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/unwavering-hand.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=move
+	}
 }
 card #nan "intervening apparitions" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/intervening-apparitions.jpeg" {
 	top
@@ -72,58 +119,123 @@ card #nan "void imbuement" level=2 image-path="character-ability-cards/gloomhave
 	bottom
 }
 card #nan "shaping the void" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/shaping-the-void.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=diamond+ ability=#null
+	}
+	bottom{
+		enhancement kind=square ability=teleport
+	}
 }
 card #nan "deadly mischief" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/deadly-mischief.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom{
+		enhancement kind=square ability=attack
+		enhancement kind=square ability=range
+	}
 }
 card #nan "strength in numbers" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/strength-in-numbers.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=heal multiple=#true
+		enhancement kind=square ability=target
+	}
 	bottom
 }
 card #nan "volatile flame" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/volatile-flame.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=#null
+	}
+	bottom lost=#true{
+		enhancement kind=square ability="summon hp"
+	}
 }
 card #nan "living mountain" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/living-mountain.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom{
+		enhancement kind=square ability=teleport
+		enhancement kind=square ability=teleport
+	}
 }
 card #nan "primal infusion" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/primal-infusion.jpeg" {
 	top
 	bottom
 }
 card #nan "tear the fabric" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/tear-the-fabric.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=shield
+		enhancement kind=square ability=retaliate
+	}
 }
 card #nan "oozing manifestation" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/oozing-manifestation.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom{
+		enhancement kind=square ability=teleport
+		enhancement kind=diamond ability=#null
+		enhancement kind=square ability=range
+	}
 }
 card #nan "divided mind" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/divided-mind.jpeg" {
-	top
+	top{
+		enhancement kind=diamond+ ability=heal
+	}
 	bottom
 }
 card #nan "negative energy" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/negative-energy.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom{
+		enhancement kind=circle ability=teleport
+		enhancement kind=diamond+ ability=#null
+	}
 }
 card #nan "otherworldly rage" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/otherworldly-rage.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=diamond+ ability=#null
+	}
 }
 card #nan "interplanar mastery" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/interplanar-mastery.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=teleport
+		enhancement kind=square ability=shield
+	}
 }
 card #nan "imposed will" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/imposed-will.jpeg" {
-	top
+	top{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
 	bottom
 }
 card #nan "horned nightmare" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/horned-nightmare.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom{
+		enhancement kind=square ability=teleport
+	}
 }
