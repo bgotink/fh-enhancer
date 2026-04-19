@@ -26,7 +26,7 @@ card #nan skewer level=1 image-path="character-ability-cards/gloomhaven-2nd-edit
 	}
 }
 card #nan "overwhelming assault" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/overwhelming-assault.jpeg" {
-	top{
+	top lost=#true{
 		enhancement kind=diamond ability=attack
 	}
 	bottom{
