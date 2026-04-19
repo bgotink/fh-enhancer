@@ -10,7 +10,7 @@ card #nan "potent potables" level=1 image-path="character-ability-cards/gloomhav
 	bottom
 }
 card #nan "harmless contraption" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/harmless-contraption.jpeg" {
-	top lost=#true persistent=#true{
+	top{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
 	}
@@ -146,7 +146,7 @@ card #nan "stamina booster" level=3 image-path="character-ability-cards/gloomhav
 	bottom
 }
 card #nan "dangerous contraption" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/dangerous-contraption.jpeg" {
-	top lost=#true persistent=#true{
+	top{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
 		enhancement kind=square ability="summon attack"
@@ -195,7 +195,7 @@ card #nan "auto turret" level=6 image-path="character-ability-cards/gloomhaven-2
 	}
 }
 card #nan "murderous contraption" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/murderous-contraption.jpeg" {
-	top lost=#true persistent=#true{
+	top{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
 		enhancement kind=square ability="summon attack"

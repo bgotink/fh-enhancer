@@ -100,7 +100,7 @@ card #nan possession level=X image-path="character-ability-cards/gloomhaven-2nd-
 	}
 }
 card #nan "gnawing horde" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/gnawing-horde.jpeg" {
-	top lost=#true{
+	top{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
 		enhancement kind=square ability="summon attack"
@@ -160,7 +160,7 @@ card #nan "mass hysteria" level=5 image-path="character-ability-cards/gloomhaven
 	}
 }
 card #nan "gangling abomination" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/gangling-abomination.jpeg" {
-	top lost=#true{
+	top{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
 		enhancement kind=square ability="summon attack"
@@ -220,7 +220,7 @@ card #nan "corrupting embrace" level=8 image-path="character-ability-cards/gloom
 	bottom
 }
 card #nan "many as one" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/MT2/many-as-one.jpeg" {
-	top lost=#true{
+	top{
 		enhancement kind=square ability="summon hp"
 		enhancement kind=square ability="summon move"
 	}
