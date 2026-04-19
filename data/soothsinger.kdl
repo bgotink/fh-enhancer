@@ -5,121 +5,219 @@ meta {
 }
 card #nan "mobilizing measure" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/mobilizing-measure.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=jump
+		enhancement kind=square ability=retaliate
+	}
 }
 card #nan "bewildering instrumental" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/bewildering-instrumental.jpeg" {
-	top
+	top{
+		enhancement kind=circle ability=move
+	}
 	bottom
 }
 card #nan "wearying chant" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/wearying-chant.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=heal
+		enhancement kind=square ability=range
+	}
 }
 card #nan "power ballad" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/power-ballad.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "dissonant rhythm" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/dissonant-rhythm.jpeg" {
 	top
 	bottom
 }
 card #nan "increase cadence" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/increase-cadence.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=attack
+	}
 	bottom
 }
 card #nan "intensifying amplitude" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/intensifying-amplitude.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=heal
+	}
 	bottom
 }
 card #nan "marching beat" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/marching-beat.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond+ ability=#null multiple=#true
+		enhancement kind=square ability=target
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=square ability=range
+		enhancement kind=square ability=move
+	}
 }
 card #nan "tuning the outcome" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/tuning-the-outcome.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond+ ability=#null multiple=#true
+		enhancement kind=square ability=target
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=square ability=range
+	}
 }
 card #nan "call to action" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/call-to-action.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=range
+		enhancement kind=square ability=move
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "singing arrow" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/singing-arrow.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=range
+		enhancement kind=diamond ability=attack
+	}
 }
 card #nan "defensive ditty" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/defensive-ditty.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "echoing aria" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/echoing-aria.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=attack
+	}
 }
 card #nan "provoke terror" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/provoke-terror.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=square ability=push
+		enhancement kind=hex number-of-hexes=4
+		enhancement kind=hex number-of-hexes=5
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "onward to battle" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/onward-to-battle.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=range
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "soothing lullaby" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/soothing-lullaby.jpeg" {
 	top
 	bottom
 }
 card #nan "symphonic medley" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/symphonic-medley.jpeg" {
-	top
+	top{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=range
+	}
 	bottom
 }
 card #nan "ode to the gambler" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/ode-to-the-gambler.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "hymn of the oak" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/hymn-of-the-oak.jpeg" {
-	top
+	top{
+		enhancement kind=diamond+ ability=#null multiple=#true
+		enhancement kind=square ability=target
+		enhancement kind=square ability=range
+	}
 	bottom
 }
 card #nan "alluring serenade" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/alluring-serenade.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=heal
+	}
 }
 card #nan "change tempo" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/change-tempo.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=hex number-of-hexes=3
+	}
+	bottom{
+		enhancement kind=diamond ability=#null
+		enhancement kind=diamond+ ability=#null
+	}
 }
 card #nan "thrilling solo" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/thrilling-solo.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "pull the strings" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/pull-the-strings.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=move
+	}
 	bottom
 }
 card #nan "disorienting dirge" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/disorienting-dirge.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "inspiring anthem" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/inspiring-anthem.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=circle ability=jump
+		enhancement kind=diamond+ ability=#null
+	}
+	bottom{
+		enhancement kind=diamond ability=attack
+	}
 }
 card #nan "wistful wounding" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/wistful-wounding.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=range
+		enhancement kind=square ability=retaliate
+	}
 }
 card #nan "commanding presence" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/commanding-presence.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "toughening trill" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/toughening-trill.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=attack
+	}
 }
 card #nan "grand finale" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/grand-finale.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=circle ability=jump
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=jump
+	}
 }
 card #nan "captivating performance" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/captivating-performance.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=jump
+	}
 }

@@ -4,11 +4,18 @@ meta {
 	color "#31514E"
 }
 card #nan "comorbid sting" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/comorbid-sting.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=diamond ability=attack
+	}
 }
 card #nan "biting gnats" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/biting-gnats.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=attack
+	}
 	bottom
 }
 card #nan "virulent strain" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/virulent-strain.jpeg" {
@@ -16,106 +23,178 @@ card #nan "virulent strain" level=1 image-path="character-ability-cards/gloomhav
 	bottom
 }
 card #nan "contagious corpse" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/contagious-corpse.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "path of the pox" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/path-of-the-pox.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=range
+	}
 }
 card #nan "vile pestilence" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/vile-pestilence.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "blistering buboes" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/blistering-buboes.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "festering sores" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/festering-sores.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "wretched yield" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/wretched-yield.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "accelerated end" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/accelerated-end.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
 	bottom
 }
 card #nan "deliriums danse" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/deliriums-danse.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
 	bottom
 }
 card #nan "gift of rot" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/gift-of-rot.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "spread the plague" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/spread-the-plague.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan "sickening strength" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/sickening-strength.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "rot maggots" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/rot-maggots.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=attack
+		enhancement kind=square ability=range
+	}
 	bottom
 }
 card #nan "nightmarish affliction" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/nightmarish-affliction.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=attack
+	}
 	bottom
 }
 card #nan "cloying miasma" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/cloying-miasma.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=attack
+	}
 	bottom
 }
 card #nan "rabid bite" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/rabid-bite.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=move
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "unwilling sacrifice" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/unwilling-sacrifice.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=range
+	}
 }
 card #nan "wilt and wither" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/wilt-and-wither.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=attack multiple=#true
+	}
 	bottom
 }
 card #nan "compounding infection" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/compounding-infection.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=range
+	}
 	bottom
 }
 card #nan "crippling malady" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/crippling-malady.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack multiple=#true
+	}
 	bottom
 }
 card #nan "succumb to the gift" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/succumb-to-the-gift.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "mass extinction" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/mass-extinction.jpeg" {
-	top
+	top lost=#true{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan "tainted offering" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/tainted-offering.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan "creeping lethargy" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/creeping-lethargy.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=heal
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "convert the flock" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/convert-the-flock.jpeg" {
-	top
+	top lost=#true{
+		enhancement kind=square ability=move
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan "disease vector" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/disease-vector.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan "xorns embrace" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/PH2/xorns-embrace.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack multiple=#true
+		enhancement kind=square ability=range multiple=#true
+	}
 	bottom
 }

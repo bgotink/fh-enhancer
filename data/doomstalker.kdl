@@ -8,99 +8,180 @@ card #nan "rain of arrows" level=1 image-path="character-ability-cards/gloomhave
 	bottom
 }
 card #nan "race to the grave" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/race-to-the-grave.jpeg" {
-	top
+	top{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
 	bottom
 }
 card #nan "gut shot" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/gut-shot.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan detonation level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/detonation.jpeg" {
-	top
+	top lost=#true{
+		enhancement kind=diamond ability=attack multiple=#true
+		enhancement kind=square ability=target
+		enhancement kind=square ability=range
+	}
 	bottom
 }
 card #nan "murderous stalker" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/murderous-stalker.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=jump
+	}
 }
 card #nan "a moment's peace" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/a-moments-peace.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "the hunt begins" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/the-hunt-begins.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
 	bottom
 }
 card #nan "solid bow" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/solid-bow.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan "foot snare" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/foot-snare.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "forward momentum" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/forward-momentum.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "hidden danger" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/hidden-danger.jpeg" {
-	top
+	top{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
 	bottom
 }
 card #nan "give chase" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/give-chase.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "feral aid" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/feral-aid.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom lost=#true{
+		enhancement kind=diamond ability=attack
+	}
 }
 card #nan "fierce fighter" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/fierce-fighter.jpeg" {
-	top
+	top{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
 	bottom
 }
 card #nan "relentless offensive" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/relentless-offensive.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=attack
+		enhancement kind=square ability=range
+	}
 	bottom
 }
 card #nan "dual shot" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/dual-shot.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=attack multiple=#true
+		enhancement kind=square ability=target
+	}
 	bottom
 }
 card #nan "walking bastion" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/walking-bastion.jpeg" {
-	top
+	top{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
 	bottom
 }
 card #nan "swift trickery" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/swift-trickery.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan camouflage level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/camouflage.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "coated arrows" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/coated-arrows.jpeg" {
 	top
 	bottom
 }
 card #nan "felling swoop" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/felling-swoop.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom{
+		enhancement kind=circle ability=jump
+	}
 }
 card #nan expose level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/expose.jpeg" {
 	top
 	bottom
 }
 card #nan "wild command" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/wild-command.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "impending end" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/impending-end.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan "charging beast" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/charging-beast.jpeg" {
-	top
+	top{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon attack"
+	}
 	bottom
 }
 card #nan "darkened skies" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/darkened-skies.jpeg" {
@@ -108,18 +189,35 @@ card #nan "darkened skies" level=7 image-path="character-ability-cards/gloomhave
 	bottom
 }
 card #nan "feral instincts" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/feral-instincts.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "press the attack" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/press-the-attack.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom lost=#true{
+		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack
+		enhancement kind=circle ability=jump
+	}
 }
 card #nan "predator and prey" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/predator-and-prey.jpeg" {
-	top
+	top{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
 	bottom
 }
 card #nan "heart of doom" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/DS2/heart-of-doom.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
