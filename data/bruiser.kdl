@@ -164,8 +164,14 @@ card #nan "defensive tactics" level=5 image-path="character-ability-cards/gloomh
 	}
 }
 card #nan "run through" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/run-through.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=hex number-of-hexes=3
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=push
+	}
 }
 card #nan "immovable phalanx" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/BR2/immovable-phalanx.jpeg" {
 	top{
