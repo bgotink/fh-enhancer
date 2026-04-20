@@ -76,13 +76,37 @@ header h1 {
 	font-weight: 500;
 }
 
-header fh-enhancer {
+fh-enhancer-settings {
+	display: block;
+	anchor-name: --settings;
+}
+
+fh-enhancer-settings dialog {
+	position: fixed;
+	position-anchor: --settings;
+	inset: auto;
+	right: anchor(right);
+	top: anchor(bottom);
+	margin-top: 5px;
+
+	border: 1px solid currentColor;
+	border-radius: 12px;
+	padding: 8px;
+}
+
+fh-enhancer-settings dialog label {
+	display: block;
+}
+fh-enhancer-settings dialog * + * {
+	margin-top: 8px;
+}
+fh-enhancer-settings dialog .multiline > * {
 	display: block;
 }
 
-fh-enhancer h2 {
-	all: unset;
-	display: inline;
+fh-enhancer-settings.type-gh2 .type-fh,
+fh-enhancer-settings.type-fh .type-gh2 {
+	display: none;
 }
 
 body > section {
@@ -108,6 +132,16 @@ body > section {
 	height: max(2lh, 40px);
 	padding: 0.3lh;
 	border-radius: 0.5lh;
+}
+
+:root.character-fh:not(.show-all-characters) .character--game-gh2,
+:root.character-gh2:not(.show-all-characters) .character--game-fh {
+	display: none;
+}
+
+.character_separator {
+	flex-basis: 100%;
+	height: 0;
 }
 
 .character:not(.character--active):is(:focus-visible, :hover) {

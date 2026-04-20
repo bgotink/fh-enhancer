@@ -13,8 +13,8 @@ import {
 	outputFolder,
 	worldhavenDataFolder,
 	worldhavenImagesFolder,
-    gloomhaven2CharacterOrder,
-		gloomhavenCardBrowserImagesFolder,
+	gloomhaven2CharacterOrder,
+	gloomhavenCardBrowserImagesFolder,
 } from "./constants.js";
 import {
 	PlayerCharacter,
@@ -88,7 +88,10 @@ const [scriptText, styleText] = await Promise.all([
 /** @type {Map<string, PlayerCharacter>} */
 const characters = new Map();
 
-for (const characterName of [frosthavenCharacterOrder, gloomhaven2CharacterOrder].flat()) {
+for (const characterName of [
+	frosthavenCharacterOrder,
+	gloomhaven2CharacterOrder,
+].flat()) {
 	let characterString;
 
 	try {
@@ -121,7 +124,7 @@ const art = new Map(
 await Promise.all(
 	Array.from(characters, async ([characterName, character]) => {
 		let imageUrl;
-		if (character.meta.game === 'frosthaven') {
+		if (character.meta.game === "frosthaven") {
 			const icon = art.get(`${characterName.replaceAll("-", " ")} icon`);
 
 			if (icon == null) {
@@ -134,7 +137,10 @@ await Promise.all(
 				throw new Error(`Couldn't find icon for ${characterName}`);
 			}
 
-			imageUrl = new URL(`icons/characters/gh2/${character.meta.shortName}.png`, gloomhavenCardBrowserImagesFolder);
+			imageUrl = new URL(
+				`icons/characters/gh2/${character.meta.shortName}.png`,
+				gloomhavenCardBrowserImagesFolder,
+			);
 		}
 
 		const image = await readFile(imageUrl);
@@ -201,15 +207,71 @@ await Promise.all(
 		fileURLToPath(new URL("template/index.html", import.meta.url)),
 	);
 	const {document} = jsdom.window;
+	installScript(document);
 
-	installScriptAndStyle(document);
-	addHeader(document, null, "Frosthaven Enhancer");
+	const container = /** @type {HTMLElement} */ (
+		document.querySelector(".container")
+	);
+
+	const characterList = Array.from(characters);
+	for (const [
+		name,
+		characters,
+	] of /** @type {[string, [string, PlayerCharacter][]][]} */ ([
+		[
+			"Frosthaven",
+			characterList.filter(
+				([, character]) => character.meta.game === "frosthaven",
+			),
+		],
+		[
+			"Gloomhaven 2nd Edition",
+			characterList.filter(
+				([, character]) => character.meta.game === "gloomhaven2",
+			),
+		],
+	])) {
+		const listContainer = container.appendChild(document.createElement("div"));
+		listContainer.classList.add("list-of-characters");
+		listContainer.appendChild(document.createElement("h2")).textContent = name;
+
+		const list = listContainer.appendChild(document.createElement("ul"));
+		for (const [characterName, character] of characters) {
+			const anchor = list
+				.appendChild(document.createElement("li"))
+				.appendChild(
+					document.createElement(
+						character.meta.spoilerFreeName ?
+							"fh-character-link-with-spoiler"
+						:	"fh-character-link",
+					),
+				)
+				.appendChild(document.createElement("a"));
+			anchor.classList.add("character");
+
+			anchor.style.setProperty("--color", character.meta.color?.rgb ?? "#999");
+
+			anchor.href = `${characterName}/${buildForDeployment ? "" : "index.html"}`;
+
+			const icon = anchor.appendChild(document.createElement("img"));
+			icon.src = `${characterName}/icon.png`;
+			icon.setAttribute("role", "presentation");
+
+			anchor.append(
+				character.meta.spoilerFreeName ?
+					`"${character.meta.spoilerFreeName}"`
+				:	character.meta.name,
+			);
+		}
+	}
 
 	await writeFile(new URL("index.html", outputFolder), jsdom.serialize());
 }
 
 for (const [characterName, character] of characters) {
-	const jsdom = new JSDOM(`<!doctype html><html lang=en></html>`);
+	const jsdom = new JSDOM(
+		`<!doctype html><html lang=en class=character-${getGameIdentifier(character)}></html>`,
+	);
 	const {document} = jsdom.window;
 
 	const prettyName = character.meta.name;
@@ -226,7 +288,8 @@ for (const [characterName, character] of characters) {
 	favicon.rel = "icon";
 	favicon.href = `favicon.png`;
 
-	installScriptAndStyle(document);
+	installStyle(document);
+	installScript(document);
 	addHeader(document, characterName, character.meta.name);
 
 	for (const card of character.cards) {
@@ -234,14 +297,17 @@ for (const [characterName, character] of characters) {
 			`${characterName}/cards/${card.name.replaceAll(" ", "-")}.jpg`,
 			async (url) => {
 				let sourceUrl;
-				if (character.meta.game === 'frosthaven') {
+				if (character.meta.game === "frosthaven") {
 					sourceUrl = new URL(card.imagePath, worldhavenImagesFolder);
 				} else {
-					sourceUrl = new URL(card.imagePath, gloomhavenCardBrowserImagesFolder);
+					sourceUrl = new URL(
+						card.imagePath,
+						gloomhavenCardBrowserImagesFolder,
+					);
 				}
 
 				return sharp(await readFile(sourceUrl))
-					.jpeg({ quality: 75, mozjpeg: buildForDeployment })
+					.jpeg({quality: 75, mozjpeg: buildForDeployment})
 					.toFile(fileURLToPath(url));
 			},
 		);
@@ -633,7 +699,7 @@ function copySharedIcon(assetName, assetPath) {
 
 /**
  * @param {Document} document
- * @param {string | null} characterName
+ * @param {string} characterName
  * @param {string} title
  */
 function addHeader(document, characterName, title) {
@@ -647,11 +713,20 @@ function addHeader(document, characterName, title) {
 		.appendChild(document.createElement("ul"));
 	characterList.className = "character-list";
 
+	let previousGame;
 	for (const [otherCharacterName, otherCharacter] of characters) {
-		const isActive = otherCharacterName === characterName;
+		if (previousGame && previousGame !== otherCharacter.meta.game) {
+			characterList
+				.appendChild(document.createElement("li"))
+				.classList.add("character_separator");
+		}
+		previousGame = otherCharacter.meta.game;
 
-		let anchor = characterList
-			.appendChild(document.createElement("li"))
+		const isActive = otherCharacterName === characterName;
+		const item = characterList.appendChild(document.createElement("li"));
+		item.classList.add(`character--game-${getGameIdentifier(otherCharacter)}`);
+
+		let anchor = item
 			.appendChild(
 				document.createElement(
 					otherCharacter.meta.spoilerFreeName ?
@@ -668,13 +743,15 @@ function addHeader(document, characterName, title) {
 			otherCharacter.meta.color?.rgb ?? "#999",
 		);
 
-		anchor.href = `${characterName ? "../" : ""}${otherCharacterName}/${buildForDeployment ? "" : "index.html"}`;
+		anchor.href = `../${otherCharacterName}/${buildForDeployment ? "" : "index.html"}`;
 
 		if (!isActive) {
 			const icon = anchor.appendChild(document.createElement("img"));
-			icon.src = `${characterName ? "../" : ""}${otherCharacterName}/icon.png`;
+			icon.src = `../${otherCharacterName}/icon.png`;
 			icon.alt = icon.title =
-				otherCharacter.meta.spoilerFreeName ?? otherCharacter.meta.name;
+				otherCharacter.meta.spoilerFreeName ?
+					`"${otherCharacter.meta.spoilerFreeName}"`
+				:	otherCharacter.meta.name;
 		} else {
 			const iconContainer = anchor.appendChild(
 				document.createElement("picture"),
@@ -683,11 +760,11 @@ function addHeader(document, characterName, title) {
 			const altIcon = iconContainer.appendChild(
 				document.createElement("source"),
 			);
-			altIcon.srcset = `${characterName ? "../" : ""}${otherCharacterName}/icon--black.png`;
+			altIcon.srcset = `../${otherCharacterName}/icon--black.png`;
 			altIcon.media = "(prefers-color-scheme: dark)";
 
 			const icon = iconContainer.appendChild(document.createElement("img"));
-			icon.src = `${characterName ? "../" : ""}${otherCharacterName}/icon--white.png`;
+			icon.src = `../${otherCharacterName}/icon--white.png`;
 			icon.alt = icon.title = otherCharacter.meta.name;
 		}
 	}
@@ -697,30 +774,54 @@ function addHeader(document, characterName, title) {
 
 	titleContainer.appendChild(document.createElement("h1")).textContent = title;
 
-	titleContainer.appendChild(document.createElement("fh-enhancer")).innerHTML =
-		`
-		  <h2 id=enhancer>Enhancer Level</h2>
-		  <label><input type=radio name=enhancer value=1 checked></input>1</label>
-		  <label><input type=radio name=enhancer value=2></input>2</label>
-		  <label><input type=radio name=enhancer value=3></input>3</label>
-		  <label><input type=radio name=enhancer value=4></input>4</label>
-		  <br>
-		  <label>Temporary Enhancement<input type=checkbox name="temporary"></input></label>
+	titleContainer.appendChild(
+		document.createElement("fh-enhancer-settings"),
+	).innerHTML = `
+			<button popovertarget="settings-dialog">
+				Settings
+			</button>
+			<dialog popover id="settings-dialog">
+				<form method=dialog>
+					<label>Show characters from all games? <input type=checkbox name=all-games></label>
+
+					<fieldset class=multiline>
+						<legend>Enhancer Type</legend>
+						<label><input type=radio name=enhancer-type value=fh>Frosthaven</label>
+						<label><input type=radio name=enhancer-type value=gh2>Gloomhaven 2nd Edition</label>
+						<label><input type=radio name=enhancer-type value="">Automatically choose based on character</label>
+					</fieldset>
+
+					<fieldset class="type-fh">
+						<legend>Level</legend>
+					  <label><input type=radio name=enhancer-level value=1 checked></input>1</label>
+					  <label><input type=radio name=enhancer-level value=2></input>2</label>
+					  <label><input type=radio name=enhancer-level value=3></input>3</label>
+					  <label><input type=radio name=enhancer-level value=4></input>4</label>
+					</fieldset>
+
+					<label class="type-gh2">Discount <input type=number name=discount step=5 min=0></label>
+
+					<label>Temporary Enhancement <input type=checkbox name="temporary"></label>
+				</form>
+			</dialog>
 	  `;
 }
 
 /** @param {Document} document */
-function installScriptAndStyle(document) {
+function installStyle(document) {
 	const style = document.head.appendChild(document.createElement("style"));
 	style.textContent = styleText;
-
-	const script = document.head.appendChild(document.createElement("script"));
-	script.type = "module";
-	script.textContent = scriptText;
 
 	const meta = document.head.appendChild(document.createElement("meta"));
 	meta.name = "viewport";
 	meta.content = "width=device-width, initial-scale=1";
+}
+
+/** @param {Document} document */
+function installScript(document) {
+	const script = document.head.appendChild(document.createElement("script"));
+	script.type = "module";
+	script.textContent = scriptText;
 }
 
 /**
@@ -735,4 +836,11 @@ function makeAsset(assetName, create) {
 			stat(assetUrl).catch(() => create(assetUrl)),
 		);
 	}
+}
+
+/**
+ * @param {PlayerCharacter?=} character
+ */
+function getGameIdentifier(character) {
+	return character?.meta.game === "gloomhaven2" ? "gh2" : "fh";
 }

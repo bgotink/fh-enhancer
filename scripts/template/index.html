@@ -1,10 +1,75 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>Frosthaven Enhancer</title>
+		<title>Frosthaven & Gloomhaven 2nd Edition Enhancer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<style>
+			:root {
+				color-scheme: light dark;
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				max-width: 500px;
+				margin: 0 auto;
+				padding: 0 8px 16px;
+
+				font-family:
+					-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+					Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+					"Segoe UI Symbol";
+				font-weight: 300;
+			}
+
+			h1,
+			h2 {
+				font-weight: 500;
+			}
+
+			.list-of-characters a img {
+				width: 1lh;
+				height: auto;
+			}
+
+			.list-of-characters ul {
+				all: unset;
+				list-style: none;
+			}
+
+			.list-of-characters li + li {
+				margin-top: 8px;
+			}
+
+			.list-of-characters a {
+				display: flex;
+				flex-flow: row nowrap;
+				gap: 1ex;
+				text-decoration: none;
+
+				color: var(--color);
+			}
+
+			.container {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			@view-transition {
+				navigation: auto;
+			}
+		</style>
 	</head>
 
 	<body>
-		<main>Pick your class in the selector above</main>
+		<h1>Frosthaven &amp;<br />Gloomhaven 2nd Edition<br />Enhancer</h1>
+		<main>
+			Pick your class
+
+			<div class="container"></div>
+		</main>
 	</body>
 </html>

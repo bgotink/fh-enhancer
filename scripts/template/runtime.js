@@ -1,29 +1,72 @@
 // @ts-check
 
-const reEnhancerLevel = /\|enhancer-level=(\d)\|/;
-const reEnhancerTemporary = /\|temporary\|/;
+const reEnhancerType = /\|enhancer-type=(fh|gh2)\|/;
+const reShowAllCharacters = /\|show-all-characters\|/;
+const reFhEnhancerLevel = /\|enhancer-level=(\d)\|/;
+const reFhEnhancerTemporary = /\|temporary\|/;
+const reGh2EnhancerDiscount = /\|discount=(\d+)\|/;
 
-class FhEnhancer extends HTMLElement {
-	#level = +(reEnhancerLevel.exec(window.name)?.[1] ?? 1);
-	#temporary = reEnhancerTemporary.test(window.name);
+class FhEnhancerSettings extends HTMLElement {
+	#type = /** @type {"fh" | "gh2" | undefined} */ (
+		reEnhancerType.exec(window.name)?.[1]
+	);
+
+	#level = +(reFhEnhancerLevel.exec(window.name)?.[1] ?? 1);
+	#temporary = reFhEnhancerTemporary.test(window.name);
+
+	#discount = +(reGh2EnhancerDiscount.exec(window.name)?.[1] ?? 0);
+
+	#showAllCharacters = reShowAllCharacters.test(window.name);
+
+	get type() {
+		return (
+			this.#type ??
+			(document.documentElement.classList.contains("character-gh2") ?
+				"gh2"
+			:	"fh")
+		);
+	}
 
 	get level() {
-		return this.#level;
+		return this.type === "gh2" ? 1 : this.#level;
 	}
 
 	get temporary() {
 		return this.#temporary;
 	}
 
+	get discount() {
+		return this.type === "gh2" ? this.#discount : 0;
+	}
+
 	connectedCallback() {
 		this.addEventListener("change", this);
+		this.addEventListener("click", this);
+
+		this.classList.add(`type-${this.type}`);
+		document.documentElement.classList.toggle(
+			"show-all-characters",
+			this.#showAllCharacters,
+		);
 
 		const levelStr = String(this.#level);
 		for (const input of this.querySelectorAll("input")) {
-			if (input.name == "temporary") {
-				input.checked = this.#temporary;
-			} else {
-				input.checked = input.value === levelStr;
+			switch (input.name) {
+				case "all-games":
+					input.checked = this.#showAllCharacters;
+					break;
+				case "discount":
+					input.valueAsNumber = this.#discount;
+					break;
+				case "enhancer-level":
+					input.checked = input.value === levelStr;
+					break;
+				case "enhancer-type":
+					input.checked = input.value === (this.#type ?? "");
+					break;
+				case "temporary":
+					input.checked = this.#temporary;
+					break;
 			}
 		}
 	}
@@ -36,25 +79,71 @@ class FhEnhancer extends HTMLElement {
 
 		event.stopPropagation();
 
-		if (/** @type {HTMLInputElement} */ (event.target).name === "temporary") {
-			this.#temporary = /** @type {HTMLInputElement} */ (event.target).checked;
-			if (reEnhancerTemporary.test(window.name)) {
-				window.name = window.name.replace(reEnhancerTemporary, ``);
-			} else {
-				window.name += `|temporary|`;
-			}
-		} else {
-			this.#level = +(/** @type {HTMLInputElement} */ (event.target).value);
-			if (reEnhancerLevel.test(window.name)) {
-				window.name = window.name.replace(
-					reEnhancerLevel,
-					`|enhancer-level=${this.#level}|`,
+		switch (/** @type {HTMLInputElement} */ (event.target).name) {
+			case "all-games":
+				this.#showAllCharacters = /** @type {HTMLInputElement} */ (
+					event.target
+				).checked;
+				this.#storeValue(
+					reShowAllCharacters,
+					this.#showAllCharacters ? "|show-all-characters|" : "",
 				);
-			} else {
-				window.name += `|enhancer-level=${this.#level}|`;
-			}
+
+				// no need to recompute, instead we'll update a class
+				document.documentElement.classList.toggle(
+					"show-all-characters",
+					this.#showAllCharacters,
+				);
+				return;
+			case "discount":
+				this.#discount = /** @type {HTMLInputElement} */ (
+					event.target
+				).valueAsNumber;
+				this.#storeValue(reGh2EnhancerDiscount, `|discount=${this.#discount}|`);
+				break;
+			case "enhancer-level":
+				this.#level = +(/** @type {HTMLInputElement} */ (event.target).value);
+				this.#storeValue(reFhEnhancerLevel, `|enhancer-level=${this.#level}|`);
+				break;
+			case "enhancer-type":
+				this.classList.remove(`type-${this.type}`);
+				this.#type =
+					/** @type {this['type']} */ (
+						/** @type {HTMLInputElement} */ (event.target).value
+					) || undefined;
+				this.classList.add(`type-${this.type}`);
+				this.#storeValue(
+					reEnhancerType,
+					this.#type ? `|enhancer-type=${this.#type}|` : "",
+				);
+				break;
+			case "temporary":
+				this.#temporary = /** @type {HTMLInputElement} */ (
+					event.target
+				).checked;
+				this.#storeValue(
+					reFhEnhancerTemporary,
+					this.#temporary ? "|temporary|" : "",
+				);
+				break;
 		}
 
+		this.#recompute();
+	}
+
+	/**
+	 * @param {RegExp} match
+	 * @param {string} value
+	 */
+	#storeValue(match, value) {
+		if (match.test(window.name)) {
+			window.name = window.name.replace(match, value);
+		} else {
+			window.name += value;
+		}
+	}
+
+	#recompute() {
 		for (const el of /** @type {NodeListOf<FhCost>} */ (
 			document.querySelectorAll("fh-cost")
 		)) {
@@ -62,7 +151,7 @@ class FhEnhancer extends HTMLElement {
 		}
 	}
 }
-customElements.define("fh-enhancer", FhEnhancer);
+customElements.define("fh-enhancer-settings", FhEnhancerSettings);
 
 class FhAction extends HTMLElement {
 	connectedCallback() {
@@ -122,15 +211,15 @@ class FhEnhancement extends HTMLElement {
 customElements.define("fh-enhancement", FhEnhancement);
 
 class FhCost extends HTMLElement {
-	/** @type {FhEnhancer?} */
-	#enhancer;
+	/** @type {FhEnhancerSettings?} */
+	#enhancer = null;
 	/** @type {FhAction?} */
-	#action;
+	#action = null;
 	/** @type {FhEnhancement?} */
-	#enhancement;
+	#enhancement = null;
 
 	connectedCallback() {
-		this.#enhancer = document.querySelector("fh-enhancer");
+		this.#enhancer = document.querySelector("fh-enhancer-settings");
 		this.#action = this.closest("fh-action");
 		this.#enhancement = this.closest("fh-enhancement");
 
@@ -149,6 +238,7 @@ class FhCost extends HTMLElement {
 		const level = +(levelStr === "X" ? 1 : levelStr);
 		const enhancerLevel = this.#enhancer?.level ?? 1;
 		const temporaryEnhancement = this.#enhancer?.temporary ?? false;
+		const discount = this.#enhancer?.discount ?? 0;
 
 		const lost = this.hasAttribute("lost");
 		const persistent = this.hasAttribute("persistent");
@@ -205,7 +295,12 @@ class FhCost extends HTMLElement {
 			title += `, reduced by ${reduction}g since it's temporary`;
 		}
 
-		this.innerText = `${Math.ceil(cost)}g`;
+		if (discount > 0) {
+			cost -= discount;
+			title += `, discounted by ${discount}g as configured in the enhancer`;
+		}
+
+		this.innerText = `${Math.max(0, Math.ceil(cost))}g`;
 		this.title = title;
 	}
 }

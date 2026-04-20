@@ -306,15 +306,17 @@ export class CharacterMeta {
 
 	/** @param {DeserializationContext} ctx */
 	static deserialize(ctx) {
-		const game =
-			ctx.child.required.single("game", (c) =>
-				c.argument.required.enum("frosthaven", "gloomhaven2"),
-			);
-		const [name, spoilerFreeName, shortName] = ctx.child.required.single("name", (c) => [
-			c.argument.required("string"),
-			c.property("spoiler", "string"),
-			c.property("short", "string")
-		]);
+		const game = ctx.child.required.single("game", (c) =>
+			c.argument.required.enum("frosthaven", "gloomhaven2"),
+		);
+		const [name, spoilerFreeName, shortName] = ctx.child.required.single(
+			"name",
+			(c) => [
+				c.argument.required("string"),
+				c.property("spoiler", "string"),
+				c.property("short", "string"),
+			],
+		);
 
 		const meta = new CharacterMeta(
 			game,

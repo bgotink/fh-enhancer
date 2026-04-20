@@ -113,7 +113,9 @@ for (const card of gloomhaven2AbilityCards) {
 		));
 
 	const level =
-		card.level === 1.5 ? "X" : card.level === 0.25 ? "M" : /** @type {Card['level']} */ (+card.level);
+		card.level === 1.5 ? "X"
+		: card.level === 0.25 ? "M"
+		: /** @type {Card['level']} */ (+card.level);
 
 	character.cards.push(
 		new Card(NaN, card.name, level, card.image, new Action(), new Action()),
