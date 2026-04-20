@@ -1,7 +1,7 @@
 meta {
 	game gloomhaven2
 	name Quartermaster spoiler="Three Spears" short=QM2
-	color "#815527"
+	color "#86410f"
 }
 card #nan "booster pack" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/booster-pack.jpeg" {
 	top

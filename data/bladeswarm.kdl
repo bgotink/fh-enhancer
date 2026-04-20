@@ -1,7 +1,7 @@
 meta {
 	game gloomhaven2
 	name Bladeswarm spoiler="Crossed Swords" short=BS2
-	color "#403129"
+	color "#955720"
 }
 card #nan "focused scourge" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BS2/focused-scourge.jpeg" {
 	top

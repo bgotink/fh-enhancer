@@ -1,7 +1,7 @@
 meta {
 	game gloomhaven2
 	name Berserker spoiler="Lightning Bolts" short=BE2
-	color "#71382F"
+	color "#a8331b"
 }
 card #nan "numb the pain" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/BE2/numb-the-pain.jpeg" {
 	top{

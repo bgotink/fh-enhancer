@@ -1,7 +1,7 @@
 meta {
 	game gloomhaven2
 	name Tinkerer short=TI2
-	color "#6C5A45"
+	color "#c0a57e"
 }
 card #nan "potent potables" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/TI2/potent-potables.jpeg" {
 	top{

@@ -1,7 +1,7 @@
 meta {
 	game gloomhaven2
 	name Soultetherer spoiler=Circles short=ST2
-	color "#713B5C"
+	color "#844f70"
 }
 card #nan "ethereal gust" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/ethereal-gust.jpeg" {
 	top

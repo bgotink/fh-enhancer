@@ -1,7 +1,7 @@
 meta {
 	game gloomhaven2
 	name Soothsinger spoiler="Music Note" short=SS2
-	color "#75524E"
+	color "#68293a"
 }
 card #nan "mobilizing measure" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/mobilizing-measure.jpeg" {
 	top

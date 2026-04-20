@@ -1,7 +1,7 @@
 meta {
 	game gloomhaven2
 	name Sunkeeper spoiler=Sun short=SK2
-	color "#7E6C34"
+	color "#c89733"
 }
 card #nan "hammer blow" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SK2/hammer-blow.jpeg" {
 	top{

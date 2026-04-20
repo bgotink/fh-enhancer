@@ -1,7 +1,7 @@
 meta {
 	game gloomhaven2
 	name Cragheart short=CH2
-	color "#656A33"
+	color "#aeb649"
 }
 card #nan "opposing strike" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/CH2/opposing-strike.jpeg" {
 	top{

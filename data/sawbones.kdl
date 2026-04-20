@@ -1,7 +1,7 @@
 meta {
 	game gloomhaven2
 	name Sawbones spoiler=Saw short=SB2
-	color "#3E3E3E"
+	color "#9e9fa0"
 }
 card #nan "battlefield medicine" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/battlefield-medicine.jpeg" {
 	top

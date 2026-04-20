@@ -53,7 +53,7 @@ export const gloomhaven2CharacterOrder = [
 
 	// Unlocked classes
 	"sunkeeper",
-	"puartermaster",
+	"quartermaster",
 	"soultetherer",
 	"nightshroud",
 	"plagueherald",

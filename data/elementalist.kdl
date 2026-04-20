@@ -1,7 +1,7 @@
 meta {
 	game gloomhaven2
 	name Elementalist spoiler=Triangles short=EL2
-	color "#474747"
+	color "#677577"
 }
 card #nan "ice spikes" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/ice-spikes.jpeg" {
 	top{
