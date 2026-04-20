@@ -92,18 +92,10 @@ for (const characterName of [
 	frosthavenCharacterOrder,
 	gloomhaven2CharacterOrder,
 ].flat()) {
-	let characterString;
-
-	try {
-		characterString = await readFile(
-			new URL(`${characterName}.kdl`, dataFolder),
-			"utf8",
-		);
-	} catch {
-		continue;
-	}
-
-	characters.set(characterName, parsePlayerCharacter(characterString));
+	characters.set(
+		characterName,
+		await parsePlayerCharacter(new URL(`${characterName}.kdl`, dataFolder)),
+	);
 
 	await mkdir(new URL(`${characterName}/cards/`, outputFolder), {
 		recursive: true,

@@ -2,6 +2,8 @@
 
 import {getLocation, InvalidKdlError, parse} from "@bgotink/kdl";
 import {deserialize, format, KdlDeserializeError} from "@bgotink/kdl/dessert";
+import {readFile} from "node:fs/promises";
+import {fileURLToPath} from "node:url";
 
 /** @import {DeserializationContext, DocumentSerializationContext, SerializationContext} from "@bgotink/kdl/dessert"; */
 
@@ -42,29 +44,57 @@ export class Enhancement {
 		let ability = null;
 		let numberOfHexes = undefined;
 
-		if (kind !== "hex") {
-			ability = ctx.property.required.enum(
-				"ability",
-				"move",
-				"jump",
-				"attack",
-				"range",
-				"target",
-				"shield",
-				"retaliate",
-				"pierce",
-				"heal",
-				"push",
-				"pull",
-				"teleport",
-				"summon hp",
-				"summon move",
-				"summon attack",
-				"summon range",
-				null,
-			);
-		} else {
-			numberOfHexes = ctx.property.required("number-of-hexes", "number");
+		switch (kind) {
+			case "diamond":
+				ability = ctx.property.required.enum(
+					"ability",
+					"attack",
+					"range",
+					"target",
+					"pierce",
+					"push",
+					"pull",
+					"summon attack",
+					"summon range",
+					null,
+				);
+				break;
+			case "diamond+":
+				ability = ctx.property.required.enum(
+					"ability",
+					"shield",
+					"retaliate",
+					"heal",
+					"push",
+					"pull",
+					"summon hp",
+					null,
+				);
+				break;
+			case "hex":
+				numberOfHexes = ctx.property.required("number-of-hexes", "number");
+				break;
+			default:
+				ability = ctx.property.required.enum(
+					"ability",
+					"move",
+					"jump",
+					"attack",
+					"range",
+					"target",
+					"shield",
+					"retaliate",
+					"pierce",
+					"heal",
+					"push",
+					"pull",
+					"teleport",
+					"summon hp",
+					"summon move",
+					"summon attack",
+					"summon range",
+					null,
+				);
 		}
 
 		const multiple = ctx.property("multiple", "boolean");
@@ -403,11 +433,11 @@ export class PlayerCharacter {
 	}
 }
 
-/** @param {string} text */
-export function parsePlayerCharacter(text) {
+/** @param {URL} url */
+export async function parsePlayerCharacter(url) {
 	let document;
 	try {
-		document = parse(text, {storeLocations: true});
+		document = parse(await readFile(url), {storeLocations: true});
 	} catch (e) {
 		if (!(e instanceof InvalidKdlError)) {
 			throw e;
@@ -442,7 +472,7 @@ export function parsePlayerCharacter(text) {
 			throw e;
 		}
 
-		console.log("Invalid character file:");
+		console.log(`Invalid character file ${fileURLToPath(url)}`);
 
 		let message = e.message;
 		const location = getLocation(e.location);

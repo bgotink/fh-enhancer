@@ -53,7 +53,7 @@ card 8 "draining arrows" level=1 image-path="character-ability-cards/frosthaven/
 }
 card 9 "prudent preparation" level=1 image-path="character-ability-cards/frosthaven/df/fh-prudent-preparation.png" {
 	top{
-		enhancement kind=diamond+ ability=attack
+		enhancement kind=diamond+ ability=shield
 		enhancement kind=diamond+ ability=retaliate
 	}
 	bottom{

@@ -132,9 +132,7 @@ await Promise.all(
 		character.cards.sort((a, b) => a.number - b.number);
 
 		try {
-			const existingCharacter = parsePlayerCharacter(
-				await readFile(characterFile, "utf8"),
-			);
+			const existingCharacter = await parsePlayerCharacter(characterFile);
 			merge(existingCharacter, character);
 			character = existingCharacter;
 		} catch {

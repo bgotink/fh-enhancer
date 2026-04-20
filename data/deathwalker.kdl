@@ -67,7 +67,7 @@ card 98 "lingering rot" level=1 image-path="character-ability-cards/frosthaven/d
 card 99 "shadow step" level=1 image-path="character-ability-cards/frosthaven/dw/fh-shadow-step.png" {
 	top{
 		enhancement kind=square ability=move
-		enhancement kind=diamond ability=move
+		enhancement kind=diamond ability=attack
 	}
 	bottom lost=#true{
 		enhancement kind=circle ability=move
