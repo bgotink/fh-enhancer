@@ -16,7 +16,7 @@ card #nan "forged ferocity" level=1 image-path="character-ability-cards/gloomhav
 		enhancement kind=square ability="summon attack"
 	}
 	bottom{
-		enhancement kind=diamond ability=#null
+		enhancement kind=diamond+ ability=#null
 	}
 }
 card #nan "living night" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/living-night.jpeg" {
@@ -124,7 +124,7 @@ card #nan "shaping the void" level=3 image-path="character-ability-cards/gloomha
 		enhancement kind=diamond+ ability=#null
 	}
 	bottom{
-		enhancement kind=square ability=teleport
+		enhancement kind=circle ability=teleport
 	}
 }
 card #nan "deadly mischief" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/deadly-mischief.jpeg" {
@@ -236,6 +236,6 @@ card #nan "horned nightmare" level=9 image-path="character-ability-cards/gloomha
 		enhancement kind=square ability="summon attack"
 	}
 	bottom{
-		enhancement kind=square ability=teleport
+		enhancement kind=circle ability=teleport
 	}
 }
