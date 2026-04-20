@@ -23,7 +23,7 @@ card #nan "curative mixture" level=1 image-path="character-ability-cards/gloomha
 }
 card #nan "bloody saw" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SB2/bloody-saw.jpeg" {
 	top{
-		enhancement kind=diamond+ ability=heal
+		enhancement kind=diamond ability=attack
 	}
 	bottom{
 		enhancement kind=diamond+ ability=#null
