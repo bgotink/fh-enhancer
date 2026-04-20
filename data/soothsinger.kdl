@@ -31,7 +31,10 @@ card #nan "power ballad" level=1 image-path="character-ability-cards/gloomhaven-
 }
 card #nan "dissonant rhythm" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/dissonant-rhythm.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=square ability=target
+		enhancement kind=square ability=range
+	}
 }
 card #nan "increase cadence" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/increase-cadence.jpeg" {
 	top{
@@ -41,7 +44,7 @@ card #nan "increase cadence" level=1 image-path="character-ability-cards/gloomha
 }
 card #nan "intensifying amplitude" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/SS2/intensifying-amplitude.jpeg" {
 	top{
-		enhancement kind=square ability=heal
+		enhancement kind=square ability=attack
 	}
 	bottom
 }
