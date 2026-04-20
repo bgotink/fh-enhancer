@@ -160,7 +160,7 @@ card #nan "living mountain" level=5 image-path="character-ability-cards/gloomhav
 		enhancement kind=square ability="summon attack"
 	}
 	bottom{
-		enhancement kind=square ability=teleport
+		enhancement kind=circle ability=teleport
 		enhancement kind=square ability=teleport
 	}
 }
@@ -171,6 +171,7 @@ card #nan "primal infusion" level=5 image-path="character-ability-cards/gloomhav
 card #nan "tear the fabric" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/ST2/tear-the-fabric.jpeg" {
 	top{
 		enhancement kind=diamond ability=attack
+		enhancement kind=diamond+ ability=#null
 	}
 	bottom{
 		enhancement kind=square ability=shield
@@ -184,7 +185,7 @@ card #nan "oozing manifestation" level=6 image-path="character-ability-cards/glo
 		enhancement kind=square ability="summon attack"
 	}
 	bottom{
-		enhancement kind=square ability=teleport
+		enhancement kind=circle ability=teleport
 		enhancement kind=diamond ability=#null
 		enhancement kind=square ability=range
 	}
