@@ -140,7 +140,7 @@ card #nan "arresting gale" level=3 image-path="character-ability-cards/gloomhave
 }
 card #nan "empowering flame" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/empowering-flame.jpeg" {
 	top{
-		enhancement kind=diamond ability=range
+		enhancement kind=diamond ability=attack
 		enhancement kind=square ability=range
 		enhancement kind=diamond+ ability=#null
 	}
@@ -160,7 +160,9 @@ card #nan "chain lightning" level=4 image-path="character-ability-cards/gloomhav
 	top lost=#true{
 		enhancement kind=diamond ability=attack
 	}
-	bottom
+	bottom{
+		enhancement kind=square ability=range
+	}
 }
 card #nan "obsidian shards" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/EL2/obsidian-shards.jpeg" {
 	top{
