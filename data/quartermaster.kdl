@@ -5,38 +5,65 @@ meta {
 }
 card #nan "booster pack" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/booster-pack.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "readied blade" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/readied-blade.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+	}
 	bottom
 }
 card #nan "crushing hammer" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/crushing-hammer.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack multiple=#true
+		enhancement kind=hex number-of-hexes=3
+		enhancement kind=hex number-of-hexes=4
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "hastened step" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/hastened-step.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=circle ability=move
+	}
 	bottom
 }
 card #nan "bladed boomerang" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/bladed-boomerang.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "impaling spear" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/impaling-spear.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=attack
+	}
 	bottom
 }
 card #nan "light javelin" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/light-javelin.jpeg" {
-	top
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
 	bottom
 }
 card #nan "cleave and thrust" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/cleave-and-thrust.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack multiple=#true
+		enhancement kind=hex number-of-hexes=2
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "iron bulwark" level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/iron-bulwark.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=shield
+	}
 	bottom
 }
 card #nan proficiency level=1 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/proficiency.jpeg" {
@@ -48,72 +75,137 @@ card #nan provisions level=1 image-path="character-ability-cards/gloomhaven-2nd-
 	bottom
 }
 card #nan "caustic bolt" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/caustic-bolt.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "scroll of recall" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/scroll-of-recall.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=pull
+		enhancement kind=square ability=range
+		enhancement kind=diamond+ ability=heal
+		enhancement kind=square ability=range
+	}
 	bottom
 }
 card #nan "sharpening kit" level=X image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/sharpening-kit.jpeg" {
-	top
+	top{
+		enhancement kind=diamond+ ability=heal
+	}
 	bottom
 }
 card #nan "scroll case" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/scroll-case.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "lethal arsenal" level=2 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/lethal-arsenal.jpeg" {
-	top
-	bottom
+	top lost=#true{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=attack
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "quiver of arrows" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/quiver-of-arrows.jpeg" {
-	top
+	top{
+		enhancement kind=square ability=attack multiple=#true
+		enhancement kind=square ability=target
+	}
 	bottom
 }
 card #nan "concussive snare" level=3 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/concussive-snare.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=circle ability=move
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=push
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "hammer and anvil" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/hammer-and-anvil.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=shield
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "giant club" level=4 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/giant-club.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "scroll of judgement" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/scroll-of-judgement.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=shield
+	}
 }
 card #nan "set up shop" level=5 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/set-up-shop.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "scroll of lightning" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/scroll-of-lightning.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=range
+	}
+	bottom{
+		enhancement kind=diamond ability=attack
+	}
 }
 card #nan "continual supply" level=6 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/continual-supply.jpeg" {
 	top
 	bottom
 }
 card #nan "twin lances" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/twin-lances.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=hex number-of-hexes=4
+	}
+	bottom{
+		enhancement kind=diamond ability=attack multiple=#true
+		enhancement kind=hex number-of-hexes=2
+	}
 }
 card #nan "tools of war" level=7 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/tools-of-war.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=circle ability=move
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "scroll of blizzards" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/scroll-of-blizzards.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=hex number-of-hexes=6
+		enhancement kind=hex number-of-hexes=7
+	}
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "armed to the teeth" level=8 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/armed-to-the-teeth.jpeg" {
-	top
-	bottom
+	top{
+		enhancement kind=square ability=shield
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
 card #nan "reinforced steel" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/reinforced-steel.jpeg" {
 	top
@@ -121,5 +213,7 @@ card #nan "reinforced steel" level=9 image-path="character-ability-cards/gloomha
 }
 card #nan "bag of holding" level=9 image-path="character-ability-cards/gloomhaven-2nd-edition/QM2/bag-of-holding.jpeg" {
 	top
-	bottom
+	bottom{
+		enhancement kind=circle ability=move
+	}
 }
