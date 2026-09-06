@@ -1,0 +1,201 @@
+meta {
+	game merc
+	name Anaphi short=AN
+	color "#983E70"
+}
+card #nan "bug-bodys bidding" level=1 image-path="character-ability-cards/mercenary/AN/bug-bodys-bidding.jpeg" {
+	top
+	bottom lost=#true persistent=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+	}
+}
+card #nan "phantasmal flurry" level=1 image-path="character-ability-cards/mercenary/AN/phantasmal-flurry.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom{
+		enhancement kind=square ability=move
+	}
+}
+card #nan "sharp teeth" level=1 image-path="character-ability-cards/mercenary/AN/sharp-teeth.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=pierce
+	}
+	bottom
+}
+card #nan "nocturnal feeding" level=1 image-path="character-ability-cards/mercenary/AN/nocturnal-feeding.jpeg" {
+	top{
+		enhancement kind=circle ability=heal
+		enhancement kind=square ability=range
+	}
+	bottom
+}
+card #nan vermincall level=1 image-path="character-ability-cards/mercenary/AN/vermincall.jpeg" {
+	top
+	bottom{
+		enhancement kind=square ability=move
+	}
+}
+card #nan "sickening betrayal" level=1 image-path="character-ability-cards/mercenary/AN/sickening-betrayal.jpeg" {
+	top{
+		enhancement kind=diamond ability=#null
+	}
+	bottom{
+		enhancement kind=diamond ability=attack
+	}
+}
+card #nan "touch of atrophy" level=1 image-path="character-ability-cards/mercenary/AN/touch-of-atrophy.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom
+}
+card #nan "surrounding shadows" level=1 image-path="character-ability-cards/mercenary/AN/surrounding-shadows.jpeg" {
+	top
+	bottom
+}
+card #nan "howling apparition" level=1 image-path="character-ability-cards/mercenary/AN/howling-apparition.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom
+}
+card #nan "endless biting" level=1 image-path="character-ability-cards/mercenary/AN/endless-biting.jpeg" {
+	top lost=#true persistent=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom
+}
+card #nan "black claws" level=1 image-path="character-ability-cards/mercenary/AN/black-claws.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom lost=#true persistent=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+	}
+}
+card #nan anguish level=X image-path="character-ability-cards/mercenary/AN/anguish.jpeg" {
+	top
+	bottom
+}
+card #nan "consume with regret" level=X image-path="character-ability-cards/mercenary/AN/consume-with-regret.jpeg" {
+	top
+	bottom
+}
+card #nan "rat surprise" level=X image-path="character-ability-cards/mercenary/AN/rat-surprise.jpeg" {
+	top
+	bottom{
+		enhancement kind=square ability=move
+	}
+}
+card #nan "tibers tenacity" level=2 image-path="character-ability-cards/mercenary/AN/tibers-tenacity.jpeg" {
+	top{
+		enhancement kind=square ability=range
+	}
+	bottom
+}
+card #nan "hidden assault" level=2 image-path="character-ability-cards/mercenary/AN/hidden-assault.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom
+}
+card #nan musophobia level=3 image-path="character-ability-cards/mercenary/AN/musophobia.jpeg" {
+	top
+	bottom
+}
+card #nan "seeking strikes" level=3 image-path="character-ability-cards/mercenary/AN/seeking-strikes.jpeg" {
+	top
+	bottom
+}
+card #nan "doks ferocity" level=4 image-path="character-ability-cards/mercenary/AN/doks-ferocity.jpeg" {
+	top{
+		enhancement kind=square ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=move
+	}
+}
+card #nan "compulsive hoarding" level=4 image-path="character-ability-cards/mercenary/AN/compulsive-hoarding.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom
+}
+card #nan "my loyal friend" level=5 image-path="character-ability-cards/mercenary/AN/my-loyal-friend.jpeg" {
+	top lost=#true persistent=#true{
+		enhancement kind=square ability="summon move"
+		enhancement kind=square ability="summon attack"
+	}
+	bottom
+}
+card #nan "nibbled to death" level=5 image-path="character-ability-cards/mercenary/AN/nibbled-to-death.jpeg" {
+	top
+	bottom
+}
+card #nan "diamartia's dominance" level=6 image-path="character-ability-cards/mercenary/AN/diamartias-dominance.jpeg" {
+	top
+	bottom{
+		enhancement kind=circle ability=heal
+		enhancement kind=square ability=range
+	}
+}
+card #nan "revel in misery" level=6 image-path="character-ability-cards/mercenary/AN/revel-in-misery.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind="diamond+" ability=#null
+	}
+	bottom{
+		enhancement kind=square ability=move
+	}
+}
+card #nan "twin frenzy" level=7 image-path="character-ability-cards/mercenary/AN/twin-frenzy.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=heal
+		enhancement kind=square ability=move
+	}
+}
+card #nan "rat tide" level=7 image-path="character-ability-cards/mercenary/AN/rat-tide.jpeg" {
+	top{
+		enhancement kind=square ability=move
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true{
+		enhancement kind=square ability=move
+	}
+}
+card #nan "powders ingenuity" level=8 image-path="character-ability-cards/mercenary/AN/powders-ingenuity.jpeg" {
+	top lost=#true{
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom
+}
+card #nan "pay the piper" level=8 image-path="character-ability-cards/mercenary/AN/pay-the-piper.jpeg" {
+	top
+	bottom
+}
+card #nan "her highness" level=9 image-path="character-ability-cards/mercenary/AN/her-highness.jpeg" {
+	top lost=#true persistent=#true{
+		enhancement kind=square ability="summon hp"
+		enhancement kind=square ability="summon move"
+	}
+	bottom{
+		enhancement kind=circle ability=heal
+		enhancement kind=square ability=range
+	}
+}
+card #nan "treacherous tactics" level=9 image-path="character-ability-cards/mercenary/AN/treacherous-tactics.jpeg" {
+	top
+	bottom{
+		enhancement kind=square ability=move
+		enhancement kind=square ability=move
+	}
+}

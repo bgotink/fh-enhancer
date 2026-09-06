@@ -1,0 +1,214 @@
+meta {
+	game merc
+	name Satha short=SA
+	color "#85A2D2"
+}
+card #nan "shared glory" level=1 image-path="character-ability-cards/mercenary/SA/shared-glory.jpeg" {
+	top{
+		enhancement kind=square ability=move
+	}
+	bottom
+}
+card #nan "bring them down" level=1 image-path="character-ability-cards/mercenary/SA/bring-them-down.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=move
+	}
+}
+card #nan "blade of the north" level=1 image-path="character-ability-cards/mercenary/SA/blade-of-the-north.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true{
+		enhancement kind=diamond ability=attack
+	}
+}
+card #nan "victory rush" level=1 image-path="character-ability-cards/mercenary/SA/victory-rush.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=attack
+		enhancement kind=square ability=heal
+	}
+}
+card #nan "dazing sweep" level=1 image-path="character-ability-cards/mercenary/SA/dazing-sweep.jpeg" {
+	top{
+		enhancement kind=square ability=attack multiple=#true
+		enhancement kind=hex number-of-hexes=2
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
+}
+card #nan "lead the charge" level=1 image-path="character-ability-cards/mercenary/SA/lead-the-charge.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=move
+		enhancement kind=square ability=move
+	}
+}
+card #nan "spur their spirits" level=1 image-path="character-ability-cards/mercenary/SA/spur-their-spirits.jpeg" {
+	top{
+		enhancement kind="diamond+" ability=heal
+	}
+	bottom
+}
+card #nan "implacable advance" level=1 image-path="character-ability-cards/mercenary/SA/implacable-advance.jpeg" {
+	top lost=#true{
+		enhancement kind=circle ability=move
+	}
+	bottom
+}
+card #nan "combined might" level=1 image-path="character-ability-cards/mercenary/SA/combined-might.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=move
+	}
+}
+card #nan "get behind me" level=1 image-path="character-ability-cards/mercenary/SA/get-behind-me.jpeg" {
+	top
+	bottom
+}
+card #nan "take command" level=X image-path="character-ability-cards/mercenary/SA/take-command.jpeg" {
+	top lost=#true{
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom
+}
+card #nan "wolf pack tactics" level=X image-path="character-ability-cards/mercenary/SA/wolf-pack-tactics.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=move
+		enhancement kind=square ability=move
+	}
+}
+card #nan "emboldening call" level=X image-path="character-ability-cards/mercenary/SA/emboldening-call.jpeg" {
+	top{
+		enhancement kind=square ability=heal
+		enhancement kind=square ability=move
+	}
+	bottom
+}
+card #nan outmaneuver level=2 image-path="character-ability-cards/mercenary/SA/outmaneuver.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=move
+	}
+	bottom
+}
+card #nan "stand firm" level=2 image-path="character-ability-cards/mercenary/SA/stand-firm.jpeg" {
+	top lost=#true{
+		enhancement kind="diamond+" ability=heal
+	}
+	bottom{
+		enhancement kind=square ability=heal
+	}
+}
+card #nan "a little help here" level=3 image-path="character-ability-cards/mercenary/SA/a-little-help-here.jpeg" {
+	top{
+		enhancement kind=square ability=shield
+	}
+	bottom
+}
+card #nan raze level=3 image-path="character-ability-cards/mercenary/SA/raze.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=move
+		enhancement kind=square ability=move
+	}
+}
+card #nan "strike now" level=4 image-path="character-ability-cards/mercenary/SA/strike-now.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=diamond ability=attack
+	}
+}
+card #nan "northern valor" level=4 image-path="character-ability-cards/mercenary/SA/northern-valor.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind="diamond+" ability=heal
+	}
+}
+card #nan "unleash the archers" level=5 image-path="character-ability-cards/mercenary/SA/unleash-the-archers.jpeg" {
+	top
+	bottom{
+		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=attack
+	}
+}
+card #nan armory level=5 image-path="character-ability-cards/mercenary/SA/armory.jpeg" {
+	top
+	bottom{
+		enhancement kind=circle ability=move
+		enhancement kind=square ability=attack
+	}
+}
+card #nan "crashing steel" level=6 image-path="character-ability-cards/mercenary/SA/crashing-steel.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+		enhancement kind=circle ability=move
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
+}
+card #nan defiance level=6 image-path="character-ability-cards/mercenary/SA/defiance.jpeg" {
+	top{
+		enhancement kind=square ability=attack
+		enhancement kind=square ability=move
+	}
+	bottom
+}
+card #nan "send them reeling" level=7 image-path="character-ability-cards/mercenary/SA/send-them-reeling.jpeg" {
+	top{
+		enhancement kind=square ability=attack multiple=#true
+	}
+	bottom
+}
+card #nan "for frosthaven" level=7 image-path="character-ability-cards/mercenary/SA/for-frosthaven.jpeg" {
+	top
+	bottom
+}
+card #nan "lead from the front" level=8 image-path="character-ability-cards/mercenary/SA/lead-from-the-front.jpeg" {
+	top
+	bottom{
+		enhancement kind="diamond+" ability=heal
+	}
+}
+card #nan "bonded through battle" level=8 image-path="character-ability-cards/mercenary/SA/bonded-through-battle.jpeg" {
+	top
+	bottom
+}
+card #nan "fight as one" level=9 image-path="character-ability-cards/mercenary/SA/fight-as-one.jpeg" {
+	top lost=#true{
+		enhancement kind=square ability=range multiple=#true
+		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=square ability=move
+		enhancement kind=diamond ability=attack
+	}
+}
+card #nan "stand against many" level=9 image-path="character-ability-cards/mercenary/SA/stand-against-many.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom
+}

@@ -81,6 +81,21 @@ fh-enhancer-settings {
 	anchor-name: --settings;
 }
 
+.home-link,
+fh-enhancer-settings button {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.3em 0.6em;
+	border: 1px solid currentColor;
+	border-radius: 4px;
+	text-decoration: none;
+	color: inherit;
+	background: transparent;
+	font: inherit;
+	font-weight: 700;
+	cursor: pointer;
+}
+
 fh-enhancer-settings dialog {
 	position: fixed;
 	position-anchor: --settings;
@@ -134,8 +149,12 @@ body > section {
 	border-radius: 0.5lh;
 }
 
-:root.character-fh:not(.show-all-characters) .character--game-gh2,
-:root.character-gh2:not(.show-all-characters) .character--game-fh {
+:root.character-group-frosthaven:not(.show-all-characters) .character--group-gloomhaven2,
+:root.character-group-frosthaven:not(.show-all-characters) .character--group-merc,
+:root.character-group-gloomhaven2:not(.show-all-characters) .character--group-frosthaven,
+:root.character-group-gloomhaven2:not(.show-all-characters) .character--group-merc,
+:root.character-group-merc:not(.show-all-characters) .character--group-frosthaven,
+:root.character-group-merc:not(.show-all-characters) .character--group-gloomhaven2 {
 	display: none;
 }
 

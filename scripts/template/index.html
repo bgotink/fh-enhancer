@@ -14,7 +14,7 @@
 			}
 
 			body {
-				max-width: 500px;
+				max-width: 720px;
 				margin: 0 auto;
 				padding: 0 8px 16px;
 
@@ -54,8 +54,15 @@
 			}
 
 			.container {
-				display: flex;
-				justify-content: space-between;
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 1.5lh 2lh;
+			}
+
+			@media (width < 600px) {
+				.container {
+					grid-template-columns: 1fr;
+				}
 			}
 
 			@view-transition {

@@ -1,0 +1,193 @@
+meta {
+	game merc
+	name Hail short=HA
+	color "#DFA1AB"
+}
+card #nan "cant be bothered" level=1 image-path="character-ability-cards/mercenary/HA/cant-be-bothered.jpeg" {
+	top
+	bottom
+}
+card #nan "interesting speciments" level=1 image-path="character-ability-cards/mercenary/HA/interesting-speciments.jpeg" {
+	top
+	bottom
+}
+card #nan "gather reagents" level=1 image-path="character-ability-cards/mercenary/HA/gather-reagents.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack multiple=#true
+	}
+	bottom
+}
+card #nan "somewhere to be" level=1 image-path="character-ability-cards/mercenary/HA/somewhere-to-be.jpeg" {
+	top
+	bottom{
+		enhancement kind=circle ability=teleport
+	}
+}
+card #nan "not amused" level=1 image-path="character-ability-cards/mercenary/HA/not-amused.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom lost=#true{
+		enhancement kind=diamond ability=#null multiple=#true
+	}
+}
+card #nan "perpetual annoyance" level=1 image-path="character-ability-cards/mercenary/HA/perpetual-annoyance.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
+}
+card #nan "minor inconvenience" level=1 image-path="character-ability-cards/mercenary/HA/minor-inconvenience.jpeg" {
+	top{
+		enhancement kind="diamond+" ability=heal
+	}
+	bottom{
+		enhancement kind=diamond ability=#null
+	}
+}
+card #nan "fleeting interest" level=1 image-path="character-ability-cards/mercenary/HA/fleeting-interest.jpeg" {
+	top lost=#true{
+		enhancement kind=square ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=teleport
+	}
+}
+card #nan "bizarre antics" level=1 image-path="character-ability-cards/mercenary/HA/bizarre-antics.jpeg" {
+	top{
+		enhancement kind=circle ability=teleport
+	}
+	bottom{
+		enhancement kind=circle ability=attack
+	}
+}
+card #nan "leave me alone" level=X image-path="character-ability-cards/mercenary/HA/leave-me-alone.jpeg" {
+	top
+	bottom{
+		enhancement kind=square ability=move
+		enhancement kind=diamond ability=attack
+	}
+}
+card #nan "abundant nuisance" level=X image-path="character-ability-cards/mercenary/HA/abundant-nuisance.jpeg" {
+	top{
+		enhancement kind=square ability=range
+	}
+	bottom
+}
+card #nan "trial and success" level=X image-path="character-ability-cards/mercenary/HA/trial-and-success.jpeg" {
+	top
+	bottom{
+		enhancement kind=circle ability=teleport
+	}
+}
+card #nan "experimental insights" level=2 image-path="character-ability-cards/mercenary/HA/experimental-insights.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=teleport
+	}
+}
+card #nan outsource level=2 image-path="character-ability-cards/mercenary/HA/outsource.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
+}
+card #nan "beneath me" level=3 image-path="character-ability-cards/mercenary/HA/beneath-me.jpeg" {
+	top
+	bottom lost=#true{
+		enhancement kind=diamond ability=attack
+	}
+}
+card #nan "fading presence" level=3 image-path="character-ability-cards/mercenary/HA/fading-presence.jpeg" {
+	top
+	bottom{
+		enhancement kind=circle ability=teleport
+	}
+}
+card #nan "fools errand" level=4 image-path="character-ability-cards/mercenary/HA/fools-errand.jpeg" {
+	top
+	bottom{
+		enhancement kind=square ability=move
+	}
+}
+card #nan miniaturize level=4 image-path="character-ability-cards/mercenary/HA/miniaturize.jpeg" {
+	top{
+		enhancement kind="diamond+" ability=#null
+	}
+	bottom{
+		enhancement kind=diamond ability=#null
+	}
+}
+card #nan "dont be a baby" level=5 image-path="character-ability-cards/mercenary/HA/dont-be-a-baby.jpeg" {
+	top{
+		enhancement kind=square ability=heal multiple=#true
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
+}
+card #nan "trying to remember" level=5 image-path="character-ability-cards/mercenary/HA/trying-to-remember.jpeg" {
+	top{
+		enhancement kind="diamond+" ability=#null
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
+}
+card #nan "withering stare" level=6 image-path="character-ability-cards/mercenary/HA/withering-stare.jpeg" {
+	top
+	bottom{
+		enhancement kind=circle ability=teleport
+		enhancement kind=square ability=push multiple=#true
+	}
+}
+card #nan "dismissive comment" level=6 image-path="character-ability-cards/mercenary/HA/dismissive-comment.jpeg" {
+	top{
+		enhancement kind=diamond ability=attack
+	}
+	bottom{
+		enhancement kind=circle ability=teleport
+	}
+}
+card #nan "tear a new one" level=7 image-path="character-ability-cards/mercenary/HA/tear-a-new-one.jpeg" {
+	top
+	bottom
+}
+card #nan "collect essence" level=7 image-path="character-ability-cards/mercenary/HA/collect-essence.jpeg" {
+	top{
+		enhancement kind=square ability=attack
+		enhancement kind="diamond+" ability=#null
+	}
+	bottom{
+		enhancement kind=circle ability=move
+	}
+}
+card #nan "kill that one first" level=8 image-path="character-ability-cards/mercenary/HA/kill-that-one-first.jpeg" {
+	top{
+		enhancement kind=diamond ability=#null
+	}
+	bottom{
+		enhancement kind=diamond ability=attack
+	}
+}
+card #nan "closed for business" level=8 image-path="character-ability-cards/mercenary/HA/closed-for-business.jpeg" {
+	top
+	bottom
+}
+card #nan "fired up" level=9 image-path="character-ability-cards/mercenary/HA/fired-up.jpeg" {
+	top
+	bottom{
+		enhancement kind=diamond ability=attack
+	}
+}
+card #nan "the power of enhancement" level=9 image-path="character-ability-cards/mercenary/HA/the-power-of-enhancement.jpeg" {
+	top
+	bottom
+}

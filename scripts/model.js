@@ -320,7 +320,7 @@ export class Color {
 }
 
 export class CharacterMeta {
-	/** @type {"frosthaven" | "gloomhaven2"} */
+	/** @type {"frosthaven" | "gloomhaven2" | "merc"} */
 	game;
 
 	name;
@@ -337,7 +337,7 @@ export class CharacterMeta {
 	/** @param {DeserializationContext} ctx */
 	static deserialize(ctx) {
 		const game = ctx.child.required.single("game", (c) =>
-			c.argument.required.enum("frosthaven", "gloomhaven2"),
+			c.argument.required.enum("frosthaven", "gloomhaven2", "merc"),
 		);
 		const [name, spoilerFreeName, shortName] = ctx.child.required.single(
 			"name",
@@ -360,7 +360,7 @@ export class CharacterMeta {
 	}
 
 	/**
-	 * @param {"frosthaven" | "gloomhaven2"} game
+	 * @param {"frosthaven" | "gloomhaven2" | "merc"} game
 	 * @param {string} name
 	 * @param {string=} spoilerFreeName
 	 * @param {string=} shortName

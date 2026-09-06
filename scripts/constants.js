@@ -42,6 +42,8 @@ export const frosthavenCharacterOrder = [
 	"metal-mosaic",
 ];
 
+export const mercCharacterOrder = ["anaphi", "cassandra", "hail", "satha"];
+
 export const gloomhaven2CharacterOrder = [
 	// Starting classes
 	"bruiser",
