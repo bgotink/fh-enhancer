@@ -75,7 +75,7 @@ card 42 "experimental adjustment" level=X image-path="character-ability-cards/fr
 card 43 "sand in the hourglass" level=X image-path="character-ability-cards/frosthaven/bb/fh-sand-in-the-hourglass.png" {
 	top
 	bottom {
-		enhancement kind=circle ability=heal
+		enhancement kind=circle ability=heal multiple=#true
 	}
 }
 card 44 "borrowed time" level=X image-path="character-ability-cards/frosthaven/bb/fh-borrowed-time.png" {

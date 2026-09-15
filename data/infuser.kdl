@@ -111,7 +111,7 @@ card 199 "veil of protection" level=2 image-path="character-ability-cards/frosth
 
 card 200 "remote impact" level=2 image-path="character-ability-cards/frosthaven/if/fh-remote-impact.png" {
 	top {
-		enhancement kind=square ability=attack
+		enhancement kind=square ability=attack multiple=#true
 		enhancement kind=hex number-of-hexes=3
 		enhancement kind=hex number-of-hexes=4
 	}
@@ -135,8 +135,8 @@ card 202 "guide the flow" level=3 image-path="character-ability-cards/frosthaven
 card 203 "coalescing darkness" level=4 image-path="character-ability-cards/frosthaven/if/fh-coalescing-darkness.png" {
 	top lost=#true persistent=#true
 	bottom {
-		enhancement kind=square ability=pull
-		enhancement kind=square ability=range
+		enhancement kind=square ability=pull multiple=#true
+		enhancement kind=square ability=range multiple=#true
 	}
 }
 
@@ -161,7 +161,7 @@ card 205 "gemstone resonance" level=5 image-path="character-ability-cards/frosth
 
 card 206 "obsidian spear" level=5 image-path="character-ability-cards/frosthaven/if/fh-obsidian-spear.png" {
 	top {
-		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack multiple=#true
 		enhancement kind=hex number-of-hexes=2
 	}
 	bottom {
@@ -179,7 +179,7 @@ card 207 "propulsive tailwind" level=6 image-path="character-ability-cards/frost
 
 card 208 "gale barrage" level=6 image-path="character-ability-cards/frosthaven/if/fh-gale-barrage.png" {
 	top {
-		enhancement kind=square ability=pierce
+		enhancement kind=square ability=pierce multiple=#true
 	}
 	bottom {
 		enhancement kind=square ability=move
@@ -195,7 +195,7 @@ card 209 diamondization level=7 image-path="character-ability-cards/frosthaven/i
 
 card 210 "malachite shockwave" level=7 image-path="character-ability-cards/frosthaven/if/fh-malachite-shockwave.png" {
 	top lost=#true {
-		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack multiple=#true
 	}
 	bottom {
 		enhancement kind=square ability=move
@@ -215,7 +215,7 @@ card 211 "untether the shackles" level=8 image-path="character-ability-cards/fro
 card 212 "swift pivot" level=8 image-path="character-ability-cards/frosthaven/if/fh-swift-pivot.png" {
 	bottom lost=#true {
 		enhancement kind=square ability=move
-		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack multiple=#true
 		enhancement kind=hex number-of-hexes=3
 	}
 }

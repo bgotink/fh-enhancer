@@ -55,7 +55,7 @@ card 422 "pressure build-up" level=1 image-path="character-ability-cards/frostha
 
 card 423 "beam axe" level=1 image-path="character-ability-cards/frosthaven/me/fh-beam-axe.png" {
 	top {
-		enhancement kind=square ability=attack
+		enhancement kind=square ability=attack multiple=#true
 	}
 	bottom {
 		enhancement kind=circle ability=move

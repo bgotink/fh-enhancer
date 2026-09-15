@@ -75,7 +75,7 @@ card 309 "cleansing fire" level=1 image-path="character-ability-cards/frosthaven
 }
 card 310 "swift vengeance" level=1 image-path="character-ability-cards/frosthaven/pc/fh-swift-vengeance.png" {
 	top{
-		enhancement kind=square ability=range
+		enhancement kind=square ability=range multiple=#true
 	}
 	bottom{
 		enhancement kind=circle ability=move

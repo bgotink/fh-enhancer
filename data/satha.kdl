@@ -60,7 +60,7 @@ card #nan "spur their spirits" level=1 image-path="character-ability-cards/merce
 }
 card #nan "implacable advance" level=1 image-path="character-ability-cards/mercenary/SA/implacable-advance.jpeg" {
 	top lost=#true{
-		enhancement kind=circle ability=move
+		enhancement kind=circle ability=move multiple=#true
 	}
 	bottom
 }
@@ -89,7 +89,7 @@ card #nan "wolf pack tactics" level=X image-path="character-ability-cards/mercen
 	}
 	bottom{
 		enhancement kind=square ability=move
-		enhancement kind=square ability=move
+		enhancement kind=square ability=move multiple=#true
 	}
 }
 card #nan "emboldening call" level=X image-path="character-ability-cards/mercenary/SA/emboldening-call.jpeg" {
@@ -171,7 +171,7 @@ card #nan "crashing steel" level=6 image-path="character-ability-cards/mercenary
 card #nan defiance level=6 image-path="character-ability-cards/mercenary/SA/defiance.jpeg" {
 	top{
 		enhancement kind=square ability=attack
-		enhancement kind=square ability=move
+		enhancement kind=square ability=move multiple=#true
 	}
 	bottom
 }
@@ -199,11 +199,11 @@ card #nan "fight as one" level=9 image-path="character-ability-cards/mercenary/S
 	top lost=#true{
 		enhancement kind=square ability=range multiple=#true
 		enhancement kind=diamond ability=attack
-		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack multiple=#true
 	}
 	bottom{
-		enhancement kind=square ability=move
-		enhancement kind=diamond ability=attack
+		enhancement kind=square ability=move multiple=#true
+		enhancement kind=diamond ability=attack multiple=#true
 	}
 }
 card #nan "stand against many" level=9 image-path="character-ability-cards/mercenary/SA/stand-against-many.jpeg" {

@@ -119,7 +119,7 @@ card 166 "hail of thorns" level=1 image-path="character-ability-cards/frosthaven
 }
 card 167 "smoldering hatred" level=X image-path="character-ability-cards/frosthaven/ge/fh-smoldering-hatred.png" {
 	top{
-		enhancement kind=diamond ability=attack
+		enhancement kind=diamond ability=attack multiple=#true
 	}
 	bottom lost=#true{
 		enhancement kind=square ability=jump
@@ -199,7 +199,7 @@ card 177 "corrosive acids" level=6 image-path="character-ability-cards/frosthave
 card 178 hirudotherapy level=6 image-path="character-ability-cards/frosthaven/ge/fh-hirudotherapy.png" {
 	top
 	bottom{
-		enhancement kind=square ability=attack
+		enhancement kind=square ability=attack multiple=#true
 	}
 }
 card 179 "two-pronged entrapment" level=7 image-path="character-ability-cards/frosthaven/ge/fh-two-pronged-entrapment.png" {

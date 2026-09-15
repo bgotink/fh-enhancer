@@ -233,4 +233,10 @@ card 415 "heavy metal" level=9 image-path="character-ability-cards/frosthaven/hv
 	}
 }
 
-card 416 disassemble level=9 image-path="character-ability-cards/frosthaven/hv/fh-disassemble.png"
+card 416 disassemble level=9 image-path="character-ability-cards/frosthaven/hv/fh-disassemble.png" {
+	top {
+		enhancement kind=square ability=attack
+		enhancement kind=square ability=attack
+	}
+	bottom
+}
